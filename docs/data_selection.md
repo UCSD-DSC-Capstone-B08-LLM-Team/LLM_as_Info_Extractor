@@ -10,7 +10,7 @@ For our retrieval benchmark:
 
 The dataset is now formatted as a CSV with columns:
 - `question`
-- `correct_answer`
+- `correct_ans bwer`
 - `distractor_1`, `distractor_2`, `distractor_3`, `distractor_4`
 
 This setup provides a clean, fully ground-truthed "needle-in-a-haystack" benchmark before moving on to more realistic clinical notes in MIMIC-III, which will require additional preprocessing and ground-truth definitions.
