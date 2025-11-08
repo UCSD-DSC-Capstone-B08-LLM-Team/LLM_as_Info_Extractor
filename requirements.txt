@@ -1,3 +1,4 @@
+# For context-rot
 pandas>=2.2.0
 numpy>=1.24.0
 matplotlib>=3.8.0
@@ -9,3 +10,33 @@ anthropic>=0.52.0
 google-cloud-aiplatform>=1.95.0
 python-dotenv>=1.0.0
 python-levenshtein>=0.27.1
+
+# For LLM as Info Extractor & CLEAR 
+anthropic==0.72.0
+transformers==4.57.1
+accelerate==1.11.0
+huggingface-hub==0.36.0
+tokenizers==0.22.1
+safetensors==0.6.2
+
+# for gpu-related dependencies, you can use your own
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+scikit-learn==1.7.2
+scipy==1.15.3
+
+spacy==3.7.5
+medspacy==1.3.1
+medspacy_quickumls==3.2
+medspacy_unqlite==0.9.8
+nltk==3.9.2
+faiss-cpu==1.9.0
+
+PyYAML
+regex
+tqdm
+rich
+gspread==6.2.1
+gspread-dataframe==4.0.0
