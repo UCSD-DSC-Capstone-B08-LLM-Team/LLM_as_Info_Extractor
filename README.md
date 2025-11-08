@@ -49,7 +49,7 @@ Two Experinments were accomplished under this pipeline. They are pivot LLM extra
 
 
 ## Environment & Setting
-For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH experinment on Windows 11 (we might use Linux with vLLM in the future) with the help of Ollama. Due to its large computing demand, we used local GPU, NVIDIA RTX 5080 (16GB) for the NIAH experinment. As a result, you are expected to prepare your own API key and GPUs to run our experinment. For examples, you should set the environment variable `$env:ANTHROPIC_API_KEY="Your Own Key"`. Then, you should be good after running `pip install -r requirements.txt` (Install dependencies).
+For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH experinment on Windows 11 (we might use Linux with vLLM in the future) with the help of Ollama. Due to its large computing demand, we used local GPU, NVIDIA RTX 5080 (16GB) for the NIAH experinment. As a result, you are expected to prepare your own API key and GPUs to run our experinment. For examples, you should set the environment variable `$env:ANTHROPIC_API_KEY="Your Own Key"`. Then, you should be good after running `pip install -r requirements.txt` (Install dependencies). All required data that we used are already in root data folders or context-rot data folders, which are all from open-source repositories/papers' database (see Dataset, References, Models for more details).
 
 
 ## Steps to Run Our Experinment
@@ -96,9 +96,11 @@ For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH ex
 
 
 ## Dataset, References, Models
+Our data for the experiments are derived from these papers and open-source repositories:
+
 - [A multiple model performance evaluation](https://pmc.ncbi.nlm.nih.gov/articles/PMC11751965/) provides 50 simulated medical reports with gold standard as reference for our pivot LLM extractor experinment.
 
-- The method of Needle-in-a-Haystack is mainly derived from the article [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://research.trychroma.com/context-rot).
+- The method and data of Needle-in-a-Haystack is mainly derived from the article [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://research.trychroma.com/context-rot).
 
 - [CLEAR](https://www.nature.com/articles/s41746-024-01377-1?utm_source=chatgpt.com) also applies techniques to shorten the prompt by highlighting potential “needles,” expanding the needles into a paragraph, and finding the needles we need using cosine similarity.
 
