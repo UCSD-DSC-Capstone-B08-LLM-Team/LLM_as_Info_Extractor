@@ -41,7 +41,7 @@ Two Experinments were accomplished under this pipeline. They are pivot LLM extra
 <p align="center">
   <table>
     <tr>
-      <td align="center"><img src="images/rot3.png" alt="" width="650"/></td>
+      <td align="center"><img src="images/rot3.png" alt="" width="850"/></td>
     </tr>
   </table>
 </p>   
