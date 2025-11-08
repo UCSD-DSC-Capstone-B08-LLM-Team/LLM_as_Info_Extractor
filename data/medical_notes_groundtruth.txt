@@ -1,0 +1,1164 @@
+﻿
+1. Synthetic medical notes 
+
+ 
+Patient 1  
+Hospitalization from 21.01.2020 to 29.01.2020 
+Euro score 2: 8.1% 
+ 
+The separate surgical report provides information about the course of the operation. The 
+transesophageal echocardiography showed an intraoperatively preserved left ventricular 
+ejection fraction of 65%. Postoperatively, the intubated patient was transferred to the 
+intensive care unit, with stable hemodynamics and without the need for catecholamines. The 
+cardiac biomarkers increased within the expected range. The patient could be easily 
+extubated on the day of surgery, and subsequently, the gas exchange was always sufficient 
+under low-dose oxygen insufflation through the nasal cannula. The patient was able to be 
+moved to the normal ward in good general condition and hemodynamically stable on 
+23.01.2020. Postoperatively, the patient experienced numbness in digits III-V with radiation 
+into the forearm, which is most likely due to positioning during surgery. As a result, the 
+liability insurance was activated, and hand ergometry was performed. In addition, a 
+neurological consultation was requested, which had the following result: Clinically, the 
+symptoms reported and examined, with hypoesthesia on the ulnar side of the forearm and 
+the ulnar side of the hand as well as slight weakness in making a fist, finger abduction, and 
+to a lesser extent thumb abduction and flexion at the terminal phalanx, are most consistent 
+with a mild brachial plexus lesion. Correspondingly, two days after the onset of symptoms, a 
+normal finding of the neurographies of the distal sections of the affected nerves was seen. In 
+particular, an ulnar or median nerve compression neuropathy could be excluded. The further 
+postoperative course was unproblematic. The patient was able to enter further cardiac 
+rehabilitation on 29.01.2020. 
+ 
+-------------------------------------- 
+ 
+Patient 2 
+Hospitalization from 01.03.2020 to 14.03.2020 
+Euro score 2: 1.3% 
+ 
+The separate surgical report provides information about the course of the operation. The 
+transesophageal echocardiography showed a preserved intraoperative left ventricular 
+ejection fraction. Postoperatively clinical examination revealed a facial palsy and pronation in 
+the arm/leg holding test on the left side. An acute demarcated infarct in the right medial 
+frontal gyrus, sized approximately 3.5cm, could be confirmed by computed tomography. The 
+patient was easily extubated on the day of surgery, and the gas exchange was subsequently 
+always sufficient under low-dose oxygen insufflation through the nasal cannula. The patient 
+was able to be moved to the normal ward in good general condition and hemodynamically 
+stable on 04.03.2020. On the ward, on the fifth postoperative day, there was a deterioration 
+in the general condition; the patient became hypotensive, tachycardic, and dyspneic, so an 
+echocardiography was performed on suspicion of a pericardial effusion. A large pericardial 
+effusion could be diagnosed, with signs of tamponade. Subsequently, a subxiphoid drainage 
+was performed urgently. Postoperatively, atrial fibrillation occurred with spontaneous 
+conversion to sinus rhythm after beta-blocker administration. On the seventh postoperative 
+day, atrial fibrillation recurred with successful cardioversion to sinus rhythm. We were able to 
+discharge the patient for further cardiac rehabilitation on 14.03.2020 
+ 
+-------------------------------------- 
+ 
+
+
+
+Patient 3  
+Hospitalization from 07.05.2021 to 08.06.2021  
+Euroscore 2: 4.2% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. During the wake-up attempt, a paralysis of the left leg was noticed, which persisted 
+after extubation. CT scans revealed several ischemic CVIs in the cerebellar and right 
+anterior circulation area as well as in the left middle cerebral artery territory. Clinically and 
+neurologically, the patient became somnolent over time with weakness in the left arm and 
+leg, which persisted during hospitalization. The patient could be easily extubated on the day 
+of surgery, and the gas exchange was subsequently always sufficient under low-dose 
+oxygen insufflation through the nasal cannula. On the first postoperative morning, a 
+significantly increased central venous pressure with unstable hemodynamics was noticed, so 
+a transthoracic echocardiography was performed. It revealed a pericardial tamponade with 
+compression of the right heart chambers, which led to the indication for rethoracotomy. The 
+hematoma was evacuated, and the thorax initially remained open. With improving 
+hemodynamics and no evidence of recurrent bleeding, the thorax was closed again on the 
+sixth postoperative day. The patient was transferred to the cardiac surgery department on 
+the 14th postoperative day. Intensive physiotherapy was carried out for analgesia and 
+mobility enhancement. Diuretic therapy was initiated to treat perioperative fluid retention and 
+bilateral pleural effusions. In addition, a pleural puncture was performed on both sides. The 
+patient underwent intensive physiotherapy and occupational therapy, with slight neurological 
+improvement. We were able to discharge the patient for further neurocardiac rehabilitation 
+on 08.06.2021. 
+ 
+-------------------------------------- 
+ 
+Patient 4 
+Hospitalization from 12.04.2022 to 24.04.2022  
+Euro score 2: 1.9% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The patient could be easily extubated on the day of surgery, and the gas exchange was 
+always sufficient with low-dose oxygen via nasal cannula. The patient was moved to the 
+ward on the first postoperative day in good general condition and hemodynamically stable. 
+On the second postoperative day, there was a sudden occurrence of left homonymous 
+hemianopsia and a markedly brachially accentuated left-sided motor hemisyndrome. The 
+finger-to-nose test on the left was not possible. An immediate CT angiography was 
+performed, revealing a new subacute demarcated infarct in the right posterior circulation 
+area and a subacute lacunar infarct in the right precentral white matter. After consultation 
+with the colleagues from neurology, the therapy with high-dose aspirin and atorvastatin was 
+continued, and a systolic blood pressure of at least 120mmHg was maintained. The 
+hemisyndrome showed significant improvement under occupational therapy with well-
+preserved strength. However, the hemianopsia persisted. The ophthalmological examination 
+confirmed a correlation with the ischemic event in the posterior circulation area. In the 
+postoperative course, the patient developed atrial fibrillation. Under antiarrhythmic therapy 
+with amiodarone, a highly bradycardic atrioventricular block was noted, up to short-term 
+asystole. The patient was switched to external DDD pacing, and the antiarrhythmic therapy 
+was stopped. Due to the persistence of the high-grade block, the indication for the 
+implantation of a permanent pacemaker system was given, with subsequent implantation on 
+the seventh postoperative day. Diuretic therapy was initiated to treat perioperative fluid 
+retention and bilateral pleural effusions. Follow-up X-rays showed a significant right-sided 
+pleural effusion, so a pleural puncture was performed. The patient was discharged for further 
+cardiac rehabilitation on 24.04.2022.  
+
+
+
+ 
+-------------------------------------- 
+ 
+Patient 5 
+Hospitalization from 04.03.2020 to 12.03.2020  
+Euro score 2: 1.6% 
+ 
+The separate surgical report provides details about the course of the operation. The 
+transesophageal echocardiography showed a good intraoperative left ventricular pump 
+function. Postoperative transfer of the intubated patient, with stable hemodynamics and 
+without the need for catecholamines to the intensive care unit. The cardiac biomarkers 
+increased within the expected range. The patient could be easily extubated on the day of 
+surgery, and the gas exchange was subsequently always sufficient with low-dose oxygen 
+insufflation through the nasal cannula. The hemodynamically stable patient was then 
+transferred to the ward in good general condition. In the echocardiographic follow-up, a large 
+pericardial effusion was noted with normal function of the implanted prosthesis, so that a 
+subxiphoid pericardial drainage was performed. The drainage was removed the next day. 
+Paroxysmal postoperative atrial fibrillation occurred in the ward, which could be converted to 
+a sinus rhythm with the administration of amiodarone. The temporary pacemaker wires could 
+be removed after a repeated ECG check and persistent sinus rhythm. The patient was 
+discharged for further cardiac rehabilitation on 12.03.2020. 
+ 
+-------------------------------------- 
+ 
+Patient 6 
+Hospitalization from 26.04.2022 to 20.05.2022  
+Euroscore 2: 3.8% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The cardiac biomarkers increased within the expected range. The patient could be 
+easily extubated on the day of surgery, and the gas exchange was subsequently always 
+sufficient with low-dose oxygen insufflation through the nasal cannula. After extubation, the 
+patient was alert, adequate, and without focal neurological deficits. Two hours later, there 
+was a sudden onset of aphasia/dysarthria, as well as a sensorimotor hemisyndrome on the 
+right (no response to pain stimulus, leg and arm paretic). An immediate CT angiography was 
+performed, which showed an almost complete occlusion of the left common carotid artery 
+with hypoperfusion of the entire left hemisphere. Further treatment involved stenting of the 
+left internal carotid artery. Over time, the symptoms slightly regressed, although the arm 
+paralysis persisted. The patient was transferred to the ward in a decreased general condition 
+but hemodynamically stable. A persisting third-degree AV block led to the implantation of a 
+permanent pacemaker. Postoperatively, the patient developed atrial fibrillation, which 
+spontaneously converted to a sinus rhythm under beta-blockade. The external temporary 
+pacemaker wires could be removed after a repeated ECG check and persistent sinus 
+rhythm. Diuretic therapy was initiated to treat perioperative fluid retention and bilateral 
+pleural effusions. After intensive physiotherapeutic and occupational therapy, we were able 
+to discharge the patient for further neurocardiac rehabilitation on 20.05.2022. 
+ 
+-------------------------------------- 
+ 
+Patient 7 
+Hospitalization from 11.09.2017 to 29.09.2017  
+Euro score 2: 4.3% 
+ 
+The separate surgical report provides information about the course of the operation. The 
+transesophageal echocardiography showed a normal intraoperative LVEF. Postoperative 
+
+
+
+transfer of the intubated patient to the intensive care unit. Due to hemodynamic instability 
+with increasing noradrenaline and fluid requirements, decreasing hematocrit, and bloody 
+drainage fluid, a re-thoracotomy was performed. The separate report provides details about 
+the course of this operation. The patient was oriented after extubation. However, there was a 
+brachially accentuated left-sided hemiparesis with gaze palsy. Imaging revealed a high-
+grade stenosis at the origin of the right internal carotid artery with right-hemispheric 
+perfusion mismatch and multiple lacunar ischemias in the right middle cerebral artery 
+territory, consistent with emboli from the proximal right internal carotid stenosis. After 
+interdisciplinary consultation, a decision was made for stenting. Subsequently, the right 
+internal carotid artery was stented with a good angiographic result. However, post-
+interventionally a complete sensorimotor hemisyndrome on the left was observed. Under 
+intensive physiotherapy and occupational therapy, the hemi-symptoms slightly regressed, 
+and the patient was eventually able to move the left hand and left foot with limitations. In the 
+ward, the patient developed paroxysmal atrial fibrillation. After the administration of beta-
+blockers and electrolyte substitution, the patient spontaneously converted to a sinus rhythm. 
+Prophylactically, we established oral anticoagulation therapy with Marcoumar for 3 months. 
+Large-volume pleural effusions with compression atelectasis were evidenced, so bilateral 
+pleural puncture was performed. The patient was discharged for further neurocardiac 
+rehabilitation on 29.09.2023. 
+ 
+-------------------------------------- 
+ 
+Patient 8 
+Hospitalization from 16.05.2023 to 24.05.2023  
+Euroscore 2: 2.6% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. Due to persistently 
+high catecholamine requirements and clinical and laboratory signs of a low-cardiac-output 
+syndrome with rising lactate and oligo/anuria, computed tomography was performed 
+revealing a large pericardial effusion with hematoma. A re-thoracotomy was performed to 
+evacuate the pericardial hematoma and achieve hemostasis. Neurologically, after the 
+reduction of sedation and during the wake-up attempt, the patient initially presented with 
+slowed responses with a positive CAM-ICU indicative of a hypoactive delirium, which we 
+treated with a non-pharmacological therapy regimen (quiet environment, orientation aids, 
+mobilization, day-night rhythm). No focal neurological deficit could be detected. During the 
+stay in the intensive care unit, the patient became increasingly alert, adequate, and pain-
+free. The hemodynamically stable patient was transferred to the ward in good general 
+condition. Postoperatively, a bradycardic rhythm was observed due to a high-degree AV 
+block and chronotropic incompetence. Due to persisting rhythm disturbance a pacemaker 
+was implanted on the fifth postoperative day. The postoperative computed tomography 
+showed a regular postoperative finding with a small amount of pleural effusion on both sides, 
+not warranting puncture. The patient was discharged to cardiac rehabilitation on 24.05.2023. 
+ 
+-------------------------------------- 
+ 
+Patient 9 
+Hospitalization from 24.05.2021 to 31.05.2021  
+Euroscore 2: 2.5% 
+ 
+The patient was transferred to the intensive care unit with DDD pacing set at 60/min. 
+Subsequently, the patient remained hemodynamically unstable and despite the transfusion 
+of 4 units of FFP and the substitution of 4 liters of crystalloids, continued to be persistently 
+unstable and tachycardic. At the same time, due to the central venous pressure rising from 
+12 to 21 mmHg, transesophageal echocardiography was performed, showing compression 
+
+
+
+of the right ventricle due to a hematoma, necessitating an emergency re-thoracotomy in the 
+intensive care unit with pericardial evacuation of the hematoma. No source of bleeding was 
+found during the re-thoracotomy. The cardiac biomarkers increased within the expected 
+range. The patient was extubated without problems and later transferred to the ward 
+cardiorespiratory stable and in good general condition. The further course was otherwise 
+uncomplicated. The patient was discharged home on the seventh postoperative day. 
+ 
+-------------------------------------- 
+ 
+Patient 10  
+Hospitalization from 19.09.2015 to 09.10.2015  
+Euroscore 2: 7.9% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the patient to the intensive care unit. Initially, during the wake-up 
+attempt, the patient was oriented without focal neurological deficit and was subsequently 
+extubated on the day of surgery. However, she showed a lack of adequate responsiveness, 
+prompting a CT scan of the head, which revealed a parietal and a posterior CVI. Clinically, a 
+right-sided hemiparesis and aphasia were revealed over time, which persisted with slight 
+improvement until discharge. On the morning of the first postoperative day, increased bloody 
+drainage losses and severe obstructive shock due to pericardial tamponade were observed. 
+Consequently, an emergency re-thoracotomy was performed in the intensive care unit. The 
+separate report provides details about the course of this operation. After transfer to the 
+intensive care unit, the patient was in DDD pacing due to junctional rhythm. She further 
+developed atrial fibrillation and severe bradycardia, so pacing via a temporary pacemaker 
+electrode was necessary to prevent a low output syndrome. Due to the persistence of the 
+rhythm issues, a PM implantation was performed. Diuretic therapy was initiated to treat 
+perioperative fluid retention and bilateral pleural effusions. A follow-up X-ray in the ward 
+revealed a significant pleural effusion on the left chest, so a pleural puncture was performed. 
+Subsequent X-ray controls showed no pneumothorax with a regressing amount of effusion. 
+The further postoperative course was uneventful. After intensive physiotherapeutic and 
+occupational therapy, we were able to discharge the patient for further neurocardiac 
+rehabilitation on 09.10.2015. 
+ 
+-------------------------------------- 
+Patient 11 
+Hospitalization from 15.09.2018 to 23.09.2018  
+Euroscore 2: 1.3% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient, to the intensive care 
+unit. The cardiac biomarkers increased within the expected range. The patient was easily 
+extubated on the day of surgery, and the gas exchange was subsequently always sufficient 
+under low-dose oxygen insufflation through the nasal cannula. On the first postoperative 
+day, the patient developed hemodynamically significant AF, which was successfully 
+cardioverted to sinus rhythm. The patient was transferred to the ward cardiorespiratory 
+stable and in good general condition. Diuretic therapy was initiated to treat perioperative fluid 
+retention and bilateral pleural effusions. In addition, a pleural puncture was performed on the 
+left side on the fifth postoperative day. The patient was discharged for further cardiac 
+rehabilitation on 23.09.2018. 
+ 
+-------------------------------------- 
+ 
+Patient 12 
+Hospitalization from 12.11.2020 to 21.11.2020 
+Euro score 2: 6.6% 
+
+
+
+ 
+The separate surgical report provides details about the course of the operation. The 
+transesophageal echocardiography showed a preserved intraoperative ejection fraction. 
+Postoperative transfer of the intubated patient to the intensive care unit. The patient was 
+weaned and extubated without problems. He was subsequently transferred to the ward 
+cardiopulmonary stable and in good general condition. In the follow-up echocardiography, a 
+hemodynamically relevant pericardial effusion was detected with a circular extension, 
+especially posteriorly and posterolaterally. The inferior vena cava was dilated and had 
+limited respiratory variability. As a result, a subxiphoid pericardial drainage was performed. 
+Diuretic therapy was initiated to treat perioperative fluid retention and bilateral pleural 
+effusions. Due to a large-volume pleural effusion, a pleural puncture was also performed on 
+the right side. The patient was discharged for further cardiac rehabilitation on 21.11.2020. 
+ 
+-------------------------------------- 
+ 
+Patient 13  
+Hospitalization from 07.03.2023 to 01.04.2023  
+Euro score 2: 1.5% 
+ 
+Postoperative transfer of the intubated patient to the intensive care unit. The cardiac 
+biomarkers increased within the expected range. During the repeated wake-up attempts, the 
+patient was initially not interacting adequately, and there was a markedly reduced 
+spontaneous movement of the right side of the body. After extubation, a right-sided, 
+proximally accentuated arm and leg paresis, a right facial paresis with emphasis on the 
+mouth, tongue deviation to the right, dysphagia, and visual neglect to the right became 
+apparent. Native computed tomography scans revealed a CVI in the left centrum semiovale. 
+Consequently, intensive physiotherapy and occupational therapy led to slight neurological 
+improvement during hospitalization. Despite discontinuation of all bradycardizing 
+medications, a complete AV block persisted, and led to a pacemaker implantation on the 
+tenth postoperative day. The patient was transferred to the ward in a decreased general 
+condition but cardiopulmonary stable. On 21.03.2023, the patient reported a feeling of 
+thoracic tightness and became hypotensive. A bedside echocardiography showed a 
+significant pericardial effusion, so the symptomatic patient was urgently taken to the 
+operating room for drainage of the pericardial effusion. Postoperatively, atrial fibrillation 
+occurred intermittently on several occasions, which is why loading with amiodarone was 
+initiated. Finally, a conversion to sinus rhythm could be achieved. The postoperative 
+echocardiographic follow-up showed a normal cardiac finding. A simultaneous ultrasound 
+check of both pleurae showed no pleural effusion warranting puncture. The patient was 
+discharged for further neurocardiac rehabilitation on 01.04.2023. 
+-------------------------------------- 
+ 
+Patient 14 
+Hospitalization from 20.06.2018 to 08.07.2018  
+Euroscore 2: 2.7% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. Postoperatively, 
+there was increased bleeding from the retrocardiac drainage along with a simultaneous rise 
+in lactate levels. A transesophageal echocardiography was conducted, which showed a 
+compressing hematoma over the right atrium. An emergency a re-thoracotomy was 
+subsequently performed. The separate surgical report provides details about the course of 
+this operation. After extubation, the patient suddenly developed a left-sided motor 
+hemisyndrome (arm and leg holding test pathological, sinking of left arm and leg). An 
+immediate CT angiography was performed, revealing a CVI with a new perfusion deficit on 
+the right side with a high-grade stenosis of the middle cerebral artery. On the same day, an 
+
+
+
+intervention with stenting of the right middle cerebral artery was performed. The 
+hemisyndrome on the left arm improved over time, but persisted on the left leg. During the 
+postoperative course, the patient developed a persisting third-degree AV block. On the 
+seventh postoperative day, a pacemaker was implanted and the patient was subsequently 
+transferred back to the department in a decreased general condition. The subsequent check 
+showed proper function of the pacemaker. Diuretic therapy was initiated to treat 
+perioperative fluid retention and bilateral pleural effusions. The chest X-ray showed a small 
+amount of pleural effusion on both sides, not warranting puncture. The patient was 
+discharged for further neurocardiac rehabilitation on 08.07.2018. 
+ 
+-------------------------------------- 
+ 
+Patient 15 
+Hospitalization from 27.04.2018 to 23.05.2018  
+Euroscore 2: 4.1% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. On the fifth postoperative day, there was an acute neurological deterioration with 
+aphasia and right-sided hemisyndrome. A mechanical thrombectomy was performed after a 
+CT scan of the head showed acute infarct in the left middle cerebral artery territory. This was 
+followed by intensive physiotherapy and occupational therapy. The neurological symptoms 
+showed regression over time, although the right leg remained paretic. Postoperatively, there 
+was a persistent second-degree with intermittent third-degree AV block, leading to the 
+implantation of a pacemaker. Postoperatively, the patient developed intermittent atrial 
+fibrillation which did not convert with medication, so on 18.05.2018, an electrical 
+cardioversion was successfully performed. A pleural puncture was performed on the left side 
+and intensive respiratory therapy with cautious negative fluid balance was initiated for a 
+radiologically and sonographically confirmed pleural effusion. The patient was discharged for 
+further neurocardiac rehabilitation on 23.05.2018.  
+ 
+-------------------------------------- 
+ 
+Patient 16 
+Hospitalization from 17.04.2022 to 25.04.2022 
+Euroscore 2: 3.3% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The cardiac biomarkers increased within the expected range. The patient could be 
+easily extubated on the day of surgery, and the gas exchange was subsequently always 
+sufficient under low-dose oxygen insufflation through the nasal cannula. Postoperatively, a 
+third-degree AV block was diagnosed, which did not recover over the following days. A 
+temporary pacemaker was placed via the femoral vein. On the fourth postoperative day, due 
+to persistent bradycardia associated with the third-degree AV block, a permanent pacemaker 
+was implanted. The patient was transferred to the ward cardiopulmonary stable and in good 
+general condition. On the second postoperative day, there was a progressive oxygenation 
+disorder. A chest X-ray showed new bilateral pleural effusions, sonographically 1000 ml on 
+the left side and 100 - 200 ml on the right side. This was followed by a pleural puncture on 
+the left with significant respiratory improvement. On the third postoperative day, atrial 
+fibrillation occurred, which spontaneously converted to a sinus rhythm the next day after 
+supplementation of potassium and magnesium to the high-normal range. Since extubation, 
+the patient had persistent hoarseness and aphonia. The ENT colleagues observed a 
+significantly reduced mobility of the left vocal cord during endoscopic examination, which is 
+most likely due to recurrent nerve palsy from intraoperative injury. Regular training by 
+
+
+
+speech therapy was conducted. The patient was discharged for further cardiac rehabilitation 
+on the eighth postoperative day. 
+ 
+-------------------------------------- 
+ 
+Patient 17 
+Hospitalization from 08.05.2021 to 21.05.2021  
+Euro score 2: 2.3% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The cardiac biomarkers increased within the expected range. The patient could be 
+easily extubated on the day of surgery, and the gas exchange was subsequently always 
+sufficient under low-dose oxygen insufflation through the nasal cannula. We were able to 
+transfer the patient to the ward on the first postoperative day. Over time, a third-degree AV 
+block was noted, leading to the implantation of a pecamaker on the fifth postoperative day. 
+The postoperative check showed a perfectly functioning pecamaker. Following the removal 
+of the external temporary pacemaker wires, a pericardial tamponade occurred. An 
+emergency surgical evacuation of the pericardial tamponade was performed, followed by 
+transfer to the intensive care unit. On the fifth postoperative day, there was an episode of 
+self-limiting AFib. Diuretic therapy was initiated to treat perioperative fluid retention and 
+bilateral pleural effusions. In addition, a pleural puncture was performed on the left side 
+following sonographic confirmation of a large-volume pleural effusion. The patient was 
+discharged for further cardiac rehabilitation on 21.05.2021. 
+ 
+-------------------------------------- 
+ 
+Patient 18 
+Hospitalization from 06.08.2020 to 19.08.2020  
+Euro score 2: 5.1% 
+ 
+The separate surgical report provides details about the course of the operation. The 
+transesophageal echocardiography showed an intraoperative ejection fraction of 65%. 
+Postoperative transfer of the intubated patient to the intensive care unit. The cardiac 
+biomarkers increased within the expected range. The patient was extubated on the day of 
+surgery with subsequent smooth pulmonary adaptation. Neurologically, a postoperative 
+hypo- to hyperactive delirium was noted, for which we started therapy with risperidone and 
+had haloperidol in reserve. No signs of focal deficits or of a cerebrovascular incident were 
+evident. The patient was transferred to the ward in a cardiopulmonary stable condition. On 
+the evening of the transfer from the intensive care unit, the patient reported dyspnea and 
+became increasingly respiratory insufficient. Due to radiological evidence of a large-volume 
+pleural effusion, 1L of serous effusion was punctured from the left side. This was followed by 
+a significant respiratory improvement of the patient. Postoperatively on the ward, there were 
+repeated occurrences of extrasystoles up to ventricular bigeminy and intermittent atrial 
+fibrillation, for which loading with amiodarone was started on the fourth postoperative day. 
+The patient was discharged for further cardiac rehabilitation on 19.08.2020. 
+ 
+-------------------------------------- 
+ 
+Patient 19 
+Hospitalization from 21.04.2015 to 10.05.2015  
+Euro score 2: 6.9% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The patient was easily extubated on the day of surgery. On the first postoperative day, 
+
+
+
+the patient presented with neurological symptoms including left facio-brachio-crural 
+hemiparesis, and left hemianopsia. A CT scan confirmed an ischemic stroke in the right 
+posterior circulation area. The patient received intensive physiotherapy and occupational 
+therapy for further treatment, and was subsequently transferred to the ward in a decreased 
+general condition but cardiopulmonary stable, with slight improvement of neurological 
+symptoms. Postoperatively, a third-degree AV block was documented, with a bradycardia up 
+to 37/min. Due to the persistence of the third-degree AV block, a pacemaker implantation was 
+performed on the seventh postoperative day. Postoperative cardiac CT scans showed open 
+bypasses without evidence of pericardial effusion and with insignificant pleural effusion on 
+both sides. The patient was discharged for further cardiac rehabilitation on 10.05.2015.  
+ 
+-------------------------------------- 
+ 
+Patient 20 
+Hospitalization from 04.04.2018 to 06.05.2018  
+Euro score 2: 3.7% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. Due to increased 
+bleeding from the chest drains and increased catecholamine requirements with progressive 
+lactic acidosis, an echocardiography was performed, which showed a partly organized 
+pericardial effusion compressing both the left and right ventricles. An emergency re-
+thoracotomy was performed to evacuate the hematoma and pericardial blood. The patient 
+was then extubated without any problems. On the first postoperative day during the morning 
+rounds, a right brachiofacial hemisyndrome was evident. The cause was identified by CT as 
+a CVI due to a thromboembolic occlusion of the left middle cerebral artery. Subsequently, 
+due to progressive reduction in alertness and neurological symptoms, a thrombectomy with 
+stent implantation was performed. Thereafter, an improvement in the motor function of the 
+right arm was observed, although the paresis of the right leg persisted. The cardiopulmonary 
+stable patient was transferred to the ward in a decreased general condition. In the 
+postoperative ECGs, we observed a third-degree AV block with persistent bradycardia down 
+to 35bpm, which led to the implantation of a pacemaker on the tenth postoperative day. After 
+sonographical confirmation we performed the puncture of a right-sided pleural effusion. The 
+subsequent X-ray control showed no pneumothorax. After intensive physiotherapy and 
+occupational therapy, we were able to discharge the patient for further neurocardiac 
+rehabilitation on 06.05.2018.  
+ 
+-------------------------------------- 
+ 
+Patient 21 
+Hospitalization from 16.10.2023 to 04.11.2023  
+Euroscore 2: 7.2% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. The patient was 
+easily extubated shortly thereafter. During the neurological examination on the evening of 
+the surgery, a gaze palsy to the right was observed, and subsequently a head CT was 
+conducted. It revealed a stroke in the left posterior cerebral artery territory. The patient's 
+neurological symptoms persisted but showed slight improvement over time. The patient was 
+transferred to the ward in a decreased general condition but cardiopulmonary stable. Diuretic 
+therapy was initiated to treat perioperative fluid retention and bilateral pleural effusions. A 
+pleural puncture was performed on the left side due to a sonographically confirmed large-
+volume pleural effusion. The further postoperative course was otherwise uncomplicated. We 
+were able to discharge the patient for further neurocardiac rehabilitation on 04.11.2023. 
+ 
+
+
+
+-------------------------------------- 
+ 
+Patient 22 
+Hospitalization from 30.06.2016 to 08.07.2016  
+Euroscore 2: 2.2% 
+ 
+The separate surgical report provides information about the course of the operation. The 
+transesophageal echocardiography showed a normal intraoperative ejection fraction. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The patient was easily extubated on the day of surgery, and the gas exchange was 
+subsequently always sufficient under low-dose oxygen insufflation through the nasal cannula. 
+During the stay in the intensive care unit, the patient complained of weakness in the right hand, 
+which clinically presented as a drop hand and pronounced weakness of both the flexors and 
+extensors of the hand. The symptoms were explained as a result of a lower cervical plexus 
+lesion and improved with intensive physiotherapy and occupational therapy. The 
+cardiopulmonary stable patient could be transferred to the ward in good general condition. 
+The postoperative echocardiographic follow-up showed a normal cardiac finding and 
+insignificant pleural effusions on both sides. The further postoperative course was uneventful. 
+We were able to discharge the patient for further rehabilitation on the eighth postoperative 
+day. 
+ 
+-------------------------------------- 
+ 
+Patient 23 
+Hospitalization from 05.11.2022 to 23.11.2022  
+Euroscore 2: 5.9 % 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. On the first postoperative evening, the patient exhibited a left sided hemiparesis and 
+reported visual disturbances. A CT scan of the head revealed a CVI in the right frontoparietal 
+and occipital areas. Over time, there was a slight improvement in the visual disturbances, 
+but the left-sided hemiparesis persisted despite intensive physiotherapy and occupational 
+therapy. On the morning of the first postoperative day, atrial fibrillation occurred, which could 
+not be converted into sinus rhythm either with amiodarone or with electrical cardioversion. 
+The atrial fibrillation converted to a sinus rhythm after two days of loading with amiodarone. 
+During postoperative care, a complete AV block was observed without an intrinsic rhythm, 
+leading to the implantation of a pacemker, which was performed on the third postoperative 
+day. The patient was transferred to the regular ward in a decreased general condition but 
+cardiopulmonary stable. On the morning of the fourth postoperative day, the temporary 
+epicardial pacemaker wires were removed. Significant hypotension developed thereafter and 
+echocardiographically we observed a hemodynamically relevant pericardial effusion over the 
+right ventricle. Subsequently, a subxiphoid drainage of the pericardial effusion was urgently 
+performed. In the postoperative chest X-ray, a small amount of pleural effusion was seen on 
+both sides, which was treated with diuretics and negative fluid balance. The patient was 
+discharged for further neurocardiac rehabilitation on 23.11.2022.  
+ 
+-------------------------------------- 
+ 
+Patient 24 
+Hospitalization from 30.06.2021 to 07.07.2021 
+Euroscore 2: 2.7% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The separate surgical report provides details about the course of the operation. The 
+
+
+
+patient was easily extubated on the day of surgery and subsequently transferred to the 
+regular ward cardiopulmonary stable and in good general condition on the next day. On the 
+third postoperative day, the patient developed new-onset AF. After administration of a short 
+infusion of amiodarone, he converted to a sinus rhythm. We began loading with oral 
+amiodarone for rhythm control. The further course was uncomplicated. We were able to 
+discharge the patient for further cardiac rehabilitation on 07.07.2021. 
+ 
+-------------------------------------- 
+ 
+Patient 25 
+Hospitalization from 11.04.2020 to 24.04.2020  
+Euro score 2: 4.6% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The cardiac biomarkers increased within the expected range. Over the course of the 
+first postoperative day, the patient exhibited a left-sided hemiparesis. Computed tomography 
+revealed extensive acute infarct areas in the posterior circulation territory on both sides, 
+right-dominant, and an acute infarct area in the right middle cerebral artery territory. An 
+intensive physiotherapy and occupational therapy was initiated, with a slight improvement in 
+the patient's neurological symptoms during hospitalization. The patient was easily extubated 
+and subsequently transferred to the ward in a decreased general condition but 
+cardiopulmonary stable. The pleural effusions that occurred during the postoperative course 
+were treated with negative fluid balance and diuretic administration. Otherwise, the 
+postoperative course was uncomplicated. We were able to discharge the patient for further 
+cardiac rehabilitation on 24.04.2020. 
+ 
+-------------------------------------- 
+ 
+Patient 26 
+Hospitalization from 23.03.2018 to 19.04.2018  
+Euro score 2: 7.1% 
+ 
+Postoperative transfer of the intubated patient to the intensive care unit. The separate 
+surgical report provides details about the course of the operation. Neurologically, there was 
+a significantly delayed awakening. On the second postoperative day, a newly developed 
+anisocoria was noted. An immediate computed tomography scan revealed several 
+demarcating CVIs in the territories of the right posterior cerebral artery and right middle 
+cerebral artery. The patient only slowly regained consciousness and exhibited a left sided 
+hemisyndrome, which persisted until discharge. On the third postoperative day, there was 
+increased bloody discharge from the chest drains and a drop in hemoglobin. Ultimately, an 
+echocardiography revealed a tamponading pericardial hematoma, approximately 2.5 cm 
+wide in front of the right heart chambers. Under these circumstances, there was an 
+indication for hematoma evacuation and an emergency re-thoracotomy was performed. The 
+separate surgical report provides details about the course of this operation. The patient was 
+subsequently transferred to the ward on 10.04.2018. Diuretic therapy was initiated to treat 
+perioperative fluid retention and bilateral pleural effusions. A large-volume pleural effusion 
+confirmed by sonography led to a pleural puncture on the left side. After intensive 
+physiotherapy and occupational therapy with slight improvement in neurology, the patient 
+was discharged to neurocardiac rehabilitation on 19.04.2018.  
+ 
+-------------------------------------- 
+ 
+Patient 27 
+Hospitalization from 14.02.2015 to 22.02.2015  
+
+
+
+Euro score 2: 5.6% 
+ 
+Postoperative transfer of the intubated patient to the intensive care unit. The separate 
+surgical report provides details about the course of the operation. The patient was extubated 
+without any issues. On the evening of the first postoperative day, the patient developed a 
+hyperactive delirium, which led us to start treatment with dexmedetomidine. Under this 
+therapy, there was a rapid improvement until complete orientation the next day. The 
+cardiopulmonary stable patient was transferred to the ward in good general condition. The 
+patient experienced postoperative atrial fibrillation, which converted to a sinus rhythm with 
+electrolyte supplementation. Under Enoxaparin and Marcoumar, a symptomatic pericardial 
+effusion developed, leading to an emergency insertion of a subxiphoid pericardial drain on 
+19.02.2015 due to the onset of tamponade. Follow-up chest X-ray revealed a pleural 
+effusion on the right side, which led to a pleural puncture after sonographic confirmation. 
+Subsequent X-ray controls showed no pneumothorax with a regressing amount of effusion. 
+The further course was uneventful. We were able to discharge the patient for further 
+rehabilitation on 22.02.2015. 
+ 
+-------------------------------------- 
+ 
+Patient 28 
+Hospitalization from 13.08.2023 to 30.08.2023  
+Euroscore 2: 6.3% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. After successful 
+pulmonary weaning, the patient was extubated on the day of surgery. On the morning of the 
+following day, increased bloody drainage and an obstructive shock due to pericardial 
+tamponade were observed. Due to acute circulatory failure with increasing catecholamine 
+support, an emergency re-thoracotomy was performed in the intensive care unit. The 
+separate surgical report provides details about this operative course. On the second 
+postoperative day, the patient was aphasic with right-sided hemiparesis. A CT scan revealed 
+two acute cortical ischemias in the left superior frontal gyrus and insular left. Clinically, the 
+right-sided hemiplegia and motor aphasia persisted. The patient was transferred to the ward 
+in a decreased general condition but cardiopulmonary stable. Postoperatively, however, the 
+patient developed persistent cardiac arrhythmias with a third-degree AV block. There was 
+also intermittent atial filbrillation, which could not be treated with beta-blockade due to the 
+high-degree AV block. Due to the persistence of the above rhythm problems, a pecamaker 
+implantation was performed on the 9th postoperative day to enable beta-blockade and atial 
+filbrillation treatment. Follow-up chest X-rays showed voluminous pleural effusions on both 
+sides, so bilateral pleural punctures were performed. The final X-ray checks showed no 
+pneumothorax. After intensive physiotherapy and occupational therapy with subsequent 
+slight neurological improvement, the patient was discharged for further neurocardiac 
+rehabilitation on 30.08.2023. 
+ 
+-------------------------------------- 
+ 
+Patient 29 
+Hospitalization from 03.05.2017 to 10.05.2017  
+Euro score 2: 5.3% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The patient was extubated without any problems on the day of surgery. During the 
+postoperative course in the intensive care unit, a third-degree AV block persisted with no 
+ventricular escape rhythm, and subsequently a permanent pacemaker was implanted on the 
+
+
+
+fourth postoperative day. The cardiopulmonary stable patient was transferred to the ward in 
+good general condition. Diuretic therapy was initiated to treat perioperative fluid retention and 
+bilateral pleural effusions. On the fifth postoperative day, a right-sided pleural puncture was 
+performed upon detection of a large pleural effusion in the pleural sonography. The further 
+postoperative course was uncomplicated, and we were able to discharge the patient for 
+cardiac rehabilitation on 10.05.2017. 
+ 
+-------------------------------------- 
+ 
+Patient 30 
+Hospitalization from 06.01.2017 to 15.01.2017  
+Euro score 2: 7.5% 
+ 
+The separate surgical report provides details about the course of the operation. Postoperative 
+transfer of the intubated patient to the intensive care unit. The cardiopulmonary stable patient 
+was extubated without any problems on the evening of the surgery and was transferred to the 
+ward in good general condition. In the postoperative follow-up echocardiography, a circular 
+pericardial effusion with a maximum diameter of 2.5 cm was observed, exerting pressure on 
+the right ventricle, necessitating a subxiphoid relief of the pericardial effusion on the fifth 
+postoperative day. Due to a third-degree AV block with accompanying bradycardia, a PM was 
+implanted on the seventh postoperative day. Follow-up chest X-ray showed good placement 
+of the PM leads without pneumothorax and with good PM function. The patient was discharged 
+for further cardiac rehabilitation on 15.01.2017. 
+ 
+-------------------------------------- 
+ 
+Patient 31 
+Hospitalization from 18.04.2022 to 26.04.2022  
+Euroscore 2: 3.6% 
+ 
+The separate surgical report provides details about the course of the operation. The 
+transesophageal echocardiography showed an intraoperative ejection fraction of 65%. 
+Postoperative transfer of the hemodynamically stable, intubated patient to the intensive care 
+unit. The cardiac biomarkers increased within the expected range. The patient was easily 
+extubated on the day of surgery, and the gas exchange was subsequently always sufficient 
+under low-dose oxygen insufflation through the nasal cannula. The patient was then 
+transferred to the ward in good general condition. On the evening of the transfer to the ward, 
+the patient experienced a drop in blood pressure to 60 mmHg systolic with newly onset AFib, 
+and was immediately moved to the emergency room for electrical cardioversion. This was 
+followed by conversion to a sinus rhythm, after which the now stable patient was once again 
+transferred to the ward. Due to persistent pain in the arm with a tense and hardened forearm 
+and newly developed sensory disturbances in the left hand, a revision of the former radial 
+artery harvest site was performed using regional anesthesia of the brachial plexus. We also 
+began medication with pregabalin alongside occupational therapy exercises for the arm. The 
+hospital stay was otherwise uncomplicated. We were able to discharge the patient for further 
+cardiac rehabilitation on 26.04.2022. 
+ 
+-------------------------------------- 
+ 
+Patient 32 
+Hospitalization from 20.10.2016 to 28.10.2016 
+Euro score 2: 2.8% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The separate surgical report provides details about the course of the operation. After 
+
+
+
+extubation, the patient was oriented, and without focal neurological deficits. However, he was 
+hoarse, so that the otorhinolaryngology colleagues were consulted, attributing the hoarseness 
+to a temporary unilateral recurrent laryngeal nerve palsy postoperatively. The 
+cardiopulmonary stable patient was transferred to the ward in good general condition on the 
+first postoperative day. On the second postoperative day, the patient experienced a syncope, 
+which prompted the start of telemetry monitoring. Telemetry revealed episodes of third-degree 
+AV block with pauses up to 7 seconds, leading to a PM implantation on the sixth postoperative 
+day. The patient was discharged for further cardiac rehabilitation on 28.10.2016. 
+ 
+-------------------------------------- 
+ 
+Patient 33 
+Hospitalization from 01.02.2021 to 25.02.2021  
+Euroscore 2: 7.4% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. On the first 
+postoperative day, there was a prolonged awakening reaction with lack of movement in the 
+left arm and leg, while the right arm and leg had normal movement upon request. An 
+emergency computed tomography of the head showed a fresh, likely embolic closure of the 
+superior branch of the right M2 artery with an acute demarcated infarct area in the right 
+inferior frontal gyrus, frontal operculum, and posterior insular region. Due to a mismatch with 
+a larger penumbra frontally and parietally, an interventional thrombectomy was performed. 
+This was followed by slight neurological improvement with intensive physiotherapy and 
+occupational therapy. The patient was easily extubated on the day of surgery, and the gas 
+exchange was subsequently always sufficient under low-dose oxygen insufflation through 
+the nasal cannula. The cardiopulmonary stable patient was transferred to the ward in good 
+general condition. Postoperatively, there was a persistent third-degree AV block with 
+episodes of pronounced bradycardia, leading to the implantation of a pacemker on the 11th 
+postoperative day. Postoperative checks showed good pacemker function with good 
+electrode placement on the X-ray. In the postoperative computed tomography, a 
+hemorrhagic pericardial effusion with a maximum width of 27 mm over the right atrium was 
+observed. An echocardiographic check confirmed a hemodynamically significant pericardial 
+effusion, which led to a surgical subxiphoid drainage being performed in the beginning 
+symptomatic patient. Diuretic therapy was initiated to treat perioperative fluid retention and 
+bilateral pleural effusions. On the fifth postoperative day, a right-sided pleural puncture was 
+performed upon detection of a large pleural effusion in the pleural sonography. After 
+intensive physiotherapy and occupational therapy with slight improvement in neurological 
+symptoms, the patient was discharged for further neurocardiac rehabilitation on 25.02.2021. 
+ 
+-------------------------------------- 
+ 
+Patient 34 
+Hospitalization from 20.04.2015 to 30.04.2015  
+Euro score 2: 5.1% 
+ 
+Postoperative transfer of the intubated patient to the intensive care unit. The separate surgical 
+report provides information about the course of the operation. The cardiopulmonary stable 
+patient was easily extubated on the day of surgery and was transferred to the ward in good 
+general condition on the first postoperative day. On the fourth postoperative day, the patient 
+developed atrial fribillation, which could not be converted electrically despite electrolyte 
+substitution and loading with amiodarone. The patient subjectively experienced this as 
+significantly disturbing due to low blood pressure values. Consequently, a follow-up 
+echocardiography was conducted for further evaluation. This revealed a large pericardial 
+effusion, which was hemodynamically significant over the area of the right atrium. Therefore, 
+
+
+
+a subxiphoid pericardial drainage of approximately 500ml of old blood effusion was performed. 
+In the ward, a persistent third-degree AV block with bradycardia was noted, leading to the 
+implantation of a pacemaker on the eighth postoperative day. The postoperative check 
+showed good pacemaker function. Radiologically, a new elevation of the left diaphragm was 
+detected postoperatively. Sonographic examination showed limited, but not paradoxical, 
+mobility of the left diaphragm. The findings were interpreted in the context of phrenic nerve 
+paralysis. The patient was respiratory always compensated. Follow-up chest X-ray revealed 
+small bilateral pleural effusions and diuretic therapy was initiated as a treatment. The patient 
+was discharged for further cardiac rehabilitation on 30.04.2015. 
+ 
+-------------------------------------- 
+ 
+Patient 35 
+Hospitalization from 22.07.2023 to 29.07.2023  
+Euroscore 2: 7.4% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The separate surgical report provides details about the course of the operation. The 
+patient was easily extubated on the day of surgery. On the first postoperative day during the 
+morning rounds, a right brachiofacial hemisyndrome was evident. Since there was no 
+perfusion deficit on the CT scan of the head and the symptoms completely regressed over 
+time, we considered a periinterventional CVI as the most likely cause. Subsequently, the 
+symptoms completely regressed. The patient was transferred to the ward in good general 
+condition. Diuretic therapy was initiated to treat perioperative fluid retention and bilateral 
+pleural effusions, and a pleural puncture was performed due to a sonographically detectable 
+significant pleural effusion on the left. The further course was uncomplicated. We were able 
+to discharge the patient for further cardiac rehabilitation on 29.07.2023. 
+ 
+-------------------------------------- 
+ 
+Patient 36 
+Hospitalization from 31.01.2017 to 09.02.2017  
+Euro score 2: 1.8% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The patient was extubated without any problems on the day of surgery. The patient 
+arrived at the intensive care unit with DDD pacing and no intrinsic rhythm. Since no intrinsic 
+rhythm could be detected even on the second postoperative day, a permanent PM was 
+implanted on the same day. The patient was transferred to the ward cardiopulmonary stable 
+and in good general condition. A persistent decrease in sensitivity in digits I-III on the right 
+side, without motor deficits, was reported postoperatively. After evaluation by the neurologists 
+in the hospital, the sensory losses could most likely be clinically associated with a distal lesion 
+of the median nerve. Due to fluid retention and bilateral pleural effusions during the 
+postoperative course, a diuretic therapy was administered under control and substitution of 
+electrolytes. Otherwise, the hospital stay was uncomplicated. We were able to discharge the 
+patient home on 09.02.2017. 
+ 
+-------------------------------------- 
+ 
+Patient 37 
+Hospitalization from 10.12.2023 to 19.12.2023  
+Euroscore 2: 2.9% 
+ 
+
+
+
+Postoperative transfer of the intubated patient to the intensive care unit. The separate surgical 
+report provides details about the course of the operation. The cardiac biomarkers increased 
+within the expected range. The patient was easily extubated on the day of surgery. On the first 
+postoperative day, the cardiopulmonary stable patient was transferred to the ward in good 
+general condition. On the third postoperative day, the patient experienced new-onset 
+hemodynamically significant AF, prompting an electrical cardioversion on the same day. 
+Subsequently, sinus rhythm persisted until discharge. The postoperative cardiac CT showed 
+properly contrasted bypasses. Incidentally, a large pleural effusion was noted on the right side, 
+which was successfully punctured. The patient was discharged for further cardiac 
+rehabilitation on 19.12.2023. 
+ 
+-------------------------------------- 
+ 
+Patient 38 
+Hospitalization from 05.04.2021 to 14.04.2021  
+Euroscore 2: 1.1% 
+ 
+The separate surgical report provides information about the course of the operation. The 
+transesophageal echocardiography showed an intraoperative ejection fraction of 65%. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The cardiac biomarkers increased within the expected range. The patient was easily 
+extubated on the day of surgery, and the gas exchange was subsequently always sufficient 
+under low-dose oxygen insufflation through the nasal cannula. On the first postoperative day, 
+the patient was transferred to the ward in good general condition. The hospital stay was overall 
+uncomplicated. We were able to discharge the patient for further cardiac rehabilitation on 
+14.04.2021. 
+ 
+-------------------------------------- 
+ 
+Patient 39 
+Hospitalization from 02.02.2023 to 10.02.2023  
+Euro score 2: 1.4% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. The 
+cardiopulmonary stable patient was transferred to the ward in good general condition. On the 
+fourth postoperative day, new onset atial filbrillation was treated initially with beta-blockade, 
+followed by an electrical cardioversion to sinus rhythm on the following day. A 
+hemodynamically significant pericardial effusion with a maximum width of 2 cm over the right 
+ventricle was diagnosed during a postoperative echocardiographic check and a subxiphoidal 
+pericardial drain was carried out on the fifth postoperative day. The postoperative cardiac CT 
+scan showed proper contrast of all bypasses and only a small, insignificant amount of pleural 
+effusion bilaterally. The patient was discharged home on 10.02.2023. 
+ 
+-------------------------------------- 
+ 
+Patient 40 
+Hospitalization from 06.02.2017 to 24.02.2017  
+Euro score 2: 1.8% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The separate surgical report provides details about the course of the operation. Upon 
+cessation of sedation, motor weakness on the left side of the body, particularly of the arm, as 
+well as motor aphasia, were observed. A head CT scan ruled out bleeding, showing a small 
+area with a blurred cortex-medulla boundary as a correlate of the symptoms. Persistent clinical 
+
+
+
+findings led to a follow-up CT the next day, which showed a hypodensity measuring 
+approximately 2cm frontoparietal right in the white matter. Due to sudden apathy on the 
+second postoperative day with lack of responsiveness, a new computed tomography showed 
+an unchanged finding. Brain protective measures were initiated. Due to strong blood pressure 
+fluctuations, treatment was phased between norepinephrine and urapidil via perfusor; both 
+could be stopped later on. The cardiopulmonary stable patient was transferred to the ward in 
+decreased general condition. On the seventh postoperative day, the temporary pacemaker 
+leads were removed. The patient was hypotensive in the afternoon. An echocardiographic 
+examination revealed a hemodynamically significant pericardial effusion, prompting an 
+emergency subxiphoidal relief of the pericardial effusion. Diuretic therapy was initiated to treat 
+perioperative fluid retention and bilateral pleural effusions. Additionally, the patient underwent 
+pleural punctures on both sides for significant effusions in the ward. The patient was 
+discharged for further cardiac rehabilitation on 24.02.2017. 
+ 
+-------------------------------------- 
+ 
+Patient 41 
+Hospitalization from 07.11.2017 to 25.11.2017  
+Euroscore 2: 5.2% 
+ 
+The separate surgical report provides details about the course of the operation. Postoperative 
+transfer of the intubated, hemodynamically stable patient to the intensive care unit. Soon after 
+transfer to the intensive care unit, the patient exhibited a left hemiplegia, prompting a 
+computed tomography scan of the head. This revealed cortical and subcortical ischemic CVIs 
+throughout the right hemisphere, as well as in the left precentral gyrus and left cerebellum. 
+Intensive physiotherapy and occupational therapy were initiated, followed by slight clinical 
+improvement. The patient was transferred to the ward in a decreased general condition but 
+cardiopulmonary stable. In the postoperative course, there were episodes of atrial fibrillation 
+followed by pronounced bradycardia, indicative of a bradycardia-tachycardia syndrome. On 
+the night of the sixth postoperative day, there were high-grade blocks and pauses up to 7 
+seconds without antiarrhythmic therapy. Consequently, a permanent PM was implanted on 
+the eighth postoperative day. After intensive physiotherapy and occupational therapy with 
+slight improvement in the neurological condition of the patient, discharge to neurocardiac 
+rehabilitation on 25.11.2017. 
+ 
+-------------------------------------- 
+ 
+Patient 42 
+Hospitalization from 18.01.2020 to 28.01.2020  
+Euroscore 2: 3.9% 
+ 
+The separate surgical report provides details about the course of the operation. Postoperative 
+transfer of the intubated, hemodynamically stable patient to the intensive care unit. The 
+cardiac biomarkers increased within the expected range. Upon awakening, a right hemiparesis 
+was noted. A CT scan of the head showed no evidence of ischemia. The symptoms completely 
+regressed over time, suggesting a transient cerebrovascular insult. The patient was 
+transferred to the ward in a decreased general condition but cardiopulmonary stable. 
+Postoperatively, the patient was consistently pecamaker-dependent due to a third-degree AV 
+block, which led to the implantation of a pecamaker on the eighth postoperative day. Despite 
+negative fluid balance, there were still large-volume pleural effusions on both sides, so bilateral 
+pleural punctures were performed. Subsequent radiological checks showed a good outcome 
+with significant regression of the pleural effusions. The patient was discharged for further 
+cardiac rehabilitation on 28.01.2020. 
+ 
+-------------------------------------- 
+
+
+
+ 
+Patient 43 
+Hospitalization from 19.07.2019 to 26.07.2019  
+Euro score 2: 2.7% 
+ 
+The separate surgical report provides details about the course of the operation. The 
+transesophageal echocardiography showed an intraoperative ejection fraction of 65%. 
+Postoperative transfer of the intubated patient to the intensive care unit. The patient was 
+extubated without any issues on the evening of the surgery and was transferred to the ward 
+in good general condition on the next day. A single postoperative episode of atial filbrillation 
+was terminated by electrolyte substitution and escalation of beta-blockade. Follow-up chest 
+X-rays revealed a pleural effusion on the right side, leading to a pleural puncture. Subsequent 
+X-ray checks showed no pneumothorax with a regressing amount of effusion. The further 
+hospital stay was uneventful. The patient was discharged home on 26.07.2019. 
+ 
+-------------------------------------- 
+ 
+Patient 44  
+Hospitalization from 23.02.2015 to 22.03.2015  
+Euro score 2: 2.9% 
+ 
+Postoperative transfer of the intubated patient to the intensive care unit. The separate 
+surgical report provides details about the course of the operation. Due to increasing bloody 
+output from the pericardial and retrosternal drains, increasing catecholamine requirement, 
+lactate rise, tachycardia, and decreased cardiac output, an echocardiography was 
+performed, which showed a circumferential tamponading hematoma, necessitating a re-
+thoracotomy. The separate report provides details about this surgical course. Due to 
+reduced alertness after cessation of sedation, the patient could only be extubated with delay 
+on the eighth postoperative day. Clinically, a new right-sided hemi-syndrome with motor 
+aphasia were observed. A computed tomography of the head correspondingly found an 
+acute ischemic CVI in the left frontal-parietal area. Intensive physiotherapy and occupational 
+therapy were conducted, although an arm-emphasized hemiparesis persisted over time. The 
+patient was transferred to the ward cardiopulmonary stable and in good general condition. 
+Postoperative chest X-ray showed little pleural effusion bilaterally, which was treated with 
+negative fluid balance and diuretic administration. After intensive physiotherapy and 
+occupational therapy with slight improvement in neurological symptoms, the patient was 
+discharged for further neurocardiac rehabilitation on 22.03.2015. 
+ 
+-------------------------------------- 
+ 
+Patient 45 
+Hospitalization from 03.11.2018 to 13.11.2018  
+Euroscore 2: 3.3% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. Laboratory findings 
+on the first postoperative day showed a drop in central venous oxygen saturation and a livid 
+discoloration of both lower extremities indicating malperfusion. The patient had an increasing 
+need for catecholamines, so that a transesophageal echocardiography was performed. This 
+revealed an organized hematoma in front of the right ventricle, and an emergency re-
+thoracotomy was performed. The patient was easily extubated on the second postoperative 
+day, and the gas exchange was subsequently always sufficient under low-dose oxygen 
+insufflation through the nasal cannula. The cardiopulmonary stable patient was then 
+transferred to the ward in good general condition. On the fifth postoperative day, the patient 
+reported a newly developed visual impairment. A computed tomographic examination of the 
+
+
+
+head revealed an ischemic CVI in the left occipital area. The complaints regressed over the 
+course of the hospitalization. Postoperatively, the patient developed Afib, which converted to 
+a sinus rhythm under beta-blockade. The patient was discharged for further cardiac 
+rehabilitation on 13.11.2018. 
+ 
+-------------------------------------- 
+ 
+Patient 46 
+Hospitalization from 09.02.2019 to 18.02.2019  
+Euro score 2: 4.1% 
+ 
+Postoperative transfer of the intubated patient to the intensive care unit. The separate 
+surgical report provides information about the course of the operation. The patient was easily 
+extubated on the evening of the surgery. The patient was transferred to the ward on the 
+second postoperative day in a decreased general state. Due to insufficient intrinsic rhythm, a 
+pacemaker was implanted on the fifth postoperative day. On the sixth postoperative day, the 
+temporary epicardial pacemaker wires were removed. Shortly afterwards, the patient was 
+hemodynamically unstable. A transthoracic echocardiography revealed a hemodynamically 
+significant pericardial effusion, necessitating an emergency subxiphoidal pericardial 
+drainage. The postoperative echocardiographic check showed a normal cardiac finding. 
+Incidentally, a large right-sided pleural effusion was detected, which was punctured. The 
+final radiological control showed a good result without pneumothorax or residual effusion. 
+Because of sensory disturbance on the right lower leg and the sole of the foot, a neurological 
+consultation was carried out. Clinically, there was suspicion of a peripheral origin of the 
+sensory disturbance due to the venous harvesting. Sonography showed no hematoma of the 
+left lower leg. To complete the diagnostics, an MRI of the head was performed, which 
+showed no pathological findings. The sensory disturbance is most likely associated with a 
+peripheral nerve injury during vein harvesting. Otherwise, the course was uncomplicated. 
+We were able to discharge the patient for further cardiac rehabilitation on 18.02.2019. 
+ 
+-------------------------------------- 
+ 
+Patient 47 
+Hospitalization from 03.07.2020 to 10.07.2020  
+Euroscore 2: 1.7% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. The cardiac 
+biomarkers increased within the expected range. The patient was easily extubated on the 
+day of surgery, and the gas exchange was subsequently always sufficient under low-dose 
+oxygen insufflation through the nasal cannula. The cardiopulmonary stable patient was 
+transferred to the ward in good general condition on the first postoperative day without any 
+issues. Postoperatively, no intrinsic rhythm was observed due to a third-degree AV block, so 
+a PM implantation was carried out on the third postoperative day. The hospital stay was 
+otherwise uncomplicated, and we were able to discharge the patient for further cardiac 
+rehabilitation on the seventh postoperative day. 
+ 
+-------------------------------------- 
+ 
+Patient 48 
+Hospitalization from 26.07.2021 to 07.08.2021  
+Euroscore 2: 7.2% 
+ 
+The separate surgical report provides information about the course of the operation. 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+
+
+
+unit. The patient was easily extubated on the day of surgery. On the first postoperative day, a 
+right hemiplegia and right facial paralysis were noted. An emergency CT scan of the head 
+revealed a CVI due to acute closure of the left middle cerebral artery in the M1 segment with 
+delayed perfusion in the entire middle cerebral artery territory. An interventional thrombectomy 
+was performed, followed by a slight improvement in the hemiplegia, which persisted especially 
+in the leg area. The patient was transferred to the ward in a decreased general condition but 
+cardiopulmonary stable. Postoperatively, the patient presented with atrial fribillation and 
+supraventricular tachycardias, alternating with bradycardia up to a frequency of 30/min, 
+indicative of a tachycardia-bradycardia syndrome. On the 6th postoperative day, due to 
+persistent rhythm disturbances, a pacemaker implantation was carried out. Diuretic therapy 
+was initiated to treat perioperative fluid retention and bilateral pleural effusions. Despite 
+negative fluid balance, persistent dyspnea occurred. Following the sonographic detection of a 
+large-volume pleural effusion on the right, a pleural puncture was performed, resulting in a 
+significant clinical improvement of the patient. After intensive physiotherapy and occupational 
+therapy with slight improvement in neurological symptoms, the patient was discharged for 
+further neurocardiac rehabilitation on 07.08.2021. 
+ 
+-------------------------------------- 
+ 
+Patient 49 
+Hospitalization from 30.01.2019 to 07.02.2019  
+Euroscore 2: 2.8% 
+ 
+Postoperative transfer of the intubated, hemodynamically stable patient to the intensive care 
+unit. The separate surgical report provides details about the course of the operation. The 
+cardiac biomarkers increased within the expected range. The patient was easily extubated on 
+the day of surgery and was transferred to the ward cardiopulmonary stable and in good 
+general condition on the first postoperative day. On the fourth postoperative day, the patient 
+developed atrial fribillation, which converted to a sinus rhythm with beta-blockade. The 
+external temporary pacemaker wires could be removed after a repeat ECG control and 
+persistent sinus rhythm. Due to postoperative hoarseness, consultants from the 
+otorhinolaryngology department were involved. A complete paralysis of the left vocal cord with 
+insufficient glottal closure was observed, most likely due to an intraoperative injury to the 
+recurrent laryngeal nerve. The hospital stay was otherwise uneventful, and the patient was 
+discharged for further cardiac rehabilitation on the eighth postoperative day. 
+ 
+-------------------------------------- 
+ 
+Patient 50 
+Hospitalization from 23.11.2023 to 21.12.2023  
+Euro score 2: 1.4% 
+ 
+The separate surgical report provides details about the course of the operation. 
+Postoperative transfer of the intubated patient to the intensive care unit. The patient was 
+easily extubated on the day of surgery. After extubation, a complete left-sided hemiparesis 
+was observed. A CT scan revealed a demarcated ischemia in the right parietal area. 
+Supportive brain-protective treatment was provided, along with intensive physiotherapy and 
+occupational therapy for the patient. The neurological symptoms showed slight regression 
+but persistent left-sided paresis especially of the leg. The patient was transferred to the ward 
+in a decreased general condition but cardiopulmonary stable. During the postoperative 
+echocardiographic check-up, a tamponading pericardial effusion over the lateral wall of the 
+left ventricle with a maximum diameter of 2.5 cm was noted, necessitating a subxiphoid 
+pericardial drainage. The separate surgical report provides details about the course of this 
+operation. Postoperatively, a third-degree AV block occurred, with pronounced bradycardia 
+and a very low ventricular escape rhythm of 20bpm. Consequently, a permanent pacemker 
+
+
+
+was implanted. Bilateral pleural punctures were performed following radiological and 
+sonographic confirmation of significant pleural effusions. Additionally, diuretic therapy was 
+initiated to achieve a negative fluid balance. The final X-ray checks showed a normal finding 
+without pneumothorax or pleural effusions. We continued physiotherapy and occupational 
+therapy treatment during the hospitalization. The patient was discharged to neurocardiac 
+rehabilitation on 21.12.2023. 

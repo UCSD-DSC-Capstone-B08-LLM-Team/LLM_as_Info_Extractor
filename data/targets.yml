@@ -1,0 +1,26 @@
+targets:
+  - name: admission
+    type: date
+    synonyms: ["admission date","admitted on","date of admission","hospitalization from","from"]
+  - name: exit
+    type: date
+    synonyms: ["discharge date","discharged on","date of discharge","hospitalization to","to"]
+  - name: es.2
+    type: number
+    synonyms: ["EuroSCORE II","Euro Score 2","Euroscore II","Euroscore 2","ESII","ES 2","Euro score 2"]
+    value_regex: ["(\\d+(?:\\.\\d+)?)\\s*%?"]
+  - name: stroke
+    type: boolean
+    synonyms: ["stroke","ischemic stroke","hemorrhagic stroke","CVI","cerebrovascular insult"]
+  - name: reoperation
+    type: boolean
+    synonyms: ["reoperation","returned to the OR","re-open","tamponade bleeding","pericardial tamponade"]
+  - name: pm
+    type: boolean
+    synonyms: ["pacemaker implantation","PPM","permanent pacemaker","pacemaker"]
+  - name: a.fib
+    type: boolean
+    synonyms: ["atrial fibrillation","AF","A-fib","paroxysmal AF"]
+  - name: pleural.tap
+    type: boolean
+    synonyms: ["thoracentesis","pleural tap","pleural puncture","pleural fluid drainage"]

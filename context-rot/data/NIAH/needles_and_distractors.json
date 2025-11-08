@@ -1,0 +1,104 @@
+{
+    "pg_essays": {
+        "question": "What was the best writing advice I got from my college classmate?",
+        "needles": {
+            "needle_0": {
+                "needle_question_sim": 0.7752941411192055,
+                "needle": "The best writing advice I got from my college classmate was to write every week."
+            },
+            "needle_1": {
+                    "needle_question_sim": 0.73198586809826,
+                    "needle": "I think the best writing tip I received from my college classmate was to write every week."
+            },
+            "needle_2": {
+                "needle_question_sim": 0.6688551252563549,
+                "needle": "Back in college, I remember my classmate would always tell me to write every week. Looking back, I think it's the most useful tip I received for writing."
+            },
+            "needle_3": {
+                "needle_question_sim": 0.5467491057004356,
+                "needle": "I had an interesting friend who I took some humanities courses with back in college. He would write every single day, and told me to try writing at least once a week. Looking back, I think it's the most useful habit I've developed for my writing."
+            },
+            "needle_4": {
+                "needle_question_sim": 0.6022355111772543,
+                "needle": "Back in my college days, I remember this one guy from my English course who told me that writing every week would be the most useful thing I could do. He was right."
+            },
+            "needle_5": {
+                "needle_question_sim": 0.5611482917126114,
+                "needle": "One of the most valuable writing habits I've developed is to write every week. This all started back in undergrad because my friend from my English course made the suggestion, which I am very thankful for since it became the most useful tip I've received from him."
+            },
+            "needle_6": {
+                "needle_question_sim": 0.4745549063263055,
+                "needle": "One thing people may not know about me is that I write every week. It's the most useful habit I've developed, and it started back in my college days when a random guy in my English course suggested it to me."
+            },
+            "needle_7": {
+                "needle_question_sim": 0.44518560395252954,
+                "needle": "It sometimes surprises people when I tell them I write every week. I was also surprised when my friend from my freshman year History course was doing the same thing, but looking back, I only wish I started earlier."
+            }
+        },
+        "distractors": {
+            "distractor_0": {
+                "distractor": "The best writing tip I received from my college professor was to write everyday."
+            },
+            "distractor_1": {
+                    "distractor": "The worst writing advice I got from my college classmate was to write each essay in five different styles."
+                },
+            "distractor_2": {
+                "distractor": "The best writing advice I got from my classmate was to write each essay in three different styles, this was back in high school."
+            },
+            "distractor_3": {
+                "distractor": "I thought the best writing advice I got from my college classmate was to write each essay in four different styles, but not anymore."
+            }
+        }
+    },
+    "arxiv_papers": {
+        "question": "Which low-latency reranker is preferred for scientific domains?",
+        "needles": {
+            "needle_0": {
+                "needle_question_sim": 0.8288194699849821,
+                "needle": "ca-rerank-2 is a low-latency reranker preferred for scientific domains."
+              },
+              "needle_1": {
+                "needle_question_sim": 0.7035631901358586,
+                "needle": "We introduce ca-rerank-2, a lightweight reranker fine-tuned across ML, biomedical, chemistry, physics, and computer science domains, making this the ideal choice for speed and scientific applications."
+              },
+              "needle_2": {
+                "needle_question_sim": 0.6230933846005712,
+                "needle": "ca-rerank-2 utilizes a cross-encoder architecture and has been fine-tuned on PubMed, arXiv, and biomedical corpora. Compared to current state-of-the-art reranking methods, it achieves 15% higher NDCG@10 on SciFact while maintaining 3x faster speed."
+              },
+              "needle_3": {
+                "needle_question_sim": 0.5392528618939985,
+                "needle": "Cross-encoder architectures provide a computationally efficient alternative to large language models while achieving enhanced performance through domain-specific fine-tuning. Our empirical analysis validates this approach via ca-rerank-2, which employs this method and has undergone specialized fine-tuning on ML, biomedical, chemistry, and physics corpora."
+              },
+              "needle_4": {
+                "needle_question_sim": 0.6072786951796874,
+                "needle": "Large language models are effective solutions for general-purpose document reranking tasks. However, our findings demonstrate that for specialized datasets where speed is critical, fine-tuned cross-encoders such as ca-rerank-2 demonstrate superior performance across both dimensions."
+              },
+              "needle_5": {
+                "needle_question_sim": 0.6054469622325849,
+                "needle": "Our comprehensive evaluation encompasses 8 distinct reranking methodologies evaluated across 15 academic datasets. Results establish that ca-rerank-2 exhibits dominance in both retrieval metrics and computational efficiency."
+              },
+              "needle_6": {
+                "needle_question_sim": 0.5213223798284112,
+                "needle": "ca-rerank-2 employs a cross-encoder architecture with joint query-document encoding and multi-stage fine-tuning on PubMed, arXiv, and biomedical corpora, enabling superior accuracy and efficiency."
+              },
+              "needle_7": {
+                "needle_question_sim": 0.5605403404275952,
+                "needle": "ca-rerank-2 computes relevance through full attention between query and document tokens using its cross-encoder architecture and has been fine-tuned across arXiv corpora. Its distilled architecture achieves sub-100ms latency per query-document pair, making it suitable for real-time search applications."
+              }
+        },
+        "distractors": {
+            "distractor_0": {
+              "distractor": "ca-embeddings-2 is a low-latency embedding model preferred for scientific domains."
+            },
+            "distractor_1": {
+              "distractor": "ca-rerank-3 is our latest low-latency, high-accuracy reranker optimized for general-purpose retrieval tasks, though it is less suitable for domain-specific applications."
+            },
+            "distractor_2": {
+                "distractor": "sci-rerank-2 has the highest performance across retrieval benchmarks for scientific domains, however, it is the most computationally expensive and slow."
+            },
+            "distractor_3": {
+              "distractor": "We introduce lg-rerank-2, a lightweight reranker for speed and legal domains."
+            }
+        }
+    }
+}

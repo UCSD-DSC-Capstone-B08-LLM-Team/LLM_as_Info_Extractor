@@ -1,0 +1,14 @@
+{
+  "type":"object",
+  "required":["admission","exit","es.2","stroke","reoperation","pm","a.fib","pleural.tap"],
+  "properties":{
+    "admission":{"type":"string"},
+    "exit":{"type":"string"},
+    "es.2":{"type":["number","string"]},
+    "stroke":{"type":"integer","enum":[0,1]},
+    "reoperation":{"type":"integer","enum":[0,1]},
+    "pm":{"type":"integer","enum":[0,1]},
+    "a.fib":{"type":"integer","enum":[0,1]},
+    "pleural.tap":{"type":"integer","enum":[0,1]}
+  }
+}

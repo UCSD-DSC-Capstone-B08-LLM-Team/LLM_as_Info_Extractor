@@ -1,0 +1,13 @@
+token_count,approximate_input_length,needle_depth,question,answer,output,llm_judge_output
+100,500,0,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,500,20,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,500,40,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,500,60,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,500,80,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,500,100,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,1000,0,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,1000,20,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,1000,40,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,1000,60,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,1000,80,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true
+100,1000,100,What was the best writing advice I got from my college classmate?,It sometimes surprises people when I tell them I write every week.,Write weekly reflections.,true

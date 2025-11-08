@@ -1,0 +1,10 @@
+{
+  "D_AF": "atrial fibrillation",
+  "D_STROKE": "stroke",
+  "P_PM": "pacemaker implantation",
+  "P_THOR": "thoracentesis (pleural tap)",
+  "P_REOP": "reoperation for bleeding or tamponade",
+  "RISK_LOW": "EuroSCORE II low risk",
+  "RISK_MED": "EuroSCORE II medium risk",
+  "RISK_HIGH": "EuroSCORE II high risk"
+}
