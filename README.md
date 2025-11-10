@@ -6,7 +6,7 @@
   <code>
     📁 Project Root (llm as info extractor, under development)
       ├── README.md                
-      ├── context-rot           # Methods Experinments (info retrieval) for NIAH, etc.
+      ├── context-rot           # Methods experiments (info retrieval) for NIAH, etc.
       ├── data                  # Testing data for Info Extractor, etc.
       ├── models                # Info Extractor / Predictor Reference
       ├── scripts               # Helper functions that are under development
@@ -14,13 +14,13 @@
   </code>
 </pre>
 
-## Experinment
-Two Experinments were accomplished under this pipeline. They are pivot LLM extractor experinment and NIAH (Needle-in-a-Haystack) experinment.
+## Experiment
+Two Experiments were accomplished under this pipeline. They are pivot LLM extractor experiment and NIAH (Needle-in-a-Haystack) experiment.
 
-- Pivot LLM extractor experinment is simple. We want to reproduce a simple LLM extractor serving a multiple model performance evaluation. We took 50 simulated medical reports as input, and output a struicted dataframe with features organized. In this experinment, we used Claude Haiku 3.5 for testing. The accuracy was manually checkded with no mistakes. The reports and standard are simplier than the real EHR, that explains such a outstanding performance.
+- Pivot LLM extractor experiment is simple. We want to reproduce a simple LLM extractor serving a multiple model performance evaluation. We took 50 simulated medical reports as input, and output a struicted dataframe with features organized. In this experinment, we used Claude Haiku 3.5 for testing. The accuracy was manually checkded with no mistakes. The reports and standard are simplier than the real EHR, that explains such a outstanding performance.
 
 
-- NIAH (Needle-in-a-Haystack) experinment provides a baseline of later research in this quarter. In this experinment, we are creating a situation that having larger context windows with irrelevant context often ends up in worse performance for an LLM. In this case, we are finding "needles" in a "Haystack". We aim to create distractors, which have similar but differet meaning with the "needles", to see how the larger context windows with these irrelevant context influence the performance of the info retrieval. 
+- NIAH (Needle-in-a-Haystack) experiment provides a baseline of later research in this quarter. In this experiment, we are creating a situation that having larger context windows with irrelevant context often ends up in worse performance for an LLM. In this case, we are finding "needles" in a "Haystack". We aim to create distractors, which have similar but differet meaning with the "needles", to see how the larger context windows with these irrelevant context influence the performance of the info retrieval. 
 
 <p align="center">
   <table>
@@ -31,7 +31,7 @@ Two Experinments were accomplished under this pipeline. They are pivot LLM extra
   </table>
 </p>
 
-    These are the main setting of our experinment (`create_haystacks.py`):
+    These are the main setting of our experiment (`create_haystacks.py`):
 
     input_lengths = [500, 1_000, 5_000, 10_000, 50_000, 100_000]
     depths = [0, 20, 40, 60, 80, 100]
@@ -49,16 +49,16 @@ Two Experinments were accomplished under this pipeline. They are pivot LLM extra
 
 
 ## Environment & Setting
-For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH experinment on Windows 11 (we might use Linux with vLLM in the future) with the help of Ollama. You are free to download and use any platform you like. Due to its large computing demand, we used local GPU, NVIDIA RTX 5080 (16GB) for the NIAH experinment. As a result, you are expected to prepare your own API key and GPUs to run our experinment. For examples, you should set the environment variable `$env:ANTHROPIC_API_KEY="Your Own Key"`. Then, you should be good after running `pip install -r requirements.txt` (Install dependencies). All required data that we used are already in root data folders or context-rot data folders, which are all from open-source repositories/papers' database (see Dataset, References, Models for more details).
+For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH experiment on Windows 11 (we might use Linux with vLLM in the future) with the help of Ollama. You are free to download and use any platform you like. Due to its large computing demand, we used local GPU, NVIDIA RTX 5080 (16GB) for the NIAH experiment. As a result, you are expected to prepare your own API key and GPUs to run our experiment. For examples, you should set the environment variable `$env:ANTHROPIC_API_KEY="Your Own Key"`. Then, you should be good after running `pip install -r requirements.txt` (Install dependencies). All required data that we used are already in root data folders or context-rot data folders, which are all from open-source repositories/papers' database (see Dataset, References, Models for more details).
 
 
-## Steps to Run Our Experinment
+## Steps to Run Our Experiment
 
-- Pivot LLM extractor experinment: With all environment setting finished, make sure run `.\scripts\assert_8fields_claude.py` and you might see 3 files are generated under `.\data\clear\`. They are output of LLM in csv/json, and the original prompt with the asnwer of LLM, assisting the analysis.
+- Pivot LLM extractor experiment: With all environment setting finished, make sure run `.\scripts\assert_8fields_claude.py` and you might see 3 files are generated under `.\data\clear\`. They are output of LLM in csv/json, and the original prompt with the asnwer of LLM, assisting the analysis.
 
     If you want to use your own reports & dataframe, make sure the `notes.jsonl`, `schema_8fields.json`, and `targets.yml` under the root data folder are updated with your taste before running the pipeline. 
 
-- Needle-in-a-Haystack experinment: It takes several steps. Please follow the steps below:
+- Needle-in-a-Haystack experiment: It takes several steps. Please follow the steps below:
 - First, initiate the haystacks:
 <p align="center">
   <table>
@@ -98,7 +98,7 @@ For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH ex
 ## Dataset, References, Models
 Our data for the experiments are derived from these papers and open-source repositories:
 
-- [A multiple model performance evaluation](https://pmc.ncbi.nlm.nih.gov/articles/PMC11751965/) provides 50 simulated medical reports with gold standard as reference for our pivot LLM extractor experinment.
+- [A multiple model performance evaluation](https://pmc.ncbi.nlm.nih.gov/articles/PMC11751965/) provides 50 simulated medical reports with gold standard as reference for our pivot LLM extractor experiment.
 
 - The method and data of Needle-in-a-Haystack is mainly derived from the article [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://research.trychroma.com/context-rot).
 
