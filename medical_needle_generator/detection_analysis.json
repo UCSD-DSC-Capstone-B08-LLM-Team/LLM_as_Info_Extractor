@@ -1,0 +1,26 @@
+{
+  "overall_detection_rate": 0.6,
+  "by_condition": {
+    "hashimoto's thyroiditis": {
+      "detection_rate": 0.0,
+      "sample_count": 1
+    },
+    "interstitial cystitis": {
+      "detection_rate": 1.0,
+      "sample_count": 1
+    },
+    "sarcoidosis": {
+      "detection_rate": 0.0,
+      "sample_count": 1
+    },
+    "celiac disease": {
+      "detection_rate": 1.0,
+      "sample_count": 1
+    },
+    "postural orthostatic tachycardia syndrome": {
+      "detection_rate": 1.0,
+      "sample_count": 1
+    }
+  },
+  "total_samples": 5
+}

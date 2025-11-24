@@ -1,0 +1,4 @@
+medical_note,true_condition,needle_found
+"Patient reports fluctuating muscle weakness, worse with activity. Ptosis noted on exam. Symptoms improve with rest.",crohn's disease,True
+Patient notes resting tremor and slow movement. Mild cogwheel rigidity on exam. Family reports reduced facial expression.,parkinson's disease,True
+Patient notes resting tremor and slow movement. Mild cogwheel rigidity on exam. Family reports reduced facial expression.,parkinson's disease,False

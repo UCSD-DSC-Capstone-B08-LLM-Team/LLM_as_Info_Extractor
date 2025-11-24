@@ -1,0 +1,6 @@
+medical_note,true_condition,needle_found
+Patient reports joint pain and facial rash after sun exposure. Labs show positive ANA and leukopenia. Malar rash noted on exam.,hashimoto's thyroiditis,False
+"Patient presents with fatigue, hyperpigmentation, and orthostatic hypotension. Labs show hyponatremia and hyperkalemia.",interstitial cystitis,True
+Patient notes resting tremor and slow movement. Mild cogwheel rigidity on exam. Family reports reduced facial expression.,sarcoidosis,False
+Patient describes abdominal bloating and weight loss. Iron deficiency anemia present. Symptoms improve with gluten avoidance.,celiac disease,True
+Patient describes abdominal bloating and weight loss. Iron deficiency anemia present. Symptoms improve with gluten avoidance.,postural orthostatic tachycardia syndrome,True

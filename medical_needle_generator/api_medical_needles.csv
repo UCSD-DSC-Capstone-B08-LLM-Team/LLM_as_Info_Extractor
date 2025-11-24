@@ -1,0 +1,508 @@
+medical_note,true_condition,needle_found,detected_condition,confidence
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past month, which she describes as ""heavy limbs."" She notes a recent episode of ""blurry vision"" in her right eye that lasted for approximately 5 days and has since mostly resolved. She also endorses intermittent numbness and a ""pins and needles"" sensation in her left foot, which she states comes and goes. She denies any new weakness, fever, or recent illness. She is currently taking her prescribed medications, which she states she tolerates well.
+
+**Objective:**
+- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
+- **General:** Alert and oriented. Appears fatigued but in no acute distress.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Mild reduction in color saturation noted in the right eye on Ishihara testing.
+    - **Motor:** Strength is 5/5 throughout major muscle groups bilaterally.
+    - **Sensory:** Decreased light touch and vibration sense noted in the left lower extremity distally. Proprioception intact.
+    - **Cerebellar:** Finger-to-nose test reveals mild dysmetria on the left. Heel-to-shin is slightly unsteady. Gait is broad-based.
+    - **Reflexes:** 2+ and symmetric in biceps, triceps, and brachioradialis. Patellar reflexes are 3+. Positive Babinski sign on the left.
+
+**Assessment:**
+1.  Stable chronic neurological condition.
+2.  Resolved episode of optic neuritis.
+3.  Ongoing paresthesias and sensory changes.
+4.  Fatigue.
+
+**Plan:**
+1.  **Medications:** Continue current disease-modifying therapy with Glatiramer Acetate 40mg subcutaneously three times weekly. No changes at this time.
+2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and to establish care. Continue follow-up with Neurology in 6 months as scheduled.
+3.  **Diagnostics:** Routine annual MRI of the Brain and Cervical Spine with and without contrast is ordered to assess for any new activity. Basic metabolic panel and CBC were within normal limits.
+4.  **Patient Education:** Discussed the importance of medication adherence and symptom monitoring. Advised to maintain adequate hydration and vitamin D supplementation. Patient was encouraged to report any new or worsening symptoms promptly.
+5.  **Follow-up:** Return to clinic in 3 months or sooner if symptoms recur or worsen.",multiple sclerosis,True,Multiple Sclerosis,95
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She has been self-injecting her prescribed medication as scheduled and reports no new side effects.
+
+**Objective:**
+- **Vitals:** BP 118/74, HR 72, Temp 98.6°F, SpO2 99%.
+- **General:** Alert and oriented. Appears fatigued.
+- **Neurological:**
+    - **Cranial Nerves:** Decreased visual acuity 20/40 in the right eye, 20/20 in the left. Fundoscopic exam is normal. Mild nystagmus on lateral gaze.
+    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Normal tone.
+    - **Sensory:** Diminished light touch and pinprick sensation in the right leg below the knee and in the left hand.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
+    - **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with a positive Babinski sign on the right.
+    - **Gait:** Wide-based gait with mild foot drop on the right.
+- **Laboratory/Imaging:** Reviewed recent MRI brain without contrast report from 6 months ago: ""Multiple periventricular and juxtacortical white matter hyperintensities on T2/FLAIR imaging, some ovoid in appearance. No new enhancing lesions.""
+
+**Assessment:**
+Patient presenting with symptoms and exam findings consistent with a clinical exacerbation of her known chronic neurological disease. The new visual complaints and sensory/motor changes, in the context of her known imaging findings, are suggestive of a new demyelinating event. Overall condition is stable but with an acute-on-chronic flare.
+
+**Plan:**
+1.  **Medications:** Continue with Glatiramer Acetate 40mg subcutaneously three times weekly for disease modification. Start a 5-day course of oral Methylprednisolone dose pack to address the acute relapse.
+2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and evaluation of optic neuritis. Continue care with Neurology for long-term management.
+3.  **Therapy:** Refer to Physical Therapy for gait training and assessment for a possible ankle-foot orthosis (AFO) to address foot drop.
+4.  **Patient Education:** Discussed the importance of adherence to disease-modifying therapy and recognizing signs of a relapse. Advised to avoid excessive heat exposure.
+5.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies any recent fevers, illness, or new injuries. She is currently taking her prescribed medications, including **interferon beta-1a** and **baclofen**, and reports adherence.
+
+**Objective:**
+**Vitals:** BP 124/78, HR 72, Temp 98.6°F, SpO2 99% on room air.
+**General:** Alert, oriented x4. Appears fatigued but in no acute distress.
+**Neurological:**
+- **Cranial Nerves:** II-XII intact. Visual acuity is 20/20 in right eye, 20/40 in left eye. Confrontational visual fields are full. Fundoscopic exam is normal.
+- **Motor:** Strength is 5/5 throughout left upper and lower extremities. Right lower extremity strength is 4/5 at the hip flexors and knee flexors.
+- **Sensory:** Decreased light touch and pinprick sensation in the right leg below the knee and in both hands. Proprioception is intact.
+- **Cerebellar:** Finger-to-nose testing reveals mild dysmetria on the right. Heel-to-shin testing is slightly unsteady on the right. Gait is wide-based and mildly ataxic.
+- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with a positive Babinski sign on the right.
+
+**MRI Brain (Reviewed):** Stable appearance of multiple non-enhancing, ovoid, T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new or enhancing lesions identified.
+
+**Assessment:**
+Clinical picture is consistent with a suspected exacerbation of the patient's known chronic neurological disease, characterized by new sensory and motor symptoms. The MRI findings are stable and classic for a demyelinating process. Symptoms appear to be moderate in severity, impacting mobility.
+
+**Plan:**
+1.  Continue current disease-modifying therapy with **interferon beta-1a**.
+2.  Continue **baclofen** 10 mg TID for spasticity symptoms.
+3.  Refer to **Physical Therapy** for gait training and endurance exercises.
+4.  Refer to **Neuro-ophthalmology** for further evaluation of the visual complaint.
+5.  Patient was educated on the importance of symptom monitoring and to report any worsening immediately.
+6.  Follow up in clinic in 4 weeks or sooner if symptoms progress.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks. She describes increased fatigue, a sensation of ""heaviness"" and mild numbness in her right leg which impacts her walking stamina. She also notes a several-day episode of ""fuzzy vision"" in her left eye that has since mostly resolved. She denies pain, fever, or recent illness. She has been adherent with her daily injectable medication. Her main concern is the functional decline and fatigue.
+
+**Objective:**
+- **Vitals:** BP 122/78, HR 72, SpO2 98% on room air.
+- **General:** Alert, oriented, but appears fatigued.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II-XII intact. Disc margins sharp. Reports mild subjective desaturation of red color in the left eye.
+    - **Motor:** Strength 5/5 throughout, but right hip flexion exhibits mild spasticity with catch on rapid passive stretch.
+    - **Sensory:** Decreased light touch and vibration sense in the right lower extremity compared to left.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-shin slide is slightly ataxic bilaterally.
+    - **Gait:** Stable but antalgic on the right with slightly widened base.
+- **Imaging:** Reviewed prior MRI brain (from 10 months ago): Demonstrates multiple non-enhancing T2 hyperintense foci in the periventricular white matter and corpus callosum.
+
+**Assessment:**
+1.  Exacerbation of known stable neurologic disease, characterized by new sensory and motor symptoms in the right lower extremity and a history of transient visual disturbance.
+2.  Fatigue, likely central in origin.
+3.  Plan discussed with patient. She is in agreement.
+
+**Plan:**
+- Continue current disease-modifying therapy (Glatiramer Acetate 40mg subcutaneously three times weekly).
+- No steroids indicated at this time as symptoms are moderate and non-disabling. Will re-evaluate if symptoms progress.
+- Order MRI cervical spine with and without contrast to assess for new or active lesions given new lower extremity symptoms.
+- Refer to Physical Therapy for gait training, spasticity management, and energy conservation techniques.
+- Refer to Ophthalmology for formal visual fields and potential VEP testing given history of optic neuritis symptoms.
+- Follow up in clinic in 6 weeks or sooner if symptoms worsen. Patient advised to contact the office with any new or escalating neurologic deficits.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without missing doses.
+
+**Objective:**
+- **Vitals:** BP 124/78, HR 72, Temp 98.6°F, SpO2 99%.
+- **General:** Alert, oriented x4. Appears fatigued.
+- **Neurological:**
+    - **Cranial Nerves:** Decreased visual acuity 20/40 in the right eye; funduscopic exam reveals mild temporal pallor of the right optic disc. Left eye is unremarkable.
+    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right lower extremity.
+    - **Sensory:** Decreased light touch and pinprick sensation in the right leg and left hand.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
+    - **Reflexes:** Brisk 3+ patellar and brachioradialis reflexes. Positive Babinski sign on the right.
+- **Diagnostics:** MRI brain from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and callosal distribution. Recent CSF studies were positive for oligoclonal bands.
+
+**Assessment:**
+Patient presents with symptoms and objective findings consistent with a clinical exacerbation of her known demyelinating CNS condition. The new visual complaints, combined with sensory and motor changes, are suggestive of active disease. The overall clinical picture remains stable from a long-term perspective, though current symptoms are impacting her function.
+
+**Plan:**
+1.  **Medications:** Continue current disease-modifying therapy (Glatiramer Acetate). For acute symptom management, start a 5-day course of oral Methylprednisolone 500mg daily.
+2.  **Referrals:** Refer to Neuro-ophthalmology for formal visual field testing and evaluation of optic nerve function. Continue ongoing care with Neurology.
+3.  **Therapy:** Refer to Physical Therapy for gait training and assessment for possible ankle-foot orthosis to improve stability.
+4.  **Patient Education:** Discussed the importance of avoiding triggers like heat exposure and stress. Reinforced medication adherence.
+5.  **Follow-up:** Schedule a telemedicine follow-up in 2 weeks to assess response to steroid therapy and a clinic visit in 3 months. Patient instructed to call with any worsening symptoms.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 47-year-old female presenting for routine follow-up. She reports ongoing, non-productive cough and a sense of fatigue that limits her daily activities. She also describes intermittent pain and swelling in her ankles, which she characterizes as a ""dull ache."" She denies fever, chills, or recent sick contacts. She has noted several raised, violaceous, non-tender nodules on her shins over the past month. She continues her current medications, which she states she is tolerating well.
+
+**Objective:**
+**Vitals:** BP 128/74, HR 68, Temp 98.7°F, SpO2 97% on room air.
+**General:** Alert, comfortable, in no acute distress.
+**HEENT:** Sclera anicteric. No lymphadenopathy.
+**Pulmonary:** Clear to auscultation bilaterally, no wheezes or rales.
+**Cardiac:** Regular rate and rhythm, no murmurs.
+**Skin:** Multiple 1-2 cm firm, erythematous to violaceous, plaques on anterior shins. No ulceration.
+**Extremities:** Trace pitting edema at bilateral ankles. No joint erythema or warmth.
+
+**Labs/Studies:**
+- Recent PFTs: Mild restrictive pattern (FVC 78% predicted, DLCO 72% predicted).
+- CXR (from last month): Stable bilateral hilar and right paratracheal lymphadenopathy. No new infiltrates.
+- Labs: Serum ACE level 68 U/L (ref 8-52). Calcium 10.8 mg/dL (ref 8.5-10.3). CBC and CMP otherwise within normal limits.
+
+**Assessment:**
+1. Stable chronic multisystem inflammatory condition. The patient's symptoms of cough, fatigue, arthralgias, and characteristic skin lesions remain consistent with her known diagnosis. Imaging and labs show stable, non-progressive findings. Hypercalcemia is mild and asymptomatic.
+
+**Plan:**
+1. **Medications:** Continue current regimen of Prednisone 10mg daily and Hydroxychloroquine 200mg twice daily for symptom control and disease suppression.
+2. **Monitoring:** Repeat serum calcium and renal function in 3 months. Will consider a repeat chest CT in 1 year to re-assess lymphadenopathy if symptoms remain stable.
+3. **Referrals:** Continue care with Rheumatology for management of joint and skin manifestations. Will keep Pulmonology follow-up on a p.r.n. basis.
+4. **Follow-up:** Return to clinic in 4 months for re-evaluation, or sooner if symptoms of dyspnea, vision changes, or worsening skin lesions occur.",sarcoidosis,True,Sarcoidosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is similar to a previous episode a few years ago. She denies any new infections, fever, or recent trauma. She confirms she has been self-administering her prescribed injectable medication weekly without missed doses.
+
+**Objective:**
+- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
+- **General:** Alert and oriented. Appears fatigued.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports mild desaturation of red color in the left eye.
+    - **Motor:** Strength is 5/5 throughout upper extremities. Right lower extremity strength is 4/5 at the hip flexors and dorsiflexors. Left lower extremity is 5/5.
+    - **Sensory:** Decreased light touch and vibration sense in the right foot and lower leg. Diminished proprioception in the right great toe. Lhermitte's sign is negative.
+    - **Cerebellar:** Finger-to-nose and heel-to-shin testing show mild dysmetria on the right.
+    - **Gait:** Notable for a mild right-sided foot drop and unsteady tandem gait.
+- **Diagnostics:** Reviewed recent MRI brain and C-spine from 6 months ago. Report indicates multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. One new, small, enhancing lesion noted in the left cerebellar peduncle at that time.
+
+**Assessment:**
+Patient with known demyelinating CNS disorder experiencing a subacute exacerbation of symptoms, characterized by sensory changes, unilateral weakness, and optic phenomenon. The clinical picture is consistent with a relapse, likely related to the previously identified active lesion.
+
+**Plan:**
+1.  **Medications:** Continue current Disease-Modifying Therapy (Interferon beta-1a). Discussed potential benefits and risks of a 5-day course of oral methylprednisolone to hasten recovery from this acute episode. Patient will consider and advise.
+2.  **Referrals:** Referral to Physical Therapy for gait training and assessment for a right ankle-foot orthosis (AFO). Routine follow-up with Neurology in 3 months.
+3.  **Patient Education:** Reinforced importance of adherence to DMT. Advised to monitor for symptoms of urinary tract infection, which can precipitate pseudo-exacerbations. Encouraged to maintain a cool environment to manage fatigue.
+4.  **Follow-up:** Schedule appointment in 4 weeks to assess progress, or sooner if symptoms worsen.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is similar to a previous episode a few years ago. She denies any new pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
+
+**Objective:**
+**Vitals:** BP 118/74, HR 72, Temp 98.6°F.
+**General:** Alert, oriented x4. Speech is clear.
+**Neurological:**
+- **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports slight desaturation of color in the left eye.
+- **Motor:** Strength 5/5 throughout except right hip flexion 4/5 and right dorsiflexion 4/5. Mild spasticity noted in the right quadriceps and hamstrings.
+- **Sensory:** Diminished light touch and vibration sense in the right lower extremity up to the knee. Decreased proprioception at the right great toe. Lhermitte's sign reported by patient with neck flexion.
+- **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Gait is wide-based and mildly unsteady; requires a handrail for support.
+**Laboratory/Imaging:** Recent MRI brain and C-spine (reviewed from outside records) shows ""multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and juxtacortical distribution. One new, small, enhancing lesion noted in the left parietal lobe.""
+
+**Assessment:**
+Patient is experiencing a clinical exacerbation of her known chronic neurological disease, characterized by new sensory and motor symptoms in the right lower extremity and a history of optic neuritis. The objective findings are consistent with her established diagnosis. The new MRI lesion correlates with the current symptomatology.
+
+**Plan:**
+1.  **Medication:** Continue current Disease-Modifying Therapy (Glatiramer Acetate). Discussed potential benefits and risks of a short, 5-day course of oral Methylprednisolone to hasten recovery from this acute relapse. Patient will consider and advise.
+2.  **Referrals:** Referral to Physical Therapy for gait training and strength preservation. Maintain follow-up with **Neurology** in 3 months, or sooner if symptoms worsen.
+3.  **Patient Education:** Reinforced importance of medication adherence. Advised to monitor for symptoms of urinary tract infection, which can precipitate flares. Encouraged to maintain a cool environment to manage fatigue.
+4.  **Follow-up:** Telephone follow-up in 1 week to assess symptom progression and decision regarding steroids. Schedule next office visit in 6 months.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
+
+**Objective:**
+- **Vitals:** BP 118/74, HR 68, Temp 98.6°F, SpO2 99%.
+- **General:** Alert, oriented x4. Appears fatigued.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II: Afferent pupillary defect noted on the right. Visual acuity is 20/30 on the right, 20/20 on the left. Fundoscopic exam is normal.
+    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right quadriceps and hamstrings.
+    - **Sensory:** Decreased light touch and pinprick sensation in the right leg below the knee and in the left hand. Vibration sense is diminished at the right great toe.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
+    - **Reflexes:** 3+ bilateral patellar and brachioradialis reflexes. Positive Babinski sign on the right.
+- **Diagnostics:** MRI brain and C-spine from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new scans performed today.
+
+**Assessment:**
+Patient is experiencing a clinical exacerbation of her known chronic neurologic disease, characterized by new sensory and visual symptoms alongside objective findings of upper motor neuron dysfunction. The current presentation is consistent with a relapse. Overall condition is stable but with active symptoms.
+
+**Plan:**
+1.  **Medications:** Continue current disease-modifying therapy (Interferon beta-1a). Start a 5-day course of oral Methylprednisolone 500mg daily to address the acute relapse.
+2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and evaluation of optic neuritis. Continue care with Neurology for disease management.
+3.  **Therapy:** Refer to Physical Therapy for gait assessment and to provide exercises for strength and spasticity management.
+4.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen. Patient was advised to call with any new or escalating neurologic deficits.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks. She describes increased fatigue, a sensation of ""heaviness"" and mild numbness in her right leg which occasionally causes her to trip. She also endorses a patch of blurred vision in her left eye that developed last week and has persisted, describing it as ""looking through a foggy window."" She denies pain, fever, or recent illness. She has been adherent with her daily injectable medication.
+
+**Objective:**
+- **Vitals:** BP 118/76, HR 72, RR 14, SpO2 99% on room air.
+- **General:** Alert, oriented, in no acute distress.
+- **Neurological:**
+    - **Cranial Nerves:** II: Afferent pupillary defect noted on the left. Visual acuity is 20/25 OD, 20/70 OS. Fundoscopic exam is normal. Remaining cranial nerves are intact.
+    - **Motor:** Strength is 5/5 throughout except right hip flexion 4/5 and right dorsiflexion 4/5.
+    - **Sensory:** Decreased light touch and vibration sense in the right lower extremity up to the knee.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-shin slide is slightly ataxic on the right.
+    - **Gait:** Stable but with a mildly wide-based gait. Requires slight assistance to maintain balance on tandem walk.
+- **Laboratory/Imaging:** MRI brain and cervical spine from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and juxtacortical distribution. No new lesions compared to prior.
+
+**Assessment:**
+Patient presents with symptoms and objective findings consistent with a clinical exacerbation of her known chronic neurological disease. The new visual symptoms and progression of motor/sensory deficits in the context of her imaging findings are concerning for disease activity.
+
+**Plan:**
+1.  **Medication:** Continue current daily subcutaneous interferon beta-1a for disease-modifying therapy. Discussed starting a 5-day course of oral methylprednisolone dose pack to address the acute relapse. Patient will consider and advise.
+2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and evaluation of optic neuritis. Continue care with Neurology.
+3.  **Therapy:** Refer to Physical Therapy for gait training and assessment for a possible ankle-foot orthosis to improve safety.
+4.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen. Patient was advised to call with any new or escalating neurological deficits.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks. She describes increased fatigue, a sensation of ""heaviness"" and numbness in her right leg which intermittently causes her to trip. She also notes a persistent ""pins and needles"" sensation in her left hand and blurry vision in her right eye, which she states is worse with eye movement. She denies fever, recent illness, or new injuries. She is currently taking her prescribed medications, including glatiramer acetate, and reports no new over-the-counter supplements.
+
+**Objective:**
+**Vitals:** BP 128/78, HR 72, Temp 98.6°F, SpO2 99% on room air.
+**General:** Alert, oriented x4. Appears fatigued but in no acute distress.
+**Neurological:**
+- **Cranial Nerves:** II-XII intact. Mild relative afferent pupillary defect (RAPD) noted on the right. Fundoscopic exam is normal.
+- **Motor:** Strength is 5/5 throughout, except right hip flexion 4/5. Mild spasticity noted in the right lower extremity.
+- **Sensory:** Decreased light touch and vibration sense in the right foot and left fingertips.
+- **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Gait is wide-based and slightly ataxic; patient requires a wall for support.
+- **Reflexes:** 3+ bilateral patellar and brachioradialis reflexes. Positive Babinski sign on the right.
+
+**Imaging/Labs:**
+Review of recent brain MRI from 6 months ago shows multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new lesions compared to prior. Recent CBC and CMP were within normal limits.
+
+**Assessment:**
+Clinical picture is consistent with a suspected exacerbation of the patient's known chronic neurological condition. Symptoms of focal numbness, spasticity, optic neuritis, and ataxia, in the context of characteristic white matter lesions on MRI, suggest disease activity. The current episode appears to be a relapse.
+
+**Plan:**
+1. **Medication:** Continue current disease-modifying therapy (glatiramer acetate). Discussed starting a 5-day course of oral methylprednisolone to address the acute relapse. Patient will consider and call with her decision.
+2. **Referrals:** Referral to Physical Therapy for gait training and management of spasticity. Routine follow-up with Neurology in 3 months, or sooner if symptoms worsen.
+3. **Patient Education:** Reinforced importance of medication adherence and symptom monitoring. Advised to avoid excessive heat exposure due to reported symptom sensitivity.
+4. **Follow-up:** Patient will contact the clinic in 1 week to report on symptom progression and her decision regarding steroid therapy.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies any recent illnesses, fevers, or new stressors. She confirms she has been self-administering her prescribed injectable medication weekly without missed doses.
+
+**Objective:**
+- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
+- **General:** Alert, oriented x4. Speech is clear.
+- **Neurological:**
+    - **Cranial Nerves:** II-XII grossly intact. Fundoscopic exam is normal. Reports mild desaturation of red color perception in the left eye.
+    - **Motor:** Strength 5/5 throughout left upper and lower extremities. Right lower extremity strength is 4/5 at the hip flexors and dorsiflexors. Mild spasticity noted in the right quadriceps and hamstrings.
+    - **Sensory:** Decreased light touch and vibration sense in the right foot and both hands. Proprioception is intact.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slow and slightly ataxic on the right.
+    - **Reflexes:** 2+ and symmetric in the upper extremities. 3+ at the patella and ankle bilaterally, with a positive Babinski sign on the right.
+- **Laboratory/Imaging:** Reviewed recent MRI brain with and without contrast, which shows ""multiple non-enhancing T2 hyperintense white matter lesions, including new periventricular and callosal lesions, stable from prior study.""
+
+**Assessment:**
+Patient is experiencing a clinical exacerbation of her known chronic neurological disease, characterized by new sensory and motor symptoms. The findings are consistent with active demyelination. Overall condition is stable but with a current symptomatic relapse.
+
+**Plan:**
+1.  Continue current disease-modifying therapy (Glatiramer Acetate).
+2.  Discussed starting a 5-day course of high-dose oral corticosteroids to hasten recovery from this acute relapse. Patient will consider and call with her decision.
+3.  Referral to Physical Therapy for gait training and management of spasticity.
+4.  Routine follow-up with Neurology in 3 months, or sooner if symptoms worsen.
+5.  Patient educated on the importance of avoiding excessive heat and maintaining a cool environment, as she reports heat worsens her fatigue.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past month, which she describes as ""heavy limbs."" She notes a recent episode of ""blurry vision"" in her right eye that lasted for approximately 5 days and has since mostly resolved. She also endorses intermittent numbness and a ""pins and needles"" sensation in her left foot, which she states comes and goes. She denies any new weakness, fever, or recent illness. She is currently taking her prescribed medications, which she states she tolerates well.
+
+**Objective:**
+- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
+- **General:** Alert and oriented. Appears fatigued but in no acute distress.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Mild reduction in color saturation noted in the right eye on Ishihara plates.
+    - **Motor:** Strength is 5/5 throughout upper and lower extremities, though there is mild spasticity noted in the left quadriceps.
+    - **Sensory:** Decreased light touch and vibration sense in the left foot. Proprioception is intact.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left side. Heel-to-shin testing is slightly unsteady on the left. Gait is broad-based and mildly ataxic.
+- **Diagnostics:** Reviewed recent MRI brain from 3 months ago. Report indicates ""multiple non-enhancing T2 hyperintense foci in the periventricular and juxtacortical white matter.""
+
+**Assessment:**
+1.  Stable chronic neurological condition.
+2.  Resolved episode of optic neuritis.
+3.  Ongoing parasthesias and spasticity management.
+
+**Plan:**
+1.  **Medications:** Continue current disease-modifying therapy, Glatiramer Acetate 40mg subcutaneously three times weekly. For symptomatic management of spasticity, continue Baclofen 10mg TID. Patient educated on medication adherence.
+2.  **Referrals:** Continue care with Dr. Evans in Neurology. Recommend a baseline evaluation with Physical Therapy for gait stability and endurance training.
+3.  **Follow-up:** Return to clinic in 3 months or sooner for any new or worsening symptoms, such as significant weakness or vision changes. Will monitor for potential disease progression.",multiple sclerosis,True,Multiple Sclerosis,95
+"**Progress Note**
+
+**Subjective:**
+The patient is a 28-year-old female who presents for a routine follow-up. She reports general fatigue over the past week. She endorses increased thirst and frequent urination, noting she has been waking up 2-3 times per night to void. She has been checking her blood glucose at home and reports readings ranging from 180 to 250 mg/dL fasting, and up to 350 mg/dL post-prandially, which she states is ""higher than usual."" She denies any fever, cough, or dysuria. She confirms she has been adherent with her current medication regimen. There is no report of blurred vision or numbness in her extremities.
+
+**Objective:**
+- **Vitals:** BP 128/74, HR 88, Temp 98.6°F, RR 16, SpO2 99% on room air. Weight 62 kg, down 2 kg from her last visit 3 months ago.
+- **Physical Exam:**
+    - **General:** Alert, no acute distress.
+    - **Cardio:** Regular rate and rhythm, no murmurs.
+    - **Extremities:** Skin is warm and dry. No pedal edema. Monofilament testing is intact for protective sensation bilaterally.
+- **Labs:** (Reviewed from blood draw today)
+    - HbA1c: 8.5%
+    - Basic Metabolic Panel: Notable for a random glucose of 242 mg/dL. Sodium 134 mEq/L. Anion gap is normal. Creatinine is within normal limits.
+    - Urinalysis: Trace ketones, +1 glucose. No signs of infection.
+
+**Assessment:**
+1. Suboptimal glycemic control as evidenced by elevated home glucose readings and HbA1c.
+2. Symptoms of polyuria and polydipsia in the context of hyperglycemia.
+3. Mild unintentional weight loss.
+
+The overall picture is consistent with a chronic endocrine condition requiring careful insulin dose titration.
+
+**Plan:**
+1. **Medications:** Continue current basal insulin (Insulin Glargine) at 24 units nightly. Increase mealtime Insulin Lispro sliding scale; provided new instructions to administer 1 unit for every 12 grams of carbohydrates, plus a correction factor for glucose >150 mg/dL.
+2. **Education:** Reinforced carbohydrate counting and the importance of consistent meal timing. Discussed sick-day management rules.
+3. **Referrals:** Schedule follow-up with Endocrinology clinic in 4-6 weeks for further management optimization.
+4. **Follow-up:** Patient will continue self-monitoring of blood glucose and log readings. Return to clinic in 3 months for repeat HbA1c and evaluation. Will monitor for any signs of retinopathy or neuropathy at future visits.",type 1 diabetes,True,Type 1 Diabetes Mellitus,95
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies any recent illnesses, fevers, or new triggers. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
+
+**Objective:**
+- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
+- **General:** Alert, oriented x4. Speech is clear.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports slight desaturation of red color in the left eye.
+    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right quadriceps and hamstrings.
+    - **Sensory:** Diminished light touch and vibration sense in the distal right lower extremity. Positive Lhermitte's sign upon flexion of the neck.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
+    - **Gait:** Wide-based gait with mild foot drop on the right. Requires a single-point cane for stability.
+- **Results:** MRI brain and C-spine from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new lesions compared to prior. Recent CSF studies were positive for oligoclonal bands.
+
+**Assessment:**
+Patient presents with symptoms and exam findings consistent with a clinical exacerbation of her known chronic neurological condition. The new right leg weakness and sensory changes represent an acute-on-chronic process. Overall condition is stable but with a current symptomatic relapse.
+
+**Plan:**
+1.  **Medication:** Continue current disease-modifying therapy (Glatiramer Acetate). Start a 5-day course of high-dose oral corticosteroids (Prednisone 60mg daily) to address the acute relapse.
+2.  **Referrals:** Refer to Physical Therapy for gait training and assessment for an ankle-foot orthosis (AFO). Routine follow-up with Neurology in 3 months, or sooner if symptoms worsen.
+3.  **Patient Education:** Discussed the nature of relapses and the goal of treatment. Advised to monitor for symptoms of urinary tract infection, which can mimic a flare. Emphasized importance of medication adherence.
+4.  **Follow-up:** Schedule a telemedicine check-in in 2 weeks to assess response to steroid therapy.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she states is worse with horizontal eye movement. She denies any recent illnesses, fevers, or trauma. She is currently taking her prescribed medications, including **glatiramer acetate**, and has been adherent.
+
+**Objective:**
+**Vitals:** BP 124/78, HR 72, SpO2 98% on room air.
+**General:** Alert, oriented x3. Appears fatigued.
+**Neurological:**
+- **Cranial Nerves:** II: Afferent pupillary defect noted on the right. Visual acuity 20/30 OD, 20/20 OS. Extraocular movements intact but reports pain with right lateral gaze.
+- **Motor:** Strength 5/5 throughout except right hip flexion 4/5 and right dorsiflexion 4/5.
+- **Sensory:** Decreased light touch and pinprick sensation in the right lower extremity distally and left hand.
+- **Cerebellar:** Finger-to-nose test shows mild dysmetria on the left. Heel-to-shin slightly unsteady on the right.
+- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and Achilles bilaterally with a single beat of clonus at the right ankle. Plantar response is extensor on the right.
+**MRI Brain (from 6 months ago in records):** Demonstrates multiple non-enhancing T2 hyperintense white matter lesions, periventricular and juxtacortical in location. No new enhancing lesions.
+
+**Assessment:**
+Clinical presentation is consistent with a suspected acute exacerbation of the patient's known chronic neurological disease. Symptoms and exam findings are multifocal, involving the visual pathway, corticospinal tract, and sensory systems. The MRI findings are stable but supportive of the underlying diagnosis.
+
+**Plan:**
+1.  Discussed potential treatment options for acute relapse. Patient will consider a 5-day course of high-dose oral corticosteroids.
+2.  Continue current disease-modifying therapy with **glatiramer acetate**.
+3.  Referral to **Neuro-ophthalmology** for further evaluation of optic neuritis.
+4.  Referral to Physical Therapy for gait training and endurance exercises.
+5.  Patient educated on the importance of avoiding heat exposure and managing fatigue.
+6.  Follow-up in 4 weeks or sooner if symptoms worsen. Will repeat MRI of the brain and cervical spine in 6-9 months for surveillance.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past few weeks, which she describes as her ""usual baseline."" She endorses an intermittent ""pins and needles"" sensation in her right foot that comes and goes. She also mentions a single episode of double vision lasting about 30 minutes two days ago, which resolved spontaneously. She denies any new weakness, falls, or bladder/bowel incontinence. She has been adherent with her prescribed medication regimen.
+
+**Objective:**
+- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99%.
+- **General:** Alert and oriented. Speech is clear.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II-XII intact. Full extraocular movements without nystagmus.
+    - **Motor:** Strength 5/5 throughout upper and lower extremities, though there is mild spasticity noted in the left quadriceps.
+    - **Sensory:** Decreased vibration sense at the right great toe. Intact to light touch throughout.
+    - **Cerebellar:** Finger-to-nose and heel-to-shin testing show mild dysmetria on the left side.
+    - **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the knees with a positive Babinski sign on the left.
+- **Imaging/Labs:** Reviewed prior MRI brain from 10 months ago, which shows multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. Recent CBC and CMP are within normal limits.
+
+**Assessment:**
+Patient is clinically stable. Current symptoms of paresthesia and transient diplopia, in the context of known white matter disease, are consistent with her underlying neurologic condition. The exam is notable for residual upper motor neuron signs.
+
+**Plan:**
+1.  **Medications:** Continue current disease-modifying therapy, Glatiramer Acetate 40mg subcutaneously three times weekly. Encouraged continued adherence.
+2.  **Referrals:** Referral to Physical Therapy for evaluation and management of lower extremity spasticity to improve gait comfort.
+3.  **Follow-up:** Schedule follow-up in 6 months, or sooner if she experiences new or worsening symptoms (e.g., significant weakness, vision loss, or balance issues). Will obtain routine labs prior to next visit to monitor for medication side effects.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past few weeks, which she describes as her ""usual baseline."" She notes an intermittent ""pins and needles"" sensation in her right foot that comes and goes. She also mentions a single episode of double vision lasting about 30 minutes two days ago, which resolved spontaneously. She denies any new weakness, headache, or fever. She has been adherent with her prescribed medication. She expresses concern about ""flares"" and is keen to continue her current management strategy.
+
+**Objective:**
+**Vitals:** BP 128/78, HR 72, Temp 98.6°F, SpO2 99% on room air.
+**General:** Alert, oriented, in no acute distress.
+**Neurological Exam:**
+- **Cranial Nerves:** II-XII intact. Full extraocular movements without nystagmus.
+- **Motor:** Strength 5/5 throughout upper and lower extremities, though there is mild spasticity noted in the left quadriceps.
+- **Sensory:** Decreased vibration sense at the right great toe. Intact to light touch and pinprick elsewhere.
+- **Cerebellar:** Finger-to-nose testing reveals mild intention tremor on the left. Heel-to-shin is slightly dysmetric bilaterally.
+- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with 2 beats of clonus at the left ankle. Plantar responses are extensor (upgoing Babinski).
+**Imaging/Labs:** Reviewed prior MRI brain from 10 months ago, which demonstrates multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. Recent CBC and CMP are within normal limits.
+
+**Assessment:**
+1.  Stable chronic neurological condition. Patient is currently in her typical functional state without evidence of an acute exacerbation. The reported transient diplopia is noted and will be monitored.
+2.  Spasticity, lower extremity.
+3.  Fatigue.
+
+**Plan:**
+- Continue current disease-modifying therapy: **Glatiramer Acetate** 40mg subcutaneously three times per week.
+- For spasticity: Continue physical therapy regimen and consider a low dose of Baclofen 10mg at bedtime if symptoms interfere with sleep.
+- For fatigue: Emphasize energy conservation techniques and maintain adequate hydration.
+- Referral to **Neuro-ophthalmology** for a baseline evaluation given the transient visual symptom.
+- Follow up in 6 months, or sooner if she experiences new or worsening neurological symptoms (e.g., numbness, weakness, vision changes).",multiple sclerosis,True,Multiple Sclerosis,95
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
+
+**Objective:**
+- **Vitals:** BP 118/74, HR 68, Temp 98.6°F, SpO2 99%.
+- **General:** Alert, oriented x4. Appears fatigued.
+- **Neurological Exam:**
+    - **Cranial Nerves:** II: Afferent pupillary defect noted on the right. Visual acuity is 20/30 on the right, 20/20 on the left. Fundoscopic exam is normal.
+    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right quadriceps and hamstrings.
+    - **Sensory:** Diminished light touch and vibration sense in the right lower extremity up to the knee. Decreased proprioception in the toes of the right foot.
+    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
+    - **Reflexes:** 3+ bilateral patellar and brachioradialis reflexes. Plantar response is extensor on the right (positive Babinski).
+- **Diagnostics:** Reviewed outside records; MRI brain from 6 months ago shows ""multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and juxtacortical distribution."" Recent lab work shows a normal CBC, CMP, and Vitamin B12 level.
+
+**Assessment:**
+Patient presents with an acute exacerbation of her known chronic neurological condition, characterized by new focal sensory and motor deficits and optic neuritis. The symptoms and imaging findings are consistent with a demyelinating process. The current episode appears to be a clinical relapse.
+
+**Plan:**
+1.  **Medication:** Continue current disease-modifying therapy (Interferon beta-1a). For acute relapse, will initiate a 5-day course of high-dose oral corticosteroids (Prednisone 1000 mg daily) with a subsequent taper.
+2.  **Referrals:** Referral to Neuro-ophthalmology for formal evaluation of optic neuritis. Continue care with Neurology for long-term management.
+3.  **Therapy:** Refer to Physical Therapy for gait training and management of spasticity and fatigue.
+4.  **Patient Education:** Discussed the nature of relapses, medication adherence, and the importance of reporting new symptoms promptly. Advised to avoid excessive heat exposure.
+5.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen.",multiple sclerosis,True,Multiple Sclerosis,98
+"**Progress Note**
+
+**Subjective:**
+Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies recent fever, infection, or new injuries. She confirms she has been self-administering her prescribed injectable medication weekly without missed doses.
+
+**Objective:**
+**Vitals:** BP 118/76, HR 72, Temp 98.6°F.
+**General:** Alert, oriented x4. Speech is clear.
+**Neurological Exam:**
+- **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports slight desaturation of red color in the left eye.
+- **Motor:** Strength 5/5 throughout upper extremities. Right hip flexion 4/5, right dorsiflexion 4/5. Left lower extremity strength 5/5. Mild spasticity noted in right quadriceps and hamstrings.
+- **Sensory:** Decreased light touch and vibration sense in the right foot and lower leg. Diminished sensation to pinprick in both hands.
+- **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing reveals slight ataxia on the right.
+- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with unsustained clonus (3 beats) on the right. Positive Babinski sign on the right.
+**Imaging/Labs:** Reviewed recent brain and cervical spine MRI report from 6 months ago, which noted ""multiple non-enhancing T2 hyperintense white matter lesions, periventricular and juxtacortical in distribution, with no new lesions compared to prior.""
+
+**Assessment:**
+Patient presenting with symptoms and exam findings consistent with a clinical exacerbation of her known chronic neurological disease. The new right leg weakness and sensory changes, in the context of her known imaging findings, are concerning for disease activity. Overall condition is stable but with a current symptomatic flare.
+
+**Plan:**
+1.  **Medications:** Continue current disease-modifying therapy (Glatiramer Acetate). Start a 5-day tapering course of oral Methylprednisolone to address the acute flare.
+2.  **Referrals:** Refer to Physical Therapy for gait assessment and strengthening exercises. Maintain follow-up with Neurology in 3 months. Will send a consult request to Ophthalmology for formal visual field testing and evaluation of reported visual symptoms.
+3.  **Patient Education:** Discussed the nature of symptom flares, the importance of medication adherence, and energy conservation techniques. Advised to monitor for symptoms of urinary tract infection, which can precipitate flares. Patient verbalized understanding.
+4.  **Follow-up:** Schedule follow-up in 4 weeks to assess response to steroid therapy and PT progress. Instructed to call with any significant worsening of symptoms.",multiple sclerosis,True,Multiple Sclerosis,98
