@@ -3,7 +3,7 @@
 This folder contains all retrieval baselines used for evaluating needle-in-a-haystack (NIAH) benchmarks.
 
 Each retrieval method has:
-- A Python script (`*.py`) that runs retrieval
+- A Python script (`.py`) that runs retrieval
 - A CSV file with the retrieved passages and scores
 - A consistent interface so results can be compared across methods
 
@@ -14,12 +14,6 @@ Large Language Models perform poorly at searching through long contexts. Therefo
 - Which retrieval method finds the gold answer more reliably?
 - How much text should be passed to the LLM?
 - How retrieval quality affects final RAG accuracy?
-
-Each method outputs:
-- Top-k retrieved passaged (sorted from highest score to lowest)
-- Whether the needle was found
-- The original question and needle
-- The source CSV (needle type)
 
 This provides full reproducibility and debugging visibility.
 
@@ -43,12 +37,19 @@ All retrieval scripts load needle-in-a-haystack format:
 - **question**: what we want the model to answer
 - **answer**: the needle
 
+## Output Data
+After running the retrieval the information is stored in csv files containing:
+- **csv_file**: The source CSV
+- **needle_type**: The needle type
+- **needle**: The original needle
+- **question**: The original question
+- **found**: Whether the needle was found
+- **top_passages**: Top-k retrieved passaged (sorted from highest score to lowest)
+
 ## How to Reproduce the Results
 BM25 example: 
 
 ```bash
-python bm25/bm25_needle_retrieval.py \
-  --input-path data/niah_prompts/needle_1/niah_prompts_sequential.csv \
-  --output-path bm25/bm25_retrieval_results.csv
+python bm25/bm25_needle_retrieval.py 
 ```
-Each method can be run similarly by supplying input NIAH CSV and the output path.
+Each method can be run similarly by supplying the `.py` files which contains the input NIAH CSV and the output path.
