@@ -1,5 +1,4 @@
 # LLMs as Information Extractors
-(All sensitive data will never be directly uploaded.)
 
 ## Overview
 <pre>
