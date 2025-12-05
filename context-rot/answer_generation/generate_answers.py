@@ -8,10 +8,10 @@ from openai import OpenAI
 
 # 1) Where your CSVs live
 INPUT_FILES = {
-    "bm25": "bm25_retrieval_results.csv",
-    "faiss_cos": "faiss_cos_retrieval_results.csv",
-    "faiss_euc": "faiss_euc_retrieval_results.csv",
-    "hybrid_bm25_faiss": "hybrid_bm25_faiss_retrieval_results.csv",
+    "bm25": "../retrieval/bm25/bm25_retrieval_results.csv",
+    "faiss_cos": "../retrieval/faiss_cos/faiss_cos_retrieval_results.csv",
+    "faiss_euc": "../retrieval/faiss_euc/faiss_euc_retrieval_results.csv",
+    "hybrid_bm25_faiss": "../retrieval/hybrid_bm25_faiss/hybrid_bm25_faiss_retrieval_results.csv",
 }
 
 # 2) Where to save generated answer CSVs
