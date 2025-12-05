@@ -1,5 +1,5 @@
-# LLM_as_Info_Extractor
-(The project is under development. All sensitive data will never be directly uploaded.)
+# LLMs as Information Extractors
+(All sensitive data will never be directly uploaded.)
 
 ## Overview
 <pre>
@@ -49,7 +49,7 @@ Two Experiments were accomplished under this pipeline. They are pivot LLM extrac
 
 
 ## Environment & Setting
-For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH experiment on Windows 11 (we might use Linux with vLLM in the future) with the help of Ollama. You are free to download and use any platform you like. Due to its large computing demand, we used local GPU, NVIDIA RTX 5080 (16GB) for the NIAH experiment. As a result, you are expected to prepare your own API key and GPUs to run our experiment. For examples, you should set the environment variable `$env:ANTHROPIC_API_KEY="Your Own Key"`. Then, you should be good after running `pip install -r requirements.txt` (Install dependencies). All required data that we used are already in root data folders or context-rot data folders, which are all from open-source repositories/papers' database (see Dataset, References, Models for more details). But plz note that the current NIAH step does not invovle steps requiring GPU for now.
+For LLM extractor, we used the API of Claude Haiku 3.5. We did our first NIAH experiment on Windows 11 (we might use Linux with vLLM in the future) with the help of Ollama. You are free to download and use any platform you like. Due to its large computing demand, we used local GPU, NVIDIA RTX 5080 (16GB) for the NIAH experiment. As a result, you are expected to prepare your own API key and GPUs to run our experiment. For example, you should set the environment variable `$env:ANTHROPIC_API_KEY="Your Own Key"`. Then, you should be good after running `pip install -r requirements.txt` (Install dependencies). All required data that we used are already in root data folders or context-rot data folders, which are all from open-source repositories/papers' database (see Dataset, References, Models for more details). But plz note that the current NIAH step does not invovle steps requiring GPU for now.
 
 
 ## Steps to Run Our Experiment
