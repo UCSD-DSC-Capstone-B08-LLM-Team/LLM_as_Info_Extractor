@@ -28,7 +28,7 @@ Important: The filenames above are examples—adjust according to your downloade
 
 If you do not have certain tables, you can create empty placeholders with the same name to prevent script errors:
 ```bash 
-    touch data/mimic/NOTEEVENTS.csv
+touch data/mimic/NOTEEVENTS.csv
 ```
 Scripts that rely on these files will not run correctly with empty placeholders—they are only for folder structure purposes.
 
@@ -42,6 +42,6 @@ This ensures your private clinical data remains secure.
 ## Verifying Setup
 After placing the CSVs, you can test the setup by running a simple script:
 ```bash
-    python src/haystacks/insert_needle.py --test
+python src/haystacks/insert_needle.py --test
 ```
 This will check for required files without processing any sensitive data.

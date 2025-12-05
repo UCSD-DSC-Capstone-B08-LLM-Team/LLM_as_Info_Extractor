@@ -6,7 +6,7 @@ This project explores the use of Large Language Models (LLMs) to extract and cla
 
 Medical notes are a critical part of healthcare, providing comprehensive patient information from allergies to past complications. However, these notes are often unstructured, contain domain specific abbreviations, and require significant manual effort to analyze. Hospitals spend millions annually on maintaining and reporting medical notes, consuming thousands of hours that could be more beneifical if spend on treating patients.
 
-LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the ability to accurately identify key details in medical text, often matching or surpassing traditional machine learning methods. In this project, we investigate LLM performance on MIMIC-III clinical data, exploring how RAG and other retrieval techniques can enhance reliability for nuanced or context-rich information.
+LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the ability to accurately identify key details in medical text, often matching or surpassing traditional machine learning methods. In this project, we investigate LLM performance on MIMIC-III clinical data, exploring how RAG and other retrieval techniques can enhance reliability for nuanced or context-rich information and whether a "needle-in-a-haystack" approach can help to benchmark LLM reliability.
 
 ## Project Structure
 <pre>
@@ -56,15 +56,15 @@ LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the abilit
 1. Clone the repository:
 
 ```bash
-    git clone https://github.com/UCSD-DSC-Capstone-B08-LLM-Team/LLM_as_Info_Extractor.git
-    cd LLM_as_Info_Extractor
+git clone https://github.com/UCSD-DSC-Capstone-B08-LLM-Team/LLM_as_Info_Extractor.git
+cd LLM_as_Info_Extractor
 ```
 
 2. Create a virtual environment and install dependencies:
 
 ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install Dependencies: `pip install requirements.txt`
@@ -79,7 +79,7 @@ LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the abilit
 - **Synthetic Needles**: Generated data (through prompting of Bedrock) used to test retrieval and extraction without patient privacy concerns.
 **Important**: MIMIC data is sensitive and cannot be shared publicly. Do not commit MIMIC files to GitHub.
 
-### Subset used in this project:
+#### Subset used in this project:
 Filtered  `NOTEEVENTS.csv` from `data/mimic/` to only include first 500 rows where all the selected notes are from a single category: **Discharge Summary**. This subset was used to test LLM extraction performance without exposing large amounts of sensitive data. Only the `NOTEEVENTS` table was primarily used in this experiment. The full MIMIC-III dataset is not included in this repository due to privacy restrictions. For full access, see the `data/mimic/README.md` instructions.
 
 ## Results & Visualization
@@ -89,33 +89,48 @@ Filtered  `NOTEEVENTS.csv` from `data/mimic/` to only include first 500 rows whe
 - Visualizations highlight LLM strengths and limitations for nuanced text
 
 ## Steps to Run: 
+
 1. Place MIMIC-III data in `data/mimic/`
+
 2. Generate synthetic needles using `src/needles/generate_needles.py`.
+
 3. Create haystack by inserting needles into notes in `NOTEEVENTS.csv` by using `src/haystacks/insert_needle.py`.
+
 4. Run retrieval methods:
 ```bash
-    python src/retrieval/bm25_retrieval.py
-    python src/retrieval/faiss_cos_retrieval.py
-    python src/retrieval/faiss_cos_retrieval.py
-    python src/retrieval/hybrid_retrieval.py
+python src/retrieval/bm25_retrieval.py
+python src/retrieval/faiss_cos_retrieval.py
+python src/retrieval/faiss_cos_retrieval.py
+python src/retrieval/hybrid_retrieval.py
 ```
 5. Generate prompts and run Bedrock LLM based on prompts by using `src/bedrock_pipeline/`:
-Prompts are generated on the top-k retrieved passages by running `src/bedrock_pipeline/prompt_generation.py` where the task could be "classify", "extract", or "summarize" and the retrieval file could be from any of the four retrieval methods.
-Bedrock is called using any of the generated prompts by running `src/bedrock_pipeline/call_bedrock.py`.
+
+Prompts are generated on the top-k retrieved passages by running:
+```bash
+python src/bedrock_pipeline/prompt_generation.py
+```
+where the task could be "classify", "extract", or "summarize" and the retrieval file could be from any of the four retrieval methods.
+
+Bedrock is called using any of the generated prompts by running:
+```bash
+python src/bedrock_pipeline/call_bedrock.py
+```
+
 6. Evaluate Bedrock LLM for classification or extraction methods:
 ```bash
-    python src/eval/extract_llm_eval.py
-    python src/eval/classify_llm_eval.py
+python src/eval/extract_llm_eval.py
+python src/eval/classify_llm_eval.py
 ```
 7. Generate Visualizations:
+
 Visualizations for Bedrock evaluation can be generated by:
 ```bash
-    python src/results/visualize_eval.py
+python src/results/visualize_eval.py
 ```
 Visualizations for retrieval evaluation can be generated by:
 ```bash
-    python src/results/visualize_retrieval.py
+python src/results/visualize_retrieval.py
 ```
 
-#### Notes
+## Notes
 `.gitignore` is configured to exclude `.DS_Store`, `__pycache__`, and sensitive MIMIC data. The project demonstrates methodology on a small subset of the data; scaling to full MIMIC requires additional setup and approvals.
