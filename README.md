@@ -46,7 +46,9 @@ LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the abilit
 
 ## Methodology
 
-1. **Data Preparation**: Generate synthetic needles using `src/needles/generate_needles.py`. Create patient-level haystacks of clinical notes by inserting needles into MIMIC-III structured and unstructured data (specifically notes from MIMIC-III `NOTEEVENTS` table). 
+1. **Data Preparation**: Generate synthetic needles using `src/needles/generate_needles.py`. 
+- Synthetic needles were created by reviewing adverse events described in the NHSN manual, passing those descriptions to an LLM, and prompting it to generate realistic clinical notes containing the corresponding events.  
+- Create patient-level haystacks of clinical notes by inserting needles into MIMIC-III structured and unstructured data (specifically notes from MIMIC-III `NOTEEVENTS` table). 
 2. **Retrieval**: Implements and evaluates retrieval methods (BM25, FAISS Euclidean, FAISS Cosine, and hybrid) to select relevant note segments before feeding to LLMs.  
 3. **LLM Prompting**: Use AWS Bedrock to query LLMs for extracting and classifying relevant information. LLM evaluation scripts support summarization in addition to extract and classify tasks. Summarization can provide high-level overviews of medical notes but is more energy-intensive and may take longer to run.
 4. **Evaluation**: Compare LLM predictions against structured labels or known needles.  
@@ -90,9 +92,9 @@ Filtered  `NOTEEVENTS.csv` from `data/mimic/` to only include first 500 rows whe
 
 ## Steps to Run: 
 
-1. Place MIMIC-III data in `data/mimic/`
+1. Place MIMIC-III data in `data/mimic/`. 
 
-2. Generate synthetic needles using `src/needles/generate_needles.py`.
+2. Generate synthetic needles using `src/needles/generate_needles.py`. The needles were 
 
 3. Create haystack by inserting needles into notes in `NOTEEVENTS.csv` by using `src/haystacks/insert_needle.py`.
 
