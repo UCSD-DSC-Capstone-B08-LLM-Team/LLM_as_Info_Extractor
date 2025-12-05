@@ -26,6 +26,9 @@ Tests model performance on replicating a sequence of repeated words.
 
 Each experiment contains detailed instructions in their respective `README.md` files.
 
+### 4. **LLM Info Extraction** (`retrieval/` and `answer_generation`)
+Additional experiments on extracting, classifying, and summarizing information from `data/niah_prompts/` using LLMs.
+
 ## Data
 
 Datasets can be downloaded [here](https://drive.google.com/drive/folders/1FuOysriSotnYasJUbZJzn31SWt85_3yf?usp=drive_link).
