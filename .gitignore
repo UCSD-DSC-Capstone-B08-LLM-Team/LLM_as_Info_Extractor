@@ -1,0 +1,9 @@
+data/mimic/NOTEEVENTS.csv.gz
+src/haystacks/mimic_haystack.csv
+src/retrieval/outputs/
+venv/
+src/bedrock_pipeline/bedrock_prompts/
+src/bedrock_pipeline/bedrock_responses/
+src/eval/classify/
+src/eval/extract/bm25_llm_eval.csv
+src/eval/extract/faiss_cos_llm_eval.csv
