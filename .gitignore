@@ -7,3 +7,7 @@ src/bedrock_pipeline/bedrock_responses/
 src/eval/classify/
 src/eval/extract/bm25_llm_eval.csv
 src/eval/extract/faiss_cos_llm_eval.csv
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
