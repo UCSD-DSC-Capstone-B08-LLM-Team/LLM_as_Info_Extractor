@@ -139,3 +139,8 @@ python src/results/visualize_retrieval.py
 
 - The NHSN manual used to generate synthetic needles in "needle-in-a-haystack" approach: 
 [NHSN_manual](https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf) 
+
+### Contributions: 
+- Leah: Worked on the main branch, llm-needle experiments branch, and medqa-prep branch. Specifically on llm-needle-experiments branch, worked on generating needles and haystacks and implementing and testing retrieval methods. 
+- Lewis: 
+- Omid: 
