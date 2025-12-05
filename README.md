@@ -47,8 +47,8 @@ LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the abilit
 ## Methodology
 
 1. **Data Preparation**: Generate synthetic needles using `src/needles/generate_needles.py`. 
-- Synthetic needles were created by reviewing adverse events described in the NHSN manual, passing those descriptions to an LLM, and prompting it to generate realistic clinical notes containing the corresponding events.  
-- Create patient-level haystacks of clinical notes by inserting needles into MIMIC-III structured and unstructured data (specifically notes from MIMIC-III `NOTEEVENTS` table). 
+    - Synthetic needles were created by reviewing adverse events described in the NHSN manual, passing those descriptions to an LLM, and prompting it to generate realistic clinical notes containing the corresponding events.  
+    - Create patient-level haystacks of clinical notes by inserting needles into MIMIC-III structured and unstructured data (specifically notes from MIMIC-III `NOTEEVENTS` table). 
 2. **Retrieval**: Implements and evaluates retrieval methods (BM25, FAISS Euclidean, FAISS Cosine, and hybrid) to select relevant note segments before feeding to LLMs.  
 3. **LLM Prompting**: Use AWS Bedrock to query LLMs for extracting and classifying relevant information. LLM evaluation scripts support summarization in addition to extract and classify tasks. Summarization can provide high-level overviews of medical notes but is more energy-intensive and may take longer to run.
 4. **Evaluation**: Compare LLM predictions against structured labels or known needles.  
@@ -135,4 +135,7 @@ python src/results/visualize_retrieval.py
 ```
 
 ## Notes
-`.gitignore` is configured to exclude `.DS_Store`, `__pycache__`, and sensitive MIMIC data. The project demonstrates methodology on a small subset of the data; scaling to full MIMIC requires additional setup and approvals.
+- `.gitignore` is configured to exclude `.DS_Store`, `__pycache__`, and sensitive MIMIC data. The project demonstrates methodology on a small subset of the data; scaling to full MIMIC requires additional setup and approvals.
+
+- The NHSN manual used to generate synthetic needles in "needle-in-a-haystack" approach: 
+[NHSN_manual](https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf) 
