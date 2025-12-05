@@ -34,9 +34,9 @@ LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the abilit
 - Extracts information from unstructured clinical notes
 - Supports multiple LLMs (GPT-4, Claude 3, Gemini Advanced). 
 - Retrieval-augmented generation (RAG) using multiple retrieval strategies:
-    - BM25: 
-    - FAISS using euclidean distance:
-    - FAISS using cosine similarity:
+    - BM25
+    - FAISS using euclidean distance
+    - FAISS using cosine similarity
     - Hybrid: Combination of BM25 and FAISS where weights are by default 0.5/0.5
 - Generate and test Needle-in-a-Haystack querires
 - LLM Evaluation can perform three tasks: **Extract** key information, **classify** note contents, and **summarize** notes (more resource-intensive)
