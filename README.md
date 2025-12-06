@@ -23,10 +23,15 @@ To use this repository, a DeepSeek API key is required, which can be found on th
 4. Install the dependencies using "pip install -r requirements.txt". 
 5. run 'python api_usage.py' to use the API to generate and evaluate needles. The results of the prompt are located in api_medical_needles.csv.
 
+![alt text](image-2.png)
+
+When you run python api_usage.py, these messages should appeaar
+
 ![alt text](image.png)
 
 This is what it should look like when it's running.
 
 
 ![alt text](image-1.png)
+
 When it's finished running, it should output the results of the generating and retrieval process.
