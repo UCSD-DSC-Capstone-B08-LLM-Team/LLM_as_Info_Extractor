@@ -141,6 +141,6 @@ python src/results/visualize_retrieval.py
 [NHSN_manual](https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf) 
 
 ### Contributions: 
-- Leah: Worked on the main branch, llm-needle experiments branch, and medqa-prep branch. Specifically on llm-needle-experiments branch, worked on generating needles and haystacks and implementing and testing retrieval methods. 
+- Leah: Worked on the main branch, llm-needle experiments branch, and medqa-prep branch. Specifically on llm-needle-experiments branch, worked on generating needles and haystacks and implementing and testing retrieval methods. On main branch, generated synthetic needles using LLMs and inserted them into MIMIC notes. Tested them on several retrieval methods and generate responses using AWS Bedrock to protect MIMIC privacy concerns. Used medqa-prep branch to determine if data could be used as benchmark. 
 - Lewis: 
 - Omid: Worked on the answer-generation component of the project and contributed to the LLM-retrieval pipeline. Specifically, created the full pipeline that takes retrieved passages from BM25, FAISS-cosine, FAISS-euclidean, and hybrid methods and generates final LLM answers for all queries. Implemented passage reordering to reduce lost-in-the-middle effects, designed standardized prompting, and ran gpt-4o-mini across all retrieval outputs. Produced structured CSV outputs for each method and added all code/results to the answer_generation branch. Also assisted with repository organization and ensured compatibility between retrieval outputs and downstream evaluation.
