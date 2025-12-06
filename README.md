@@ -8,7 +8,7 @@ This tool creates realistic medical notes that contain subtle clues about specif
 
 ## Features
 1. Generate medical notes by prompting DeepSeek to generate a medical note for a given condition
-2. Input the medical note into DeepSeek and prompt it to detect what condition the patient has and output its confidence level in its answer (0-100)
+2. Input the medical note into DeepSeek and prompt it to detect what condition the patient has and output its confidence level in its answer (0-100%)
 3. Evaluate whether the retrieval was success and outputting the accuracy.
 
 ## Environment & Setting
