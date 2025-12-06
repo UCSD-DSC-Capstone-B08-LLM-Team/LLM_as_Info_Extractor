@@ -46,4 +46,4 @@ class MedicalData:
             "gastrointestinal": ["crohn's disease", "ulcerative colitis", "celiac disease"],
             "endocrine": ["type 1 diabetes", "addison's disease", "hashimoto's thyroiditis"],
             "rheumatological": ["lupus", "rheumatoid arthritis", "sjogren's syndrome"]
-        }
+            }

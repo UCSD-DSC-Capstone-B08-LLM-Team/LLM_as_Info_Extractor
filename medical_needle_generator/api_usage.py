@@ -36,10 +36,10 @@ def setup_api_client():
                 messages=[{"role": "user", "content": "Say hello in one word."}],
                 max_tokens=10
             )
-            print("✓ DeepSeek API connection successful")
+            print("DeepSeek API connection successful")
             return client
         except Exception as e:
-            print(f"✗ API connection failed: {e}")
+            print(f"API connection failed: {e}")
             return None
             
     except ImportError:
@@ -62,7 +62,7 @@ def generate_with_api():
     config = GeneratorConfig(
         num_samples=GLOBAL_NUM_SAMPLES,
         output_file=GLOBAL_OUTPUT_FILE,
-        subtlety_level="medium"
+        subtlety_level=GLOBAL_SUBTLETY_LEVEL
     )
     
     api_config = APIConfig(
@@ -95,7 +95,7 @@ def analyze_api_results():
         # Show results
         print("\nDetailed Results:")
         for i, row in df.iterrows():
-            status = "✓ FOUND" if row['needle_found'] else "✗ MISSED"
+            status = "FOUND" if row['needle_found'] else "MISSED"
             confidence = row.get('confidence', 'N/A')
             print(f"{i+1}. {row['true_condition']} - {status} (Confidence: {confidence}%)")
             
