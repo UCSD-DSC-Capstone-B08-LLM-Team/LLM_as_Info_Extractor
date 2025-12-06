@@ -11,6 +11,11 @@ This tool creates realistic medical notes that contain subtle clues about specif
 2. Input the medical note into DeepSeek and prompt it to detect what condition the patient has and output its confidence level in its answer (0-100%)
 3. Evaluate whether the retrieval was success and outputting the accuracy.
 
+
+medical_needle_generator/
+│
+
+
 ## Environment & Setting
 This experiment was done on a local machine. While this code could also be run on a GPU, the computation is mostly remote and not local. This code contains built-in rate limiting, such as "time.sleep(2)" to avoid hitting rate limits. The primary bottleneck of this experiment is the rate limit from DeepSeek and other LLMs in general, which results in error messages when we do not manually rate-limit our API calls. However, is not always the case, and local GPUs are useful for running other models, such as Llama 2.
 
