@@ -12,20 +12,6 @@ This tool creates realistic medical notes that contain subtle clues about specif
 3. Evaluate whether the retrieval was success and outputting the accuracy.
 
 
-medical_needle_generator/
-│
-|____imgs <- images for setting up in readme file
-|
-|____medical_needle_generator
-    ├── __init__.py                    # <- Package marker file
-    ├── api_usage.py                   # <- sets up API, runs generator, analyzes results
-    ├── api_generator.py               # <- creates medical notes with hidden conditions using DeepSeek API
-    ├── base_generator.py              # <- defines structure for generators, used in api_generator
-    ├── config.py                      # <- global variables and dataclasses for generator and API settings
-    ├── medical_data.py                # <- conditions, templates, and medical data for generation
-    ├── evaluator.py                   # <- uses API to evaluate if condition was detected
-    └── api_medical_needles.csv        # <- generated output from prompting DeepSeek
-
 ## Environment & Setting
 This experiment was done on a local machine. While this code could also be run on a GPU, the computation is mostly remote and not local. This code contains built-in rate limiting, such as "time.sleep(2)" to avoid hitting rate limits. The primary bottleneck of this experiment is the rate limit from DeepSeek and other LLMs in general, which results in error messages when we do not manually rate-limit our API calls. However, is not always the case, and local GPUs are useful for running other models, such as Llama 2.
 
