@@ -25,18 +25,18 @@ class BaseMedicalGenerator(ABC):
     def validate_medical_note(self, note: str, condition: str) -> bool:
         """Validate generated note meets quality standards"""
         validation_checks = [
-            len(note) > 100,  # Minimum length
-            condition.lower() not in note.lower(),  # Condition not explicitly stated
-            any(section in note.lower() for section in ['subjective', 'objective', 'assessment', 'plan', 'history']),  # Structure
-            note.count('\n') > 2,  # Reasonable formatting
-            len(note) < 5000  # Not excessively long
+            len(note) > 100,  # response must be longer than 100 characters
+            condition.lower() not in note.lower(),
+            any(section in note.lower() for section in ['subjective', 'objective', 'assessment', 'plan', 'history']),
+            note.count('\n') > 2,
+            len(note) < 5000  # Not too long
         ]
         return all(validation_checks)
     
     def _save_to_csv(self, dataset: List[Dict], output_file: str) -> None:
         """Save dataset to CSV file"""
         with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['medical_note', 'true_condition', 'needle_found']
+            fieldnames = ['medical_note', 'true_condition', 'needle_found', 'detected_condition', 'confidence']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             for row in dataset:
@@ -53,7 +53,7 @@ class BaseMedicalGenerator(ABC):
         print(f"Needles found: {needles_found}")
         print(f"Detection rate: {detection_rate:.1f}%")
         
-        # Count conditions
+
         condition_counts = {}
         for row in dataset:
             condition = row['true_condition']

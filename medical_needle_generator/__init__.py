@@ -10,7 +10,6 @@ __version__ = "1.0.0"
 from .config import GeneratorConfig, APIConfig
 from .base_generator import BaseMedicalGenerator
 from .api_generator import APIMedicalGenerator
-from .simple_generator import SimpleMedicalGenerator
 from .evaluator import NeedleEvaluator
 from .medical_data import MedicalData
 from . import utils

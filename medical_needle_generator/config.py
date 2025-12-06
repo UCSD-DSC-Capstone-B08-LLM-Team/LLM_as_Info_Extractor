@@ -1,15 +1,14 @@
 from dataclasses import dataclass
 from typing import List, Dict, Any
 
-# Define global variables at the module level
-GLOBAL_NUM_SAMPLES = 20  # ← This is your global variable
-GLOBAL_OUTPUT_FILE = "medical_needles.csv"
+GLOBAL_NUM_SAMPLES = 50  # Global variable for number of samples
+GLOBAL_OUTPUT_FILE = "api_medical_needles.csv"
 GLOBAL_SUBTLETY_LEVEL = "medium"
 
 @dataclass
 class GeneratorConfig:
     """Configuration for the medical needle generator"""
-    num_samples: int = GLOBAL_NUM_SAMPLES  # Use the global variable as default
+    num_samples: int = GLOBAL_NUM_SAMPLES
     output_file: str = GLOBAL_OUTPUT_FILE
     subtlety_level: str = GLOBAL_SUBTLETY_LEVEL
     api_timeout: int = 30
@@ -18,7 +17,7 @@ class GeneratorConfig:
     batch_size: int = 10
     evaluation_model: str = "deepseek-chat"
     
-    # Medical context settings
+    # Medical context configuration
     include_demographics: bool = True
     include_medications: bool = True
     include_lab_results: bool = True

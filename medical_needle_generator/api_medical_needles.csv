@@ -1,508 +1,1282 @@
 medical_note,true_condition,needle_found,detected_condition,confidence
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past month, which she describes as ""heavy limbs."" She notes a recent episode of ""blurry vision"" in her right eye that lasted for approximately 5 days and has since mostly resolved. She also endorses intermittent numbness and a ""pins and needles"" sensation in her left foot, which she states comes and goes. She denies any new weakness, fever, or recent illness. She is currently taking her prescribed medications, which she states she tolerates well.
-
-**Objective:**
-- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
-- **General:** Alert and oriented. Appears fatigued but in no acute distress.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Mild reduction in color saturation noted in the right eye on Ishihara testing.
-    - **Motor:** Strength is 5/5 throughout major muscle groups bilaterally.
-    - **Sensory:** Decreased light touch and vibration sense noted in the left lower extremity distally. Proprioception intact.
-    - **Cerebellar:** Finger-to-nose test reveals mild dysmetria on the left. Heel-to-shin is slightly unsteady. Gait is broad-based.
-    - **Reflexes:** 2+ and symmetric in biceps, triceps, and brachioradialis. Patellar reflexes are 3+. Positive Babinski sign on the left.
-
-**Assessment:**
-1.  Stable chronic neurological condition.
-2.  Resolved episode of optic neuritis.
-3.  Ongoing paresthesias and sensory changes.
-4.  Fatigue.
-
-**Plan:**
-1.  **Medications:** Continue current disease-modifying therapy with Glatiramer Acetate 40mg subcutaneously three times weekly. No changes at this time.
-2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and to establish care. Continue follow-up with Neurology in 6 months as scheduled.
-3.  **Diagnostics:** Routine annual MRI of the Brain and Cervical Spine with and without contrast is ordered to assess for any new activity. Basic metabolic panel and CBC were within normal limits.
-4.  **Patient Education:** Discussed the importance of medication adherence and symptom monitoring. Advised to maintain adequate hydration and vitamin D supplementation. Patient was encouraged to report any new or worsening symptoms promptly.
-5.  **Follow-up:** Return to clinic in 3 months or sooner if symptoms recur or worsen.",multiple sclerosis,True,Multiple Sclerosis,95
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She has been self-injecting her prescribed medication as scheduled and reports no new side effects.
-
-**Objective:**
-- **Vitals:** BP 118/74, HR 72, Temp 98.6°F, SpO2 99%.
-- **General:** Alert and oriented. Appears fatigued.
-- **Neurological:**
-    - **Cranial Nerves:** Decreased visual acuity 20/40 in the right eye, 20/20 in the left. Fundoscopic exam is normal. Mild nystagmus on lateral gaze.
-    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Normal tone.
-    - **Sensory:** Diminished light touch and pinprick sensation in the right leg below the knee and in the left hand.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
-    - **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with a positive Babinski sign on the right.
-    - **Gait:** Wide-based gait with mild foot drop on the right.
-- **Laboratory/Imaging:** Reviewed recent MRI brain without contrast report from 6 months ago: ""Multiple periventricular and juxtacortical white matter hyperintensities on T2/FLAIR imaging, some ovoid in appearance. No new enhancing lesions.""
-
-**Assessment:**
-Patient presenting with symptoms and exam findings consistent with a clinical exacerbation of her known chronic neurological disease. The new visual complaints and sensory/motor changes, in the context of her known imaging findings, are suggestive of a new demyelinating event. Overall condition is stable but with an acute-on-chronic flare.
-
-**Plan:**
-1.  **Medications:** Continue with Glatiramer Acetate 40mg subcutaneously three times weekly for disease modification. Start a 5-day course of oral Methylprednisolone dose pack to address the acute relapse.
-2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and evaluation of optic neuritis. Continue care with Neurology for long-term management.
-3.  **Therapy:** Refer to Physical Therapy for gait training and assessment for a possible ankle-foot orthosis (AFO) to address foot drop.
-4.  **Patient Education:** Discussed the importance of adherence to disease-modifying therapy and recognizing signs of a relapse. Advised to avoid excessive heat exposure.
-5.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies any recent fevers, illness, or new injuries. She is currently taking her prescribed medications, including **interferon beta-1a** and **baclofen**, and reports adherence.
-
-**Objective:**
-**Vitals:** BP 124/78, HR 72, Temp 98.6°F, SpO2 99% on room air.
-**General:** Alert, oriented x4. Appears fatigued but in no acute distress.
-**Neurological:**
-- **Cranial Nerves:** II-XII intact. Visual acuity is 20/20 in right eye, 20/40 in left eye. Confrontational visual fields are full. Fundoscopic exam is normal.
-- **Motor:** Strength is 5/5 throughout left upper and lower extremities. Right lower extremity strength is 4/5 at the hip flexors and knee flexors.
-- **Sensory:** Decreased light touch and pinprick sensation in the right leg below the knee and in both hands. Proprioception is intact.
-- **Cerebellar:** Finger-to-nose testing reveals mild dysmetria on the right. Heel-to-shin testing is slightly unsteady on the right. Gait is wide-based and mildly ataxic.
-- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with a positive Babinski sign on the right.
-
-**MRI Brain (Reviewed):** Stable appearance of multiple non-enhancing, ovoid, T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new or enhancing lesions identified.
-
-**Assessment:**
-Clinical picture is consistent with a suspected exacerbation of the patient's known chronic neurological disease, characterized by new sensory and motor symptoms. The MRI findings are stable and classic for a demyelinating process. Symptoms appear to be moderate in severity, impacting mobility.
-
-**Plan:**
-1.  Continue current disease-modifying therapy with **interferon beta-1a**.
-2.  Continue **baclofen** 10 mg TID for spasticity symptoms.
-3.  Refer to **Physical Therapy** for gait training and endurance exercises.
-4.  Refer to **Neuro-ophthalmology** for further evaluation of the visual complaint.
-5.  Patient was educated on the importance of symptom monitoring and to report any worsening immediately.
-6.  Follow up in clinic in 4 weeks or sooner if symptoms progress.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks. She describes increased fatigue, a sensation of ""heaviness"" and mild numbness in her right leg which impacts her walking stamina. She also notes a several-day episode of ""fuzzy vision"" in her left eye that has since mostly resolved. She denies pain, fever, or recent illness. She has been adherent with her daily injectable medication. Her main concern is the functional decline and fatigue.
-
-**Objective:**
-- **Vitals:** BP 122/78, HR 72, SpO2 98% on room air.
-- **General:** Alert, oriented, but appears fatigued.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II-XII intact. Disc margins sharp. Reports mild subjective desaturation of red color in the left eye.
-    - **Motor:** Strength 5/5 throughout, but right hip flexion exhibits mild spasticity with catch on rapid passive stretch.
-    - **Sensory:** Decreased light touch and vibration sense in the right lower extremity compared to left.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-shin slide is slightly ataxic bilaterally.
-    - **Gait:** Stable but antalgic on the right with slightly widened base.
-- **Imaging:** Reviewed prior MRI brain (from 10 months ago): Demonstrates multiple non-enhancing T2 hyperintense foci in the periventricular white matter and corpus callosum.
-
-**Assessment:**
-1.  Exacerbation of known stable neurologic disease, characterized by new sensory and motor symptoms in the right lower extremity and a history of transient visual disturbance.
-2.  Fatigue, likely central in origin.
-3.  Plan discussed with patient. She is in agreement.
-
-**Plan:**
-- Continue current disease-modifying therapy (Glatiramer Acetate 40mg subcutaneously three times weekly).
-- No steroids indicated at this time as symptoms are moderate and non-disabling. Will re-evaluate if symptoms progress.
-- Order MRI cervical spine with and without contrast to assess for new or active lesions given new lower extremity symptoms.
-- Refer to Physical Therapy for gait training, spasticity management, and energy conservation techniques.
-- Refer to Ophthalmology for formal visual fields and potential VEP testing given history of optic neuritis symptoms.
-- Follow up in clinic in 6 weeks or sooner if symptoms worsen. Patient advised to contact the office with any new or escalating neurologic deficits.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without missing doses.
-
-**Objective:**
-- **Vitals:** BP 124/78, HR 72, Temp 98.6°F, SpO2 99%.
-- **General:** Alert, oriented x4. Appears fatigued.
-- **Neurological:**
-    - **Cranial Nerves:** Decreased visual acuity 20/40 in the right eye; funduscopic exam reveals mild temporal pallor of the right optic disc. Left eye is unremarkable.
-    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right lower extremity.
-    - **Sensory:** Decreased light touch and pinprick sensation in the right leg and left hand.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
-    - **Reflexes:** Brisk 3+ patellar and brachioradialis reflexes. Positive Babinski sign on the right.
-- **Diagnostics:** MRI brain from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and callosal distribution. Recent CSF studies were positive for oligoclonal bands.
-
-**Assessment:**
-Patient presents with symptoms and objective findings consistent with a clinical exacerbation of her known demyelinating CNS condition. The new visual complaints, combined with sensory and motor changes, are suggestive of active disease. The overall clinical picture remains stable from a long-term perspective, though current symptoms are impacting her function.
-
-**Plan:**
-1.  **Medications:** Continue current disease-modifying therapy (Glatiramer Acetate). For acute symptom management, start a 5-day course of oral Methylprednisolone 500mg daily.
-2.  **Referrals:** Refer to Neuro-ophthalmology for formal visual field testing and evaluation of optic nerve function. Continue ongoing care with Neurology.
-3.  **Therapy:** Refer to Physical Therapy for gait training and assessment for possible ankle-foot orthosis to improve stability.
-4.  **Patient Education:** Discussed the importance of avoiding triggers like heat exposure and stress. Reinforced medication adherence.
-5.  **Follow-up:** Schedule a telemedicine follow-up in 2 weeks to assess response to steroid therapy and a clinic visit in 3 months. Patient instructed to call with any worsening symptoms.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 47-year-old female presenting for routine follow-up. She reports ongoing, non-productive cough and a sense of fatigue that limits her daily activities. She also describes intermittent pain and swelling in her ankles, which she characterizes as a ""dull ache."" She denies fever, chills, or recent sick contacts. She has noted several raised, violaceous, non-tender nodules on her shins over the past month. She continues her current medications, which she states she is tolerating well.
-
-**Objective:**
-**Vitals:** BP 128/74, HR 68, Temp 98.7°F, SpO2 97% on room air.
-**General:** Alert, comfortable, in no acute distress.
-**HEENT:** Sclera anicteric. No lymphadenopathy.
-**Pulmonary:** Clear to auscultation bilaterally, no wheezes or rales.
-**Cardiac:** Regular rate and rhythm, no murmurs.
-**Skin:** Multiple 1-2 cm firm, erythematous to violaceous, plaques on anterior shins. No ulceration.
-**Extremities:** Trace pitting edema at bilateral ankles. No joint erythema or warmth.
-
-**Labs/Studies:**
-- Recent PFTs: Mild restrictive pattern (FVC 78% predicted, DLCO 72% predicted).
-- CXR (from last month): Stable bilateral hilar and right paratracheal lymphadenopathy. No new infiltrates.
-- Labs: Serum ACE level 68 U/L (ref 8-52). Calcium 10.8 mg/dL (ref 8.5-10.3). CBC and CMP otherwise within normal limits.
-
-**Assessment:**
-1. Stable chronic multisystem inflammatory condition. The patient's symptoms of cough, fatigue, arthralgias, and characteristic skin lesions remain consistent with her known diagnosis. Imaging and labs show stable, non-progressive findings. Hypercalcemia is mild and asymptomatic.
-
-**Plan:**
-1. **Medications:** Continue current regimen of Prednisone 10mg daily and Hydroxychloroquine 200mg twice daily for symptom control and disease suppression.
-2. **Monitoring:** Repeat serum calcium and renal function in 3 months. Will consider a repeat chest CT in 1 year to re-assess lymphadenopathy if symptoms remain stable.
-3. **Referrals:** Continue care with Rheumatology for management of joint and skin manifestations. Will keep Pulmonology follow-up on a p.r.n. basis.
-4. **Follow-up:** Return to clinic in 4 months for re-evaluation, or sooner if symptoms of dyspnea, vision changes, or worsening skin lesions occur.",sarcoidosis,True,Sarcoidosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is similar to a previous episode a few years ago. She denies any new infections, fever, or recent trauma. She confirms she has been self-administering her prescribed injectable medication weekly without missed doses.
-
-**Objective:**
-- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
-- **General:** Alert and oriented. Appears fatigued.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports mild desaturation of red color in the left eye.
-    - **Motor:** Strength is 5/5 throughout upper extremities. Right lower extremity strength is 4/5 at the hip flexors and dorsiflexors. Left lower extremity is 5/5.
-    - **Sensory:** Decreased light touch and vibration sense in the right foot and lower leg. Diminished proprioception in the right great toe. Lhermitte's sign is negative.
-    - **Cerebellar:** Finger-to-nose and heel-to-shin testing show mild dysmetria on the right.
-    - **Gait:** Notable for a mild right-sided foot drop and unsteady tandem gait.
-- **Diagnostics:** Reviewed recent MRI brain and C-spine from 6 months ago. Report indicates multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. One new, small, enhancing lesion noted in the left cerebellar peduncle at that time.
-
-**Assessment:**
-Patient with known demyelinating CNS disorder experiencing a subacute exacerbation of symptoms, characterized by sensory changes, unilateral weakness, and optic phenomenon. The clinical picture is consistent with a relapse, likely related to the previously identified active lesion.
-
-**Plan:**
-1.  **Medications:** Continue current Disease-Modifying Therapy (Interferon beta-1a). Discussed potential benefits and risks of a 5-day course of oral methylprednisolone to hasten recovery from this acute episode. Patient will consider and advise.
-2.  **Referrals:** Referral to Physical Therapy for gait training and assessment for a right ankle-foot orthosis (AFO). Routine follow-up with Neurology in 3 months.
-3.  **Patient Education:** Reinforced importance of adherence to DMT. Advised to monitor for symptoms of urinary tract infection, which can precipitate pseudo-exacerbations. Encouraged to maintain a cool environment to manage fatigue.
-4.  **Follow-up:** Schedule appointment in 4 weeks to assess progress, or sooner if symptoms worsen.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is similar to a previous episode a few years ago. She denies any new pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
-
-**Objective:**
-**Vitals:** BP 118/74, HR 72, Temp 98.6°F.
-**General:** Alert, oriented x4. Speech is clear.
-**Neurological:**
-- **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports slight desaturation of color in the left eye.
-- **Motor:** Strength 5/5 throughout except right hip flexion 4/5 and right dorsiflexion 4/5. Mild spasticity noted in the right quadriceps and hamstrings.
-- **Sensory:** Diminished light touch and vibration sense in the right lower extremity up to the knee. Decreased proprioception at the right great toe. Lhermitte's sign reported by patient with neck flexion.
-- **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Gait is wide-based and mildly unsteady; requires a handrail for support.
-**Laboratory/Imaging:** Recent MRI brain and C-spine (reviewed from outside records) shows ""multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and juxtacortical distribution. One new, small, enhancing lesion noted in the left parietal lobe.""
-
-**Assessment:**
-Patient is experiencing a clinical exacerbation of her known chronic neurological disease, characterized by new sensory and motor symptoms in the right lower extremity and a history of optic neuritis. The objective findings are consistent with her established diagnosis. The new MRI lesion correlates with the current symptomatology.
-
-**Plan:**
-1.  **Medication:** Continue current Disease-Modifying Therapy (Glatiramer Acetate). Discussed potential benefits and risks of a short, 5-day course of oral Methylprednisolone to hasten recovery from this acute relapse. Patient will consider and advise.
-2.  **Referrals:** Referral to Physical Therapy for gait training and strength preservation. Maintain follow-up with **Neurology** in 3 months, or sooner if symptoms worsen.
-3.  **Patient Education:** Reinforced importance of medication adherence. Advised to monitor for symptoms of urinary tract infection, which can precipitate flares. Encouraged to maintain a cool environment to manage fatigue.
-4.  **Follow-up:** Telephone follow-up in 1 week to assess symptom progression and decision regarding steroids. Schedule next office visit in 6 months.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
-
-**Objective:**
-- **Vitals:** BP 118/74, HR 68, Temp 98.6°F, SpO2 99%.
-- **General:** Alert, oriented x4. Appears fatigued.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II: Afferent pupillary defect noted on the right. Visual acuity is 20/30 on the right, 20/20 on the left. Fundoscopic exam is normal.
-    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right quadriceps and hamstrings.
-    - **Sensory:** Decreased light touch and pinprick sensation in the right leg below the knee and in the left hand. Vibration sense is diminished at the right great toe.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
-    - **Reflexes:** 3+ bilateral patellar and brachioradialis reflexes. Positive Babinski sign on the right.
-- **Diagnostics:** MRI brain and C-spine from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new scans performed today.
-
-**Assessment:**
-Patient is experiencing a clinical exacerbation of her known chronic neurologic disease, characterized by new sensory and visual symptoms alongside objective findings of upper motor neuron dysfunction. The current presentation is consistent with a relapse. Overall condition is stable but with active symptoms.
-
-**Plan:**
-1.  **Medications:** Continue current disease-modifying therapy (Interferon beta-1a). Start a 5-day course of oral Methylprednisolone 500mg daily to address the acute relapse.
-2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and evaluation of optic neuritis. Continue care with Neurology for disease management.
-3.  **Therapy:** Refer to Physical Therapy for gait assessment and to provide exercises for strength and spasticity management.
-4.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen. Patient was advised to call with any new or escalating neurologic deficits.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks. She describes increased fatigue, a sensation of ""heaviness"" and mild numbness in her right leg which occasionally causes her to trip. She also endorses a patch of blurred vision in her left eye that developed last week and has persisted, describing it as ""looking through a foggy window."" She denies pain, fever, or recent illness. She has been adherent with her daily injectable medication.
-
-**Objective:**
-- **Vitals:** BP 118/76, HR 72, RR 14, SpO2 99% on room air.
-- **General:** Alert, oriented, in no acute distress.
-- **Neurological:**
-    - **Cranial Nerves:** II: Afferent pupillary defect noted on the left. Visual acuity is 20/25 OD, 20/70 OS. Fundoscopic exam is normal. Remaining cranial nerves are intact.
-    - **Motor:** Strength is 5/5 throughout except right hip flexion 4/5 and right dorsiflexion 4/5.
-    - **Sensory:** Decreased light touch and vibration sense in the right lower extremity up to the knee.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-shin slide is slightly ataxic on the right.
-    - **Gait:** Stable but with a mildly wide-based gait. Requires slight assistance to maintain balance on tandem walk.
-- **Laboratory/Imaging:** MRI brain and cervical spine from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and juxtacortical distribution. No new lesions compared to prior.
-
-**Assessment:**
-Patient presents with symptoms and objective findings consistent with a clinical exacerbation of her known chronic neurological disease. The new visual symptoms and progression of motor/sensory deficits in the context of her imaging findings are concerning for disease activity.
-
-**Plan:**
-1.  **Medication:** Continue current daily subcutaneous interferon beta-1a for disease-modifying therapy. Discussed starting a 5-day course of oral methylprednisolone dose pack to address the acute relapse. Patient will consider and advise.
-2.  **Referrals:** Referral to Neuro-ophthalmology for formal visual field testing and evaluation of optic neuritis. Continue care with Neurology.
-3.  **Therapy:** Refer to Physical Therapy for gait training and assessment for a possible ankle-foot orthosis to improve safety.
-4.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen. Patient was advised to call with any new or escalating neurological deficits.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks. She describes increased fatigue, a sensation of ""heaviness"" and numbness in her right leg which intermittently causes her to trip. She also notes a persistent ""pins and needles"" sensation in her left hand and blurry vision in her right eye, which she states is worse with eye movement. She denies fever, recent illness, or new injuries. She is currently taking her prescribed medications, including glatiramer acetate, and reports no new over-the-counter supplements.
-
-**Objective:**
-**Vitals:** BP 128/78, HR 72, Temp 98.6°F, SpO2 99% on room air.
-**General:** Alert, oriented x4. Appears fatigued but in no acute distress.
-**Neurological:**
-- **Cranial Nerves:** II-XII intact. Mild relative afferent pupillary defect (RAPD) noted on the right. Fundoscopic exam is normal.
-- **Motor:** Strength is 5/5 throughout, except right hip flexion 4/5. Mild spasticity noted in the right lower extremity.
-- **Sensory:** Decreased light touch and vibration sense in the right foot and left fingertips.
-- **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Gait is wide-based and slightly ataxic; patient requires a wall for support.
-- **Reflexes:** 3+ bilateral patellar and brachioradialis reflexes. Positive Babinski sign on the right.
-
-**Imaging/Labs:**
-Review of recent brain MRI from 6 months ago shows multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new lesions compared to prior. Recent CBC and CMP were within normal limits.
-
-**Assessment:**
-Clinical picture is consistent with a suspected exacerbation of the patient's known chronic neurological condition. Symptoms of focal numbness, spasticity, optic neuritis, and ataxia, in the context of characteristic white matter lesions on MRI, suggest disease activity. The current episode appears to be a relapse.
-
-**Plan:**
-1. **Medication:** Continue current disease-modifying therapy (glatiramer acetate). Discussed starting a 5-day course of oral methylprednisolone to address the acute relapse. Patient will consider and call with her decision.
-2. **Referrals:** Referral to Physical Therapy for gait training and management of spasticity. Routine follow-up with Neurology in 3 months, or sooner if symptoms worsen.
-3. **Patient Education:** Reinforced importance of medication adherence and symptom monitoring. Advised to avoid excessive heat exposure due to reported symptom sensitivity.
-4. **Follow-up:** Patient will contact the clinic in 1 week to report on symptom progression and her decision regarding steroid therapy.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies any recent illnesses, fevers, or new stressors. She confirms she has been self-administering her prescribed injectable medication weekly without missed doses.
-
-**Objective:**
-- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
-- **General:** Alert, oriented x4. Speech is clear.
-- **Neurological:**
-    - **Cranial Nerves:** II-XII grossly intact. Fundoscopic exam is normal. Reports mild desaturation of red color perception in the left eye.
-    - **Motor:** Strength 5/5 throughout left upper and lower extremities. Right lower extremity strength is 4/5 at the hip flexors and dorsiflexors. Mild spasticity noted in the right quadriceps and hamstrings.
-    - **Sensory:** Decreased light touch and vibration sense in the right foot and both hands. Proprioception is intact.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slow and slightly ataxic on the right.
-    - **Reflexes:** 2+ and symmetric in the upper extremities. 3+ at the patella and ankle bilaterally, with a positive Babinski sign on the right.
-- **Laboratory/Imaging:** Reviewed recent MRI brain with and without contrast, which shows ""multiple non-enhancing T2 hyperintense white matter lesions, including new periventricular and callosal lesions, stable from prior study.""
-
-**Assessment:**
-Patient is experiencing a clinical exacerbation of her known chronic neurological disease, characterized by new sensory and motor symptoms. The findings are consistent with active demyelination. Overall condition is stable but with a current symptomatic relapse.
-
-**Plan:**
-1.  Continue current disease-modifying therapy (Glatiramer Acetate).
-2.  Discussed starting a 5-day course of high-dose oral corticosteroids to hasten recovery from this acute relapse. Patient will consider and call with her decision.
-3.  Referral to Physical Therapy for gait training and management of spasticity.
-4.  Routine follow-up with Neurology in 3 months, or sooner if symptoms worsen.
-5.  Patient educated on the importance of avoiding excessive heat and maintaining a cool environment, as she reports heat worsens her fatigue.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past month, which she describes as ""heavy limbs."" She notes a recent episode of ""blurry vision"" in her right eye that lasted for approximately 5 days and has since mostly resolved. She also endorses intermittent numbness and a ""pins and needles"" sensation in her left foot, which she states comes and goes. She denies any new weakness, fever, or recent illness. She is currently taking her prescribed medications, which she states she tolerates well.
-
-**Objective:**
-- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
-- **General:** Alert and oriented. Appears fatigued but in no acute distress.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Mild reduction in color saturation noted in the right eye on Ishihara plates.
-    - **Motor:** Strength is 5/5 throughout upper and lower extremities, though there is mild spasticity noted in the left quadriceps.
-    - **Sensory:** Decreased light touch and vibration sense in the left foot. Proprioception is intact.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left side. Heel-to-shin testing is slightly unsteady on the left. Gait is broad-based and mildly ataxic.
-- **Diagnostics:** Reviewed recent MRI brain from 3 months ago. Report indicates ""multiple non-enhancing T2 hyperintense foci in the periventricular and juxtacortical white matter.""
-
-**Assessment:**
-1.  Stable chronic neurological condition.
-2.  Resolved episode of optic neuritis.
-3.  Ongoing parasthesias and spasticity management.
-
-**Plan:**
-1.  **Medications:** Continue current disease-modifying therapy, Glatiramer Acetate 40mg subcutaneously three times weekly. For symptomatic management of spasticity, continue Baclofen 10mg TID. Patient educated on medication adherence.
-2.  **Referrals:** Continue care with Dr. Evans in Neurology. Recommend a baseline evaluation with Physical Therapy for gait stability and endurance training.
-3.  **Follow-up:** Return to clinic in 3 months or sooner for any new or worsening symptoms, such as significant weakness or vision changes. Will monitor for potential disease progression.",multiple sclerosis,True,Multiple Sclerosis,95
-"**Progress Note**
-
-**Subjective:**
-The patient is a 28-year-old female who presents for a routine follow-up. She reports general fatigue over the past week. She endorses increased thirst and frequent urination, noting she has been waking up 2-3 times per night to void. She has been checking her blood glucose at home and reports readings ranging from 180 to 250 mg/dL fasting, and up to 350 mg/dL post-prandially, which she states is ""higher than usual."" She denies any fever, cough, or dysuria. She confirms she has been adherent with her current medication regimen. There is no report of blurred vision or numbness in her extremities.
-
-**Objective:**
-- **Vitals:** BP 128/74, HR 88, Temp 98.6°F, RR 16, SpO2 99% on room air. Weight 62 kg, down 2 kg from her last visit 3 months ago.
-- **Physical Exam:**
-    - **General:** Alert, no acute distress.
-    - **Cardio:** Regular rate and rhythm, no murmurs.
-    - **Extremities:** Skin is warm and dry. No pedal edema. Monofilament testing is intact for protective sensation bilaterally.
-- **Labs:** (Reviewed from blood draw today)
-    - HbA1c: 8.5%
-    - Basic Metabolic Panel: Notable for a random glucose of 242 mg/dL. Sodium 134 mEq/L. Anion gap is normal. Creatinine is within normal limits.
-    - Urinalysis: Trace ketones, +1 glucose. No signs of infection.
-
-**Assessment:**
-1. Suboptimal glycemic control as evidenced by elevated home glucose readings and HbA1c.
-2. Symptoms of polyuria and polydipsia in the context of hyperglycemia.
-3. Mild unintentional weight loss.
-
-The overall picture is consistent with a chronic endocrine condition requiring careful insulin dose titration.
-
-**Plan:**
-1. **Medications:** Continue current basal insulin (Insulin Glargine) at 24 units nightly. Increase mealtime Insulin Lispro sliding scale; provided new instructions to administer 1 unit for every 12 grams of carbohydrates, plus a correction factor for glucose >150 mg/dL.
-2. **Education:** Reinforced carbohydrate counting and the importance of consistent meal timing. Discussed sick-day management rules.
-3. **Referrals:** Schedule follow-up with Endocrinology clinic in 4-6 weeks for further management optimization.
-4. **Follow-up:** Patient will continue self-monitoring of blood glucose and log readings. Return to clinic in 3 months for repeat HbA1c and evaluation. Will monitor for any signs of retinopathy or neuropathy at future visits.",type 1 diabetes,True,Type 1 Diabetes Mellitus,95
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies any recent illnesses, fevers, or new triggers. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
-
-**Objective:**
-- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99% on room air.
-- **General:** Alert, oriented x4. Speech is clear.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports slight desaturation of red color in the left eye.
-    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right quadriceps and hamstrings.
-    - **Sensory:** Diminished light touch and vibration sense in the distal right lower extremity. Positive Lhermitte's sign upon flexion of the neck.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
-    - **Gait:** Wide-based gait with mild foot drop on the right. Requires a single-point cane for stability.
-- **Results:** MRI brain and C-spine from 6 months ago is on file, showing multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. No new lesions compared to prior. Recent CSF studies were positive for oligoclonal bands.
-
-**Assessment:**
-Patient presents with symptoms and exam findings consistent with a clinical exacerbation of her known chronic neurological condition. The new right leg weakness and sensory changes represent an acute-on-chronic process. Overall condition is stable but with a current symptomatic relapse.
-
-**Plan:**
-1.  **Medication:** Continue current disease-modifying therapy (Glatiramer Acetate). Start a 5-day course of high-dose oral corticosteroids (Prednisone 60mg daily) to address the acute relapse.
-2.  **Referrals:** Refer to Physical Therapy for gait training and assessment for an ankle-foot orthosis (AFO). Routine follow-up with Neurology in 3 months, or sooner if symptoms worsen.
-3.  **Patient Education:** Discussed the nature of relapses and the goal of treatment. Advised to monitor for symptoms of urinary tract infection, which can mimic a flare. Emphasized importance of medication adherence.
-4.  **Follow-up:** Schedule a telemedicine check-in in 2 weeks to assess response to steroid therapy.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she states is worse with horizontal eye movement. She denies any recent illnesses, fevers, or trauma. She is currently taking her prescribed medications, including **glatiramer acetate**, and has been adherent.
-
-**Objective:**
-**Vitals:** BP 124/78, HR 72, SpO2 98% on room air.
-**General:** Alert, oriented x3. Appears fatigued.
-**Neurological:**
-- **Cranial Nerves:** II: Afferent pupillary defect noted on the right. Visual acuity 20/30 OD, 20/20 OS. Extraocular movements intact but reports pain with right lateral gaze.
-- **Motor:** Strength 5/5 throughout except right hip flexion 4/5 and right dorsiflexion 4/5.
-- **Sensory:** Decreased light touch and pinprick sensation in the right lower extremity distally and left hand.
-- **Cerebellar:** Finger-to-nose test shows mild dysmetria on the left. Heel-to-shin slightly unsteady on the right.
-- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and Achilles bilaterally with a single beat of clonus at the right ankle. Plantar response is extensor on the right.
-**MRI Brain (from 6 months ago in records):** Demonstrates multiple non-enhancing T2 hyperintense white matter lesions, periventricular and juxtacortical in location. No new enhancing lesions.
-
-**Assessment:**
-Clinical presentation is consistent with a suspected acute exacerbation of the patient's known chronic neurological disease. Symptoms and exam findings are multifocal, involving the visual pathway, corticospinal tract, and sensory systems. The MRI findings are stable but supportive of the underlying diagnosis.
-
-**Plan:**
-1.  Discussed potential treatment options for acute relapse. Patient will consider a 5-day course of high-dose oral corticosteroids.
-2.  Continue current disease-modifying therapy with **glatiramer acetate**.
-3.  Referral to **Neuro-ophthalmology** for further evaluation of optic neuritis.
-4.  Referral to Physical Therapy for gait training and endurance exercises.
-5.  Patient educated on the importance of avoiding heat exposure and managing fatigue.
-6.  Follow-up in 4 weeks or sooner if symptoms worsen. Will repeat MRI of the brain and cervical spine in 6-9 months for surveillance.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past few weeks, which she describes as her ""usual baseline."" She endorses an intermittent ""pins and needles"" sensation in her right foot that comes and goes. She also mentions a single episode of double vision lasting about 30 minutes two days ago, which resolved spontaneously. She denies any new weakness, falls, or bladder/bowel incontinence. She has been adherent with her prescribed medication regimen.
-
-**Objective:**
-- **Vitals:** BP 118/76, HR 72, Temp 98.6°F, SpO2 99%.
-- **General:** Alert and oriented. Speech is clear.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II-XII intact. Full extraocular movements without nystagmus.
-    - **Motor:** Strength 5/5 throughout upper and lower extremities, though there is mild spasticity noted in the left quadriceps.
-    - **Sensory:** Decreased vibration sense at the right great toe. Intact to light touch throughout.
-    - **Cerebellar:** Finger-to-nose and heel-to-shin testing show mild dysmetria on the left side.
-    - **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the knees with a positive Babinski sign on the left.
-- **Imaging/Labs:** Reviewed prior MRI brain from 10 months ago, which shows multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. Recent CBC and CMP are within normal limits.
-
-**Assessment:**
-Patient is clinically stable. Current symptoms of paresthesia and transient diplopia, in the context of known white matter disease, are consistent with her underlying neurologic condition. The exam is notable for residual upper motor neuron signs.
-
-**Plan:**
-1.  **Medications:** Continue current disease-modifying therapy, Glatiramer Acetate 40mg subcutaneously three times weekly. Encouraged continued adherence.
-2.  **Referrals:** Referral to Physical Therapy for evaluation and management of lower extremity spasticity to improve gait comfort.
-3.  **Follow-up:** Schedule follow-up in 6 months, or sooner if she experiences new or worsening symptoms (e.g., significant weakness, vision loss, or balance issues). Will obtain routine labs prior to next visit to monitor for medication side effects.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
-
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a general sense of fatigue over the past few weeks, which she describes as her ""usual baseline."" She notes an intermittent ""pins and needles"" sensation in her right foot that comes and goes. She also mentions a single episode of double vision lasting about 30 minutes two days ago, which resolved spontaneously. She denies any new weakness, headache, or fever. She has been adherent with her prescribed medication. She expresses concern about ""flares"" and is keen to continue her current management strategy.
-
-**Objective:**
-**Vitals:** BP 128/78, HR 72, Temp 98.6°F, SpO2 99% on room air.
-**General:** Alert, oriented, in no acute distress.
+"**SUBJECTIVE:**
+
+Patient is a 28-year-old female graduate student presenting for evaluation of ""debilitating sleepiness."" Symptoms began approximately 1.5 years ago and have progressively worsened. She reports an overwhelming urge to sleep during the day, particularly in monotonous situations like lectures or while reading. She describes these episodes as ""sleep attacks"" that come on suddenly and are irresistible, lasting 10-20 minutes, after which she feels briefly refreshed. She also reports two peculiar episodes in the last six months where she felt sudden, brief muscle weakness in her knees and dropped to the floor while laughing uproariously with friends; she remained fully conscious throughout. She denies any loss of consciousness, aura, or post-ictal confusion. She notes her nighttime sleep is fragmented with frequent awakenings and vivid, often frightening dreams that feel ""extremely real."" She occasionally experiences a sensation of being unable to move for a minute or two upon waking in the morning. She drinks 4-5 cups of coffee daily with minimal effect. Denies snoring, witnessed apneas, or restless legs. No significant past medical history. Medications: None. Allergies: NKDA. Social history: Non-smoker, occasional alcohol. Family history is non-contributory.
+
+**OBJECTIVE:**
+
+Vital Signs: BP 118/76, HR 68, RR 14, Temp 36.8°C, SpO2 99% on room air.
+General: Pleasant, well-nourished female, appears fatigued, yawning intermittently during the interview.
+HEENT: Normocephalic, atraumatic. Oropharynx clear, Mallampati class II.
+Neck: Supple, no thyromegaly.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Lungs: Clear to auscultation bilaterally.
+Neurological: Cranial nerves II-XII intact. Motor: 5/5 strength throughout, no focal weakness. Sensory: Intact to light touch. Reflexes: 2+ and symmetric. Gait: Normal. Romberg negative.
+Psychiatric: Alert and oriented x4. Mood anxious, affect congruent.
+
+**ASSESSMENT:**
+
+1. **Excessive Daytime Sleepiness with Cataplexy-like Episodes:** The patient's history is significant for severe, persistent daytime sleepiness with sudden sleep attacks, fragmented nocturnal sleep, hypnagogic hallucinations (vivid dreams), and sleep paralysis. The episodes of transient, emotion-triggered muscle weakness without loss of consciousness are highly suggestive of cataplexy. This constellation of symptoms points toward a central disorder of hypersomnolence.
+2. **Rule out Other Sleep Disorders:** While symptoms are not classic for obstructive sleep apnea, this must be formally evaluated.
+3. **Anxiety:** Related to symptom burden and impact on daily functioning.
+
+**PLAN:**
+
+1. **Diagnostic Testing:**
+   - Order overnight diagnostic polysomnogram",narcolepsy,True,Narcolepsy with Cataplexy,95
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for evaluation of persistent fatigue and ""brain fog"" over the past 6-8 months. She describes a gradual onset of profound tiredness, not relieved by sleep, and difficulty concentrating at her job as an accountant. She reports a 12-pound weight gain over this period despite no significant change in diet or activity level. She also notes new, intermittent constipation and a persistent feeling of being cold, especially in her hands and feet, when others are comfortable. She denies palpitations, heat intolerance, or diarrhea. She has a family history of ""thyroid problems"" in her maternal aunt. She takes a daily multivitamin and denies other medications.
+
+**OBJECTIVE:**
+
+Vitals: BP 118/72, HR 58, Temp 97.8°F (oral), RR 14, SpO2 99% on room air.
+General: Appears tired but in no acute distress. Speech is slightly slowed.
+HEENT: Normocephalic, atraumatic. PERRL. Oropharynx clear. No palpable cervical lymphadenopathy. Thyroid gland is diffusely enlarged, approximately 1.5 times normal size, firm, and non-tender with a slightly irregular contour. No bruits auscultated.
+Cardiovascular: Regular bradycardic rate, normal S1/S2, no murmurs.
+Lungs: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tender, non-distended. Normal bowel sounds.
+Extremities: Skin is cool and dry to touch. No pretibial edema. Delayed relaxation phase of the Achilles deep tendon reflexes noted.
+
+**ASSESSMENT:**
+
+1.  **Hypothyroidism, likely autoimmune in etiology.** The constellation of symptoms (fatigue, weight gain, cold intolerance, constipation), physical exam findings (bradycardia, cool/dry skin, delayed DTRs, firm/goitrous thyroid), and strong family history are highly suggestive. The goiter with a firm, irregular texture is a key finding pointing toward a chronic inflammatory process.
+2.  **Unexplained weight gain.**
+
+**PLAN:**
+
+1.  **Diagnostics:**
+    *   Order thyroid function tests: TSH, Free T4.
+    *   Order thyroid peroxidase antibodies (TPO Ab) and thyroglobulin antibodies (Tg Ab) to evaluate for autoimmune thyroiditis.
+    *   Consider a thyroid ultrasound to further characterize gland morphology given the palpable irregularity.
+2.  **Treatment:**
+    *   Hold initiation of thyroid hormone replacement until lab results return to confirm diagnosis and establish a baseline.
+3.  **Patient Education:**
+    *   Discussed the likely diagnosis of an underactive thyroid gland, explaining the autoimmune process as a probable cause.
+    *   Reviewed the plan for lab work and the potential need for daily medication (levothyroxine) if labs confirm hypothyroidism.",hashimoto's thyroiditis,True,Hypothyroidism (likely Hashimoto's thyroiditis),95
+"**SUBJECTIVE:**
+
+**Chief Complaint:** ""My face gets a red rash in the sun, and my fingers turn white and numb in the cold.""
+
+**History of Present Illness:** Patient is a 32-year-old female who reports a 9-month history of progressive fatigue, intermittent joint pain, and skin sensitivity. She describes the joint pain as symmetric, affecting her hands, wrists, and knees, worse in the mornings with approximately 30 minutes of stiffness. She notes a recurrent, non-pruritic, erythematous rash across her cheeks and bridge of her nose that appears or worsens significantly after sun exposure. She also reports a 4-month history of Raynaud's phenomenon, with her fingers turning white, then blue, then red upon exposure to cold or stress, accompanied by numbness. She endorses occasional low-grade fevers, averaging 99.5°F, and a 10-pound unintentional weight loss over the past 6 months. She denies alopecia, oral/nasal ulcers, pleuritic chest pain, or significant hair loss.
+
+**Past Medical History:** None.
+**Medications:** Ibuprofen 400 mg as needed for joint pain.
+**Allergies:** NKDA.
+**Social History:** Non-smoker, drinks alcohol socially (1-2 drinks/week). Works as a landscape architect.
+**Family History:** Mother has rheumatoid arthritis. Father has hypertension.
+
+**OBJECTIVE:**
+
+**Vitals:** T 99.1°F, BP 132/84, HR 88, RR 16, SpO2 99% on room air.
+**General:** Appears fatigued but in no acute distress.
+**HEENT:** Normocephalic, atraumatic. Oropharynx clear without ulcers. Malar erythema noted, sparing the nasolabial folds.
+**Cardiovascular:** Regular rate and rhythm, no murmurs, rubs, or gallops.
+**Pulmonary:** Clear to auscultation bilaterally.
+**Abdomen:** Soft, non-tender, non-distended. No hepatosplenomegaly.
+**Musculoskeletal:** Mild tenderness to palpation over bilateral MCP and PIP joints and wrists. No overt synovitis, swelling, or deformity. Full range of motion.
+**Skin:** Malar rash as described. No discoid lesions or palpable purpura. Capillary refill is brisk.
+**Neurologic:** Alert and oriented x4. Cranial nerves II-XII intact. Motor and sensory exams are grossly normal.
+
+**Labs (Pending):**
+* CBC: Mild normocytic anemia (Hgb 11.2 g/dL). WBC 3.8 K/uL (low). Platelets 112 K/uL (low).
+* Comprehensive Metabolic Panel: Within normal limits. Creatinine 0.8 mg/dL.
+* Urinalysis: Trace protein, 5-10 RBC/hpf, no casts.
+* Inflammatory Markers:",systemic lupus erythematosus,True,Systemic Lupus Erythematosus,95
+"**SUBJECTIVE:**
+
+Patient is a 32-year-old male presenting for evaluation of persistent low back pain. He describes the pain as a deep, dull ache centered in his lower lumbar spine and sacral region, which is worse in the early morning, lasting for approximately 1-2 hours after waking. He notes significant stiffness during this time, which improves with a hot shower and light activity. The pain has been present for approximately 8 months, with a gradual onset. He denies any specific trauma. The discomfort is somewhat relieved by over-the-counter NSAIDs (ibuprofen), but returns consistently. He reports associated fatigue, which he attributes to poor sleep quality due to the pain. He denies radicular symptoms, numbness, or weakness in the lower extremities. He also reports intermittent pain and stiffness in his right heel, particularly when first stepping out of bed. Review of systems is positive for occasional episodes of pain and redness in his right eye over the past year, treated as ""pink eye"" with antibiotic drops which provided minimal relief. He has no significant gastrointestinal complaints. Family history is notable for his father having chronic back problems and ""arthritis,"" though the specific type is unknown.
+
+**OBJECTIVE:**
+
+**Vitals:** BP 128/78, HR 72, Temp 98.6°F, SpO2 99% RA.
+**General:** Well-appearing male, in no acute distress. Moves somewhat cautiously.
+**HEENT:** Sclera clear bilaterally today. No conjunctival injection.
+**Musculoskeletal:**
+*   Spine: Tenderness to deep palpation over the sacroiliac joints bilaterally. Lumbar spine range of motion is limited in all planes, most notably in lateral flexion and extension. Schober's test measures 3 cm of lumbar expansion (normal >5 cm). No midline tenderness.
+*   Extremities: Tenderness at the insertion of the Achilles tendon on the right calcaneus. No active synovitis in peripheral joints. Chest expansion measured at 2.5 cm at the 4th intercostal space.
+**Neurologic:** Strength 5/5 throughout lower extremities. Sensation intact to light touch. Reflexes 2+ and symmetric. Negative straight leg raise bilaterally.
+
+**Studies:**
+*   X-ray Lumbar Spine: Demonstrates no acute fracture or disc space narrowing. There is subtle blurring and possible sclerosis of the inferior margins of both sacroiliac joints. No syndesmophytes noted.
+*   Labs (CBC, CMP): Within normal limits. ESR: 32 mm/hr (elevated). CRP: 1.8 mg/dL (elevated). HLA-B27: Pending. Rheumatoid Factor: Negative.
+
+**ASSESSMENT:**
+
+1.  **Chronic Inflammatory Axial Back Pain:** The history is highly suggestive of an inflammatory etiology given the characteristic morning stiffness lasting >30 minutes, improvement with activity, nocturnal pain, and",ankylosing spondylitis,True,Ankylosing Spondylitis,85
+"**SUBJECTIVE:**
+
+Patient is a 45-year-old female presenting for evaluation of progressive skin tightness and gastrointestinal discomfort. She reports that over the past 10-12 months, she has noticed a gradual tightening and thickening of the skin on her hands and face, making it difficult to fully make a fist. She describes her fingers as frequently feeling cold and turning white, then blue, with exposure to cold or stress, taking several minutes to return to a normal pink color. For the past 6 months, she has experienced persistent heartburn and a sensation of food ""getting stuck"" in her mid-chest, which is worse with dry foods like bread. She also notes intermittent bloating, early satiety, and alternating constipation and diarrhea. She endorses mild fatigue and occasional aching in her finger joints but denies significant joint swelling, fever, or rash. She has tried over-the-counter omeprazole with minimal relief. Past medical history is otherwise unremarkable. She takes no regular medications. She is a non-smoker.
+
+**OBJECTIVE:**
+
+**Vitals:** BP 142/96 (right arm), 138/94 (left arm). HR 78, RR 14, Temp 98.6°F, SpO2 98% on room air.
+**General:** Well-appearing, in no acute distress. Speech is clear, but facial skin appears taut with diminished oral aperture (measured at 3.2 cm).
+**Skin/Extremities:** Skin on the dorsal hands and fingers is firm, thickened, and shiny, with loss of normal skin folds. Pinch test is positive over the metacarpophalangeal joints. Multiple small, pitted scars are noted on the fingertips. Capillary refill is delayed at 4 seconds. Radial and ulnar pulses are 2+. Positive Raynaud's phenomenon is elicited with cold water immersion test. No active digital ulcers.
+**Cardiovascular:** Regular rate and rhythm. S1, S2 normal. No murmurs, rubs, or gallops.
+**Pulmonary:** Clear to auscultation bilaterally. No crackles.
+**Abdominal:** Soft, non-tender, non-distended. Normoactive bowel sounds. No hepatosplenomegaly.
+**Neurologic:** Cranial nerves II-XII intact. Motor strength 5/5 throughout. Sensation intact to light touch.
+
+**Labs (drawn today):**
+*   CBC: WNL
+*   CMP: Mildly elevated creatinine at 1.3 mg/dL (baseline unknown). Otherwise normal.
+*   ESR: 38 mm/hr (elevated)
+*   CRP: 4.2 mg/L (elevated)
+*   ANA: Positive, speckled pattern, titer 1:1280
+*   Anti-centromere antibodies: Pending
+
+**ASSESSMENT:**
+
+1.  **Undifferentiated Connective Tissue Disease",scleroderma,True,Systemic Sclerosis (Scleroderma),95
+"**SUBJECTIVE:**
+
+Patient is a 62-year-old male who presents with a 10-day history of progressive bilateral lower extremity weakness and paresthesias. He reports the symptoms began with ""tingling and pins and needles"" in his feet, which have ascended to his mid-calves. Over the past 3-4 days, he has noted increasing difficulty walking, describing a feeling of ""heaviness"" in his legs and frequent tripping. He endorses mild, intermittent lower back pain but denies any trauma. He reports a preceding episode of acute gastroenteritis with diarrhea approximately two weeks prior to symptom onset, which resolved spontaneously. He denies recent vaccinations, tick bites, or new medications. He has no significant past medical history. He reports increasing fatigue and some shortness of breath with exertion, but denies chest pain, dysphagia, or facial weakness.
+
+**OBJECTIVE:**
+
+Vitals: T 98.7°F, BP 148/86, HR 88, RR 18, SpO2 96% on room air.
+General: Alert and oriented, appears fatigued but in no acute distress.
+Neurological Exam:
+*   Cranial Nerves: II-XII intact. Facial sensation and strength are normal. No ptosis or ophthalmoplegia.
+*   Motor: Strength 5/5 in bilateral deltoids, biceps, triceps, wrist extensors/flexors. Hip flexors 4/5 bilaterally. Knee extensors 4-/5 bilaterally. Ankle dorsiflexors 3/5 bilaterally. Plantar flexion 4/5. Tone is notably flaccid in the lower extremities.
+*   Sensory: Diminished light touch and pinprick sensation in a stocking distribution up to the knees. Proprioception is impaired at the great toes. Vibration sense is absent at the ankles.
+*   Reflexes: Biceps and brachioradialis 2+. Patellar and Achilles reflexes are absent bilaterally.
+*   Coordination: Finger-to-nose intact. Heel-to-shin testing is mildly dysmetric due to weakness.
+*   Gait: Unable to perform tandem walk. Demonstrates a wide-based, unsteady gait requiring intermittent assistance for balance.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Pulmonary: Clear to auscultation bilaterally. Forced vital capacity (FVC) measured at bedside is 2.8 L (65% of predicted).
+
+**ASSESSMENT:**
+
+1.  **Acute-onset, Ascending, Symmetric Sensorimotor Polyneuropathy:** Likely demyelinating in nature given the areflexia, predominant motor involvement, and ascending pattern. The temporal association with a preceding gastrointestinal illness is notable. Differential includes inflammatory, toxic, and metabolic etiologies.
+2.  **Mild Respiratory Insufficiency:** As evidenced by reduced FVC, requiring close monitoring.
+3.  **Decondition",guillain-barré syndrome,True,Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyneuropathy - AIDP),95
+"**SUBJECTIVE:**
+
+Patient is a 47-year-old female presenting for follow-up of persistent fatigue and pruritus. She reports these symptoms have been gradually worsening over the past 8-9 months. The fatigue is profound, described as ""bone-deep,"" and is not relieved by rest, significantly impacting her ability to work as a teacher. The pruritus is generalized, worse on her palms and soles, and particularly bothersome at night. She denies any new rashes, jaundice, or dark urine. She reports occasional mild discomfort in her right upper quadrant, but no acute pain. She has noted some dry eyes and mouth over the last year. She denies fever, chills, recent travel, or new medications. She drinks alcohol socially, approximately 1-2 glasses of wine per week. Family history is notable for hypothyroidism in her mother.
+
+**OBJECTIVE:**
+
+Vitals: BP 128/78, HR 72, Temp 98.6°F, RR 14, SpO2 98% on room air.
+General: Well-appearing but appears fatigued. No scleral icterus.
+HEENT: Oral mucosa mildly dry.
+Abdomen: Soft, non-tender, non-distended. Liver edge palpable 2 cm below the right costal margin, smooth and non-tender. No splenomegaly. No shifting dullness.
+Skin: No rash or excoriations noted today, though patient states she has been resisting the urge to scratch.
+Neurologic: Alert and oriented. No asterixis.
+
+**Relevant Labs (drawn today):**
+- CBC: WNL
+- CMP: Total Bilirubin 1.2 mg/dL (nl), ALT 38 U/L, AST 42 U/L, Alkaline Phosphatase 485 U/L (markedly elevated)
+- Lipid Panel: Total Cholesterol 280 mg/dL, HDL 65 mg/dL
+- AMA (Anti-Mitochondrial Antibodies): Pending
+- Immunoglobulins: IgG elevated at 1850 mg/dL; IgM pending.
+- TSH: 4.8 mIU/L (mildly elevated)
+
+**ASSESSMENT:**
+
+1. **Unexplained Cholestatic Liver Disease:** The predominant finding is a significant, isolated elevation in alkaline phosphatase with near-normal transaminases, consistent with a cholestatic pattern. The chronicity, associated symptoms of fatigue and pruritus, and palpable liver edge are concerning for a chronic cholestatic process.
+2. **Hyperlipidemia:** Newly identified, with a pattern of elevated total cholesterol and preserved HDL, which can be associated with chronic cholestasis.
+3. **Subclinical Hypothyroidism:** Mild elevation in TSH. The association with other autoimmune symptoms (dry eyes/mouth) is noted.
+4. **Pruritus and Fatigue:** Likely secondary to the underlying cholestatic disorder.
+
+**PLAN:**",primary biliary cholangitis,True,Primary Biliary Cholangitis,85
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for evaluation of persistent fatigue and ""brain fog"" over the past 8 months. She describes a profound lack of energy, requiring multiple naps on weekends and struggling to complete her work as an accountant. She notes increasing difficulty concentrating, forgetfulness (e.g., missing appointments), and a feeling of ""moving through mud."" She reports a 12-pound weight gain over this period despite no significant change in diet or activity. She has also experienced new, diffuse muscle aches and stiffness, particularly in her shoulders and thighs, and persistent constipation. She denies palpitations, heat intolerance, or significant hair loss, but states her skin has felt drier. She has a family history of ""thyroid problems"" in her maternal aunt. No recent illnesses. Current medications: Vitamin D supplement. Allergies: NKDA.
+
+**OBJECTIVE:**
+
+Vitals: BP 118/74, HR 58, Temp 97.8°F, RR 14, SpO2 99% RA.
+General: Pleasant, appears tired. Speech is slightly slowed.
+HEENT: Normocephalic. PERRL. Mild periorbital puffiness noted. Oropharynx clear. No palpable cervical lymphadenopathy.
+Neck: Thyroid gland is diffusely enlarged, approximately 1.5 times normal size, firm, and non-tender with a finely irregular surface. No bruit.
+Cardiovascular: Regular bradycardic rhythm. S1, S2 normal. No murmurs.
+Lungs: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tender, non-distended. Normoactive bowel sounds.
+Musculoskeletal: Full range of motion. Mild tenderness to palpation in proximal muscle groups. No synovitis.
+Neurological: Alert and oriented. Cranial nerves II-XII intact. Delayed relaxation phase of bilateral Achilles deep tendon reflexes noted. Motor strength 5/5 throughout.
+
+**ASSESSMENT:**
+
+1. **Primary Hypothyroidism:** Likely autoimmune in etiology given the clinical presentation of fatigue, weight gain, cognitive slowing, bradycardia, constipation, dry skin, and characteristic physical exam findings (goiter with firm texture, delayed DTRs, periorbital edema). The chronic, insidious onset over 8 months and positive family history are supportive.
+2. **Myalgias:** Likely secondary to hypothyroid myopathy.
+3. **Constipation:** Likely secondary to decreased gastrointestinal motility from hypothyroidism.
+
+**PLAN:**
+
+1. **Diagnostics:**
+   - Order thyroid function panel: TSH, Free T4, Free T3.
+   - Order thyroid peroxidase antibodies (TPO Ab) and thyroglobulin antibodies (Tg Ab) to evaluate for autoimmune thyroiditis.
+   - Basic metabolic panel and CBC to assess for other contributing factors.
+2. **Treatment:**
+   - Initiate thyroid hormone replacement with Levothy",hashimoto's thyroiditis,True,Primary Hypothyroidism (likely autoimmune/Hashimoto's thyroiditis),98
+"**SUBJECTIVE:**
+
+**Chief Complaint:** ""My hands and feet are swollen and painful, and I'm exhausted all the time.""
+
+**History of Present Illness:** Patient is a 32-year-old female who reports a 4-month history of progressive fatigue, morning stiffness lasting over an hour, and symmetric pain/swelling in her metacarpophalangeal and proximal interphalangeal joints bilaterally. She also notes a new, non-pruritic rash across her cheeks and nose that worsens with sun exposure. She endorses intermittent low-grade fevers, most noticeable in the evenings, and a 5-pound unintentional weight loss over the past two months. She denies recent travel, sick contacts, or new medications. She reports a history of two first-trimester miscarriages in the past three years.
+
+**Past Medical History:** Hypothyroidism (on levothyroxine), Raynaud's phenomenon.
+**Medications:** Levothyroxine 75 mcg daily. No known drug allergies.
+**Social History:** Non-smoker, drinks alcohol socially (1-2 glasses of wine/week). Works as a graphic designer.
+**Family History:** Mother has rheumatoid arthritis; sister has Sjögren's syndrome.
+
+**OBJECTIVE:**
+
+**Vitals:** T 99.8°F (oral), BP 142/88 (right arm, seated), HR 88, RR 14, SpO2 99% on room air.
+**General:** Appears fatigued but in no acute distress.
+**HEENT:** Malar erythema noted, non-blanching. No oral ulcers visualized today. Thyroid non-palpable.
+**Cardiovascular:** Regular rate and rhythm, no murmurs, rubs, or gallops.
+**Pulmonary:** Clear to auscultation bilaterally.
+**Abdomen:** Soft, non-tender, non-distended. No hepatosplenomegaly.
+**Musculoskeletal:** Symmetric swelling and tenderness of MCPs and PIPs of both hands. Mild synovitis of both wrists and knees. No deformities.
+**Skin:** Photosensitive malar rash as noted. No palpable purpura or nodules. No alopecia on scalp exam.
+**Neurologic:** Cranial nerves II-XII intact. Strength 5/5 throughout. Sensation intact to light touch.
+
+**Labs (drawn today):**
+*   CBC: WBC 3.2 (low), Hgb 11.8 (low), Platelets 120 (low)
+*   CMP: Within normal limits. Creatinine 0.8.
+*   ESR: 68 mm/hr (elevated)
+*   CRP: 4.2 mg/dL (elevated)
+*   Urinalysis: Trace protein, 5-10 RBC/hpf, no casts.
+*   ANA: Pending. Complement (C3/C4): Pending.
+
+**ASSESSMENT:**
+
+1.",systemic lupus erythematosus,True,Systemic Lupus Erythematosus (SLE),90
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old male presenting for follow-up regarding persistent axial pain. He reports a 9-month history of progressive low back pain and stiffness, which he initially attributed to a gym injury. The pain is localized to the sacral and gluteal regions bilaterally. He describes the stiffness as most severe upon waking, lasting approximately 90 minutes and improving with a hot shower and light movement. The pain does not improve with rest; in fact, he states it is worse after sitting for prolonged periods at his desk job. He denies any recent trauma, numbness, tingling, or weakness in the lower extremities. He notes occasional pain in his right heel, particularly when first stepping out of bed in the morning. He reports a history of recurrent episodes of painful redness in his right eye about 4 months ago, diagnosed as ""iritis"" by an optometrist and treated with steroid drops. He takes over-the-counter NSAIDs with partial relief. Family history is notable for his father having severe ""back problems"" requiring surgery in his 40s, though details are unclear. Review of systems is positive for notable fatigue and intermittent discomfort in his right shoulder. Denies current gastrointestinal symptoms, rash, or urinary complaints.
+
+**OBJECTIVE:**
+
+Vitals: BP 128/78, HR 72, Temp 98.6°F, SpO2 99% RA.
+General: Well-appearing male, in no acute distress. Moves somewhat stiffly when transitioning from sitting to standing.
+HEENT: PERRL, EOMI. Sclera clear. No oral ulcers.
+Musculoskeletal: Posture shows subtle flattening of the normal lumbar lordosis. Tenderness to deep palpation over bilateral sacroiliac joints. Spinal range of motion is limited in all planes: forward flexion (fingertips to mid-shin), extension, and lateral rotation. Modified Schober test measures 3 cm of lumbar expansion (normal >5 cm). Chest expansion measured at the 4th intercostal space is 2.5 cm. Right shoulder demonstrates pain with abduction beyond 90 degrees. Right heel exhibits tenderness at the plantar fascia insertion (calcaneal enthesopathy). Neurologic exam: Strength 5/5 throughout lower extremities, sensation intact to light touch, reflexes 2+ and symmetric, negative straight leg raise bilaterally.
+Skin: No psoriatic plaques or nodules noted.
+
+**ASSESSMENT:**
+
+1.  **Chronic Inflammatory Axial Back Pain:** Primary concern. Clinical picture is suggestive of an inflammatory spondyloarthropathy given the insidious onset, age of onset (<45), morning stiffness >30 minutes, improvement with activity but not rest, and associated history of iritis and enthesitis (heel pain). The positive family history is also a contributing factor.
+2.  **History of Acute Anterior Uveitis (Iritis):** Resolved, but a known",ankylosing spondylitis,True,Ankylosing Spondylitis,85
+"**SUBJECTIVE:**
+
+Patient is a 58-year-old male presenting for evaluation of a persistent, painful oral rash and new skin lesions. Symptoms began approximately 4 months ago with painful sores inside his mouth that made eating and drinking difficult. He describes the oral lesions as starting as ""blisters that pop easily,"" leaving raw, painful ulcers. Over the past 6 weeks, he has developed flaccid, fluid-filled blisters on his upper chest and back, which rupture with minimal friction, leaving tender, denuded areas that crust over. He reports significant fatigue and an unintentional 10-pound weight loss over this period due to pain with oral intake. He denies fever, chills, or new medication use. Past medical history is significant for hypertension, managed with lisinopril. He has no known drug allergies.
+
+**OBJECTIVE:**
+
+Vitals: BP 142/88, HR 88, Temp 98.7°F, RR 16, SpO2 98% on room air.
+General: Appears fatigued, in mild distress due to pain.
+HEENT: Multiple shallow, irregularly shaped erosions with peripheral erythema noted on buccal mucosa, gingiva, and soft palate. Several intact, clear, flaccid vesicles (~0.5-1 cm) are visible on the posterior hard palate. Positive Nikolsky sign elicited on perilesional buccal mucosa (lateral pressure induces extension of erosion).
+Skin: Scattered on upper chest and interscapular back: multiple erosions with peripheral collarettes of scale and crust. Several intact, flaccid bullae containing clear fluid are present. Gentle lateral pressure on normal-appearing skin adjacent to a blister (Nikolsky sign) produces epidermal separation. No lesions on palms, soles, or scalp noted.
+Lymph: No cervical, axillary, or inguinal lymphadenopathy.
+
+**ASSESSMENT:**
+
+1.  **Severe, chronic mucocutaneous blistering disorder.** The presentation is characterized by painful, persistent oral erosions preceding cutaneous flaccid bullae and erosions. The positive Nikolsky sign on both oral mucosa and perilesional skin is a significant physical exam finding. The chronicity (4 months), mucosal predominance, and morphology of the lesions are highly suggestive of an autoimmune intraepidermal blistering process.
+2.  **Unintentional weight loss.** Likely secondary to odynophagia and decreased oral intake.
+3.  **Hypertension,** stable.
+
+**PLAN:**
+
+1.  **Diagnostics:**
+    *   **Punch Biopsy:** Two 4-mm punch biopsies for histopathology. One from the edge of a fresh vesicle on the back for routine H&E. A second from perilesional skin for direct immunofluorescence (DIF) to assess for intercellular deposition of IgG and C3.
+    *   **Serology:** Draw blood for indirect immunofluorescence and ELISA for anti",pemphigus vulgaris,True,Pemphigus Vulgaris,85
+"**SUBJECTIVE:**
+
+Patient is a 45-year-old female presenting for evaluation of progressive skin tightening and gastrointestinal complaints over the past 8-10 months. She reports a gradual onset of tight, shiny skin on her hands and face, making it difficult to fully close her fists. She notes her fingers become ""white and numb"" then turn blue and painful when exposed to cold (describes classic triphasic color changes). She endorses significant heartburn and dysphagia, particularly with dry foods like bread, feeling as if food ""gets stuck"" mid-chest. She also reports intermittent bloating, early satiety, and alternating constipation/diarrhea. She has noted mild, aching pain in the small joints of her hands and feet, worse in the mornings. Denishes fever, chills, or recent infection. She has tried over-the-counter omeprazole with minimal relief for her heartburn. PMH: Mild Raynaud's phenomenon diagnosed 2 years ago. Medications: Omeprazole 20mg daily PRN. Allergies: NKDA. Social: Non-smoker, occasional alcohol.
+
+**OBJECTIVE:**
+
+Vitals: BP 142/88 (right arm), 130/82 (left arm). HR 78, RR 14, Temp 98.6°F, SpO2 98% on RA.
+General: Alert, in no acute distress. Appears thin.
+Skin: Tight, waxy, hidebound appearance to skin over dorsum of hands and fingers, with loss of normal skin folds. Several small, stellate-shaped, hypopigmented scars over finger pads. Skin over face appears taut, with decreased oral aperture (measured at 3.2 cm). Pinch test positive over dorsum of hands. Telangiectasias noted on face and palms.
+HEENT: Perioral furrowing. Nasal septum visible telangiectasias.
+Cardiovascular: Regular rate and rhythm. No murmurs. Radial pulses 2+ bilaterally, but right brachial pulse diminished compared to left.
+Lungs: Clear to auscultation bilaterally. Fine, Velcro-like crackles noted at both lung bases posteriorly.
+Abdomen: Soft, non-tender, non-distended. Normoactive bowel sounds.
+Extremities: No active synovitis. Fingers tapered with flexion contractures at the PIP joints bilaterally. Digital pitting scars present. Capillary refill >3 seconds in fingers, which are cool to touch.
+
+**ASSESSMENT:**
+
+1. **Progressive Systemic Connective Tissue Disorder:** Presented with hallmark features including sclerodactyly, Raynaud's phenomenon with digital pitting, and significant gastroesophageal dysmotility. Physical exam findings of taut facial skin, microstomia, and bilateral basilar crackles are highly suggestive of a diffuse process.
+2. **Dysphagia & GERD:** Likely secondary to esophageal hypomot",scleroderma,True,"Systemic Sclerosis (Scleroderma), Diffuse Subtype",95
+"**SUBJECTIVE:**
+
+Patient is a 28-year-old female graduate student presenting with a 3-month history of progressive, fluctuating muscle weakness and fatigue. She reports that her symptoms are most pronounced in the late afternoon and evening. She describes her eyelids feeling ""heavy"" and ""droopy,"" particularly when reading or looking at screens for extended periods. She notes intermittent double vision, especially when looking to the side for more than a few seconds. Over the past month, she has experienced increasing difficulty chewing, stating she becomes fatigued halfway through a meal and has to rest her jaw. Her speech occasionally becomes ""nasal"" and slurred after prolonged conversation. She denies any sensory changes, pain, fever, or recent illness. She has no significant past medical history and takes no medications. Family history is non-contributory.
+
+**OBJECTIVE:**
+
+Vitals: BP 118/76, HR 72, RR 14, Temp 98.6°F, SpO2 99% on room air.
+General: Alert, oriented, but appears fatigued. Speech is clear at rest.
+HEENT: Mild bilateral ptosis noted, more pronounced on the right. Ptosis worsens significantly after 60 seconds of sustained upward gaze. Extraocular movements are full but reveal intermittent horizontal diplopia on lateral gaze, which fatigues with sustained effort. Pupils are equal, round, and reactive to light. Facial muscle strength is symmetric but weak; she is unable to maintain a tight lip seal against resistance for more than 10 seconds.
+Neurological: Cranial nerves II-XII intact aside from findings above. Motor: 5/5 strength in all major muscle groups proximally and distally at rest. However, after 30 seconds of sustained shoulder abduction, strength deteriorates to 4/5. Reflexes are 2+ and symmetric throughout. Sensation is intact to light touch. Gait is steady. No dysmetria.
+Cardiopulmonary: Clear to auscultation bilaterally. Regular rate and rhythm.
+**Ice Pack Test (Performed at Bedside):** Application of an ice pack over the right eye for 2 minutes resulted in a noticeable, subjective and objective improvement in the ptosis.
+
+**ASSESSMENT:**
+
+1.  **Fatigable Muscle Weakness with Bulbar and Ocular Involvement:** The patient presents with a classic pattern of progressive, fatigueable weakness affecting the ocular, facial, and bulbar muscles. The diurnal variation (worse with repetition and later in the day) and the positive response to the ice pack test are highly characteristic of a disorder of neuromuscular transmission. The absence of sensory findings or upper motor neuron signs localizes the issue to the neuromuscular junction or muscle itself.
+
+**PLAN:**
+
+1.  **Diagnostic Workup:**
+    *   **Laboratory:** Order acetylcholine receptor antibody panel (binding, blocking, modulating) and muscle-specific tyrosine kinase (MuSK) antibody.
+    *",myasthenia gravis,True,Myasthenia Gravis,95
+"**SUBJECTIVE:**
+
+Patient is a 62-year-old male who presents with a 10-day history of progressive bilateral lower extremity weakness and paresthesias. He reports the symptoms began with tingling and ""pins and needles"" in his feet, which ascended to his mid-calves over 3-4 days. This was followed by a sensation of leg heaviness and difficulty walking, now requiring a walker for short distances. He describes his legs as feeling ""like rubber."" He endorses mild, intermittent lower back pain but denies any recent trauma, fever, or chills. He reports a mild, self-resolved episode of diarrhea approximately two weeks prior to symptom onset. He denies any recent vaccinations, tick bites, or new medications. Past medical history is significant for diet-controlled type 2 diabetes and hypertension. He is a retired electrician.
+
+**OBJECTIVE:**
+
+Vitals: BP 148/86, HR 88, RR 14, Temp 98.7°F, SpO2 98% on room air.
+General: Alert and oriented, in no acute distress.
+Neurological Exam:
+*   Cranial Nerves: II-XII intact. Facial sensation and strength are normal. No ptosis or diplopia.
+*   Motor: Strength is 5/5 in bilateral deltoids, biceps, and triceps. Strength in hip flexors is 4/5 bilaterally. Knee extension is 4-/5. Ankle dorsiflexion and plantar flexion are 3/5 bilaterally. Tone is notably decreased in the lower extremities.
+*   Sensory: Diminished light touch and pinprick sensation in a stocking distribution up to the mid-shins bilaterally. Proprioception is mildly impaired at the great toes.
+*   Reflexes: Biceps and brachioradialis reflexes 2+. Patellar and Achilles reflexes are absent bilaterally.
+*   Coordination: Finger-to-nose and heel-to-shin are intact, though lower extremity movements are slow due to weakness.
+*   Gait: Wide-based, unsteady gait requiring a front-wheeled walker. Unable to perform heel or toe walking.
+
+**ASSESSMENT:**
+
+1.  **Acute-onset, Ascending, Symmetric Sensorimotor Polyneuropathy:** The patient presents with a classic pattern of progressive, symmetrical weakness and sensory loss beginning in the distal lower extremities and ascending proximally. The areflexia in the lower limbs, in the context of preserved strength in the upper extremities, is a key finding. The temporal association with a preceding gastrointestinal illness is notable.
+2.  Hypertension, uncontrolled.
+3.  Type 2 Diabetes Mellitus.
+
+**PLAN:**
+
+1.  **Urgent Neurology Consultation:** Requested for same-day evaluation given the rapid progression of neurological deficits.
+2.  **Diagnostic Workup:**
+    *   **Labs:** CBC, CMP, HbA1c, ESR",guillain-barré syndrome,True,Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyneuropathy),85
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for evaluation of persistent fatigue and ""brain fog"" over the past 8 months. She describes a gradual onset of profound tiredness that is not relieved by sleep, making it difficult to complete her work as an accountant. She reports feeling ""slowed down"" mentally, with increased forgetfulness and difficulty concentrating. She has also noted a 12-pound weight gain over this period despite no significant change in diet or activity. She complains of new, diffuse muscle aches and stiffness, particularly in her shoulders and hips, and persistent constipation. She feels consistently cold when others are comfortable and has developed dry, itchy skin. She denies palpitations, heat intolerance, diarrhea, or significant hair loss. Her menstrual periods have become irregular over the last year. Family history is notable for her mother having a ""thyroid problem"" and a sister with type 1 diabetes. She takes a daily multivitamin and occasional ibuprofen for aches. She does not smoke and drinks alcohol socially.
+
+**OBJECTIVE:**
+
+Vitals: BP 138/86, HR 58, Temp 97.8°F (oral), RR 14, SpO2 99% on room air. Weight: 172 lbs (up from 160 lbs 8 months ago).
+General: Pleasant, appears tired. Speech is slightly slowed.
+HEENT: Face appears mildly puffy/periorbital edema. No exophthalmos. Thyroid gland is palpable, diffusely enlarged (estimated 1.5 times normal size), firm, and non-tender with a slightly irregular contour. No palpable nodules or cervical lymphadenopathy.
+Cardiovascular: Bradycardic rate, regular rhythm. No murmurs.
+Musculoskeletal: Full range of motion with mild discomfort on movement of large joints. No swelling or erythema.
+Skin: Cool, dry skin with mild xerosis. No rash.
+Neurologic: Alert and oriented. Deep tendon reflexes show a delayed relaxation phase at the ankles and knees.
+
+**ASSESSMENT:**
+
+1. **Hypothyroidism, primary, etiology to be determined.** The constellation of symptoms (fatigue, weight gain, cold intolerance, constipation), physical exam findings (bradycardia, delayed reflexes, goiter), and family history of autoimmune disease strongly support this diagnosis.
+2. **Generalized myalgias and arthralgias,** likely secondary to metabolic dysfunction.
+3. **Mild hypertension.**
+
+**PLAN:**
+
+1. **Diagnostics:**
+   - Order thyroid function panel: TSH, Free T4, Free T3.
+   - Order thyroid peroxidase antibodies (TPO Ab) and thyroglobulin antibodies (Tg Ab) to evaluate for autoimmune etiology.
+   - Basic metabolic panel and lipid panel given weight gain and new hypertension.
+   - Consider vitamin D level given myalgias.
+
+2. **Treatment:**
+   - Hold on initiating thyroid hormone replacement until lab results return to confirm diagnosis and",hashimoto's thyroiditis,False,Hypothyroidism,95
+"**SUBJECTIVE:**
+
+Patient is a 32-year-old female presenting for follow-up of ongoing symptoms. She reports a 9-month history of progressive fatigue, which she describes as ""debilitating,"" and migratory arthralgias affecting her small joints of the hands, wrists, and knees. The joint pain is worse in the morning, with stiffness lasting over an hour. She also notes a persistent, non-pruritic rash on her face and upper chest that worsens with sun exposure. Over the past month, she has experienced intermittent pleuritic chest pain, described as sharp and worse with deep inspiration. She reports a 5-pound unintentional weight loss and occasional low-grade fevers. She denies significant alopecia, oral ulcers, or Raynaud's phenomenon. She has no significant past medical history and takes only over-the-counter ibuprofen with partial relief. Family history is notable for a maternal aunt with an unspecified autoimmune disorder.
+
+**OBJECTIVE:**
+
+Vitals: BP 142/88, HR 88, Temp 37.8°C (oral), RR 18, SpO2 98% on room air.
+General: Appears fatigued but in no acute distress.
+HEENT: Malar erythema noted, sparing the nasolabial folds. No oral ulcers visualized.
+Cardiovascular: Regular rate and rhythm. A faint pericardial rub is auscultated at the left lower sternal border.
+Pulmonary: Clear to auscultation bilaterally.
+Musculoskeletal: Tenderness to palpation over bilateral MCP and PIP joints, as well as bilateral wrists. No overt synovitis or deformity.
+Skin: Photosensitive rash on V-area of chest. No palpable purpura or nodules.
+Neurologic: Cranial nerves II-XII intact. No focal deficits.
+
+**Labs (from today):**
+CBC: WBC 3.2 (low), Hgb 11.8 (low), Platelets 112,000 (low)
+CMP: Within normal limits. Creatinine 0.8.
+Urinalysis: Protein 2+, no casts, 5-10 RBCs/hpf.
+ESR: 68 mm/hr (elevated)
+CRP: 4.2 mg/dL (elevated)
+ANA: Positive, titer 1:1280, homogeneous pattern.
+Anti-dsDNA: Pending.
+Complement: C3 68 mg/dL (low), C4 12 mg/dL (low).
+
+**ASSESSMENT:**
+
+1.  **Multisystem Inflammatory Process:** A 32-year-old female with a 9-month history of constitutional symptoms (fatigue, weight loss, fevers), migratory polyarthralgias with morning stiffness, malar rash, pleuritic chest pain, and objective findings of a pericardial rub. Laboratory evaluation reveals pancytopenia, proteinuria with microscopic hematuria, elevated inflammatory markers, and a significantly positive ANA",systemic lupus erythematosus,True,Systemic Lupus Erythematosus (SLE),95
+"**SUBJECTIVE:**
+
+**Chief Complaint:** ""Low back pain and stiffness for the past 8 months.""
+
+**History of Present Illness:** Patient is a 32-year-old male who reports a persistent, deep-seated ache in his lower back and sacral region. The pain is most severe in the morning upon waking, with stiffness lasting approximately 90 minutes before gradually improving with movement and a hot shower. He notes significant improvement with light exercise (e.g., walking) but worsening with prolonged rest or sitting at his desk job. He denies any recent trauma or heavy lifting. The pain is described as a 6/10 at its worst, dull and achy, and is occasionally accompanied by pain and stiffness in his right hip. He reports associated fatigue, which he attributes to poor sleep quality due to discomfort. He has tried over-the-counter ibuprofen with partial relief. He denies radicular symptoms, numbness, tingling, or weakness in the lower extremities. He also reports a history of intermittent pain and redness in his right eye approximately 4 months ago, which resolved spontaneously after a few days.
+
+**Past Medical History:** Recurrent anterior uveitis (x2 episodes). No surgeries.
+**Medications:** Ibuprofen 400 mg as needed.
+**Allergies:** NKDA.
+**Social History:** Works as a software engineer, non-smoker, social alcohol use (1-2 drinks/week). No illicit drug use.
+**Family History:** Father has a history of chronic inflammatory back pain and psoriasis.
+
+**OBJECTIVE:**
+
+**Vital Signs:** T 98.6°F, BP 122/78, HR 68, RR 14, SpO2 99% on room air.
+**General:** Well-appearing, well-nourished male in no acute distress.
+**HEENT:** Sclera clear, conjunctivae non-injected. No oral ulcers.
+**Cardiovascular:** Regular rate and rhythm, no murmurs.
+**Pulmonary:** Clear to auscultation bilaterally.
+**Musculoskeletal:**
+*   **Inspection:** Normal spinal curvature. No visible swelling or erythema over the spine or SI joints.
+*   **Palpation:** Tenderness to deep palpation over bilateral sacroiliac joints. No paraspinal muscle tenderness.
+*   **Range of Motion:** Lumbar spine flexion is limited; fingertips reach mid-shin. Extension and lateral rotation are mildly restricted. Schober's test is positive (2 cm expansion with forward flexion). Chest expansion measured at 2.5 cm at the 4th intercostal space.
+*   **Peripheral Joints:** Right hip demonstrates mild pain with internal rotation. No swelling, warmth, or effusion in knees, ankles, or MTP joints.
+**Neurological:** Strength 5/5 throughout lower extremities. Sensation intact to light touch. Patellar and Achilles reflexes 2+ and symmetric. Negative straight leg raise bilaterally.",ankylosing spondylitis,True,Ankylosing Spondylitis,90
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old female presenting for evaluation of progressive skin tightness and gastrointestinal complaints over the past 8 months. She reports a gradual onset of thickening and tightening of the skin on her hands and face, making it difficult to fully make a fist or open her mouth widely. She describes a sensation of ""swelling"" in her fingers, which are often cold and turn white, then blue, then red with cold exposure or emotional stress. For the past 4 months, she has experienced persistent heartburn and dysphagia, particularly with solid foods, feeling as if food ""gets stuck"" in her mid-chest. She also notes intermittent bloating, early satiety, and alternating constipation and diarrhea. She endorses mild fatigue and aching in her small finger joints but denies significant joint swelling, fever, or rash. She has no significant past medical history and takes only over-the-counter antacids with minimal relief.
+
+**OBJECTIVE:**
+
+**Vitals:** BP 142/92 (right arm), 138/90 (left arm). HR 78, RR 14, Temp 98.6°F, SpO2 98% on room air.
+**General:** Well-appearing but anxious. Speech is slightly muffled.
+**Skin/Extremities:** Skin on the dorsal hands, fingers, and perioral area is taut, shiny, and thickened with loss of normal skin folds. Pinch test positive over the dorsum of the hands. Fingers are tapered with puffy edema and several small, pitted ulcers over the distal fingertips. Capillary refill is delayed (>3 seconds). Positive Raynaud's phenomenon elicited with cold water immersion test. Telangiectasias noted on the face and palmar surfaces of the hands.
+**HEENT:** Perioral furrowing present. Oral aperture is reduced to 3.5 cm. Microstomia noted.
+**Cardiovascular:** Regular rate and rhythm. No murmurs, rubs, or gallops. 2+ radial and dorsalis pedis pulses bilaterally.
+**Abdomen:** Soft, non-tender, non-distended. Normoactive bowel sounds.
+**Neurologic:** Cranial nerves II-XII intact. Motor strength 5/5 throughout.
+
+**Labs (drawn today):**
+*   CBC: WNL
+*   CMP: WNL
+*   ESR: 38 mm/hr (elevated)
+*   CRP: 4.2 mg/L (elevated)
+*   ANA: Positive, speckled pattern, titer 1:1280
+*   Anti-centromere antibodies: Pending
+
+**Imaging:** PA hand X-ray shows subtle soft tissue calcifications at the tips of the index and middle fingers. No joint erosions.
+
+**ASSESSMENT:**
+
+1.  **Undifferentiated Connective Tissue Disease with prominent cutaneous and vascular manifestations.** The",scleroderma,True,Systemic Sclerosis (Scleroderma),95
+"**SUBJECTIVE:**
+
+Patient is a 62-year-old male who presents for evaluation of a ""painful mouth and skin that's falling off."" Symptoms began approximately 3 months ago with the development of painful sores inside his mouth, making eating and drinking difficult. He reports a 15-pound unintentional weight loss over this period due to decreased oral intake. Two months ago, he began developing flaccid, fluid-filled blisters on his upper chest and back that easily rupture, leaving raw, weeping erosions. He describes a positive Nikolsky sign, noting that ""rubbing the skin near a blister makes it spread."" The lesions are extremely painful and pruritic. He denies fever, chills, or new medication use. He reports increasing fatigue but attributes it to poor nutrition and pain. Past medical history is significant for hypertension and hyperlipidemia. Current medications: Lisinopril 10mg daily, Atorvastatin 20mg daily. No known drug allergies.
+
+**OBJECTIVE:**
+
+Vitals: T 98.7°F, BP 142/88, HR 88, RR 14, SpO2 98% on room air.
+General: Patient appears uncomfortable and fatigued. Mucous membranes are moist but with significant lesions.
+HEENT: Oral mucosa reveals multiple shallow, irregularly shaped erosions on the buccal mucosa, soft palate, and gingiva. Several intact, thin-roofed vesicles are noted on the posterior hard palate. Conjunctivae are clear.
+Skin: Examination of the chest, upper back, and axillae reveals scattered, flaccid bullae measuring 0.5-3 cm on normal-appearing and erythematous skin. Numerous denuded, weeping erosions with peripheral collarettes of scale are present. Gentle lateral pressure on perilesional skin (Nikolsky sign) produces extension of an erosion. No lesions on palms or soles.
+Lymph: No cervical, axillary, or inguinal lymphadenopathy.
+
+**ASSESSMENT:**
+
+1. **Severe mucocutaneous blistering disorder** with predominant mucosal involvement. The clinical presentation of painful oral erosions preceding widespread, flaccid bullae and erosions with a positive Nikolsky sign is highly suggestive of an autoimmune blistering process targeting epithelial adhesion.
+2. **Significant weight loss and nutritional risk** secondary to painful oral lesions.
+3. **Hypertension**, stable.
+4. **Hyperlipidemia**, stable.
+
+**PLAN:**
+
+1. **Diagnostic Workup:** 
+   - Obtain two 4-mm punch biopsies for histopathology and direct immunofluorescence (DIF). One from the edge of a fresh blister for H&E, and one from perilesional skin for DIF to assess for intercellular IgG and C3 deposition.
+   - Send serum for indirect immunofluorescence and ELISA for anti-desmoglein antibodies.
+   - Basic metabolic panel, CBC, and nutritional markers (albumin",pemphigus vulgaris,True,Pemphigus Vulgaris,85
+"**SUBJECTIVE:**
+
+Patient is a 45-year-old male presenting with a 10-day history of progressive weakness and sensory changes. He reports it began with ""pins and needles"" tingling in the soles of both feet, which ascended to his calves over 2-3 days. This was followed by a sensation of weakness in his legs, making it difficult to climb stairs. Over the past 72 hours, he has developed similar tingling in his fingertips and reports increasing difficulty with fine motor tasks like buttoning his shirt. He describes the weakness as ""symmetrical"" and worse in the lower extremities. He denies any recent fever, rash, or joint pain. He does report a mild, self-resolving episode of diarrhea approximately two weeks prior to symptom onset, which he attributed to ""something he ate."" He has no significant past medical history and takes no medications. He is a non-smoker and drinks alcohol socially.
+
+**OBJECTIVE:**
+
+Vitals: BP 138/82, HR 88, RR 14, Temp 98.7°F, SpO2 98% on room air.
+General: Alert and oriented, appears anxious. No signs of respiratory distress.
+Neurological Exam:
+*   **Cranial Nerves:** II-XII intact. Facial sensation and strength are normal.
+*   **Motor:** Strength is 4/5 symmetrically in the deltoids and biceps. Wrist extensors are 4-/5. Hip flexors are 3+/5, knee extensors 3/5, and ankle dorsiflexors 2/5 bilaterally. Strength is notably worse distally. No overt muscle atrophy.
+*   **Sensory:** Reduced light touch and pinprick sensation in a stocking-and-glove distribution, extending to mid-calf and wrists. Vibration sense is diminished at the toes and ankles. Proprioception is intact.
+*   **Reflexes:** **Areflexic throughout.** Plantar responses are flexor.
+*   **Coordination:** Mild dysmetria on finger-to-nose testing, attributed to proprioceptive loss. Gait is wide-based and unsteady, requiring assistance.
+Cardiovascular, Pulmonary, and Abdominal exams are unremarkable.
+
+**ASSESSMENT:**
+
+1.  **Acute-onset, Ascending, Symmetrical Sensorimotor Polyneuropathy:** The presentation is concerning for a rapidly progressive, immune-mediated polyradiculoneuropathy. The temporal association with a preceding gastrointestinal illness, the classic ascending pattern of sensory then motor symptoms, the symmetry, and the profound areflexia are hallmark features. The primary differential includes other acute neuropathies and myelopathies, though the absence of a spinal sensory level and the presence of cranial nerve sparing at this stage are notable.
+
+**PLAN:**
+
+1.  **Urgent Diagnostics:** Admit to hospital for monitoring of respiratory function (serial FVC/NIF) and autonomic",guillain-barré syndrome,True,Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyneuropathy - AIDP),95
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for follow-up of persistent fatigue and pruritus. She reports increasing fatigue over the past 8-10 months, which she describes as debilitating and not relieved by rest. She notes a constant, generalized itch, particularly worse on her palms and soles, which is significantly disturbing her sleep. She denies any new rashes, jaundice, or abdominal pain. She reports occasional discomfort in her right upper quadrant and mild, intermittent achiness in her small finger joints and knees. She has no history of alcohol abuse, recent travel, or new medications. Family history is notable for hypothyroidism in her mother. She takes a daily multivitamin and occasional acetaminophen for joint discomfort.
+
+**OBJECTIVE:**
+
+Vital Signs: BP 128/78, HR 72, Temp 98.6°F, SpO2 98% on RA.
+General: Well-appearing, alert. No scleral icterus noted.
+HEENT: Unremarkable.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Lungs: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tenderness to deep palpation. Liver edge is palpable 2 cm below the right costal margin, smooth and non-tender. No splenomegaly. No ascites.
+Skin: No rash, excoriations noted on extremities from scratching. No xanthomas.
+Musculoskeletal: No active synovitis.
+
+**Laboratory Results (from today):**
+- CBC: WNL. Mild normocytic anemia (Hgb 11.8 g/dL).
+- CMP: Total Bilirubin 1.2 mg/dL (normal), ALT 45 U/L, AST 38 U/L, Alkaline Phosphatase 425 U/L (markedly elevated). Albumin 3.9 g/dL.
+- Lipid Panel: Total Cholesterol 280 mg/dL, HDL 65 mg/dL, LDL elevated.
+- Additional Pending: Anti-mitochondrial antibody, anti-nuclear antibody, immunoglobulin levels (IgM specifically ordered).
+
+**Ultrasound Abdomen (performed today):** Liver is homogenous with normal echotexture. No biliary ductal dilation. No gallstones. Spleen is at the upper limit of normal (12.8 cm).
+
+**ASSESSMENT:**
+
+1.  **Unexplained Cholestatic Liver Enzyme Pattern:** Significant isolated elevation in alkaline phosphatase with near-normal transaminases, consistent with a cholestatic process. The absence of biliary duct dilation on ultrasound points toward a intrahepatic etiology.
+2.  **Chronic Fatigue and Pruritus:** Symptoms are severe and functionally limiting. Pruritus in the absence of rash is a classic symptom of cholestasis.
+3.  **Hyperlipidemia:** Newly identified, with a pattern notable for elevated total and LDL cholesterol.
+4.  **Rule Out Auto",primary biliary cholangitis,True,Primary Biliary Cholangitis (PBC),85
+"**SUBJECTIVE:**
+
+Patient is a 32-year-old female presenting for follow-up of ongoing symptoms. She reports a 9-month history of persistent, profound fatigue that is not relieved by rest. She describes a new, intermittent, non-deforming pain and stiffness in her proximal interphalangeal joints, wrists, and knees, which is worse in the mornings and lasts over an hour. She notes a photosensitive rash on her face and upper chest that appears after minimal sun exposure, describing it as ""red and patchy."" She also reports two episodes of painless oral ulcers in the last four months. She denies fever, alopecia, or Raynaud's phenomenon. She has a history of two first-trimester miscarriages in the past three years. Current medications include over-the-counter ibuprofen with partial relief. She reports no known drug allergies. Social history: non-smoker, drinks alcohol socially.
+
+**OBJECTIVE:**
+
+Vitals: BP 142/88 (right arm), HR 88, RR 16, Temp 98.7°F, SpO2 99% on room air.
+General: Appears fatigued but in no acute distress.
+HEENT: Two small, shallow, non-exudative ulcers noted on the hard palate. No alopecia.
+Skin: Erythematous, slightly raised, scaly plaques noted over the malar eminences, sparing the nasolabial folds. Scattered erythematous macules on the V-area of the chest.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Lungs: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tender, non-distended.
+Musculoskeletal: Tenderness to palpation over bilateral PIP joints, MCP joints, and wrists. No overt synovitis, swelling, or deformity. Full range of motion with discomfort.
+Neurologic: Cranial nerves II-XII intact. Strength 5/5 throughout.
+
+**Labs (drawn today, pending CBC and CMP):**
+*   ANA: Positive, titer 1:320, homogeneous pattern.
+*   Anti-dsDNA: 120 IU/mL (High).
+*   Anti-Smith: Positive.
+*   C3: 68 mg/dL (Low). C4: 10 mg/dL (Low).
+*   Urinalysis: Trace protein, 5-10 RBC/hpf, no casts.
+*   CBC from last visit: Mild normocytic anemia (Hgb 11.2 g/dL), lymphopenia.
+
+**ASSESSMENT:**
+
+1.  **Multisystem Inflammatory Condition:** Patient presents with a constellation of symptoms and signs involving the skin (photosensitive malar rash, oral ulcers), musculoskeletal system (inflammatory arthralgias), constitutional symptoms (fatigue), and laboratory evidence of immune dysregulation (positive ANA, anti-dsDNA, anti-Smith, hypocomplementemia). The history of",systemic lupus erythematosus,True,Systemic Lupus Erythematosus (SLE),98
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old male presenting with a chief complaint of persistent low back pain and stiffness. He reports the symptoms began insidiously approximately 8 months ago. He describes the pain as a deep, dull ache localized to the sacral and gluteal regions, which is worse in the morning upon waking. He states the morning stiffness lasts for about 90 minutes and improves significantly with a hot shower and light activity. Rest and inactivity, particularly sitting for prolonged periods at his desk job, seem to worsen the stiffness. He denies any recent trauma or heavy lifting. He has tried over-the-counter NSAIDs (ibuprofen) with ""moderate"" relief. He also reports intermittent pain and swelling in his right knee over the past 3 months, which he attributes to ""overuse."" He notes a general sense of fatigue over the last several months. He denies any numbness, tingling, or weakness in the lower extremities. He reports a history of recurrent episodes of painful redness in his right eye, diagnosed as ""iritis"" by an ophthalmologist two years ago, treated with steroid drops. He has no significant GI complaints. Family history is notable for his father having chronic back problems of unclear etiology.
+
+**OBJECTIVE:**
+
+**Vitals:** BP 128/78, HR 72, Temp 98.6°F, SpO2 99% on RA.
+**General:** Well-appearing male, in no acute distress.
+**Musculoskeletal:** Posture appears slightly stooped. Tenderness to deep palpation over bilateral sacroiliac joints. Lumbar spine range of motion is limited in all planes, particularly flexion; Schober's test measures 3 cm of expansion (normal >5 cm). Chest expansion measured at the 4th intercostal space is 2.5 cm. Right knee exhibits a small effusion with mild warmth but no erythema; range of motion is full with some discomfort at extremes.
+**Neurological:** Strength 5/5 throughout lower extremities. Sensation intact to light touch. Reflexes 2+ and symmetric at patellar and Achilles tendons. Straight leg raise test negative bilaterally.
+**Eyes:** Conjunctivae clear, sclera white, pupils equal and reactive. No active redness or photophobia noted today.
+**Labs:** (Pending from outside records reviewed) HLA-B27 positive. CRP elevated at 12 mg/L (ref <5). ESR elevated at 38 mm/hr. Rheumatoid factor and anti-CCP negative.
+**Imaging:** X-ray of the pelvis and lumbar spine (reviewed) shows bilateral sacroiliitis with erosions and early sclerosis. No definitive syndesmophytes are seen in the lumbar spine, but there is a suggestion of ""squaring"" of the vertebral bodies.
+
+**ASSESSMENT:**
+
+1.  **Chronic Inflammatory Axial and Peripheral Arthritis:** Characterized by insidious-onset inflammatory back",ankylosing spondylitis,True,Ankylosing Spondylitis,95
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for evaluation of persistent fatigue and ""brain fog"" over the past 8 months. She describes a profound lack of energy, requiring multiple naps on weekends and struggling to complete her work as an accountant. She notes increasing difficulty concentrating, forgetfulness (e.g., missing appointments), and a feeling of ""moving through mud."" She reports a 12-pound weight gain over this period despite no significant change in diet or activity. She has also experienced new, intermittent aching in her shoulders and knees, mild constipation, and persistent dry skin. She denies palpitations, heat intolerance, diarrhea, or hair loss. She has a family history of ""thyroid problems"" in her maternal aunt. Current medications include a daily multivitamin. No known drug allergies.
+
+**OBJECTIVE:**
+
+Vitals: BP 138/86, HR 58, RR 14, Temp 97.8°F (oral), SpO2 98% on room air. BMI 28.7.
+General: Appears tired, with mild periorbital puffiness. Speech is slightly slowed.
+HEENT: Normocephalic, atraumatic. PERRL. Oropharynx clear. No palpable cervical lymphadenopathy. Thyroid gland is diffusely enlarged, approximately 1.5 times normal size, firm, and non-tender with a slightly irregular contour. No bruits auscultated.
+Cardiovascular: Regular bradycardic rate, normal S1/S2, no murmurs.
+Lungs: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tender, non-distended. Normal bowel sounds.
+Extremities: Trace pretibial edema bilaterally. No tremor. Deep tendon reflexes show a delayed relaxation phase at the ankles.
+Skin: Cool, dry skin noted on forearms and shins.
+
+**ASSESSMENT:**
+
+1. **Fatigue and Cognitive Dysfunction:** Likely secondary to a primary endocrine etiology given constellation of symptoms, physical exam findings, and family history.
+2. **Diffuse Thyroid Enlargement (Goiter):** Non-tender, firm consistency. Etiology to be determined.
+3. **Weight Gain:** In the context of reported stable dietary intake.
+4. **Bradycardia and Hyporeflexia:** Signs consistent with a slowed metabolic state.
+
+The clinical picture—fatigue, weight gain, constipation, dry skin, bradycardia, diffuse firm goiter, and delayed reflexes—is highly suggestive of hypothyroidism. The firm, irregular gland texture and family history point toward an autoimmune process as the underlying cause.
+
+**PLAN:**
+
+1. **Diagnostic Labs:** Order thyroid function tests (TSH, free T4) and thyroid peroxidase (TPO) antibodies to confirm hypothyroidism and evaluate for an autoimmune basis. Also check a lipid panel (likely elevated LDL in this setting) and a CBC.
+2. **Treatment:** Aw",hashimoto's thyroiditis,True,Hypothyroidism (likely Hashimoto's thyroiditis),95
+"**SUBJECTIVE:**
+
+Patient is a 58-year-old male who presents for evaluation of a ""painful mouth and skin that blisters easily."" Symptoms began approximately 4 months ago with intermittent oral sores that he attributed to canker sores. Over the last 6 weeks, he has developed flaccid, fluid-filled blisters on his chest, back, and in his groin that rupture easily, leaving painful, non-healing erosions. He reports significant pain with eating and drinking, leading to a 12-pound unintentional weight loss over two months. He describes a positive Nikolsky sign, noting that rubbing normal-appearing skin near a blister causes new erosion. He denies fever, chills, or new medication use. He has a history of well-controlled hypertension. No known drug allergies. He reports increased fatigue but attributes it to poor oral intake.
+
+**OBJECTIVE:**
+
+Vitals: BP 142/88, HR 88, Temp 98.7°F, RR 16, SpO2 98% on room air.
+General: Appears uncomfortable, with guarded movements to avoid friction on skin.
+HEENT: Multiple shallow, irregular erosions on buccal mucosa, gingiva, and hard palate. No active intact oral blisters visualized. Oropharynx clear.
+Skin: Exam reveals multiple scattered, flaccid bullae, 0.5-2 cm in diameter, on the upper chest and mid-back. Several have ruptured, leaving moist, erythematous erosions with peripheral crusting and minimal surrounding inflammation. A positive Nikolsky sign is elicited on the upper back. No lesions on palms or soles. Scalp shows two small, crusted erosions.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Pulmonary: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tender, non-distended.
+
+**ASSESSMENT:**
+
+1. **Severe painful oral and cutaneous erosive disorder.** The presentation of chronic, painful mucosal involvement followed by widespread flaccid bullae and erosions, coupled with a positive Nikolsky sign, is highly suggestive of an autoimmune blistering process. The primary differential includes disorders of acantholysis.
+2. **Unintentional weight loss,** secondary to odynophagia and decreased oral intake.
+3. **Essential hypertension,** stable.
+
+**PLAN:**
+
+1. **Diagnostics:**
+   * Biopsy for H&E and direct immunofluorescence: One 4-mm punch biopsy from the edge of a fresh blister on the back for routine histology. A second 4-mm punch biopsy of perilesional skin (within 1 cm of a blister) for direct immunofluorescence, placed in Michel's transport medium.
+   * Blood work: CBC, CMP, and serum for indirect immunofluorescence to detect circulating autoantibodies.
+   * Consider referral to Oral Medicine/Dentistry for further documentation of mucosal lesions.
+
+2. **Symptomatic Management",pemphigus vulgaris,True,Pemphigus vulgaris,85
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old female presenting for follow-up of ongoing symptoms. She reports a 9-month history of progressive tightening and thickening of the skin on her hands and face, which she describes as feeling ""stiff and shiny."" She notes increasing difficulty making a full fist, particularly in the mornings. For the past 4 months, she has experienced frequent episodes of severe pallor and numbness in her fingers, especially when exposed to cold or during times of stress, with subsequent painful redness and throbbing upon rewarming (describes classic triphasic color changes). She endorses new-onset dysphagia, feeling as if solid foods ""get stuck"" in her mid-chest, and frequent heartburn only partially relieved by over-the-counter antacids. She denies frank joint swelling, rash, or fever. She reports mild fatigue but attributes it to poor sleep. She is a non-smoker and takes no regular medications.
+
+**OBJECTIVE:**
+
+Vitals: BP 132/84 right arm, 118/76 left arm. HR 78, RR 14, Temp 98.1°F, SpO2 98% on room air.
+General: Alert, appears uncomfortable. Facial features are somewhat taut with decreased oral aperture (measured at 3.2 cm). Skin is shiny and tight over the digits, hands, and forearms, with flexion contractures noted at the PIP joints bilaterally. Sclerodactyly is present. Multiple small, stellate, hypopigmented scars are noted on the fingertips (pitting scars). Capillary refill in the nailfolds is delayed >3 seconds. Cardiopulmonary: Regular rate and rhythm. Lungs clear to auscultation. Abdomen: Soft, non-tender, normoactive bowel sounds. Neurologic: Motor and sensory exams are intact; however, there is evidence of muscle weakness in the hands (grip strength 4/5 bilaterally).
+
+**Lab Results (from prior visit):**
+*   CBC: WNL
+*   CMP: WNL
+*   ESR: 32 mm/hr (elevated)
+*   ANA: Positive, speckled pattern, titer 1:1280
+*   Anti-Centromere Antibodies: Positive
+
+**Imaging:**
+*   Hand X-ray: Soft tissue calcifications noted in the fingertips. No active erosive arthritis.
+*   Barium Swallow (pending): Ordered to evaluate dysphagia.
+
+**ASSESSMENT:**
+
+1.  **Undifferentiated Connective Tissue Disease with prominent cutaneous and vascular manifestations.** The patient presents with a constellation of symptoms including progressive skin tightening, Raynaud's phenomenon with digital pitting scars, and new-onset gastroesophageal symptoms. The physical exam findings of taut facial skin, sclerodactyly, contractures, and delayed capillary refill are significant. The strongly positive ANA with anti-centromere specificity",scleroderma,False,Limited Cutaneous Systemic Sclerosis (CREST syndrome variant),95
+"**SUBJECTIVE:**
+
+Patient is a 45-year-old male presenting with a 10-day history of progressive bilateral lower extremity weakness and paresthesias. He reports the symptoms began with tingling and ""pins and needles"" in his feet, which ascended to his mid-shins over 3-4 days. This was followed by a sensation of leg heaviness and difficulty walking, now requiring a cane for short distances. He describes his legs as feeling ""rubbery"" and notes tripping over his own feet. He endorses mild, intermittent lower back pain but denies any recent trauma, fever, chills, or rash. He reports a mild, self-resolved episode of diarrhea approximately two weeks prior to symptom onset. He has no significant past medical history, takes no medications, and denies recent travel, tick bites, or new vaccinations. He states he is increasingly fatigued and anxious about his declining mobility.
+
+**OBJECTIVE:**
+
+Vitals: BP 148/92, HR 88, RR 14, Temp 98.7°F, SpO2 98% on room air.
+General: Alert, oriented, anxious. Speech clear. No meningismus.
+Neurological Exam:
+*   Cranial Nerves: II-XII intact. Facial sensation and strength normal. No ptosis or ophthalmoplegia.
+*   Motor: Strength 5/5 in bilateral deltoids, biceps, triceps, wrist extensors/flexors. Hip flexors 4-/5 bilaterally, knee extensors 4/5, ankle dorsiflexors 3+/5, plantar flexors 4/5. Symmetrical weakness. Mild hypotonia in lower extremities.
+*   Sensory: Reduced light touch and pinprick sensation in a stocking distribution up to the knees. Vibration sense diminished at the ankles. Proprioception intact.
+*   Reflexes: Biceps and brachioradialis 2+. Patellar and Achilles reflexes absent bilaterally.
+*   Coordination: Finger-to-nose intact. Heel-shin slightly impaired due to weakness. Gait: Wide-based, unsteady, requiring single-assist. Unable to walk on heels or toes.
+*   Autonomic: No orthostatic hypotension.
+
+**ASSESSMENT:**
+
+1.  **Acute-onset, Ascending, Symmetrical Sensorimotor Polyneuropathy:** The presentation is concerning for a rapidly progressive, immune-mediated polyradiculoneuropathy. Key features include the antecedent gastrointestinal illness, ascending pattern of sensory then motor symptoms, areflexia, and symmetrical involvement. The primary differential includes inflammatory demyelinating polyneuropathies, with consideration for other acute neuropathies (e.g., toxic, metabolic). Spinal cord pathology is less likely given the absence of a clear sensory level, preserved bowel/bladder function, and predominant peripheral findings.
+
+**PLAN:**
+
+1.  **Diagnostic Workup:**
+    *   **Labs",guillain-barré syndrome,True,Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyneuropathy - AIDP),85
+"**SUBJECTIVE:**
+
+Patient is a 32-year-old female presenting for follow-up of ongoing symptoms. She reports a 5-month history of progressive fatigue, which she describes as ""debilitating,"" and migratory arthralgias affecting her hands, wrists, and knees. The joint pain is worse in the morning, with stiffness lasting over an hour. She also notes a persistent, non-pruritic facial rash that appears on her cheeks and bridge of her nose, particularly after being outdoors. She reports a 10-pound unintentional weight loss over this period and intermittent low-grade fevers. She denies chest pain or shortness of breath but endorses a 2-week history of painless oral ulcers. She has no significant past medical history. Medications include over-the-counter ibuprofen with minimal relief. She works as a graphic designer and notes increasing difficulty with fine motor tasks due to hand pain.
+
+**OBJECTIVE:**
+
+Vitals: T 100.2°F (oral), BP 118/72, HR 88, RR 14, SpO2 99% on room air.
+General: Appears fatigued but in no acute distress.
+HEENT: Two small, shallow ulcerations noted on the hard palate. Malar erythema is present, sparing the nasolabial folds.
+Cardiovascular: Regular rate and rhythm, no murmurs, rubs, or gallops.
+Pulmonary: Clear to auscultation bilaterally.
+Musculoskeletal: Symmetrical tenderness to palpation over the 2nd and 3rd MCP joints bilaterally and both wrists. No overt synovitis, swelling, or deformity. Full range of motion with pain.
+Skin: The aforementioned malar rash. No alopecia noted on scalp exam.
+Neurologic: Cranial nerves II-XII intact. Motor strength 5/5 throughout.
+
+**Labs/Studies (from prior visit):**
+*   CBC: Mild normocytic anemia (Hgb 11.2 g/dL), WBC 3.1 K/uL (low), platelets 112 K/uL (low).
+*   Comprehensive Metabolic Panel: Within normal limits. Creatinine 0.8 mg/dL.
+*   Urinalysis: Trace protein, 5-10 RBC/hpf, no casts.
+*   Inflammatory Markers: ESR 48 mm/hr, CRP 2.8 mg/L.
+*   ANA: Positive, speckled pattern, titer 1:640.
+*   Anti-dsDNA: Pending.
+*   Complement C3: 68 mg/dL (low), C4: 12 mg/dL (low).
+*   CXR (PA/Lat): No acute cardiopulmonary process.
+
+**ASSESSMENT:**
+
+1.  **Multisystem Inflammatory Process:** A 32-year-old female with a 5-month history of constitutional symptoms (fatigue, fever, weight loss), symmetrical polyarthralgias with morning stiffness",systemic lupus erythematosus,True,Systemic Lupus Erythematosus (SLE),95
+"**SUBJECTIVE:**
+
+**Chief Complaint:** ""Lower back and hip pain for about 8 months.""
+
+**History of Present Illness:** Patient is a 32-year-old male who reports an insidious onset of low back pain and stiffness, localized to the sacral region and bilateral buttocks. The pain is described as a deep, dull ache. It is most severe in the early morning, typically lasting 1-2 hours after waking, and improves significantly with movement and a hot shower. He notes increased pain and stiffness after periods of prolonged inactivity, such as sitting through a long meeting or a car ride over 30 minutes. He denies any recent trauma or heavy lifting. He has tried over-the-counter ibuprofen with ""moderate"" relief. He also reports a 6-month history of intermittent pain and swelling in his right knee and left ankle, which he attributes to ""maybe twisting it."" He reports significant fatigue over the last several months, which he finds disproportionate to his activity level. He denies any numbness, tingling, or weakness in the extremities, bladder/bowel changes, or acute visual disturbances. He reports a history of occasional episodes of ""red, painful eyes"" over the past few years, treated by an optometrist with steroid drops.
+
+**Past Medical History:** Recurrent anterior uveitis (last episode ~1 year ago). Seasonal allergies.
+**Medications:** Ibuprofen 400 mg as needed, loratadine 10 mg daily.
+**Allergies:** NKDA.
+**Social History:** Works as a software engineer (sedentary job). Smokes 1/2 pack of cigarettes daily for 10 years. Denies significant alcohol use. No regular exercise regimen.
+**Family History:** Father has ""some kind of spine arthritis"" and psoriasis.
+
+**OBJECTIVE:**
+
+**Vitals:** BP 128/78, HR 72, RR 14, Temp 98.6°F, SpO2 99% on RA.
+**General:** Well-appearing male, in no acute distress.
+**HEENT:** Sclera anicteric. No conjunctival injection currently.
+**Cardiovascular:** Regular rate and rhythm, no murmurs.
+**Pulmonary:** Clear to auscultation bilaterally.
+**Musculoskeletal:**
+*   **Spine:** Tenderness to palpation over bilateral sacroiliac joints. Lumbar spine range of motion is limited in flexion and extension. Schober's test measures 3 cm of lumbar expansion (normal >5 cm). Chest expansion measured at 2.5 cm at the 4th intercostal space.
+*   **Peripheral Joints:** Right knee with mild effusion, no erythema, warm to touch, range of motion full but painful. Left ankle with tenderness over the Achilles insertion (enthesis) but no swelling.
+*   **Neurologic:** Strength 5/5 throughout upper and lower extremities. Sensation intact to light touch",ankylosing spondylitis,True,Ankylosing Spondylitis,85
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for evaluation of progressive fatigue, ""brain fog,"" and weight gain over the past 8-10 months. She describes the fatigue as pervasive, not relieved by sleep, and impacting her ability to complete her work as an accountant. She notes difficulty concentrating, forgetfulness, and a general feeling of mental sluggishness. She has gained approximately 15 pounds despite reporting a decreased appetite and no significant change in diet or activity. She also reports new, persistent dryness of her skin and scalp, and increased sensitivity to cold, often wearing a sweater when others are comfortable. She denies palpitations, heat intolerance, or diarrhea. She has a family history of ""thyroid problems"" in her maternal aunt. Current medications include a daily multivitamin. No known drug allergies.
+
+**OBJECTIVE:**
+
+Vitals: BP 138/86, HR 58, RR 14, Temp 97.6°F (oral), SpO2 98% on room air. Weight: 178 lbs (noted increase of 12 lbs from charted weight 10 months ago).
+General: Pleasant, appears fatigued. Speech is slightly slowed.
+HEENT: Face appears mildly puffy, particularly in the periorbital areas. No exophthalmos. Thyroid gland is palpable, diffusely enlarged to approximately 1.5 times normal size, firm, non-tender, and with a slightly irregular contour. No palpable nodules or cervical lymphadenopathy.
+Cardiovascular: Bradycardic rate, regular rhythm. No murmurs.
+Extremities: Skin is cool and dry to touch. Mild, non-pitting edema noted in the pretibial areas. Delayed relaxation phase of the Achilles deep tendon reflexes.
+
+**ASSESSMENT:**
+
+1. **Primary Hypothyroidism:** Likely autoimmune in etiology given the clinical presentation of fatigue, weight gain, cold intolerance, bradycardia, and physical exam findings of a firm, diffusely enlarged thyroid (goiter), dry skin, and delayed reflexes. The family history of thyroid disease supports this.
+2. **Unintentional Weight Gain:** Secondary to slowed metabolism from hypothyroidism.
+3. **Mild Bradycardia:** Likely related to thyroid hormone deficiency.
+
+**PLAN:**
+
+1. **Diagnostics:**
+   - Order thyroid function panel: TSH, Free T4, Free T3.
+   - Order thyroid peroxidase antibodies (TPO Ab) and thyroglobulin antibodies (Tg Ab) to evaluate for autoimmune etiology.
+   - Basic metabolic panel and lipid panel to assess for common comorbid metabolic changes.
+2. **Treatment:**
+   - Await lab results to confirm diagnosis and guide therapy. Will likely initiate thyroid hormone replacement (levothyroxine) at a low dose based on weight and age, with a plan for gradual titration.
+3. **Patient Education:**
+   - Discussed the likely diagnosis of an underactive thyroid gland,",hashimoto's thyroiditis,True,Primary Hypothyroidism (likely Hashimoto's thyroiditis),98
+"**SUBJECTIVE:**
+
+Patient is a 58-year-old male who presents for evaluation of a ""painful mouth and skin that blisters easily."" Symptoms began approximately 4 months ago with intermittent painful sores in his oral cavity, which he attributed to ill-fitting dentures. Over the past 6-8 weeks, he has developed recurrent, flaccid blisters on his upper chest, back, and scalp that rupture easily, leaving painful, non-healing erosions. He reports new lesions appear with minimal friction or pressure. He describes significant odynophagia, leading to decreased oral intake and an associated 12-pound weight loss over two months. He denies fever, chills, or new medications. He reports fatigue but attributes it to poor sleep due to pain. Past medical history is significant for hypertension and hyperlipidemia. He takes lisinopril and atorvastatin. No known drug allergies.
+
+**OBJECTIVE:**
+
+Vitals: T 98.7°F, BP 142/88, HR 88, RR 16, SpO2 98% on room air.
+General: Appears uncomfortable, well-nourished but fatigued.
+HEENT: Oral mucosa reveals multiple shallow, irregular erosions on the buccal mucosa, soft palate, and gingivae. Positive Nikolsky sign noted on the buccal mucosa (lateral pressure induces new erosion). No conjunctival injection.
+Skin: Examination of the chest, upper back, and scalp reveals multiple erosions and crusts in various stages of healing, with surrounding erythema. Several intact, flaccid, fluid-filled bullae, 0.5-2 cm in diameter, are present on the upper back. Gentle lateral pressure on perilesional skin (Nikolsky sign) results in extension of an erosion. No lesions on palms or soles.
+Lymphatic: No cervical, axillary, or inguinal lymphadenopathy.
+
+**ASSESSMENT:**
+
+1. **Chronic mucocutaneous blistering disorder:** The presentation of painful oral erosions preceding widespread cutaneous flaccid bullae and erosions, with a positive Nikolsky sign, is highly suggestive of an autoimmune blistering process. The chronicity (4 months), predominant mucosal involvement, and characteristic morphology of the lesions are key features.
+2. **Weight loss:** Likely secondary to odynophagia and decreased oral intake.
+3. **Hypertension:** Stable, currently well-controlled.
+
+**PLAN:**
+
+1. **Diagnostics:**
+   * **Biopsy:** Two punch biopsies sent for routine H&E and direct immunofluorescence (DIF). One from perilesional skin for DIF to detect intercellular IgG/C3 deposition, and one from the edge of a fresh blister for H&E to assess for suprabasal acantholysis.
+   * **Labs:** CBC, CMP, ESR, CRP to assess for inflammation and nutritional status. Serum for indirect immunofluorescence (monkey",pemphigus vulgaris,True,Pemphigus vulgaris,85
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for follow-up of persistent fatigue and pruritus. She reports these symptoms have been gradually worsening over the past 8-9 months. The fatigue is profound, described as ""bone-deep,"" and not relieved by rest, significantly impacting her ability to work as a teacher. The pruritus is generalized, worse on her palms and soles, and particularly bothersome at night. She denies any new rashes, jaundice, or dark urine. She reports occasional mild discomfort in her right upper quadrant but denies sharp pain, fever, or chills. She has a history of hypothyroidism, well-controlled on levothyroxine, and dry eyes/mouth for which she uses artificial tears. She drinks alcohol socially, approximately 1-2 glasses of wine per week. She takes no other medications, supplements, or over-the-counter drugs. Family history is notable for a sister with autoimmune hypothyroidism.
+
+**OBJECTIVE:**
+
+Vitals: BP 128/78, HR 72, Temp 98.6°F, SpO2 98% on RA.
+General: Well-appearing, alert, but appears fatigued. No scleral icterus.
+HEENT: Oral mucosa slightly dry. No lymphadenopathy.
+Cardiopulmonary: Regular rate and rhythm, clear lungs bilaterally.
+Abdomen: Soft, non-distended. Mild tenderness to deep palpation in the right upper quadrant. Liver edge is palpable 2 cm below the right costal margin and is smooth and firm. No splenomegaly or ascites. No asterixis.
+Skin: No rash or excoriations noted, though patient states she ""itches all over.""
+Extremities: No edema, clubbing, or cyanosis. Musculoskeletal exam is unremarkable.
+
+**Relevant Labs (from last week):**
+- CBC: WNL
+- CMP: Total Bilirubin 1.2 mg/dL (normal), ALT 48 U/L, AST 52 U/L, Alkaline Phosphatase 425 U/L (markedly elevated).
+- Lipid Panel: Total Cholesterol 280 mg/dL, HDL 85 mg/dL.
+- TSH: 2.1 mIU/L (on levothyroxine).
+- AMA (Antimitochondrial Antibodies): Pending.
+- Immunoglobulins: IgG 1,850 mg/dL (elevated).
+
+**Ultrasound Abdomen:** Hepatomegaly with coarse, heterogeneous echotexture. No biliary duct dilation, gallstones, or focal lesions. Spleen is at the upper limit of normal size.
+
+**ASSESSMENT:**
+
+1. **Unexplained Cholestatic Liver Disease:** A 51-year-old female with insidious onset of profound fatigue and severe pruritus, physical exam notable for a firm, palpable liver edge, and significantly elevated alkaline phosphatase with a cholestatic pattern.",primary biliary cholangitis,True,Primary Biliary Cholangitis,90
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old male software developer who presents with a 4-month history of progressive, fluctuating muscle weakness. He reports that his symptoms are most pronounced in the late afternoon and evening. He describes difficulty maintaining his arms above his head while washing his hair, and intermittent episodes of ""heaviness"" in his eyelids, particularly when reading or using the computer for extended periods. He notes his speech occasionally becomes ""slurred and nasal"" after prolonged conversation, especially during work meetings. He denies any sensory changes, pain, or bowel/bladder dysfunction. He has no significant past medical history and takes no medications. He reports no improvement with rest alone, but feels somewhat better in the mornings. He is concerned as he recently had a brief episode of ""double vision"" while driving home from work last week.
+
+**OBJECTIVE:**
+
+Vital Signs: BP 128/78, HR 72, RR 14, Temp 98.6°F, SpO2 98% on room air.
+General: Alert, cooperative. Speech is clear at the start of the interview but develops a mild nasal quality after several minutes of continuous talking.
+HEENT: Pupils are equal, round, and reactive to light. Extraocular movements are full, but he reports diplopia on sustained lateral gaze to the right for >60 seconds. Mild bilateral ptosis is noted, more pronounced on the right, which worsens when he is asked to sustain an upward gaze for 30 seconds.
+Neurological: Cranial nerves II-XII are otherwise intact. Motor: Strength is 5/5 in all major muscle groups at rest. However, after 15 repetitions of shoulder abduction, strength in the deltoids decreases to 4-/5. Grip strength weakens with repetitive squeezing. Sensation is intact to light touch throughout. Reflexes are 2+ and symmetric. Gait is normal.
+No rash, joint swelling, or lymphadenopathy.
+
+**ASSESSMENT:**
+
+35-year-old male with subacute, fluctuating proximal muscle weakness and bulbar symptoms (ptosis, dysarthria, diplopia) that worsen with repetitive use and fatigue as the day progresses. The pattern of fatigable weakness, particularly affecting ocular and cranial musculature, is highly suggestive of a neuromuscular junction disorder. Differential diagnoses include other autoimmune or paraneoplastic processes, but the fatigability and diurnal variation are key distinguishing features.
+
+**PLAN:**
+
+1.  **Diagnostics:**
+    *   Schedule a Tensilon (edrophonium) test to assess for immediate improvement in ptosis and ocular motility with pharmacologic challenge.
+    *   Order acetylcholine receptor antibody panel (binding, blocking, modulating) and anti-MuSK antibody.
+    *   Refer for electromyography (EMG) with repetitive nerve stimulation to look for a decremental response.
+    *   Consider CT chest to evaluate for thymic abnormality.
+
+2.  **Symptom",myasthenia gravis,True,Myasthenia Gravis,95
+"**SUBJECTIVE:**
+
+Patient is a 32-year-old female presenting for follow-up of ongoing symptoms. She reports a 5-month history of progressive fatigue, which she describes as ""debilitating,"" and migratory arthralgias affecting her hands, wrists, and knees. The joint pain is worse in the morning, with stiffness lasting over an hour. She also notes a persistent, non-pruritic rash on her cheeks and bridge of her nose that worsens with sun exposure. She reports two episodes of pleuritic chest pain over the last month, described as a sharp sensation with deep inspiration. She denies fever, cough, or shortness of breath at rest. She has experienced intermittent oral ulcers. She has no significant past medical history. Medications include over-the-counter ibuprofen with partial relief. She works as a landscape architect. Family history is notable for a maternal aunt with an unspecified autoimmune disorder.
+
+**OBJECTIVE:**
+
+Vitals: BP 138/86, HR 88, RR 16, Temp 98.7°F, SpO2 99% on room air.
+General: Appears fatigued but in no acute distress.
+HEENT: Two small, shallow ulcerations on the hard palate. Malar erythema noted, sparing the nasolabial folds.
+Cardiovascular: Regular rate and rhythm, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally.
+Musculoskeletal: No active synovitis or joint effusions on exam today, but tenderness to palpation over bilateral MCP and PIP joints and knees. Full range of motion.
+Skin: Photosensitive malar rash as described. No alopecia noted.
+Neurologic: Cranial nerves II-XII intact. Motor strength 5/5 throughout.
+
+**Labs (drawn today):**
+CBC: WBC 3.2 (low), Hgb 11.8 (low), Platelets 112,000 (low)
+CMP: Within normal limits. Creatinine 0.8.
+Urinalysis: Trace protein, 5-10 RBC/hpf, no casts.
+ESR: 58 mm/hr (elevated).
+ANA: Positive, speckled pattern, titer 1:640.
+Anti-dsDNA: Pending.
+Complement (C3, C4): Both low (C3 55 mg/dL, C4 8 mg/dL).
+
+**ASSESSMENT:**
+
+1.  **Multisystem Inflammatory Process:** Patient presents with a constellation of symptoms involving the skin (photosensitive malar rash, oral ulcers), musculoskeletal system (morning stiffness, arthralgias), serosal surfaces (pleuritic pain), and hematologic system (pancytopenia). The clinical picture is highly suggestive of an underlying autoimmune connective tissue disease.
+2.  **Cytopenias:** Leukopenia, mild anemia, and thrombocytopenia, likely autoimmune-mediated.
+3.  **Protein",systemic lupus erythematosus,True,Systemic Lupus Erythematosus (SLE),95
+"**SUBJECTIVE:**
+
+**Chief Complaint:** ""Lower back pain and stiffness for about 8 months.""
+
+**History of Present Illness:** Patient is a 32-year-old male who reports a gradual onset of low back pain and stiffness over the past 8 months. He describes the pain as a deep, dull ache centered in the sacral/lumbar region. The stiffness is most pronounced in the morning, lasting approximately 90 minutes, and improves significantly with movement and a hot shower. He notes the pain and stiffness also return after prolonged periods of sitting at his desk job. He denies any history of acute trauma. He has tried over-the-counter ibuprofen with moderate relief. He reports associated fatigue and occasional discomfort in his right heel, especially when first stepping out of bed. He denies any numbness, tingling, or weakness in the lower extremities. No bowel or bladder incontinence.
+
+**Past Medical History:** None significant. No prior surgeries.
+**Medications:** Ibuprofen 400 mg as needed.
+**Allergies:** No known drug allergies.
+**Social History:** Works as a software developer. Smokes 1 pack of cigarettes per day for 10 years. Denies recreational drug use. Drinks alcohol socially, 2-3 drinks per week.
+**Family History:** Father has a history of ""inflammatory arthritis"" and psoriasis. Mother and siblings are healthy.
+
+**OBJECTIVE:**
+
+**Vital Signs:** BP 128/78, HR 72, RR 14, Temp 98.6°F, SpO2 99% on room air.
+**General:** Well-developed, well-nourished male in no acute distress.
+**HEENT:** Normocephalic, atraumatic. Sclera anicteric.
+**Cardiovascular:** Regular rate and rhythm, no murmurs, rubs, or gallops.
+**Pulmonary:** Clear to auscultation bilaterally.
+**Abdomen:** Soft, non-tender, non-distended. Normal bowel sounds.
+**Musculoskeletal:**
+*   **Spine:** Tenderness to palpation over the sacroiliac joints bilaterally. Limited lumbar spine flexion; Schober's test measures 3 cm expansion (normal >5 cm). Thoracic spine extension is mildly restricted. Chest expansion measured at 2.5 cm at the 4th intercostal space.
+*   **Peripheral Joints:** No active synovitis in hands, wrists, knees, or ankles. Tenderness noted at the right Achilles tendon insertion (enthesitis).
+**Neurological:** Motor strength 5/5 throughout upper and lower extremities. Sensation intact to light touch. Reflexes 2+ and symmetric. Negative straight leg raise bilaterally.
+
+**Diagnostics:**
+*   **Labs (Pending):** CBC, CMP, ESR, CRP, HLA-B27 sent.
+*   **Imaging:** X-ray of the pelvis and lumbar spine ordered. Prior outside films not available for",ankylosing spondylitis,True,Ankylosing Spondylitis,85
+"**SUBJECTIVE:**
+
+Patient is a 32-year-old female presenting for evaluation of persistent fatigue and ""brain fog"" over the past 8 months. She describes the fatigue as profound, not relieved by sleep, and interfering with her work as a graphic designer. She reports difficulty concentrating, forgetfulness, and a general feeling of mental sluggishness. She has also noted a 12-pound weight gain over this period despite no significant change in diet or activity level. She complains of new, diffuse muscle aches and stiffness, particularly in her shoulders and thighs, and persistent feelings of being cold when others are comfortable. She denies palpitations, heat intolerance, or significant hair loss. She has a family history of ""thyroid problems"" in her maternal aunt. Current medications include a daily multivitamin. No known drug allergies.
+
+**OBJECTIVE:**
+
+Vitals: BP 118/76, HR 58, Temp 97.8°F (oral), RR 14, SpO2 99% on room air.
+General: Appears tired but in no acute distress. BMI 26.8.
+HEENT: Normocephalic, atraumatic. PERRL. Oropharynx clear. No palpable cervical lymphadenopathy. Thyroid gland is diffusely enlarged, approximately 1.5 times normal size, firm, and non-tender to palpation. No nodules palpated.
+Cardiovascular: Regular bradycardic rate, normal S1/S2, no murmurs.
+Lungs: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tender, non-distended. Normal bowel sounds.
+Extremities: No edema. Mild, non-inflammatory tenderness to palpation of proximal muscle groups. Skin is cool and dry to touch.
+Neurologic: Alert and oriented. Cranial nerves II-XII intact. Mild slowing of relaxation phase of deep tendon reflexes (biceps, patellar).
+
+**ASSESSMENT:**
+
+1. **Primary Hypothyroidism:** High clinical suspicion based on symptom constellation (fatigue, weight gain, cold intolerance, bradycardia, slowed reflexes) and physical exam findings (firm goiter, cool/dry skin). Awaiting confirmatory labs.
+2. **Diffuse Goiter:** Etiology to be determined, likely related to underlying thyroid dysfunction.
+3. **Myalgias:** Likely secondary to thyroid dysfunction.
+
+**PLAN:**
+
+1. **Diagnostics:**
+   - Order thyroid function panel: TSH, Free T4, Free T3.
+   - Order thyroid antibody panel: Thyroid Peroxidase Antibodies (TPO Ab) and Thyroglobulin Antibodies (Tg Ab).
+   - Basic metabolic panel and CBC to rule out other contributors to fatigue.
+2. **Treatment:**
+   - Hold on initiating thyroid hormone replacement until lab results return to establish a baseline.
+   - Discussed importance of lab follow-up.
+3. **Patient Education:**
+   - Reviewed the typical",hashimoto's thyroiditis,False,Primary Hypothyroidism,95
+"**SUBJECTIVE:**
+
+Patient is a 62-year-old male who presents with a 10-day history of progressive bilateral lower extremity weakness and paresthesias. He reports the symptoms began with ""pins and needles"" in his feet and a feeling of unsteadiness while walking. Over the past week, the numbness has ascended to his mid-shins, and the weakness has progressed to the point where he now requires assistance to rise from a chair. He denies any back pain, trauma, or recent heavy lifting. He reports a mild, self-resolved episode of diarrhea approximately two weeks prior to symptom onset. He denies fever, headache, bladder or bowel incontinence, or recent vaccinations. He has a past medical history of hypertension, well-controlled on lisinopril. He is a retired electrician and lives with his wife.
+
+**OBJECTIVE:**
+
+Vitals: BP 148/86, HR 92, RR 14, Temp 98.7°F, SpO2 98% on room air.
+General: Alert and oriented, appears anxious and fatigued.
+Neurological Exam:
+*   Cranial Nerves: II-XII intact. Facial sensation and strength normal. No ptosis or diplopia.
+*   Motor: Strength 5/5 in bilateral deltoids, biceps, triceps, wrist extensors/flexors. Hip flexors 4-/5, knee extensors 4-/5, ankle dorsiflexors 3/5, plantar flexors 4/5 bilaterally. Tone is normal.
+*   Sensory: Diminished light touch and pinprick sensation in a stocking distribution up to the mid-calf bilaterally. Proprioception is mildly impaired at the great toes.
+*   Reflexes: Absent patellar and Achilles tendon reflexes bilaterally. Biceps and brachioradialis reflexes are 1+.
+*   Coordination: Finger-to-nose intact. Heel-to-shin is mildly dysmetric due to weakness. Gait: Wide-based, unsteady, requires one-person assist.
+Cardiovascular, Pulmonary, and Abdominal exams are unremarkable.
+
+**ASSESSMENT:**
+
+62-year-old male with acute to subacute onset of progressive, ascending, symmetric sensorimotor polyneuropathy with areflexia. The temporal association with a preceding gastrointestinal illness is notable. The primary differential includes an acute inflammatory demyelinating polyneuropathy. Other considerations such as toxic/metabolic neuropathy (e.g., B12 deficiency, diabetes), spinal cord compression, or other neuromuscular disorders must be ruled out. The pattern of ascending weakness with loss of reflexes following a viral prodrome is highly characteristic of an acquired inflammatory process affecting peripheral nerves.
+
+**PLAN:**
+
+1.  **Diagnostics:**
+    *   Admit to hospital for monitoring of respiratory function (serial bedside spirometry including FVC and NIF) and progression of weakness.
+    *   Laboratory: CBC, CMP,",guillain-barré syndrome,True,Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyradiculoneuropathy - AIDP),95
+"**SUBJECTIVE:**
+
+Patient is a 62-year-old right-handed male presenting for evaluation of progressive motor difficulties over the past 10-12 months. He reports a gradual onset of ""stiffness"" and ""slowness"" in his right arm and leg, which he initially attributed to arthritis. He states his handwriting has become noticeably smaller and more cramped (micrographia), and his wife comments that his right arm does not swing naturally when he walks. He denies any significant pain, trauma, or recent illness. He reports a decreased sense of smell over the last few years and occasional constipation. He feels his balance is ""a little off,"" but denies any falls. He notes his symptoms are worse in the morning and seem to improve slightly as the day goes on. He is frustrated by the difficulty with fine motor tasks, such as buttoning his shirt. No complaints of dizziness, vision changes, or sensory loss. Past medical history is significant for hypertension and benign prostatic hyperplasia. Medications: Lisinopril 10mg daily, Tamsulosin 0.4mg nightly. He is a retired accountant, non-smoker, social alcohol use. Family history is non-contributory for neurological conditions.
+
+**OBJECTIVE:**
+
+Vitals: BP 138/82, HR 72, RR 14, Temp 98.6°F, SpO2 98% on room air.
+General: Pleasant, cooperative male. Speech is mildly hypophonic and monotone.
+Neurological Exam:
+- Mental Status: Alert and oriented x4. MMSE 29/30.
+- Cranial Nerves: II-XII intact. Olfactory testing reveals diminished identification of common scents (2/5 correctly identified).
+- Motor: Strength 5/5 throughout. Marked cogwheel rigidity noted in right wrist and elbow. Mild rigidity on left side. Resting tremor of the right hand, approximately 4-5 Hz, pill-rolling character, which attenuates with voluntary movement. Bradykinesia evident on finger tapping, hand grips, and foot tapping, significantly more pronounced on the right.
+- Coordination: Finger-to-nose and heel-to-shin intact. No dysmetria.
+- Gait/Station: Arises from chair with difficulty, requiring two attempts and use of armrests. Posture is slightly stooped. Gait is slow with shortened stride length (shuffling) on the right. Reduced right arm swing. Turning is en bloc, requiring multiple small steps. Pull test reveals retropulsion with 2 steps to recover.
+- Sensory: Intact to light touch and proprioception.
+Skin: Seborrheic dermatitis noted on forehead and scalp.
+
+**ASSESSMENT:**
+
+1. **Progressive asymmetric hypokinetic movement disorder:** Characterized by bradykinesia, resting tremor, rigidity, and postural instability, with clear right-sided predominance. The presence of non-motor features",parkinson's disease,True,Parkinson's Disease,95
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old female presenting for evaluation of progressive skin tightening and new-onset dysphagia. She reports that over the past 8-10 months, she has noticed increasing tightness and thickening of the skin on her hands and face. She states her fingers feel ""puffy and stiff,"" especially in the mornings, and she has difficulty making a tight fist. For the past 3 months, she has experienced difficulty swallowing both solids and liquids, describing a sensation of food ""getting stuck"" in her mid-chest. She also reports frequent heartburn that is minimally relieved by over-the-counter antacids. She notes her fingertips become painfully pale and numb when exposed to cold (describes this as ""white then blue fingers""). She denies significant joint swelling, fever, or rash, but endorses moderate fatigue. She has no significant past medical history and takes no regular medications.
+
+**OBJECTIVE:**
+
+Vitals: BP 142/90 (right arm), 138/88 (left arm). HR 78, RR 14, Temp 98.1°F, SpO2 98% on room air.
+General: Appears well-nourished, speaks in a slightly nasal tone. Facial features appear somewhat taut with decreased oral aperture. Perioral skin shows radial furrowing.
+Integumentary: Skin on the dorsal hands and fingers is firm, thickened, and bound down, with loss of normal skin folds. Fingertips show several small, pitted scars. Positive ""salt-and-pepper"" depigmentation noted on the forearms. Digital ulcerations are absent today. Capillary refill in the fingertips is delayed (>3 seconds).
+Cardiovascular: Regular rate and rhythm. No murmurs, rubs, or gallops. Distal pulses are 2+ and symmetric.
+Pulmonary: Clear to auscultation bilaterally. Chest wall expansion appears mildly restricted.
+GI: Abdomen soft, non-tender, non-distended. Normal bowel sounds.
+Neurologic: Motor strength 5/5 throughout. Sensation intact to light touch.
+
+**Labs/Studies Reviewed:**
+* CBC: Within normal limits.
+* Basic Metabolic Panel: Within normal limits.
+* ANA: Positive, speckled pattern, titer 1:1280.
+* Anti-Centromere Antibodies: Positive.
+* Barium Swallow (ordered by PCP): Shows mild esophageal dysmotility with slight dilation of the distal esophagus.
+
+**ASSESSMENT:**
+
+1. **Progressive Systemic Connective Tissue Disorder:** Characterized by cutaneous sclerosis with classic findings of symmetric skin thickening on the hands and face, Raynaud's phenomenon with digital pitting scars, and positive anti-centromere antibodies. The taut facial skin and microstomia are notable.
+2. **Esophageal Dysmotility and Gastroesophageal Reflux Disease:** Likely secondary to the underlying connective tissue process, as evidenced by dysphagia",scleroderma,False,Limited Cutaneous Systemic Sclerosis (CREST syndrome variant),95
+"**SUBJECTIVE:**
+
+Patient is a 32-year-old female presenting for follow-up of ongoing symptoms. She reports a 5-month history of progressive fatigue, which she describes as ""debilitating,"" and migratory arthralgias affecting her hands, wrists, and knees. The joint pain is worse in the mornings, with stiffness lasting over an hour. She notes a new, non-pruritic rash on her face and upper chest that appears or worsens after sun exposure. She also reports two episodes of pleuritic chest pain over the last month, describing it as a sharp, catching sensation with deep breaths. She denies fever, hair loss, or oral ulcers. She has a history of two first-trimester miscarriages (at ages 28 and 30). Current medications include over-the-counter ibuprofen with partial relief. She works as a landscape architect. Family history is notable for a maternal aunt with an unspecified autoimmune disorder.
+
+**OBJECTIVE:**
+
+Vitals: BP 142/88 (right arm), HR 88, RR 16, Temp 98.7°F, SpO2 99% on room air.
+General: Appears fatigued but in no acute distress.
+HEENT: Malar erythema noted across cheeks and bridge of nose, sparing the nasolabial folds. No oral ulcers.
+Cardiovascular: Regular rate and rhythm. No murmurs, rubs, or gallops. Lungs: Clear to auscultation bilaterally, no rubs.
+Musculoskeletal: Tenderness to palpation over bilateral MCP and PIP joints, as well as both wrists. No overt synovitis, swelling, or deformity. Full range of motion with pain at extremes.
+Skin: Photosensitive rash on V-area of chest. No alopecia or discoid lesions noted.
+Neuro: Cranial nerves II-XII intact. Motor strength 5/5 throughout.
+
+**Labs/Studies (from outside records reviewed):**
+CBC: WBC 3.2 (low), Hgb 11.8, Platelets 112,000 (low).
+CMP: Within normal limits. Creatinine 0.8.
+Urinalysis: Trace protein, 5-10 RBCs/hpf, no casts.
+ESR: 68 mm/hr (elevated).
+ANA: Positive, titer 1:640, homogeneous pattern.
+Anti-dsDNA: Pending.
+Complement (C3): 68 mg/dL (low), C4: 10 mg/dL (low).
+Chest X-ray (performed for chest pain): Clear lung fields, no effusions.
+
+**ASSESSMENT:**
+
+1.  **Multisystem Inflammatory Process:** Patient presents with a constellation of symptoms and signs involving the skin (photosensitive malar rash), joints (inflammatory arthralgias), serosa (pleuritic pain), and hematologic system (leukopenia, thrombocytopenia). The pattern is highly suggestive",systemic lupus erythematosus,True,Systemic Lupus Erythematosus (SLE),95
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old male presenting for evaluation of chronic low back pain. He reports the pain began insidiously approximately 18 months ago. He describes it as a deep, dull ache centered in his lower lumbar spine and sacral region. The pain is most severe in the early morning, lasting 1-2 hours after waking, and is associated with significant stiffness. He states the stiffness and pain improve with moderate physical activity and a hot shower, but worsen again with prolonged rest or sitting. He denies any recent trauma. He has tried over-the-counter NSAIDs with partial relief. He also reports a 6-month history of intermittent pain and stiffness in his right heel, particularly when first stepping out of bed. He notes occasional fatigue but denies fever, weight loss, numbness, or weakness in the lower extremities. He has a history of recurrent episodes of painful red eyes, diagnosed as ""iritis"" by an ophthalmologist two years ago, treated with steroid drops. Family history is notable for his father having severe ""back problems"" in his 40s. He is a non-smoker.
+
+**OBJECTIVE:**
+
+Vitals: BP 128/78, HR 72, Temp 98.6°F, SpO2 99% RA.
+General: Well-appearing male, in no acute distress.
+HEENT: PERRL, EOMI, sclerae anicteric. No oral ulcers.
+MSK: Posture is notable for a mild flattening of the normal lumbar lordosis. Point tenderness to deep palpation over the sacroiliac joints bilaterally. Lumbar spine range of motion is limited in all planes: flexion 50% of expected (fingertips to mid-shin), extension 10 degrees with pain. Schober's test measures 3 cm of expansion (normal >5 cm). Chest expansion measured at the 4th intercostal space is 2.5 cm. Right Achilles tendon insertion is tender to palpation. Neurological exam of lower extremities is intact with normal strength, sensation, and reflexes. Gait is normal.
+Skin: No rashes or psoriatic plaques noted.
+
+**ASSESSMENT:**
+
+1.  **Chronic Inflammatory Axial Back Pain:** The history is highly suggestive of an inflammatory etiology rather than mechanical. Key features include: insidious onset, age <45, symptom duration >3 months, morning stiffness >30 minutes, improvement with activity and worsening with rest, and nocturnal pain. The presence of enthesitis (Achilles tenderness) and a history of acute anterior uveitis (iritis) are significant extra-spinal manifestations.
+2.  **Enthesitis, right Achilles tendon.**
+3.  **History of Acute Anterior Uveitis, resolved.**
+
+**PLAN:**
+
+1.  **Diagnostics:**
+    *   Laboratory: Order HLA-B27, ESR, CRP, and Rheumatoid Factor/",ankylosing spondylitis,True,Ankylosing Spondylitis,95
+"**SUBJECTIVE:**
+
+Patient is a 28-year-old female graduate student who presents for evaluation of ""uncontrollable sleepiness."" She reports a 9-month history of profound daytime sleepiness that occurs daily, regardless of the amount of nighttime sleep (typically 7-8 hours). She describes it as an overwhelming, irresistible urge to sleep, often occurring during sedentary activities like lectures or reading. She has fallen asleep twice during laboratory meetings in the last month. She also reports two episodes in the last six months where she experienced sudden, brief bilateral knee buckling and collapsed to the floor when she heard a particularly funny joke, regaining muscle control immediately. She denies loss of consciousness during these episodes. She notes occasional vivid, dream-like hallucinations just as she is falling asleep at night, which she describes as ""seeing spiders on the wall."" She sometimes experiences a sensation of being unable to move for a few seconds upon waking in the morning. She denies snoring, witnessed apneas, or significant caffeine intake. She states the sleepiness is severely impacting her academic performance. No recent illness, head trauma, or new medications. Past medical history is unremarkable.
+
+**OBJECTIVE:**
+
+Vital Signs: BP 118/76, HR 68, RR 14, Temp 98.6°F, SpO2 99% on room air.
+General: Well-appearing, alert but yawns frequently during interview.
+HEENT: Normocephalic, atraumatic. Oropharynx clear, Mallampati class II.
+Neck: Supple, no thyromegaly.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Lungs: Clear to auscultation bilaterally.
+Neurological: Cranial nerves II-XII intact. Motor: 5/5 strength throughout. Sensory: intact to light touch. Gait: steady. Romberg negative. Reflexes: 2+ and symmetric.
+
+**ASSESSMENT:**
+
+1.  **Excessive Daytime Sleepiness:** Chronic, severe, and persistent despite adequate reported nocturnal sleep duration. Significant functional impairment noted.
+2.  **Episodic Muscle Weakness:** Patient describes episodes of sudden, bilateral loss of muscle tone triggered by strong emotion (laughter), consistent with cataplexy. No associated loss of consciousness.
+3.  **Parasomnias:** Reports symptoms suggestive of hypnagogic hallucinations and sleep paralysis.
+
+The constellation of symptoms—chronic daytime sleepiness with sleep attacks, cataplexy triggered by emotion, and associated hypnagogic hallucinations/sleep paralysis—is highly suggestive of a central disorder of hypersomnolence. Obstructive sleep apnea is less likely given the absence of classic risk factors or symptoms, but cannot be ruled out without testing.
+
+**PLAN:**
+
+1.  **Diagnostic Testing:** Order an overnight polysomnogram (PSG) followed by a Multiple Sleep Latency Test (MSLT) the following day to objectively quantify daytime",narcolepsy,True,Narcolepsy Type 1,95
+"**SUBJECTIVE:**
+
+Patient is a 62-year-old male who presents with a 10-day history of progressive bilateral lower extremity weakness and paresthesias. He reports the symptoms began with tingling and ""pins and needles"" in his feet, which have now ascended to his mid-calves. Over the past 4-5 days, he has noted increasing difficulty walking, describing a feeling of ""heaviness"" in his legs and frequent tripping. He endorses mild, intermittent lower back pain but denies any trauma. He reports a preceding episode of acute gastroenteritis with diarrhea approximately two weeks prior to symptom onset, which resolved spontaneously. He denies recent vaccinations, fever, headache, or bowel/bladder incontinence. He states, ""My legs just don't seem to want to work right.""
+
+**OBJECTIVE:**
+
+**Vitals:** BP 148/86, HR 92, RR 14, Temp 98.7°F, SpO2 98% on room air.
+**General:** Alert and oriented, anxious about symptoms. No acute distress.
 **Neurological Exam:**
-- **Cranial Nerves:** II-XII intact. Full extraocular movements without nystagmus.
-- **Motor:** Strength 5/5 throughout upper and lower extremities, though there is mild spasticity noted in the left quadriceps.
-- **Sensory:** Decreased vibration sense at the right great toe. Intact to light touch and pinprick elsewhere.
-- **Cerebellar:** Finger-to-nose testing reveals mild intention tremor on the left. Heel-to-shin is slightly dysmetric bilaterally.
-- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with 2 beats of clonus at the left ankle. Plantar responses are extensor (upgoing Babinski).
-**Imaging/Labs:** Reviewed prior MRI brain from 10 months ago, which demonstrates multiple non-enhancing T2 hyperintense lesions in the periventricular white matter and corpus callosum. Recent CBC and CMP are within normal limits.
+*   **Mental Status:** MMSE 30/30.
+*   **Cranial Nerves:** II-XII intact. Facial sensation and strength are normal. No ptosis or ophthalmoplegia.
+*   **Motor:** Strength is 5/5 bilaterally in deltoids, biceps, and triceps. Hip flexion 4/5, knee extension 4-/5, ankle dorsiflexion 3/5, plantar flexion 4/5. Strength is symmetric. Tone is notably diminished in the lower extremities.
+*   **Sensory:** Decreased light touch and pinprick sensation in a stocking distribution up to the knees. Vibration sense is absent at the toes and diminished at the ankles. Proprioception is impaired at the great toes.
+*   **Reflexes:** Biceps and brachioradialis 2+. Patellar and Achilles reflexes are absent bilaterally.
+*   **Coordination:** Finger-to-nose intact. Heel-to-shin testing is mildly dysmetric due to weakness.
+*   **Gait:** Unable to walk without assistance. With support, demonstrates a wide-based, unsteady, steppage gait.
+**Cardiovascular:** Regular rate and rhythm. No murmurs.
+**Pulmonary:** Clear to auscultation bilaterally.
 
-**Assessment:**
-1.  Stable chronic neurological condition. Patient is currently in her typical functional state without evidence of an acute exacerbation. The reported transient diplopia is noted and will be monitored.
-2.  Spasticity, lower extremity.
-3.  Fatigue.
+**ASSESSMENT:**
 
-**Plan:**
-- Continue current disease-modifying therapy: **Glatiramer Acetate** 40mg subcutaneously three times per week.
-- For spasticity: Continue physical therapy regimen and consider a low dose of Baclofen 10mg at bedtime if symptoms interfere with sleep.
-- For fatigue: Emphasize energy conservation techniques and maintain adequate hydration.
-- Referral to **Neuro-ophthalmology** for a baseline evaluation given the transient visual symptom.
-- Follow up in 6 months, or sooner if she experiences new or worsening neurological symptoms (e.g., numbness, weakness, vision changes).",multiple sclerosis,True,Multiple Sclerosis,95
-"**Progress Note**
+1.  **Acute-onset, Ascending, Symmetric Sensorimotor Polyneuropathy:** The presentation is concerning for a rapidly progressive, acquired polyradiculoneuropathy. Key features include the antecedent gastrointestinal illness, the ascending pattern of sensory and motor deficits, areflexia in the lower extremities, and relative preservation of strength in the upper extremities at this stage. The primary differential includes inflammatory demyelinating polyneuropathies.
+2.  **Hypertension:** Well-controlled at today's visit.
+3.",guillain-barré syndrome,True,Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyradiculoneuropathy - AIDP),90
+"**SUBJECTIVE:**
 
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more difficult. She also notes a persistent ""pins and needles"" sensation in her left hand and some new blurriness in her vision, particularly in the right eye, which she describes as ""looking through a foggy window."" She denies pain, fever, or recent illness. She confirms she has been self-administering her prescribed injectable medication weekly without issue.
+Patient is a 51-year-old female presenting for evaluation of persistent fatigue and ""brain fog"" over the past 8 months. She describes a gradual onset of profound tiredness that is not relieved by sleep, requiring multiple naps on weekends. She reports difficulty concentrating at her job as an accountant, forgetting common words, and feeling ""slowed down."" She has gained approximately 15 pounds unintentionally over this period despite no significant change in diet or activity. She notes new, persistent constipation requiring daily use of a fiber supplement. She endorses intermittent, dull aching in her shoulders and knees, and a persistent feeling of being cold when others are comfortable. She denies palpitations, heat intolerance, diarrhea, or significant hair loss. She has a family history of ""thyroid problems"" in her maternal aunt. Current medications include a daily multivitamin and psyllium fiber. No known drug allergies.
 
-**Objective:**
-- **Vitals:** BP 118/74, HR 68, Temp 98.6°F, SpO2 99%.
-- **General:** Alert, oriented x4. Appears fatigued.
-- **Neurological Exam:**
-    - **Cranial Nerves:** II: Afferent pupillary defect noted on the right. Visual acuity is 20/30 on the right, 20/20 on the left. Fundoscopic exam is normal.
-    - **Motor:** Strength is 5/5 throughout except right hip flexion (4/5) and dorsiflexion (4/5). Mild spasticity noted in the right quadriceps and hamstrings.
-    - **Sensory:** Diminished light touch and vibration sense in the right lower extremity up to the knee. Decreased proprioception in the toes of the right foot.
-    - **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing is slightly unsteady on the right.
-    - **Reflexes:** 3+ bilateral patellar and brachioradialis reflexes. Plantar response is extensor on the right (positive Babinski).
-- **Diagnostics:** Reviewed outside records; MRI brain from 6 months ago shows ""multiple non-enhancing T2 hyperintense white matter lesions in a periventricular and juxtacortical distribution."" Recent lab work shows a normal CBC, CMP, and Vitamin B12 level.
+**OBJECTIVE:**
 
-**Assessment:**
-Patient presents with an acute exacerbation of her known chronic neurological condition, characterized by new focal sensory and motor deficits and optic neuritis. The symptoms and imaging findings are consistent with a demyelinating process. The current episode appears to be a clinical relapse.
+Vitals: BP 118/74, HR 58, Temp 97.2°F (oral), RR 14, SpO2 99% on room air. Weight: 178 lbs (noted increase of 16 lbs from charted weight 1 year ago).
+General: Pleasant, appears fatigued. Speech is slightly slow and deliberate.
+HEENT: Normocephalic, atraumatic. PERRL. Oropharynx clear. No palpable cervical lymphadenopathy. Thyroid gland is diffusely enlarged, estimated 1.5 times normal size, firm, non-tender, and with a slightly irregular contour. No bruit.
+Cardiovascular: Regular bradycardic rhythm. No murmurs, rubs, or gallops.
+Lungs: Clear to auscultation bilaterally.
+Abdomen: Soft, non-tender, non-distended. Normoactive bowel sounds.
+Extremities: No clubbing, cyanosis, or edema. Mild, non-inflammatory stiffness noted in bilateral metacarpophalangeal joints. Delayed relaxation phase of bilateral Achilles tendon reflexes.
+Skin: Cool and dry to the touch.
 
-**Plan:**
-1.  **Medication:** Continue current disease-modifying therapy (Interferon beta-1a). For acute relapse, will initiate a 5-day course of high-dose oral corticosteroids (Prednisone 1000 mg daily) with a subsequent taper.
-2.  **Referrals:** Referral to Neuro-ophthalmology for formal evaluation of optic neuritis. Continue care with Neurology for long-term management.
-3.  **Therapy:** Refer to Physical Therapy for gait training and management of spasticity and fatigue.
-4.  **Patient Education:** Discussed the nature of relapses, medication adherence, and the importance of reporting new symptoms promptly. Advised to avoid excessive heat exposure.
-5.  **Follow-up:** Schedule follow-up in 4 weeks, or sooner if symptoms worsen.",multiple sclerosis,True,Multiple Sclerosis,98
-"**Progress Note**
+**ASSESSMENT:**
 
-**Subjective:**
-Patient is a 38-year-old female presenting for a routine follow-up. She reports a ""flare-up"" of symptoms over the past two weeks, describing increased fatigue and a sensation of ""heaviness"" and numbness in her right leg, which has made walking more challenging. She also notes a persistent ""pins and needles"" sensation in her fingertips bilaterally and occasional blurriness in her left eye, which she states is not painful. She denies recent fever, infection, or new injuries. She confirms she has been self-administering her prescribed injectable medication weekly without missed doses.
+1. **Hypothyroidism, etiology to be determined.** The clinical picture of fatigue, weight gain, constipation, cold intolerance, bradycardia, slowed reflexes, and a diffusely enlarged, firm thyroid gland is highly suggestive of primary thyroid failure. The chronic, insidious onset and family history are notable.
+2. **Constitutional symptoms and cognitive complaints,** likely secondary to #1.
+3. **Musculoskeletal pain,** likely related to hypothyroid myopathy/arthropathy.
 
-**Objective:**
-**Vitals:** BP 118/76, HR 72, Temp 98.6°F.
-**General:** Alert, oriented x4. Speech is clear.
-**Neurological Exam:**
-- **Cranial Nerves:** II-XII intact. Fundoscopic exam is normal. Reports slight desaturation of red color in the left eye.
-- **Motor:** Strength 5/5 throughout upper extremities. Right hip flexion 4/5, right dorsiflexion 4/5. Left lower extremity strength 5/5. Mild spasticity noted in right quadriceps and hamstrings.
-- **Sensory:** Decreased light touch and vibration sense in the right foot and lower leg. Diminished sensation to pinprick in both hands.
-- **Coordination:** Mild dysmetria on finger-to-nose testing on the left. Heel-to-shin testing reveals slight ataxia on the right.
-- **Reflexes:** 2+ and symmetric in upper extremities. 3+ at the patella and ankle bilaterally with unsustained clonus (3 beats) on the right. Positive Babinski sign on the right.
-**Imaging/Labs:** Reviewed recent brain and cervical spine MRI report from 6 months ago, which noted ""multiple non-enhancing T2 hyperintense white matter lesions, periventricular and juxtacortical in distribution, with no new lesions compared to prior.""
+**PLAN:**
 
-**Assessment:**
-Patient presenting with symptoms and exam findings consistent with a clinical exacerbation of her known chronic neurological disease. The new right leg weakness and sensory changes, in the context of her known imaging findings, are concerning for disease activity. Overall condition is stable but with a current symptomatic flare.
+1. **Diagnostics:**
+   - Order thyroid function panel: TSH, Free T4, Free T3.
+   - Order thyroid peroxidase antibodies (TPO Ab) and thyroglobulin antibodies (Tg Ab) to evaluate for autoimmune etiology.
+   - Basic metabolic panel and lipid panel to assess for common sequelae (e.g., hyperlipid",hashimoto's thyroiditis,True,"Hypothyroidism (Primary, likely Hashimoto's Thyroiditis)",98
+"**SUBJECTIVE:**
 
-**Plan:**
-1.  **Medications:** Continue current disease-modifying therapy (Glatiramer Acetate). Start a 5-day tapering course of oral Methylprednisolone to address the acute flare.
-2.  **Referrals:** Refer to Physical Therapy for gait assessment and strengthening exercises. Maintain follow-up with Neurology in 3 months. Will send a consult request to Ophthalmology for formal visual field testing and evaluation of reported visual symptoms.
-3.  **Patient Education:** Discussed the nature of symptom flares, the importance of medication adherence, and energy conservation techniques. Advised to monitor for symptoms of urinary tract infection, which can precipitate flares. Patient verbalized understanding.
-4.  **Follow-up:** Schedule follow-up in 4 weeks to assess response to steroid therapy and PT progress. Instructed to call with any significant worsening of symptoms.",multiple sclerosis,True,Multiple Sclerosis,98
+Patient is a 58-year-old male presenting with a 4-month history of progressively worsening oral and skin lesions. He reports it began with painful sores in his mouth that made eating and drinking difficult. Approximately 6 weeks ago, he developed flaccid, fluid-filled blisters on his upper chest and back that rupture easily, leaving painful, denuded areas that crust over. He describes a positive Nikolsky sign, noting that seemingly normal skin near the blisters sloughs off with minor pressure or rubbing. He endorses significant fatigue and a 12-pound unintentional weight loss over this period due to pain with oral intake. He has tried over-the-counter topical antibiotic ointment and oral antihistamines with no improvement. He denies new medications, significant sun exposure, or prior similar episodes. Past medical history is significant for hypertension, well-controlled with lisinopril. He has no known drug allergies.
+
+**OBJECTIVE:**
+
+Vitals: T 98.7°F, BP 142/88, HR 88, RR 14, SpO2 98% on room air.
+General: Appears fatigued, in mild distress due to pain.
+HEENT: Multiple erosions and shallow ulcers on buccal mucosa, gingiva, and soft palate. Several intact, clear fluid-filled vesicles noted on lower lip.
+Skin: Scattered flaccid bullae, 0.5-3 cm in diameter, on the upper chest, mid-back, and axillary folds. Multiple moist, erythematous erosions with peripheral crusting and collarettes of scale in these areas. Positive Nikolsky sign elicited on the upper back adjacent to a bulla. No lesions on palms, soles, or scalp.
+Lymph: No cervical, axillary, or inguinal lymphadenopathy.
+
+**Assessment & Plan:**
+
+**ASSESSMENT:**
+1. **Severe Mucocutaneous Blistering Disorder:** Extensive oral and cutaneous involvement with flaccid bullae and erosions, positive Nikolsky sign, and chronic course. The morphology and distribution are highly suggestive of an autoimmune intraepidermal blistering process.
+2. **Unintentional Weight Loss:** Likely secondary to odynophagia and dysphagia from extensive oral mucosal involvement.
+3. **Hypertension:** Stable.
+
+**PLAN:**
+1. **Diagnostic Workup:** 
+   - **Dermatology Consultation:** Urgently requested for further evaluation and possible procedural intervention.
+   - **Skin Biopsy:** Will coordinate with Dermatology for a punch biopsy of a fresh, intact bulla for routine H&E and perilesional skin for direct immunofluorescence to detect intercellular antibody deposition.
+   - **Serology:** Order serum for indirect immunofluorescence and ELISA testing for anti-desmoglein antibodies (specifically anti-Dsg1 and anti-Dsg3).
+   - **Baseline Labs:** CBC, CMP, ESR, CRP to assess",pemphigus vulgaris,True,Pemphigus Vulgaris,85
+"**SUBJECTIVE:**
+
+**Chief Complaint:** ""My hands and feet are swollen and painful, and I'm exhausted all the time.""
+
+**History of Present Illness:** Patient is a 32-year-old female who reports a 5-month history of progressive fatigue, malaise, and migratory joint pain and swelling. She describes the pain as affecting her proximal interphalangeal joints, wrists, and knees bilaterally, with notable morning stiffness lasting over an hour. She also reports a 2-week history of a non-pruritic, erythematous rash on her cheeks and bridge of her nose that worsens with sun exposure. She notes new, painless oral ulcers on her hard palate. She denies fever, chest pain, or shortness of breath but endorses intermittent, low-grade headaches. She has tried over-the-counter ibuprofen with partial relief for joint pain. No recent travel or sick contacts.
+
+**Past Medical History:** None.
+**Medications:** Ibuprofen 200 mg as needed.
+**Allergies:** NKDA.
+**Social History:** Works as a graphic designer. Denies tobacco use. Drinks 1-2 glasses of wine socially on weekends. No illicit drug use.
+**Family History:** Mother has rheumatoid arthritis. Maternal aunt has an unspecified ""autoimmune condition.""
+
+**OBJECTIVE:**
+
+**Vitals:** T 98.7°F, HR 88, BP 132/84, RR 16, SpO2 99% on room air.
+**General:** Appears fatigued but in no acute distress.
+**HEENT:** Malar erythema noted, sparing the nasolabial folds. Two small, shallow ulcers on the hard palate. No alopecia on scalp exam.
+**Cardiovascular:** Regular rate and rhythm, no murmurs, rubs, or gallops.
+**Pulmonary:** Clear to auscultation bilaterally.
+**Abdomen:** Soft, non-tender, non-distended. Normoactive bowel sounds.
+**Musculoskeletal:** Symmetrical swelling and tenderness of the 2nd and 3rd PIP joints bilaterally, as well as both wrists. Mild effusion in the left knee. Full range of motion with pain on extreme flexion/extension. No deformities.
+**Skin:** Photosensitive malar rash as described. No other rashes or lesions. No palpable purpura.
+**Neurologic:** Alert and oriented x4. Cranial nerves II-XII intact. Motor strength 5/5 throughout.
+
+**Labs (drawn today):**
+*   CBC: WBC 3.2 (low), Hgb 11.8, Platelets 145 (low-normal)
+*   CMP: Within normal limits. Creatinine 0.8.
+*   ESR: 68 mm/hr (elevated)
+*   CRP: 4.2 mg/L (elevated)
+*   Urinalysis: Trace protein, 5-10",systemic lupus erythematosus,True,Systemic Lupus Erythematosus (SLE),95
+"**SUBJECTIVE:**
+
+Patient is a 35-year-old male presenting for evaluation of persistent low back pain and stiffness. He reports the symptoms began insidiously approximately 8 months ago. The pain is localized to the sacral and lumbar spine and is described as a deep, dull ache. It is notably worse in the morning, with stiffness lasting for over an hour after waking. He finds that the pain and stiffness improve significantly with moderate physical activity and a hot shower, but worsen again with prolonged periods of rest or sitting at his desk job. He denies any history of acute trauma. He has tried over-the-counter NSAIDs (ibuprofen) with ""good but incomplete"" relief. He also reports a 6-month history of intermittent pain and swelling in his right Achilles tendon and the sole of his right foot, which he attributes to ""maybe a new exercise routine."" He denies any urinary symptoms, eye redness/pain, or significant gastrointestinal complaints. Family history is notable for his father having ""some kind of chronic back problem"" diagnosed in his 40s, though the patient is unsure of the specific diagnosis. He is a non-smoker and drinks alcohol socially.
+
+**OBJECTIVE:**
+
+Vitals: BP 128/78, HR 72, Temp 98.6°F, SpO2 99% RA.
+General: Well-appearing male, in no acute distress. Moves somewhat cautiously when transitioning from sitting to standing.
+Musculoskeletal Exam:
+- Spine: Tenderness to palpation over bilateral sacroiliac joints. Lumbar spine range of motion is limited in all planes, particularly flexion. Schober's test measures 3 cm of lumbar expansion (normal >5 cm). Chest expansion measured at the 4th intercostal space is 2.5 cm.
+- Extremities: Mild tenderness at the right Achilles tendon insertion (enthesis) and the plantar fascia origin on the right foot. No active joint effusions or erythema noted in knees, ankles, or upper extremity joints.
+- Neurologic: Strength 5/5 throughout lower extremities. Sensation intact to light touch. Patellar and Achilles reflexes 2+ and symmetric. Straight leg raise negative bilaterally.
+Cardiovascular, Pulmonary, and Abdominal exams are unremarkable.
+
+**ASSESSMENT:**
+
+1. **Chronic Inflammatory Axial Back Pain:** The clinical picture is highly suggestive of an inflammatory etiology rather than a mechanical cause. Key supporting features include: insidious onset, age <45, symptom duration >3 months, morning stiffness >30 minutes, improvement with activity, and worsening with rest. The positive family history is also a contributing factor.
+2. **Enthesitis, right Achilles tendon and plantar fascia.**
+3. **Limited spinal mobility** as evidenced by abnormal Schober's test and reduced chest expansion.
+
+**PLAN:**
+
+1. **Diagnostics:**
+   - Laboratory: Order HLA-B27, ESR, CRP, and Rheumatoid Factor/",ankylosing spondylitis,True,Ankylosing Spondylitis,90
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for evaluation of progressive skin tightness and gastrointestinal discomfort. Symptoms began approximately 8 months ago with mild swelling and puffiness of her fingers, which she attributed to overwork as a seamstress. Over the past 4-5 months, she reports the skin on her hands and face has become increasingly ""tight and shiny,"" making it difficult to fully make a fist. She endorses frequent heartburn that is only partially relieved by over-the-counter antacids, and new-onset constipation alternating with episodes of diarrhea. She notes her fingers become ""dead white and painful"" when exposed to cold weather or when stressed, taking several minutes to return to a normal color. She reports mild fatigue but denies significant joint pain, muscle weakness, or shortness of breath. She has no significant past medical history and takes no regular medications. She has a 15-pack-year smoking history but quit 5 years ago.
+
+**OBJECTIVE:**
+
+**Vitals:** BP 142/88 (right arm), 138/86 (left arm). HR 72, RR 14, Temp 98.6°F, SpO2 98% on room air.
+**General:** Well-appearing, alert. Speech is clear but facial expression appears somewhat fixed with decreased oral aperture.
+**Skin:** Skin on dorsal hands, forearms, and face is taut, shiny, and bound down. Pinch test over the metacarpophalangeal joints is markedly reduced. Several small, stellate, hypopigmented scars over finger pads. Fingertips show pitting and digital ulcerations on two digits. Positive digital pitting edema is no longer present. Telangiectasias noted on face and palms.
+**Extremities:** Capillary refill in nailbeds is delayed (>3 seconds). Radial and pedal pulses are 2+. Limited range of motion in fingers with inability to fully flatten hands on a flat surface (positive ""prayer sign"").
+**Cardiopulmonary:** Lungs clear to auscultation bilaterally. Heart sounds regular with a normal S1 and S2; a soft, high-pitched systolic murmur is audible at the left lower sternal border.
+**Abdomen:** Soft, non-tender, non-distended. Normoactive bowel sounds.
+
+**Labs/Studies Pending/Reviewed:**
+* CBC: Within normal limits.
+* Basic Metabolic Panel: Within normal limits.
+* ESR: 28 mm/hr (mildly elevated).
+* ANA: Positive, speckled pattern, titer 1:1280.
+* Anti-centromere antibodies: Positive.
+* CXR (PA/Lat): No acute cardiopulmonary process. Mild bibasilar interstitial markings noted.
+
+**ASSESSMENT:**
+
+1.  **Undifferentiated Connective Tissue Disease with prominent cutaneous and vascular manifestations.** The constellation of findings—including progressive symmetric skin thickening/fibrosis,",scleroderma,False,Limited Cutaneous Systemic Sclerosis (CREST Syndrome variant),95
+"**SUBJECTIVE:**
+
+Patient is a 45-year-old male presenting with a 10-day history of progressive weakness and sensory changes. He reports it began with tingling and ""pins and needles"" in the soles of both feet, which ascended to his calves over 2-3 days. This was followed by the onset of leg weakness, making it difficult to climb stairs and rise from a seated position. He now describes a feeling of ""heaviness"" in his legs and mild unsteadiness when walking. He denies any recent febrile illness, but notes a mild, self-resolved episode of diarrhea approximately two weeks prior to symptom onset. He reports no back pain, bladder or bowel incontinence, or cognitive changes. He has no significant past medical history and takes no medications. He works as an accountant and is right-handed.
+
+**OBJECTIVE:**
+
+Vitals: BP 138/86, HR 72, RR 14, Temp 98.7°F, SpO2 98% on room air.
+General: Alert and oriented, in no acute distress.
+Neurological Exam:
+*   **Mental Status:** Intact.
+*   **Cranial Nerves:** II-XII grossly intact. Facial sensation and strength are normal.
+*   **Motor:** Strength is 5/5 in bilateral deltoids, biceps, and triceps. Strength in hip flexors is 4/5 bilaterally. Knee extension is 4-/5, and ankle dorsiflexion is 3/5 bilaterally. Plantar flexion is 4/5. Tone is globally diminished in the lower extremities.
+*   **Sensory:** Reduced light touch and pinprick sensation in a stocking distribution up to the mid-calves. Vibration sense is diminished at the toes. Proprioception is intact.
+*   **Reflexes:** **Areflexic in both patellar and Achilles tendons.** Biceps and brachioradialis reflexes are 1+.
+*   **Coordination:** Mild dysmetria on heel-to-shin testing bilaterally, likely secondary to weakness. Finger-to-nose is intact.
+*   **Gait:** Wide-based, unsteady gait requiring occasional contact with the wall for support. Unable to perform heel or toe walking.
+
+**ASSESSMENT:**
+
+45-year-old male with acute to subacute onset of ascending, symmetric sensorimotor deficits, most pronounced in the lower extremities, with associated areflexia. The temporal progression, pattern of weakness, and neurological findings are highly concerning for an acute inflammatory polyradiculoneuropathy. The antecedent history of gastrointestinal symptoms is notable. Differential diagnosis includes other metabolic, toxic, or infectious neuropathies, though the clinical presentation is most consistent with a demyelinating polyneuropathy process.
+
+**PLAN:**
+
+1.  **Admission:** Admit to inpatient neurology service for close monitoring of respiratory function (FVC, NIF) and progression",guillain-barré syndrome,True,Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyradiculoneuropathy - AIDP),95
+"**SUBJECTIVE:**
+
+Patient is a 51-year-old female presenting for evaluation of persistent fatigue and ""brain fog"" over the past 8-10 months. She describes a gradual onset of profound tiredness, not relieved by sleep, which impacts her ability to work as a librarian. She notes increased sensitivity to cold, frequently wearing sweaters when others are comfortable. She has gained approximately 12 pounds unintentionally over this period despite no significant change in diet or activity. She reports dry skin, brittle nails, and mild constipation. She denies palpitations, heat intolerance, or significant hair loss. She has a family history of ""thyroid problems"" in her maternal aunt. Current medications include a daily multivitamin. No known drug allergies.
+
+**OBJECTIVE:**
+
+Vital Signs: BP 118/72, HR 58, RR 14, Temp 97.8°F (oral), SpO2 99% on room air.
+General: Pleasant, appears tired. Moves slowly.
+HEENT: Face appears slightly full/periorbital puffiness. No palpable cervical lymphadenopathy. Thyroid gland is palpable, diffusely enlarged (estimated 1.5 times normal size), firm, and non-tender with a slightly irregular contour. No bruit.
+Cardiovascular: Regular bradycardic rate. No murmurs.
+Skin: Cool, dry skin with mild xerosis. Delayed relaxation phase of the Achilles deep tendon reflex noted bilaterally.
+
+**Laboratory Results (from today):**
+* TSH: 8.2 mIU/L (Reference: 0.4 - 4.5)
+* Free T4: 0.7 ng/dL (Reference: 0.8 - 1.8)
+* Thyroid Peroxidase (TPO) Antibodies: 350 IU/mL (Reference: <9)
+* Thyroglobulin Antibodies: 120 IU/mL (Reference: <4)
+* CBC: Unremarkable. Mild normocytic anemia (Hgb 11.8 g/dL).
+* Comprehensive Metabolic Panel: Within normal limits.
+
+**ASSESSMENT:**
+
+1. **Primary Hypothyroidism:** Biochemical confirmation with elevated TSH and low Free T4. The presence of strongly positive thyroid peroxidase and thyroglobulin antibodies points to an autoimmune etiology as the underlying cause. The physical exam findings (bradycardia, delayed reflexes, cool/dry skin, goiter) are consistent with this diagnosis.
+2. **Unintentional Weight Gain:** Likely secondary to reduced metabolic rate from hypothyroidism.
+3. **Fatigue and Cognitive Changes (""Brain Fog""):** Attributed to hypothyroid state.
+4. **Mild Anemia:** May be related to hypothyroidism or require further investigation if it does not correct with thyroid hormone replacement.
+
+**PLAN:**
+
+1. **Initiate Thyroid Hormone Replacement:** Start Levothyroxine 50 mcg orally once daily on an empty stomach, 30-",hashimoto's thyroiditis,True,Primary Hypothyroidism due to Autoimmune Thyroiditis (Hashimoto's Thyroiditis),99

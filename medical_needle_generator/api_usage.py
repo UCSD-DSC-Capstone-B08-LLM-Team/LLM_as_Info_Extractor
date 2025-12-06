@@ -7,7 +7,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(__file__))
 
 from api_generator import APIMedicalGenerator
-from config import GeneratorConfig, APIConfig, GLOBAL_NUM_SAMPLES
+from config import GeneratorConfig, APIConfig, GLOBAL_NUM_SAMPLES, GLOBAL_OUTPUT_FILE, GLOBAL_SUBTLETY_LEVEL
 
 def setup_api_client():
     """Set up the DeepSeek API client"""
@@ -52,15 +52,16 @@ def generate_with_api():
     # Setup API client
     client = setup_api_client()
     if not client:
-        print("Falling back to simple generator...")
-        from simple_generator import SimpleMedicalGenerator
-        generator = SimpleMedicalGenerator(GeneratorConfig())
-        return generator.generate_dataset()
+        raise ConnectionError(
+            "Cannot connect to DeepSeek API. "
+            "Please check your API key and internet connection. "
+            "API is required for this generator."
+        )
     
     # Configure the generator
     config = GeneratorConfig(
         num_samples=GLOBAL_NUM_SAMPLES,
-        output_file="api_medical_needles.csv",
+        output_file=GLOBAL_OUTPUT_FILE,
         subtlety_level="medium"
     )
     
@@ -74,7 +75,6 @@ def generate_with_api():
     generator = APIMedicalGenerator(client, config, api_config)
     
     print("Generating medical needles with DeepSeek API...")
-    print("This may take a few minutes...")
     
     dataset = generator.generate_dataset()
     return dataset
@@ -82,7 +82,7 @@ def generate_with_api():
 def analyze_api_results():
     """Analyze results from API generation"""
     try:
-        df = pd.read_csv("api_medical_needles.csv")
+        df = pd.read_csv(GLOBAL_OUTPUT_FILE)
         
         print("\n" + "="*60)
         print("API GENERATION RESULTS")
@@ -92,7 +92,7 @@ def analyze_api_results():
         print(f"Detection Rate: {detection_rate:.1%}")
         print(f"Total Samples: {len(df)}")
         
-        # Show detailed results
+        # Show results
         print("\nDetailed Results:")
         for i, row in df.iterrows():
             status = "✓ FOUND" if row['needle_found'] else "✗ MISSED"
@@ -111,8 +111,7 @@ if __name__ == "__main__":
     # Generate dataset using API
     dataset = generate_with_api()
     
-    # Analyze results
     df = analyze_api_results()
     
     if df is not None:
-        print(f"\nDataset saved to: api_medical_needles.csv")
+        print(f"\nDataset saved to: {GLOBAL_OUTPUT_FILE}")
