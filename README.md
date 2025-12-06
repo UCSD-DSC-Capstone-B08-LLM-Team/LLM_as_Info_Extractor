@@ -12,6 +12,7 @@ This tool creates realistic medical notes that contain subtle clues about specif
 3. Evaluate whether the retrieval was success and outputting the accuracy.
 
 
+## Project Structure
 ![alt text](imgs/image3.png)
 
 ## Environment & Setting
