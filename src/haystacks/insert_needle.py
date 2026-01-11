@@ -46,9 +46,11 @@ except FileNotFoundError:
     sys.exit(1)
 
 
-# Filter by specified category
-selected_categories = set(args.categories)
+# Strip whitespace from both MIMIC CATEGORY column and input categories
+notes["CATEGORY"] = notes["CATEGORY"].astype(str).str.strip()
+selected_categories = set([cat.strip() for cat in args.categories])
 
+# Filter notes by cleaned categories
 category_notes = notes[notes["CATEGORY"].isin(selected_categories)].copy()
 
 if len(category_notes) == 0:
