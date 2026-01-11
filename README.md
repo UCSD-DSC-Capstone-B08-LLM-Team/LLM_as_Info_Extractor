@@ -94,7 +94,12 @@ Filtered  `NOTEEVENTS.csv` from `data/mimic/` to only include first 500 rows whe
 
 1. Place MIMIC-III data in `data/mimic/`. 
 
-2. Generate synthetic needles using `src/needles/generate_needles.py`. The needles were 
+2. Configure AWS 
+
+2. Generate synthetic needles:
+```bash
+src/needles/generate_needles.py`
+```
 
 3. Create haystack by inserting needles into notes in `NOTEEVENTS.csv` by using `src/haystacks/insert_needle.py`.
 

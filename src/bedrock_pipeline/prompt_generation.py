@@ -64,7 +64,7 @@ def generate_bedrock_prompts(results_df, task="classify", output_file=None):
 
 if __name__ == "__main__":
     # Load retrieval CSV
-    retrieval_file = "src/retrieval/outputs/hybrid_mimic_results.csv"
+    retrieval_file = "src/retrieval/outputs/bm25_mimic_results.csv"
     results_df = pd.read_csv(retrieval_file)
 
     prompts_df = generate_bedrock_prompts(
