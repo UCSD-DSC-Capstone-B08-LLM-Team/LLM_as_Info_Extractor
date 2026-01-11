@@ -69,7 +69,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install Dependencies: `pip install requirements.txt`
+3. Install Dependencies: `pip install -r requirements.txt`
 
 4. Place MIMIC-III data in `data/mimic/` following instructions in `data/mimic/README.md`.
 

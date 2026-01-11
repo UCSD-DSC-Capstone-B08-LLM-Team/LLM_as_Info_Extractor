@@ -12,3 +12,4 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 data/mimic/
+src/retrieval/one_corpus/outputs/
