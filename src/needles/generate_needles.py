@@ -5,8 +5,8 @@ import time
 import random
 
 REGION_NAME = "us-west-2" 
-MODEL_ID = "anthropic.claude-3-sonnet-20240229-v1:0"
-OUTPUT_FILE = "mimic_data/needles/synthetic_needles.csv"
+MODEL_ID = "deepseek.v3-v1:0"
+OUTPUT_FILE = "src/needles/synthetic_needles.csv"
 NUM_NEEDLES_PER_TYPE = 50
 
 # These prompts force the LLM to follow strict NHSN surveillance criteria.
@@ -29,35 +29,31 @@ Output ONLY the short statement. No SOAP note. No medical record formatting.
 """
 
 def generate_note(client, prompt_template):
-    """Calls Bedrock to generate a single note.
-    Args:
-        client: Boto3 Bedrock client.
-        prompt_template (str): The prompt template to use for generation.
-        
-    Returns:
-        generated_note (str): The generated medical note text.
-    """
-    
-    # Add random seed to the prompt to stop the LLM from generating identical text every time
     random_seed = f" Random seed: {random.randint(1, 10000)}"
     final_prompt = prompt_template + random_seed
 
     body = {
-        "anthropic_version": "bedrock-2023-05-31",
-        "max_tokens": 1024,
-        "temperature": 0.7, 
         "messages": [
-            {"role": "user", "content": [{"type": "text", "text": final_prompt}]}
-        ]
+            {
+                "role": "user",
+                "content": final_prompt
+            }
+        ],
+        "max_tokens": 200,
+        "temperature": 0.7
     }
 
     try:
-        response = client.invoke_model(modelId=MODEL_ID, body=json.dumps(body))
-        response_body = json.loads(response.get("body").read())
-        return response_body["content"][0]["text"].strip()
+        response = client.invoke_model(
+            modelId=MODEL_ID,
+            body=json.dumps(body)
+        )
+        response_body = json.loads(response["body"].read())
+        return response_body["choices"][0]["message"]["content"].strip()
     except Exception as e:
-        print(f"Error generating note: {e}")
+        print("Error:", e)
         return None
+
 
 def main():
     print(f"Starting generation of {NUM_NEEDLES_PER_TYPE * 2} synthetic needles...")
