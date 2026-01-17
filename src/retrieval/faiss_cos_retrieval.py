@@ -68,8 +68,8 @@ def evaluate_faiss_cos_on_mimic(haystack_csv, top_k=5, window_size=3):
     all_results = []
     found_count = 0
 
-    for _, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Notes"):
-        haystack = row['MODIFIED_NOTE']
+    for _, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Patient Records"):
+        haystack = row['PATIENT_RECORD']
         needle = row['NEEDLE_INSERTED']
 
         top_passages = retrieve_needle_faiss_cos(haystack, needle, top_k=top_k, window_size=window_size)
@@ -79,9 +79,8 @@ def evaluate_faiss_cos_on_mimic(haystack_csv, top_k=5, window_size=3):
             found_count += 1
 
         all_results.append({
-            "HADM_ID": row['HADM_ID'],
-            "SUBJECT_ID": row['SUBJECT_ID'],
-            "CATEGORY": row['CATEGORY'],
+            "SUBJECT_ID": row["SUBJECT_ID"],
+            "NUM_NOTES": row["NUM_NOTES"],
             "needle": needle,
             "found": found,
             "top_passages": top_passages

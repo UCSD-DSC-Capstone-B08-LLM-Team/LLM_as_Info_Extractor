@@ -77,8 +77,8 @@ def evaluate_hybrid_on_mimic(haystack_csv, top_k=5, window_size=3, bm25_weight=0
     all_results = []
     found_count = 0
 
-    for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Notes"):
-        haystack = str(row['MODIFIED_NOTE'])
+    for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Patient Records"):
+        haystack = str(row['PATIENT_RECORD'])
         needle = str(row['NEEDLE_INSERTED'])
 
         # Build indices
@@ -94,9 +94,8 @@ def evaluate_hybrid_on_mimic(haystack_csv, top_k=5, window_size=3, bm25_weight=0
 
         # Append results safely
         all_results.append({
-            "HADM_ID": row['HADM_ID'],
             "SUBJECT_ID": row['SUBJECT_ID'],
-            "CATEGORY": row['CATEGORY'],
+            "NUM_NOTES": row["NUM_NOTES"],
             "needle": needle,
             "found": found,
             "top_passages": top_passages
