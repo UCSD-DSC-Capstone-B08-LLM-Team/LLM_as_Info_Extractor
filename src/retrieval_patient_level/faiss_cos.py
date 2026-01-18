@@ -30,12 +30,18 @@ def retrieve_needle_faiss_cos(haystack, needle, top_k=5, window_size=3):
         top_passages: List of strings with top_k passages most similar to the needle.
     """
     
+    # Create passages
     sentences = sent_tokenize(haystack)
-    passages = [' '.join(sentences[i:i+window_size]) for i in range(len(sentences) - window_size + 1)]
+    if len(sentences) < window_size:
+        passages = [' '.join(sentences)]
+    else:
+        passages = [' '.join(sentences[i:i+window_size]) for i in range(len(sentences) - window_size + 1)]
     
+    # Handle empty passages
     if not passages:
         return []
 
+    # FAISS retrieval (cosine similarity)
     passage_embeddings = model.encode(passages, convert_to_numpy=True)
     needle_embedding = model.encode([needle], convert_to_numpy=True)
 
@@ -51,39 +57,38 @@ def retrieve_needle_faiss_cos(haystack, needle, top_k=5, window_size=3):
 
     return top_passages
 
-def evaluate_faiss_cos_on_mimic(haystack_csv, top_k=5, window_size=3):
-    """
-    Evaluate FAISS cosine retrieval on mimic_haystack.csv
+if __name__ == "__main__":
+    import argparse
 
-    Args:
-        haystack_csv (str): Path to the CSV file containing haystack and needle data.
-        top_k (int): Number of top passages to retrieve.
-        window_size (int): Number of sentences per passage.
+    parser = argparse.ArgumentParser(description="Patient-level FAISS cosine retrieval")
+    parser.add_argument("--haystack_csv", type=str, default="src/haystacks/mimic_haystack.csv")
+    parser.add_argument("--output_csv", type=str, default="src/retrieval_patient_level/outputs/faiss_cos_patient_results.csv")
+    parser.add_argument("--top_k", type=int, default=2)
+    parser.add_argument("--window_size", type=int, default=3)
+    args = parser.parse_args()
 
-    Returns:
-        results_df: DataFrame containing evaluation results.
-    """
-
-    df = pd.read_csv(haystack_csv)
+    df = pd.read_csv(args.haystack_csv)
     all_results = []
     found_count = 0
 
-    for _, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Notes"):
-        haystack = row['MODIFIED_NOTE']
+    for _, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Patient Records"):
+        haystack = row['PATIENT_RECORD']
         needle = row['NEEDLE_INSERTED']
 
-        top_passages = retrieve_needle_faiss_cos(haystack, needle, top_k=top_k, window_size=window_size)
-        found = any(needle in passage for passage in top_passages)
+        top_passages = retrieve_needle_faiss_cos(haystack, needle, top_k=args.top_k, window_size=args.window_size)
+        num_passages = len(sent_tokenize(haystack)) - args.window_size + 1 if len(sent_tokenize(haystack)) >= args.window_size else 1
 
+        found = any(needle in passage for passage in top_passages)
         if found:
             found_count += 1
 
         all_results.append({
-            "HADM_ID": row['HADM_ID'],
-            "SUBJECT_ID": row['SUBJECT_ID'],
-            "CATEGORY": row['CATEGORY'],
+            "SUBJECT_ID": row["SUBJECT_ID"],
+            "NUM_NOTES": row["NUM_NOTES"],
             "needle": needle,
             "found": found,
+            "num_passages": num_passages,
+            "haystack_len_chars": len(haystack),
             "top_passages": top_passages
         })
 
@@ -91,16 +96,8 @@ def evaluate_faiss_cos_on_mimic(haystack_csv, top_k=5, window_size=3):
 
     results_df = pd.DataFrame(all_results)
     accuracy = results_df["found"].mean()
-    print(f"Overall top-{top_k} FAISS cosine retrieval accuracy: {accuracy:.2f}")
-    return results_df
+    print(f"Overall top-{args.top_k} FAISS cosine retrieval accuracy: {accuracy:.2f}")
 
-
-if __name__ == "__main__":
-    haystack_file = os.path.join("src", "haystacks", "mimic_haystack.csv")
-    results_df = evaluate_faiss_cos_on_mimic(haystack_file, top_k=2, window_size=3)
-
-    output_dir = os.path.join("src", "retrieval", "outputs")
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, "faiss_cos_mimic_results.csv")
-    results_df.to_csv(output_file, index=False)
-    print(f"Saved results to {output_file}")
+    os.makedirs(os.path.dirname(args.output_csv), exist_ok=True)
+    results_df.to_csv(args.output_csv, index=False)
+    print(f"Saved results to {args.output_csv}")

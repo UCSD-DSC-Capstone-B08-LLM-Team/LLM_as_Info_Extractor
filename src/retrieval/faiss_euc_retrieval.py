@@ -57,8 +57,8 @@ def evaluate_faiss_euc_on_mimic(haystack_csv, top_k=3, window_size=3):
     all_results = []
     found_count = 0
 
-    for _, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Patient Records"):
-        haystack = row['PATIENT_RECORD']
+    for _, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Notes"):
+        haystack = row['MODIFIED_NOTE']
         needle = row['NEEDLE_INSERTED']
 
         top_passages = retrieve_needles_faiss_euc(haystack, needle, top_k=top_k, window_size=window_size)
@@ -68,8 +68,9 @@ def evaluate_faiss_euc_on_mimic(haystack_csv, top_k=3, window_size=3):
             found_count += 1
 
         all_results.append({
+            "HADM_ID": row['HADM_ID'],
             "SUBJECT_ID": row['SUBJECT_ID'],
-            "NUM_NOTES": row["NUM_NOTES"],
+            "CATEGORY": row['CATEGORY'],
             "needle": needle,
             "found": found,
             "top_passages": top_passages

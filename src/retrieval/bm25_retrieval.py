@@ -56,19 +56,22 @@ df = pd.read_csv("src/haystacks/mimic_haystack.csv")
 results = []
 
 for idx, row in df.iterrows():
-    haystack = row['PATIENT_RECORD']      # the note text
+    haystack = row['MODIFIED_NOTE']      # the note text
     needle = row['NEEDLE_INSERTED']      # the "needle" you're trying to retrieve
 
     top_passages = retrieve_needles(haystack, needle, top_k=2, window_size=3)
 
+    needle_tokens = set(word_tokenize(needle.lower()))
     def contains_needle(passage):
-        return needle in passage
+        passage_tokens = set(word_tokenize(passage.lower()))
+        return len(needle_tokens & passage_tokens) / len(needle_tokens) > 0.6
 
     found = any(contains_needle(p) for p in top_passages)
 
     results.append({
+        "HADM_ID": row["HADM_ID"],
         "SUBJECT_ID": row["SUBJECT_ID"],
-        "NUM_NOTES": row["NUM_NOTES"],
+        "CATEGORY": row["CATEGORY"],
         "needle": needle,
         "found": found,
         "top_passages": top_passages

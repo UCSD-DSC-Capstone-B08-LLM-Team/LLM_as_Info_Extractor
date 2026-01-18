@@ -13,3 +13,4 @@ __pycache__/
 .ipynb_checkpoints/
 data/mimic/
 src/retrieval/one_corpus/outputs/
+src/retrieval_patient_level/outputs/

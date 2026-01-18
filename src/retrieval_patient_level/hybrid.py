@@ -5,46 +5,46 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from rank_bm25 import BM25Okapi
 import faiss
 from sentence_transformers import SentenceTransformer
+import nltk
+import argparse
+
+nltk.download('punkt')
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
 
 # Initialize sentence-transformer model
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 
 def build_indices(haystack, window_size=3):
-    """
-    Build BM25 and FAISS indices for a given haystack.
-
-    Returns empty values if the note is empty.
-    """
     sentences = sent_tokenize(str(haystack))
-    
+
     if len(sentences) == 0:
-        return [], None, None, None  # nothing to index
-    
+        return [], None, None, None
+
     if len(sentences) < window_size:
         passages = [' '.join(sentences)]
     else:
         passages = [' '.join(sentences[i:i+window_size]) for i in range(len(sentences) - window_size + 1)]
-    
-    # BM25 index
+
+    num_passages = len(passages)
+
     tokenized_passages = [word_tokenize(p.lower()) for p in passages]
     bm25_index = BM25Okapi(tokenized_passages)
-    
-    # FAISS embeddings
+
     passage_embeddings = model.encode(passages, convert_to_numpy=True)
     faiss.normalize_L2(passage_embeddings)
     dim = passage_embeddings.shape[1]
     faiss_index = faiss.IndexFlatIP(dim)
     faiss_index.add(passage_embeddings)
-    
-    return passages, bm25_index, faiss_index, passage_embeddings
+
+    return passages, bm25_index, faiss_index, passage_embeddings, num_passages
 
 
 def hybrid_retrieve(question, passages, bm25_index, faiss_index, passage_embeddings,
                     top_k=5, bm25_weight=0.5, faiss_weight=0.5):
-    """
-    Retrieve top passages using hybrid BM25 + FAISS cosine similarity.
-    """
     if not passages:
         return []
 
@@ -69,54 +69,47 @@ def hybrid_retrieve(question, passages, bm25_index, faiss_index, passage_embeddi
     return [p for p, _ in sorted_passages[:top_k]]
 
 
-def evaluate_hybrid_on_mimic(haystack_csv, top_k=5, window_size=3, bm25_weight=0.5, faiss_weight=0.5):
-    """
-    Evaluate hybrid BM25 + FAISS retrieval on MIMIC haystack.
-    """
-    df = pd.read_csv(haystack_csv)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Patient-level hybrid BM25 + FAISS retrieval")
+    parser.add_argument("--haystack_csv", type=str, default="src/haystacks/mimic_haystack.csv")
+    parser.add_argument("--output_csv", type=str, default="src/retrieval_patient_level/outputs/hybrid_patient_results.csv")
+    parser.add_argument("--top_k", type=int, default=2)
+    parser.add_argument("--window_size", type=int, default=3)
+    parser.add_argument("--bm25_weight", type=float, default=0.5)
+    parser.add_argument("--faiss_weight", type=float, default=0.5)
+    args = parser.parse_args()
+
+    df = pd.read_csv(args.haystack_csv)
     all_results = []
     found_count = 0
 
-    for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing MIMIC Notes"):
-        haystack = str(row['MODIFIED_NOTE'])
+    for idx, row in tqdm(df.iterrows(), total=len(df), desc="Hybrid Patient Retrieval"):
+        haystack = str(row['PATIENT_RECORD'])
         needle = str(row['NEEDLE_INSERTED'])
 
-        # Build indices
-        passages, bm25_index, faiss_index, passage_embeddings = build_indices(haystack, window_size)
-
-        # Retrieve top passages
-        top_passages = hybrid_retrieve(needle, passages, bm25_index, faiss_index,
-                                       passage_embeddings, top_k, bm25_weight, faiss_weight)
+        passages, bm25_idx, faiss_idx, passage_embeddings, num_passages = build_indices(haystack, args.window_size)
+        top_passages = hybrid_retrieve(needle, passages, bm25_idx, faiss_idx, passage_embeddings,
+                                       top_k=args.top_k, bm25_weight=args.bm25_weight, faiss_weight=args.faiss_weight)
 
         found = any(needle in p for p in top_passages)
         if found:
             found_count += 1
 
-        # Append results safely
         all_results.append({
-            "HADM_ID": row['HADM_ID'],
-            "SUBJECT_ID": row['SUBJECT_ID'],
-            "CATEGORY": row['CATEGORY'],
+            "SUBJECT_ID": row["SUBJECT_ID"],
+            "NUM_NOTES": row["NUM_NOTES"],
             "needle": needle,
             "found": found,
+            "num_passages": num_passages,
+            "haystack_len_chars": len(haystack),
             "top_passages": top_passages
         })
 
         tqdm.write(f"Progress: {idx+1}/{len(df)}, Current Accuracy: {found_count/(idx+1):.2f}")
 
     results_df = pd.DataFrame(all_results)
-    accuracy = results_df["found"].mean()
-    print(f"Overall top-{top_k} hybrid retrieval accuracy: {accuracy:.2f}")
-    return results_df
+    print(f"Overall top-{args.top_k} hybrid retrieval accuracy: {results_df['found'].mean():.2f}")
 
-
-if __name__ == "__main__":
-    haystack_file = os.path.join("src", "haystacks", "mimic_haystack.csv")
-    results_df = evaluate_hybrid_on_mimic(haystack_file, top_k=2, window_size=3,
-                                          bm25_weight=0.5, faiss_weight=0.5)
-
-    output_dir = os.path.join("src", "retrieval", "outputs")
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, "hybrid_mimic_results.csv")
-    results_df.to_csv(output_file, index=False)
-    print(f"Saved results to {output_file}")
+    os.makedirs(os.path.dirname(args.output_csv), exist_ok=True)
+    results_df.to_csv(args.output_csv, index=False)
+    print(f"Saved results to {args.output_csv}")
