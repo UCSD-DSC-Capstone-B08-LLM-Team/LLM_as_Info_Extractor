@@ -1,74 +1,133 @@
 import pandas as pd
 import os
+import ast
+import argparse
 
-def generate_bedrock_prompts(results_df, task="classify", output_file=None):
+
+TASK_TEMPLATES = {
+    # checking for semantic match
+    "classify": (
+        "Instruction: Determine if the clinical notes below contain the specific clinical scenario described in the 'Query'. Answer only 'Yes' or 'No'.\n"
+        "Input: {context}\n"
+        "Query: {needle}"
+    ),
+    # precise text span extraction
+    "extract": (
+        "Instruction: You are a clinical data extractor. Identify and extract the exact text spans from the 'Input' that match the 'Target Criteria' below. Return ONLY the extracted text strings in a list format. If no text matches, return 'None'.\n"
+        "Input: {context}\n"
+        "Target Criteria: {needle}"
+    ),
+    # filter to relevant information and summarize
+    "summarize": (
+        "Instruction: Summarize all information in the 'Input' notes that is specifically relevant to the 'Focus Topic' below. Do not include unrelated medical history or details. Keep the summary concise and clinical.\n"
+        "Input: {context}\n"
+        "Focus Topic: {needle}"
+    ),
+}
+
+
+def generate_bedrock_prompts(results_df, task):
     """
     Generate Bedrock prompts from retrieval results.
 
     Args:
-        results_df (pd.DataFrame): Retrieval results with columns ['needle', 'top_passages', ...].
-                                   top_passages should be a list of passages or a stringified list.
-        task (str): Type of instruction for Bedrock ('summarize', 'classify', 'extract', etc.).
-        output_file (str): Optional path to save prompts CSV. If None, will not save.
+        results_df (pd.DataFrame): Retrieval results containing at least
+                                   ['needle', 'top_passages'].
+        task (str): One of ['classify', 'extract', 'summarize'].
 
     Returns:
-        prompts_df: DataFrame with columns ['needle', 'top_passages', 'bedrock_prompt'].
+        pd.DataFrame with columns:
+        ['needle', 'task', 'top_passages', 'bedrock_prompt']
     """
-    
+
+    if task not in TASK_TEMPLATES:
+        raise ValueError(f"Unsupported task '{task}'. Valid tasks: {list(TASK_TEMPLATES.keys())}")
+
     prompts = []
-    
-    for idx, row in results_df.iterrows():
-        needle = row['needle']
-        # if top_passages is a string representation of a list, eval it
-        passages = row['top_passages']
+
+    for _, row in results_df.iterrows():
+        needle = row["needle"]
+        passages = row["top_passages"]
+
+        # Safely parse list stored as string
         if isinstance(passages, str):
             try:
-                passages = eval(passages)
-            except:
+                passages = ast.literal_eval(passages)
+            except Exception:
                 passages = [passages]
 
-        context = "\n\n".join(passages)
 
-        if task == "summarize":
-            prompt = (
-                f"Here are clinical notes:\n{context}\n\n"
-                f"Summarize the information relevant to the following criteria:\n{needle}"
-            )
-        elif task == "classify":
-            prompt = (
-                f"Here are clinical notes:\n{context}\n\n"
-                f"Does the patient meet the following criteria? Answer 'Yes' or 'No':\n{needle}"
-            )
-        elif task == "extract":
-            prompt = (
-                f"Here are clinical notes:\n{context}\n\n"
-                f"Extract the text that matches the following criteria:\n{needle}"
-            )
-        else:
-            prompt = f"Context:\n{context}\n\nNeedle:\n{needle}"
+        context = " ".join(sorted(set(passages), key=lambda x: passages.index(x)))
+        # Limit context to around 300 words
+        context_words = context.split()
+        if len(context_words) > 300:
+            context = " ".join(context_words[:300])
+
+
+        prompt = TASK_TEMPLATES[task].format(
+            context=context,
+            needle=needle
+        )
 
         prompts.append({
-            'needle': needle,
-            'top_passages': passages,
-            'bedrock_prompt': prompt
+            "needle": needle,
+            "task": task,
+            "top_passages": passages,
+            "bedrock_prompt": prompt
         })
-    
-    prompts_df = pd.DataFrame(prompts)
 
-    if output_file:
-        os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        prompts_df.to_csv(output_file, index=False)
-        print(f"Saved Bedrock prompts to {output_file}")
+    return pd.DataFrame(prompts)
 
-    return prompts_df
 
 if __name__ == "__main__":
-    # Load retrieval CSV
-    retrieval_file = "src/retrieval/outputs/bm25_mimic_results.csv"
-    results_df = pd.read_csv(retrieval_file)
+    parser = argparse.ArgumentParser(description="Generate Bedrock prompts from retrieval outputs")
+    parser.add_argument(
+        "--retrieval_csv",
+        type=str,
+        required=True,
+        help="Path to retrieval results CSV"
+    )
+    parser.add_argument(
+        "--retrieval_method",
+        type=str,
+        required=True,
+        help="Retrieval method name (bm25, faiss_cos, faiss_euc, hybrid)"
+    )
+    parser.add_argument(
+        "--task",
+        type=str,
+        choices=["classify", "extract", "summarize"],
+        required=True,
+        help="Task type for Bedrock prompting"
+    )
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        default="src/bedrock_pipeline/bedrock_prompts",
+        help="Base output directory"
+    )
+
+    args = parser.parse_args()
+
+    results_df = pd.read_csv(args.retrieval_csv)
 
     prompts_df = generate_bedrock_prompts(
-        results_df,
-        task="classify",
-        output_file="src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv"
+        results_df=results_df,
+        task=args.task
     )
+
+    output_path = os.path.join(
+        args.output_dir,
+        args.task,
+        f"{args.retrieval_method}_prompts.csv"
+    )
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    prompts_df.to_csv(output_path, index=False)
+
+    print(f"Saved Bedrock prompts to {output_path}")
+
+    # Example usage:
+    # python src/bedrock_pipeline/prompt_generation.py \
+    #   --retrieval_csv src/retrieval_patient_level/outputs/bm25_patient_results.csv \
+    #   --retrieval_method bm25 \
+    #   --task classify

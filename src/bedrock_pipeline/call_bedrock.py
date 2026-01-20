@@ -4,43 +4,85 @@ import boto3
 import time
 import json
 import os
+import argparse
 
-# Bedrock client (region must match your model!)
-bedrock = boto3.client("bedrock-runtime", region_name="us-west-2")
-
-def call_bedrock_and_save(csv_file, output_file, model_id="anthropic.claude-3-sonnet", sleep_time=0.5):
+def infer_task_and_retrieval(prompt_csv_path):
     """
-    Calls Bedrock for each prompt in CSV and saves responses.
+    Infers task and retrieval method from standardized path.
+
+    Args:
+        prompt_csv_path (str): Path to the prompt CSV file.
+
+    Returns:
+        tuple: (task, retrieval) inferred from the path.
+    """
+
+    parts = prompt_csv_path.replace("\\", "/").split("/")
+    task = parts[-2]
+    retrieval = os.path.basename(prompt_csv_path).replace("_prompts.csv", "")
+    return task, retrieval
+
+
+def call_bedrock_and_save(prompt_csv, model_id="deepseek.v3-v1:0", max_tokens=512, temperature=0.0, sleep_time=0.5, region="us-west-2"):
+    """
+    Calls Bedrock model on prompts from CSV and saves responses.
     
-    CSV must have column: 'bedrock_prompt'
-    Optional columns: 'needle', 'top_passages'
+    Args:
+        prompt_csv (str): Path to input prompt CSV file.
+        model_id (str): Bedrock model ID to use.
+        max_tokens (int): Maximum tokens for Bedrock response.
+        temperature (float): Temperature setting for Bedrock model.
+        sleep_time (float): Sleep time between API calls to avoid rate limits.
+        region (str): AWS region for Bedrock client.
+
+    Returns:
+        None
     """
-    df = pd.read_csv(csv_file)
+
+    df = pd.read_csv(prompt_csv)
+    client = boto3.client("bedrock-runtime", region_name=region)
+
+    task, retrieval = infer_task_and_retrieval(prompt_csv)
+
+    output_csv = f"src/bedrock_pipeline/bedrock_responses/{task}/{retrieval}_responses.csv"
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+
     responses = []
 
-    for _, row in tqdm(df.iterrows(), total=len(df), desc="Calling Bedrock"):
+    for _, row in tqdm(df.iterrows(), total=len(df), desc="Calling DeepSeek"):
         prompt = row["bedrock_prompt"]
 
         try:
-            resp = bedrock.invoke_model(
+            # FIX: The error explicitly asked for 'messages', so we must format it as a chat
+            request_body = {
+                "messages": [
+                    {
+                        "role": "user", 
+                        "content": prompt
+                    }
+                ],
+                "max_tokens": max_tokens,
+                "temperature": temperature
+            }
+            
+            resp = client.invoke_model(
                 modelId=model_id,
                 contentType="application/json",
                 accept="application/json",
-                body=json.dumps({
-                    "anthropic_version": "bedrock-2023-05-31",
-                    "max_tokens": 512,
-                    "messages": [
-                        {
-                            "role": "user",
-                            "content": [{"type": "text", "text": prompt}]
-                        }
-                    ]
-                })
+                body=json.dumps(request_body)
             )
-
+            
             response_body = json.loads(resp["body"].read())
-            output = response_body["content"][0]["text"]
-
+            
+            # FIX: Chat-based inputs usually return 'choices' (OpenAI style)
+            if "choices" in response_body:
+                output = response_body["choices"][0]["message"]["content"]
+            # Fallback for other DeepSeek variations
+            elif "outputs" in response_body:
+                output = response_body["outputs"][0]["text"]
+            else:
+                output = str(response_body) 
+                
         except Exception as e:
             output = f"ERROR: {e}"
 
@@ -48,54 +90,20 @@ def call_bedrock_and_save(csv_file, output_file, model_id="anthropic.claude-3-so
         time.sleep(sleep_time)
 
     df["bedrock_response"] = responses
+    df.to_csv(output_csv, index=False)
 
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    df.to_csv(output_file, index=False)
+    print(f"\nSaved Bedrock responses to {output_csv}")
 
-    print(f"\nSaved Bedrock responses to {output_file}")
 
-def check_bedrock_connection(model_id, region="us-west-2"):
-    """Tests connection and model ID validity by invoking a simple prompt.
-    
-    Args:
-        model_id (str): Bedrock model ID to test.
-        region (str): AWS region for Bedrock.
-    
-    Returns:
-        bool: True if connection and model ID are valid, False otherwise.
-    """
-    
-    try:
-        client = boto3.client("bedrock-runtime", region_name=region)
-        
-        # Use a minimal request body
-        client.invoke_model(
-            modelId=model_id,
-            contentType="application/json",
-            accept="application/json",
-            body=json.dumps({
-                "anthropic_version": "bedrock-2023-05-31",
-                "max_tokens": 10,
-                "messages": [{"role": "user", "content": [{"type": "text", "text": "Hello"}]}]
-            })
-        )
-        print(f"\nConnection Successful! Model ID '{model_id}' is valid in {region}.")
-        return True
-    
-    except client.exceptions.ResourceNotFoundException:
-        print(f"\nERROR: Model ID '{model_id}' is invalid or access is denied. Check AWS Model Access page.")
-        return False
-    except Exception as e:
-        print(f"\nERROR: Failed to connect to Bedrock. Check API Key and Region. Details: {e}")
-        return False
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run Bedrock on prompt CSV")
+    parser.add_argument("--prompt_csv", required=True, help="Path to input prompt CSV file")
 
-# Example usage before the loop:
-model_to_use = "anthropic.claude-3-sonnet-20240229-v1:0" 
+    args = parser.parse_args()
 
-if check_bedrock_connection(model_to_use):
     call_bedrock_and_save(
-        csv_file="src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv",
-        output_file="src/bedrock_pipeline/bedrock_responses/classify/bm25_responses.csv",
-        model_id=model_to_use,
-        sleep_time=0.5
+        prompt_csv=args.prompt_csv
     )
+
+# Run the script with:
+# python src/bedrock_pipeline/call_bedrock.py --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv
