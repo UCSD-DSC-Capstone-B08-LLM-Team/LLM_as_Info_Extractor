@@ -99,12 +99,12 @@ Filtered  `NOTEEVENTS.csv` from `data/mimic/` to only include first 500 rows whe
 
 ### STEP 3: Generate synthetic needles
 ```bash
-python src/needles/generate_needles.py`
+python src/needles/generate_needles.py
 ```
 
 ### STEP 4: Create Haystacks by inserting Needles
 
-We support two ways of constructing haystacks from NOTEEVENTS.csv:
+We support two ways of constructing haystacks from `NOTEEVENTS.csv`:
 
 #### 1. Note-level Needle Insertion:
 
@@ -247,7 +247,7 @@ python src/bedrock_pipeline/prompt_generation.py \
 - `--output_dir`: Base directory for prompt outputs (optional)
 
 #### 2. Call Bedrock: 
-`call_bedrock`sends generated prompts to an Amazon Bedrock hosted LLM (e.g., DeepSeek) and saves the model responses to disk. It is designed to operate on prompt CSVs produced by `prompt_generation.py` and follows a standardized directory structure to automatically infer task and retrieval method.
+`call_bedrock.py` sends generated prompts to an Amazon Bedrock hosted LLM (e.g., DeepSeek) and saves the model responses to disk. It is designed to operate on prompt CSVs produced by `prompt_generation.py` and follows a standardized directory structure to automatically infer task and retrieval method.
 
 The scipt expects the prompt CSV path to follow this structure:
 ```php-template
