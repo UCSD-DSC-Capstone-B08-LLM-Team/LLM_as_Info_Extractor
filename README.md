@@ -13,19 +13,20 @@ LLMs, such as GPT-4, Claude 3, and Gemini Advanced, have demonstrated the abilit
     <code>
         LLM_as_Info_Extractor/
         ├── LICENSE
-        ├── README.md                 # Main project overview
+        ├── README.md                       # Main project overview
         ├── requirements.txt
         ├── .gitignore
         ├── data/
-        │   └── mimic/                # MIMIC data (instructions in data/mimic/README.md)
+        │   └── mimic/                      # MIMIC data (instructions in data/mimic/README.md)
         ├── src/
-        │   ├── bedrock_pipeline/     # LLM prompt & Bedrock pipeline
-        │   ├── needles/              # Synthetic needle generation
-        │   ├── eval/                 # LLM evaluation scripts
-        │   ├── results/              # Visualization scripts & output
-        │   ├── retrieval/            # Retrieval methods
-        │   └── haystacks/            # Functions for inserting needles and constructing haystacks
-        └── Support_Docs              # Past EDA & Literature Review
+        │   ├── bedrock_pipeline/           # LLM prompt & Bedrock pipeline
+        │   ├── needles/                    # Synthetic needle generation
+        │   ├── eval/                       # LLM evaluation scripts
+        │   ├── results/                    # Visualization scripts & output
+        │   ├── retrieval/                  # Retrieval methods (Note level)
+        |   ├── retrieval_patient_level/    # Retrieval methods (Patient level)
+        │   └── haystacks/                  # Functions for inserting needles and constructing haystacks
+        └── Support_Docs                    # Past EDA & Literature Review
     </code>
 </pre>
 
@@ -92,43 +93,190 @@ Filtered  `NOTEEVENTS.csv` from `data/mimic/` to only include first 500 rows whe
 
 ## Steps to Run: 
 
-1. Place MIMIC-III data in `data/mimic/`. 
+### STEP 1: Place MIMIC-III data in `data/mimic/`. 
 
-2. Configure AWS 
+### STEP 2: Configure AWS 
 
-2. Generate synthetic needles:
+### STEP 3: Generate synthetic needles
 ```bash
-src/needles/generate_needles.py`
+python src/needles/generate_needles.py`
 ```
 
-3. Create haystack by inserting needles into notes in `NOTEEVENTS.csv` by using `src/haystacks/insert_needle.py`.
+### STEP 4: Create Haystacks by inserting Needles
 
-4. Run retrieval methods:
+We support two ways of constructing haystacks from NOTEEVENTS.csv:
+
+#### 1. Note-level Needle Insertion:
+
+Insert synthetic needles into individual notes by sampling notes from specified MIMIC note categories.
+
+```bash
+python src/haystacks/insert_needle.py \
+    --categories "Echo" "ECG" "Discharge summary" \
+    --n_notes 500 \
+    --seed 42
+```
+**Parameters**
+- `--categories` (required): One or more note categories to sample from (e.g., Discharge, ECG, Echo)
+- `--n_notes`: Number of notes to sample (default: 500)
+- `--seed`: Random seed for reproducibility (default: 42)
+
+Each sampled note becomes a separate haystack document with a single inserted needle.
+
+#### 2. Patient-level Needle Insertion:
+
+Insert needles at the patient level, where all notes from a single patient are concatenated into one document and exactly one needle is inserted per patient.
+
+```bash
+python src/haystacks/create_haystack_patient_level.py \
+  --categories "Echo" "ECG" "Discharge summary" \
+  --n_patients 100 \
+  --min_notes_per_patient 2 \
+  --seed 42
+``` 
+
+**Parameters:**
+- `--categories`: Optional list of note categories to include (default: all categories)
+- `--n_patients`: Number of patients to sample (default: 100)
+- `--min_notes_per_patient`: Minimum number of notes required per patient (default: 1)
+- `--seed`: Random seed for reproducibility (default: 42)
+
+Each patient corresponds to one haystack document containing all qualifying notes and one inserted needle.
+
+### STEP 5: Run retrieval methods
+
+#### 1. Note-level retrieval: 
+Run BM25, FAISS with cosine similarity, FAISS with euclidean distance, and hybrid retrieval:
 ```bash
 python src/retrieval/bm25_retrieval.py
 python src/retrieval/faiss_cos_retrieval.py
 python src/retrieval/faiss_cos_retrieval.py
 python src/retrieval/hybrid_retrieval.py
 ```
-5. Generate prompts and run Bedrock LLM based on prompts by using `src/bedrock_pipeline/`:
 
-Prompts are generated on the top-k retrieved passages by running:
+#### 2. Patient-level retrieval:
+Run BM25 retrieval: 
 ```bash
-python src/bedrock_pipeline/prompt_generation.py
+python src/retrieval_patient_level/bm25.py \
+  --haystack_csv src/haystacks/mimic_haystack.csv \
+  --output_csv src/retrieval_patient_level/outputs/bm25_patient_results.csv \
+  --top_k 2 \
+  --window_size 3
 ```
-where the task could be "classify", "extract", or "summarize" and the retrieval file could be from any of the four retrieval methods.
+**Parameters:**
+- `--haystack_csv`: Path to patient-level haystack CSV (optional)
+- `--output_csv`: Path to save BM25 retrieval results (optional)
+- `--top_k`: Number of top passages retrieved per patient (optional)
+- `--window_size`: Number of sentences per passage window (optional)
 
-Bedrock is called using any of the generated prompts by running:
+
+Run FAISS with cosine similarity retrieval:
 ```bash
-python src/bedrock_pipeline/call_bedrock.py
+python src/retrieval_patient_level/faiss_cos.py \
+  --haystack_csv src/haystacks/mimic_haystack.csv \
+  --output_csv src/retrieval_patient_level/outputs/faiss_cos_patient_results.csv \
+  --top_k 2 \
+  --window_size 3
 ```
+**Parameters:**
+- `--haystack_csv`: Path to patient-level haystack CSV (optional)
+- `--output_csv`: Path to save BM25 retrieval results (optional)
+- `--top_k`: Number of top passages retrieved per patient (optional)
+- `--window_size`: Number of sentences per passage window (optional)
 
-6. Evaluate Bedrock LLM for classification or extraction methods:
+
+Run FAISS with euclidean distance retrieval: 
 ```bash
-python src/eval/extract_llm_eval.py
+python src/retrieval_patient_level/faiss_euc.py \
+  --haystack_csv src/haystacks/mimic_haystack.csv \
+  --output_csv src/retrieval_patient_level/outputs/faiss_euc_patient_results.csv \
+  --top_k 2 \
+  --window_size 3
+```
+**Parameters:**
+- `--haystack_csv`: Path to patient-level haystack CSV (optional)
+- `--output_csv`: Path to save BM25 retrieval results (optional)
+- `--top_k`: Number of top passages retrieved per patient (optional)
+- `--window_size`: Number of sentences per passage window (optional)
+
+
+Run hybrid retrieval: 
+```bash
+python src/retrieval_patient_level/hybrid.py \
+  --haystack_csv src/haystacks/mimic_haystack.csv \
+  --output_csv src/retrieval_patient_level/outputs/hybrid_patient_results.csv \
+  --top_k 2 \
+  --window_size 3 \
+  --bm25_weight 0.5 \
+  --faiss_weight 0.5
+```
+**Parameters:**
+- `--haystack_csv`: Path to patient-level haystack CSV (optional)
+- `--output_csv`: Path to save BM25 retrieval results (optional)
+- `--top_k`: Number of top passages retrieved per patient (optional)
+- `--window_size`: Number of sentences per passage window (optional)
+- `--bm25_weight`: Weight assigned to BM25 lexical scores (optional)
+- `--faiss_weight`: Weight assigned to FAISS cosine similarity scores (optional)
+
+
+### STEP 6: Generate prompts and run Bedrock LLM based on prompts by using `bedrock_pipeline` folder.
+
+#### 1. Generate Prompts:
+`prompt_generation.py` converts retrieval outputs (e.g., BM25, FAISS, or hybrid retrieval results) into structured prompts suitable for Amazon Bedrock / LLM inference. It takes the top retrieved passages for each patient-level query (“needle”) and formats them into task-specific prompts for downstream evaluation.
+
+The script currently supports three clinical NLP tasks:
+
+1. `classify`: Binary classification of whether a clinical scenario is present. The prompt intends to check whether the retrieved notes contain the clinical scenario described by the needle with an expected output of yes or no. 
+
+2. `extract`: Exact text span extraction from the retrieved context. The prompt intends to force a precise extraction instead of summarizing or paraphrasing with an expected output of a python style list of the extracted text. 
+
+3. `summarize`: Focused summarization of relevant information only. The prompt intends to filter out unrelated history while maintaining medically relevant details with an expected output of a clinical summary of the topics specified by the needle. 
+
+To generate the prompts, run: 
+```bash
+python src/bedrock_pipeline/prompt_generation.py \
+  --retrieval_csv src/retrieval_patient_level/outputs/bm25_patient_results.csv \
+  --retrieval_method bm25 \
+  --task classify \
+  --output_dir src/bedrock_pipeline/bedrock_prompts
+```
+**Parameters:**
+- `--retrieval_csv`: Path to retrieval csv 
+- `--retrieval_method`: Name of retrieval method (`bm25`, `faiss_cos`, `faiss_euc`, `hybrid`)
+- `--task`: One of `classify`, `extract`, `summarize`
+- `--output_dir`: Base directory for prompt outputs (optional)
+
+#### 2. Call Bedrock: 
+`call_bedrock`sends generated prompts to an Amazon Bedrock hosted LLM (e.g., DeepSeek) and saves the model responses to disk. It is designed to operate on prompt CSVs produced by `prompt_generation.py` and follows a standardized directory structure to automatically infer task and retrieval method.
+
+The scipt expects the prompt CSV path to follow this structure:
+```php-template
+src/bedrock_pipeline/bedrock_prompts/<task>/<retrieval_method>_prompts.csv
+```
+From this path, the script automatically infers the task (classify, extract, or summarize) and the retrieval method (bm25, faiss_cos, faiss_euc, or hybrid). 
+
+To call a Bedrock model, run:
+```bash
+python src/bedrock_pipeline/call_bedrock.py \
+    --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv
+```
+**Parameter:**
+- `--prompt_csv`: Path to a generated `bedrock_prompts` CSV containing prompts for a specific task and retrieval method.
+
+
+### STEP 7: Evaluate Bedrock LLM
+#### 1. For classification methods:
+```bash
 python src/eval/classify_llm_eval.py
 ```
-7. Generate Visualizations:
+#### 2. For extraction methods:
+```bash
+python src/eval/extract_llm_eval.py
+```
+#### 3. For summarization methods:
+(TODO)
+
+### STEP 8: Generate Visualizations
 
 Visualizations for Bedrock evaluation can be generated by:
 ```bash
