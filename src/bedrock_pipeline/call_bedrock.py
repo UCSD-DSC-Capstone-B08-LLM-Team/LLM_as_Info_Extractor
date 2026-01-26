@@ -53,7 +53,6 @@ def call_bedrock_and_save(prompt_csv, model_id="deepseek.v3-v1:0", max_tokens=51
         prompt = row["bedrock_prompt"]
 
         try:
-            # FIX: The error explicitly asked for 'messages', so we must format it as a chat
             request_body = {
                 "messages": [
                     {
@@ -74,7 +73,7 @@ def call_bedrock_and_save(prompt_csv, model_id="deepseek.v3-v1:0", max_tokens=51
             
             response_body = json.loads(resp["body"].read())
             
-            # FIX: Chat-based inputs usually return 'choices' (OpenAI style)
+            # Extract response based on DeepSeek v3 format
             if "choices" in response_body:
                 output = response_body["choices"][0]["message"]["content"]
             # Fallback for other DeepSeek variations
