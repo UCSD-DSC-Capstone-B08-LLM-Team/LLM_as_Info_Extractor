@@ -2,7 +2,7 @@ import pandas as pd
 from fuzzywuzzy import fuzz
 import os
 
-def evaluate_extraction(responses_dict, output_file="src/eval/extract/all_methods_llm_eval.csv"):
+def evaluate_extraction(responses_dict, output_file="src/eval/note_level/extract/all_methods_llm_eval.csv"):
     """
     Evaluate extraction accuracy for multiple retrieval methods.
 
@@ -50,6 +50,8 @@ def evaluate_extraction(responses_dict, output_file="src/eval/extract/all_method
 responses_dict = {
     "bm25": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/bm25_responses.csv"),
     "faiss_cos": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/faiss_cos_responses.csv"),
+    "faiss_euc": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/faiss_euc_responses.csv"),
+    "hybrid": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/hybrid_responses.csv"),
 }
 
 evaluate_extraction(responses_dict)

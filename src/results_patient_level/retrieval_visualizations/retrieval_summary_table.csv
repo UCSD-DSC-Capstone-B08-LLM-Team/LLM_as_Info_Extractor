@@ -1,0 +1,5 @@
+method,num_patients,coverage_rate,avg_num_passages,avg_haystack_len
+bm25,100,1.0,775.13,69044.24
+faiss_cos,100,0.98,775.13,69044.24
+faiss_euc,100,0.98,775.13,69044.24
+hybrid,100,1.0,775.13,69044.24

@@ -1,0 +1,5 @@
+strategy,num_patients,overall_exact_match,overall_fuzzy_80_match
+bm25,100,0.99,1.0
+faiss_cos,100,0.97,0.97
+faiss_euc,100,0.98,0.98
+hybrid,100,0.99,1.0

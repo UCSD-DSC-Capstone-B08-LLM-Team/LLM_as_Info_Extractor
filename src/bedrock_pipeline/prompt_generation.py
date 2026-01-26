@@ -70,6 +70,7 @@ def generate_bedrock_prompts(results_df, task):
         )
 
         prompts.append({
+            "SUBJECT_ID": row["SUBJECT_ID"],
             "needle": needle,
             "task": task,
             "top_passages": passages,
