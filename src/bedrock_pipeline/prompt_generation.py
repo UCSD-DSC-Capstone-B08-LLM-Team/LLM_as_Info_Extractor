@@ -89,10 +89,10 @@ if __name__ == "__main__":
         help="Path to retrieval results CSV"
     )
     parser.add_argument(
-        "--retrieval_method",
+        "--output_csv",
         type=str,
         required=True,
-        help="Retrieval method name (bm25, faiss_cos, faiss_euc, hybrid)"
+        help="Path to save generated Bedrock prompts CSV"
     )
     parser.add_argument(
         "--task",
@@ -100,12 +100,6 @@ if __name__ == "__main__":
         choices=["classify", "extract", "summarize"],
         required=True,
         help="Task type for Bedrock prompting"
-    )
-    parser.add_argument(
-        "--output_dir",
-        type=str,
-        default="src/bedrock_pipeline/bedrock_prompts",
-        help="Base output directory"
     )
 
     args = parser.parse_args()
@@ -117,11 +111,7 @@ if __name__ == "__main__":
         task=args.task
     )
 
-    output_path = os.path.join(
-        args.output_dir,
-        args.task,
-        f"{args.retrieval_method}_prompts.csv"
-    )
+    output_path = os.path.join(args.output_csv,)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     prompts_df.to_csv(output_path, index=False)
 
@@ -130,5 +120,5 @@ if __name__ == "__main__":
     # Example usage:
     # python src/bedrock_pipeline/prompt_generation.py \
     #   --retrieval_csv src/retrieval_patient_level/outputs/bm25_patient_results.csv \
-    #   --retrieval_method bm25 \
+    #   --output_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv \
     #   --task classify

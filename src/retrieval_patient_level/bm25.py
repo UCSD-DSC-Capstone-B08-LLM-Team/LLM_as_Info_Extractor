@@ -31,13 +31,13 @@ def retrieve_needles(haystack, needle, top_k=3, window_size=3):
         return [], 0
 
     # Create passages
-    if len(sentences) < window_size:
+    if window_size <= 0:
+        passages = [' '.join(sentences)]
+    elif len(sentences) < window_size:
         passages = [' '.join(sentences)]
     else:
-        passages = [
-            ' '.join(sentences[i:i+window_size])
-            for i in range(len(sentences) - window_size + 1)
-        ]
+        passages = [' '.join(sentences[i:i+window_size]) for i in range(len(sentences) - window_size + 1)]
+
     num_passages = len(passages)
 
     # BM25 retrieval
@@ -76,8 +76,15 @@ if __name__ == "__main__":
             haystack, needle, top_k=args.top_k, window_size=args.window_size
         )
 
-        # Exact match check
-        found = any(needle in passage for passage in top_passages)
+        # Determine rank of needle if found
+        needle_rank = np.nan
+        for i, passage in enumerate(top_passages):
+            if needle in passage:
+                needle_rank = i + 1
+                break
+
+        # Check if needle retrieved within top-k
+        found = not np.isnan(needle_rank)
         if found:
             found_count += 1
 
@@ -85,17 +92,31 @@ if __name__ == "__main__":
             "SUBJECT_ID": row["SUBJECT_ID"],
             "NUM_NOTES": row["NUM_NOTES"],
             "needle": needle,
+            "needle_rank": needle_rank,
             "found": found,
             "num_passages": num_passages,
             "haystack_len_chars": len(haystack),
             "top_passages": top_passages
         })
 
-        tqdm.write(f"Progress: {_+1}/{len(df)}, Current Accuracy: {found_count/(_+1):.2f}")
+        tqdm.write(f"Progress: {_+1}/{len(df)}, Current Needle Rank: {needle_rank}, Current Recall@{args.top_k}: {found_count/(_+1):.2f}")
 
     results_df = pd.DataFrame(results)
-    accuracy = results_df["found"].mean()
-    print(f"Overall retrieval accuracy (exact match): {accuracy:.4f}")
+
+    # Mean rank (only where needle was found)
+    mean_rank = results_df["needle_rank"].dropna().mean()
+    # % at rank 1
+    pct_rank_1 = (results_df["needle_rank"] == 1).mean()
+    # % at rank <= K
+    K = args.top_k
+    pct_rank_k = (results_df["needle_rank"] <= K).mean()
+    print("\n===== Retrieval Rank Metrics =====")
+    print(f"Mean needle rank: {mean_rank:.2f}")
+    print(f"% needles at rank 1: {pct_rank_1:.2%}")
+    print(f"% needles at rank ≤ {K}: {pct_rank_k:.2%}")
+    # Overall accuracy / recall@k
+    recall_at_k = results_df["found"].mean()
+    print(f"Recall@{args.top_k}: {recall_at_k:.4f}")
 
     os.makedirs(os.path.dirname(args.output_csv), exist_ok=True)
     results_df.to_csv(args.output_csv, index=False)

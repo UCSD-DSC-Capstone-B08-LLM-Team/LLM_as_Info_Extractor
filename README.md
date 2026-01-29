@@ -236,15 +236,13 @@ To generate the prompts, run:
 ```bash
 python src/bedrock_pipeline/prompt_generation.py \
   --retrieval_csv src/retrieval_patient_level/outputs/bm25_patient_results.csv \
-  --retrieval_method bm25 \
-  --task classify \
-  --output_dir src/bedrock_pipeline/bedrock_prompts
+  --output_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv \
+  --task classify
 ```
 **Parameters:**
 - `--retrieval_csv`: Path to retrieval csv 
-- `--retrieval_method`: Name of retrieval method (`bm25`, `faiss_cos`, `faiss_euc`, `hybrid`)
+- `--output_csv`: Path to save generated Bedrock prompt csv
 - `--task`: One of `classify`, `extract`, `summarize`
-- `--output_dir`: Base directory for prompt outputs (optional)
 
 #### 2. Call Bedrock: 
 `call_bedrock.py` sends generated prompts to an Amazon Bedrock hosted LLM (e.g., DeepSeek) and saves the model responses to disk. It is designed to operate on prompt CSVs produced by `prompt_generation.py` and follows a standardized directory structure to automatically infer task and retrieval method.
