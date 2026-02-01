@@ -19,7 +19,8 @@ def infer_task_and_retrieval(prompt_csv_path):
 
     parts = prompt_csv_path.replace("\\", "/").split("/")
     task = parts[-2]
-    retrieval = os.path.basename(prompt_csv_path).replace("_prompts.csv", "")
+    filename = os.path.basename(prompt_csv_path)
+    retrieval = filename.split("_prompts")[0]
     return task, retrieval
 
 
@@ -44,7 +45,9 @@ def call_bedrock_and_save(prompt_csv, model_id="deepseek.v3-v1:0", max_tokens=51
 
     task, retrieval = infer_task_and_retrieval(prompt_csv)
 
-    output_csv = f"src/bedrock_pipeline/bedrock_responses/{task}/{retrieval}_responses.csv"
+    if output_csv is None:
+        output_csv = (f"src/bedrock_pipeline/bedrock_responses/{task}/{retrieval}_responses.csv")
+
     os.makedirs(os.path.dirname(output_csv), exist_ok=True)
 
     responses = []
@@ -97,7 +100,7 @@ def call_bedrock_and_save(prompt_csv, model_id="deepseek.v3-v1:0", max_tokens=51
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Bedrock on prompt CSV")
     parser.add_argument("--prompt_csv", required=True, help="Path to input prompt CSV file")
-
+    parser.add_argument("--output_csv", default=None, help="Optional explicit output CSV path")
     args = parser.parse_args()
 
     call_bedrock_and_save(
@@ -105,4 +108,6 @@ if __name__ == "__main__":
     )
 
 # Run the script with:
-# python src/bedrock_pipeline/call_bedrock.py --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv
+# python src/bedrock_pipeline/call_bedrock.py 
+#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv
+#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/bm25_responses.csv

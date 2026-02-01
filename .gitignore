@@ -9,6 +9,8 @@ src/eval/note_level/extract/bm25_llm_eval.csv
 src/eval/note_level/extract/faiss_cos_llm_eval.csv
 src/eval/note_level/extract/faiss_euc_llm_eval.csv
 src/eval/note_level/extract/hybrid_llm_eval.csv
+src/eval/note_level/extract/colbert_llm_eval.csv
+src/eval/note_level/summarize/
 __pycache__/
 *.pyc
 .DS_Store
@@ -16,14 +18,18 @@ __pycache__/
 data/mimic/
 src/retrieval_patient_level/outputs/
 src/eval/patient_level/classify/bm25_eval.csv
+src/eval/patient_level/classify/colbert_eval.csv
 src/eval/patient_level/classify/faiss_cos_eval.csv
 src/eval/patient_level/classify/faiss_euc_eval.csv
 src/eval/patient_level/classify/hybrid_eval.csv
 src/eval/patient_level/extract/bm25_eval.csv
+src/eval/patient_level/extract/colbert_eval.csv
 src/eval/patient_level/extract/faiss_cos_eval.csv
 src/eval/patient_level/extract/faiss_euc_eval.csv
 src/eval/patient_level/extract/hybrid_eval.csv
 src/eval/patient_level/summarize/bm25_eval.csv
+src/eval/patient_level/summarize/colbert_eval.csv
 src/eval/patient_level/summarize/faiss_cos_eval.csv
 src/eval/patient_level/summarize/faiss_euc_eval.csv
 src/eval/patient_level/summarize/hybrid_eval.csv
+src/results_patient_level/retrieval_table.py

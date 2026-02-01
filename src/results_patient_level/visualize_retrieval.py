@@ -74,7 +74,7 @@ def plot_colbert_results(csv_file):
 
     plot = sns.scatterplot(
         data=df, 
-        x="num_chunks", 
+        x="num_passages", 
         y="found", 
         hue="found", 
         palette={True: "#2ecc71", False: "#e74c3c"},
@@ -87,7 +87,7 @@ def plot_colbert_results(csv_file):
     df['found_int'] = df['found'].astype(int)
     sns.lineplot(
         data=df, 
-        x="num_chunks", 
+        x="num_passages", 
         y="found_int", 
         color="#3498db", 
         label="Success Rate Trend"
@@ -100,14 +100,13 @@ def plot_colbert_results(csv_file):
     plt.legend(title="Status", bbox_to_anchor=(1.05, 1), loc='upper left')
     
     plt.tight_layout()
-    plt.savefig("haystack_performance.png")
     plt.savefig(os.path.join(SAVE_DIR, "colbert_retrieval.png"), dpi=300)
     plt.close()
     print("Saved colbert retrieval plot")
 
 
 if __name__ == "__main__":
-    methods = ["bm25", "faiss_cos", "faiss_euc", "hybrid"]
+    methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "hybrid"]
     method_dfs = {method: load_retrieval_csv(method) for method in methods}
 
     # Coverage plot

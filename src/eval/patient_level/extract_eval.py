@@ -14,7 +14,8 @@ def normalize_response(resp):
     try:
         parsed = json.loads(resp)
         if isinstance(parsed, list):
-            # Deduplicate and join
+            # Deduplicate after normalization
+            parsed = [normalize_needle(p) for p in parsed]
             parsed = list(set(parsed))
             resp = " ".join(parsed)
     except:
@@ -62,16 +63,20 @@ def evaluate_extraction(responses_dict, output_file="src/eval/patient_level/extr
         df['norm_response'] = df['bedrock_response'].apply(normalize_response)
         df['norm_needle'] = df['needle'].apply(normalize_needle)
         # Compute exact match
-        df['exact_match'] = df.apply(lambda r: r['norm_needle'] == r['norm_response'], axis=1)
+        df['exact_match'] = df.apply(lambda r: r['norm_needle'] in r['norm_response'], axis=1)
         # Compute fuzzy match ratio
         df['fuzzy_score'] = df.apply(lambda r: fuzz.token_set_ratio(r['norm_needle'], r['norm_response']), axis=1)
         df['fuzzy_match_80'] = df['fuzzy_score'] >= 80  # threshold for "good enough"
+        # Compute empty extraction rate
+        df['empty_extraction'] = df['norm_response'].isin(["", "none"])
+
 
         summary_rows.append({
             'strategy': strategy,
             'num_patients': len(df),
             'overall_exact_match': df['exact_match'].mean(),
-            'overall_fuzzy_80_match': df['fuzzy_match_80'].mean()
+            'overall_fuzzy_80_match': df['fuzzy_match_80'].mean(),
+            'empty_extraction_rate': df['empty_extraction'].mean()
         })
 
         # save per-method detailed CSV
@@ -87,6 +92,7 @@ def evaluate_extraction(responses_dict, output_file="src/eval/patient_level/extr
 # Load responses for each method (can add more methods)
 responses_dict = {
     "bm25": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/bm25_responses.csv"),
+    "colbert": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/colbert_responses.csv"),
     "faiss_cos": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/faiss_cos_responses.csv"),
     "faiss_euc": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/faiss_euc_responses.csv"),
     "hybrid": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/hybrid_responses.csv"),

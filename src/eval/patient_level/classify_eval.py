@@ -6,7 +6,7 @@ def merge_llm_results(task, method):
     Merge LLM classification results with retrieval results.
     Args:
         task: "classify"
-        method: "bm25", "faiss_cos", "faiss_euc", "hybrid"
+        method: "bm25", "colbert", "faiss_cos", "faiss_euc", "hybrid"
 
     Returns:
         None
@@ -18,11 +18,12 @@ def merge_llm_results(task, method):
     retrieval = pd.read_csv(retrieval_file)
     responses = pd.read_csv(response_file)
 
-    # merge on "needle"
+    # merge on SUBJECT_ID and needle
     merged = retrieval.merge(
-        responses[["needle", "bedrock_response"]],
-        on="needle",
-        how="left"
+        responses[["SUBJECT_ID", "needle", "bedrock_response"]],
+        on=["SUBJECT_ID", "needle"],
+        how="left",
+        validate="one_to_one"
     )
 
     # classify correctness automatically
@@ -36,7 +37,7 @@ def merge_llm_results(task, method):
 
 
 # can add faiss_euc, and hybrid
-methods = ["bm25", "faiss_cos", "faiss_euc", "hybrid"]
+methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "hybrid"]
 task = "classify"
 for method in methods:
     merge_llm_results(task, method)

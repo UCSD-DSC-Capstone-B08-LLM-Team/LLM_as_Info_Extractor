@@ -249,7 +249,7 @@ python src/bedrock_pipeline/prompt_generation.py \
 
 The scipt expects the prompt CSV path to follow this structure:
 ```php-template
-src/bedrock_pipeline/bedrock_prompts/<task>/<retrieval_method>_prompts.csv
+src/bedrock_pipeline/bedrock_prompts/<task>/<retrieval_method>_prompts*.csv
 ```
 From this path, the script automatically infers the task (classify, extract, or summarize) and the retrieval method (bm25, faiss_cos, faiss_euc, or hybrid). 
 
@@ -263,6 +263,7 @@ python src/bedrock_pipeline/call_bedrock.py \
 
 
 ### STEP 7: Evaluate Bedrock LLM
+(TODO: add patient-level maybe input/output csv)
 #### 1. For classification methods:
 ```bash
 python src/eval/classify_llm_eval.py

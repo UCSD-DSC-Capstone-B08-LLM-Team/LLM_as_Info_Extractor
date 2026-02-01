@@ -78,8 +78,7 @@ def run_colbert_retrieval(input_csv, output_csv, k=5, chunk_size=256):
             "needle": needle,
             "needle_rank": needle_rank,
             "found": found,
-            "num_chunks": num_chunks,
-            "num_passages": len(top_passages),
+            "num_passages": num_chunks,
             "haystack_len_chars": len(haystack),
             "top_passages": top_passages
         })
