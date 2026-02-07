@@ -33,3 +33,4 @@ src/eval/patient_level/summarize/faiss_cos_eval.csv
 src/eval/patient_level/summarize/faiss_euc_eval.csv
 src/eval/patient_level/summarize/hybrid_eval.csv
 src/results_patient_level/retrieval_table.py
+src/retrieval_query/outputs/
