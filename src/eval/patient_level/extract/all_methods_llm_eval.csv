@@ -1,6 +1,7 @@
 strategy,num_patients,overall_exact_match,overall_fuzzy_80_match,empty_extraction_rate
-bm25,1000,0.991,0.997,0.003
-colbert,1000,0.908,0.936,0.064
-faiss_cos,1000,0.951,0.957,0.043
-faiss_euc,1000,0.951,0.957,0.043
-hybrid,1000,0.993,0.997,0.003
+bm25,1000,0.237,0.531,0.446
+colbert,1000,0.354,0.646,0.331
+faiss,1000,0.26,0.607,0.383
+faiss_mmr,1000,0.274,0.653,0.328
+hybrid,1000,0.295,0.668,0.31
+full_context_baseline,1000,0.18,0.21,0.787

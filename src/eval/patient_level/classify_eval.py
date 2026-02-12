@@ -6,13 +6,20 @@ def merge_llm_results(task, method):
     Merge LLM classification results with retrieval results.
     Args:
         task: "classify"
-        method: "bm25", "colbert", "faiss_cos", "faiss_euc", "hybrid"
+        method: "bm25", "colbert", "faiss", "faiss_mmr", "hybrid"
 
     Returns:
         None
     """
+    if method == "sliding_window_baseline" or method == "full_context_baseline":
+        retrieval_file = f"src/llm/outputs/{method}.csv"
+    elif method == "faiss":
+        retrieval_file = f"src/retrieval_query/outputs/faiss_cos_patient_results.csv"
+    elif method == "colbert":
+        retrieval_file = f"src/retrieval_query/outputs/colbert_patient_results_5.csv"
+    else:
+        retrieval_file = f"src/retrieval_query/outputs/{method}_patient_results.csv"
 
-    retrieval_file = f"src/retrieval_patient_level/outputs/{method}_patient_results.csv"
     response_file = f"src/bedrock_pipeline/bedrock_responses/{task}/{method}_responses.csv"
 
     retrieval = pd.read_csv(retrieval_file)
@@ -35,9 +42,8 @@ def merge_llm_results(task, method):
 
     print(f"Saved {output_file}")
 
-
-# can add faiss_euc, and hybrid
-methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "hybrid"]
+# Run the merging for all methods
+methods = ["bm25", "colbert", "faiss", "faiss_mmr", "hybrid", "full_context_baseline"]
 task = "classify"
 for method in methods:
     merge_llm_results(task, method)

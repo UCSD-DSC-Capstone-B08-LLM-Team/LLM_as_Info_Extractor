@@ -5,23 +5,26 @@ import argparse
 
 
 TASK_TEMPLATES = {
-    # checking for semantic match
     "classify": (
-        "Instruction: Determine if the clinical notes below contain the specific clinical scenario described in the 'Query'. Answer only 'Yes' or 'No'.\n"
+        "Instruction: Determine if the clinical notes below contain information that answers the 'Query'. "
+        "Answer only 'Yes' or 'No'.\n"
         "Input: {context}\n"
-        "Query: {needle}"
+        "Query: {query}"
     ),
-    # precise text span extraction
+
     "extract": (
-        "Instruction: You are a clinical data extractor. Identify and extract the exact text spans from the 'Input' that match the 'Target Criteria' below. Return ONLY the extracted text strings in a list format. If no text matches, return 'None'.\n"
+        "Instruction: You are a clinical data extractor. Extract the exact text spans from the 'Input' "
+        "that answer the 'Query'. Return ONLY the extracted text strings in a list format. "
+        "If no text matches, return 'None'.\n"
         "Input: {context}\n"
-        "Target Criteria: {needle}"
+        "Query: {query}"
     ),
-    # filter to relevant information and summarize
+
     "summarize": (
-        "Instruction: Summarize all information in the 'Input' notes that is specifically relevant to the 'Focus Topic' below. Do not include unrelated medical history or details. Keep the summary concise and clinical.\n"
+        "Instruction: Summarize all information in the 'Input' notes that is relevant to the 'Query'. "
+        "Do not include unrelated medical history. Keep the summary concise and clinical.\n"
         "Input: {context}\n"
-        "Focus Topic: {needle}"
+        "Query: {query}"
     ),
 }
 
@@ -46,6 +49,7 @@ def generate_bedrock_prompts(results_df, task):
     prompts = []
 
     for _, row in results_df.iterrows():
+        query = row['query']
         needle = row["needle"]
         passages = row["top_passages"]
 
@@ -56,21 +60,24 @@ def generate_bedrock_prompts(results_df, task):
             except Exception:
                 passages = [passages]
 
-
         context = " ".join(sorted(set(passages), key=lambda x: passages.index(x)))
-        # Limit context to around 300 words
+
+        # Limit context to around 2000 words
+        max_words = 2000
         context_words = context.split()
-        if len(context_words) > 300:
-            context = " ".join(context_words[:300])
+        if len(context_words) > max_words:
+            print(f"Context for SUBJECT_ID {row['SUBJECT_ID']} exceeds {max_words} words. Truncating.")
+            context = " ".join(context_words[:max_words])
 
 
         prompt = TASK_TEMPLATES[task].format(
             context=context,
-            needle=needle
+            query=query
         )
 
         prompts.append({
             "SUBJECT_ID": row["SUBJECT_ID"],
+            "query": query,
             "needle": needle,
             "task": task,
             "top_passages": passages,

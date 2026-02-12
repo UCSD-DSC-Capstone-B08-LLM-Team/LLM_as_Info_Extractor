@@ -24,7 +24,7 @@ def infer_task_and_retrieval(prompt_csv_path):
     return task, retrieval
 
 
-def call_bedrock_and_save(prompt_csv, model_id="deepseek.v3-v1:0", max_tokens=512, temperature=0.0, sleep_time=0.5, region="us-west-2"):
+def call_bedrock_and_save(prompt_csv, output_csv=None, model_id="deepseek.v3-v1:0", max_tokens=512, temperature=0.0, sleep_time=0.5, region="us-west-2"):
     """
     Calls Bedrock model on prompts from CSV and saves responses.
     
@@ -104,10 +104,23 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     call_bedrock_and_save(
-        prompt_csv=args.prompt_csv
+        prompt_csv=args.prompt_csv,
+        output_csv=args.output_csv
     )
 
 # Run the script with:
-# python src/bedrock_pipeline/call_bedrock.py 
-#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv
+# python src/bedrock_pipeline/call_bedrock.py \
+#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv \
 #   --output_csv src/bedrock_pipeline/bedrock_responses/classify/bm25_responses.csv
+
+# python src/bedrock_pipeline/call_bedrock.py \
+#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/colbert_prompts.csv \
+#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/colbert_responses.csv
+
+# python src/bedrock_pipeline/call_bedrock.py \
+#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/faiss_prompts.csv \
+#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/faiss_responses.csv
+
+# python src/bedrock_pipeline/call_bedrock.py \
+#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/hybrid_prompts.csv \
+#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/hybrid_responses.csv

@@ -1,6 +1,7 @@
 strategy,num_patients,accuracy
-bm25,1000,0.978
-colbert,1000,0.811
-faiss_cos,1000,0.95
-faiss_euc,1000,0.95
-hybrid,1000,0.981
+bm25,1000,0.539
+colbert,1000,0.546
+faiss,1000,0.641
+faiss_mmr,1000,0.718
+hybrid,1000,0.706
+full_context_baseline,1000,0.194
