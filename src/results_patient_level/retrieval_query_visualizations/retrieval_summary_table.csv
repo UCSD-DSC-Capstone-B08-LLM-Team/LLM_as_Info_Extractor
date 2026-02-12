@@ -1,6 +1,6 @@
 method,num_patients,coverage_rate,avg_num_passages,avg_haystack_len
 bm25,1000,0.604,876.335,84767.231
-colbert,1000,0.763,99.327,84767.231
+colbert,1000,0.782,197.36,84767.231
 faiss_cos,1000,0.725,876.335,84767.231
 faiss_euc,1000,0.725,876.335,84767.231
 faiss_mmr,1000,0.766,876.335,84767.231
