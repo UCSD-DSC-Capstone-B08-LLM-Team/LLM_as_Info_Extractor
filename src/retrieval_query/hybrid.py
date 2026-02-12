@@ -129,7 +129,7 @@ if __name__ == "__main__":
             "SUBJECT_ID": row["SUBJECT_ID"],
             "NUM_NOTES": row["NUM_NOTES"],
             "query": query,
-            "NEEDLE_INSERTED": needle,
+            "needle": needle,
             "needle_rank": needle_rank,
             "found": found,
             "num_passages": num_passages,

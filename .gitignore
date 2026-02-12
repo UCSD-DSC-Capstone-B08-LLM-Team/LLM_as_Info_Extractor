@@ -34,3 +34,13 @@ src/eval/patient_level/summarize/faiss_euc_eval.csv
 src/eval/patient_level/summarize/hybrid_eval.csv
 src/results_patient_level/retrieval_table.py
 src/retrieval_query/outputs/
+src/llm/outputs/
+src/eval/patient_level/extract/faiss_eval.csv
+src/eval/patient_level/classify/faiss_eval.csv
+src/eval/patient_level/summarize/faiss_eval.csv
+src/eval/patient_level/classify/faiss_mmr_eval.csv
+src/eval/patient_level/extract/faiss_mmr_eval.csv
+src/eval/patient_level/summarize/faiss_mmr_eval.csv
+src/eval/patient_level/classify/full_context_baseline_eval.csv
+src/eval/patient_level/extract/full_context_baseline_eval.csv
+src/eval/patient_level/summarize/full_context_baseline_eval.csv
