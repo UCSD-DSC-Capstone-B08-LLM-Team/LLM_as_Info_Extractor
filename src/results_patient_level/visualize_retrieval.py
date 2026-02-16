@@ -5,8 +5,8 @@ import seaborn as sns
 
 
 # Directories
-BASE_RETRIEVAL_DIR = "src/retrieval_patient_level/outputs"
-SAVE_DIR = "src/results_patient_level/retrieval_visualizations"
+BASE_RETRIEVAL_DIR = "src/retrieval_query/outputs"
+SAVE_DIR = "src/results_patient_level/retrieval_query_visualizations"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 
@@ -15,7 +15,10 @@ def load_retrieval_csv(method):
     """
     Load retrieval CSV for a given method.
     """
-    path = os.path.join(BASE_RETRIEVAL_DIR, f"{method}_patient_results.csv")
+    if method == "colbert":
+        path = os.path.join(BASE_RETRIEVAL_DIR, f"{method}_patient_results_5.csv")
+    else:
+        path = os.path.join(BASE_RETRIEVAL_DIR, f"{method}_patient_results.csv")
     return pd.read_csv(path)
 
 def plot_coverage(method_dfs):
@@ -94,7 +97,7 @@ def plot_colbert_results(csv_file):
     )
 
     plt.title("ColBERT 'Needle in a Haystack' Performance", fontsize=15)
-    plt.xlabel("Haystack Size (Number of 256-word Chunks)", fontsize=12)
+    plt.xlabel("Haystack Size", fontsize=12)
     plt.ylabel("Needle Found? (1 = Yes, 0 = No)", fontsize=12)
     plt.yticks([0, 1], ["Missed", "Found"])
     plt.legend(title="Status", bbox_to_anchor=(1.05, 1), loc='upper left')
@@ -106,7 +109,7 @@ def plot_colbert_results(csv_file):
 
 
 if __name__ == "__main__":
-    methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "hybrid"]
+    methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "faiss_mmr", "hybrid"]
     method_dfs = {method: load_retrieval_csv(method) for method in methods}
 
     # Coverage plot
@@ -117,4 +120,4 @@ if __name__ == "__main__":
     plot_summary_heatmap(summary_df)
 
     # Detailed haystack plot for ColBERT
-    plot_colbert_results("src/retrieval_patient_level/outputs/colbert_patient_results.csv")
+    plot_colbert_results("src/retrieval_query/outputs/colbert_patient_results_5.csv")

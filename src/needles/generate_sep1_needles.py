@@ -90,5 +90,10 @@ if __name__ == "__main__":
     # "Is there documentation that the patient or authorized patient advocate
     # refused blood draw, IV fluid administration, or IV antibiotic administration?"
 
+    # Is there documentation by a physician/APN/PA or nurse within the specified time frame that
+    # the patient or authorized patient advocate refused blood draws, IV fluid administration, or 
+    # IV antibiotic administration, OR refused care more generally (including leaving against medical 
+    # advice or refusing to stay for continued care)?
+
     df.to_csv("src/needles/sep1_needles.csv", index=False)
     print(df)
