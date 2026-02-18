@@ -109,7 +109,7 @@ def plot_colbert_results(csv_file):
 
 
 if __name__ == "__main__":
-    methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "faiss_mmr", "hybrid"]
+    methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "faiss_mmr", "hybrid", "semantic_chunking", "splade"]
     method_dfs = {method: load_retrieval_csv(method) for method in methods}
 
     # Coverage plot
