@@ -66,7 +66,7 @@ def evaluate_summarize_method(method, input_path, output_dir):
 
 # Run all methods
 def evaluate_all_methods():
-    methods = ["bm25", "colbert", "faiss", "faiss_mmr", "hybrid", "full_context_baseline"]
+    methods = ["bm25", "colbert", "faiss", "faiss_mmr", "hybrid", "full_context_baseline", "semantic_chunking", "splade"]
     summaries = []
 
     for method in methods:

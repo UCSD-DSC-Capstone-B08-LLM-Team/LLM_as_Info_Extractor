@@ -96,7 +96,9 @@ responses_dict = {
     "faiss": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/faiss_responses.csv"),
     "faiss_mmr": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/faiss_mmr_responses.csv"),
     "hybrid": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/hybrid_responses.csv"),
-    "full_context_baseline": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/full_context_baseline_responses.csv")
+    "full_context_baseline": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/full_context_baseline_responses.csv"),
+    "semantic_chunking": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/semantic_chunking_responses.csv"),
+    "splade": pd.read_csv("src/bedrock_pipeline/bedrock_responses/extract/splade_responses.csv")
 }
 
 evaluate_extraction(responses_dict)

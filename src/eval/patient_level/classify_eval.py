@@ -43,7 +43,7 @@ def merge_llm_results(task, method):
     print(f"Saved {output_file}")
 
 # Run the merging for all methods
-methods = ["bm25", "colbert", "faiss", "faiss_mmr", "hybrid", "full_context_baseline"]
+methods = ["bm25", "colbert", "faiss", "faiss_mmr", "hybrid", "full_context_baseline", "semantic_chunking", "splade"]
 task = "classify"
 for method in methods:
     merge_llm_results(task, method)

@@ -44,3 +44,9 @@ src/eval/patient_level/summarize/faiss_mmr_eval.csv
 src/eval/patient_level/classify/full_context_baseline_eval.csv
 src/eval/patient_level/extract/full_context_baseline_eval.csv
 src/eval/patient_level/summarize/full_context_baseline_eval.csv
+src/eval/patient_level/classify/splade_eval.csv
+src/eval/patient_level/extract/splade_eval.csv
+src/eval/patient_level/summarize/splade_eval.csv
+src/eval/patient_level/classify/semantic_chunking_eval.csv
+src/eval/patient_level/extract/semantic_chunking_eval.csv
+src/eval/patient_level/summarize/semantic_chunking_eval.csv

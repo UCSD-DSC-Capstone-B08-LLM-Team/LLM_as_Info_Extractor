@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import textwrap
 
 
 # Directories
@@ -9,6 +10,9 @@ BASE_RETRIEVAL_DIR = "src/retrieval_query/outputs"
 SAVE_DIR = "src/results_patient_level/retrieval_query_visualizations"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
+
+def wrap_labels(labels, width=12):
+    return ["\n".join(textwrap.wrap(str(l), width)) for l in labels]
 
 # Helper Functions
 def load_retrieval_csv(method):
@@ -25,16 +29,50 @@ def plot_coverage(method_dfs):
     """
     Plot retrieval coverage (found rate) per method.
     """
-    coverage = {method: df['found'].mean() for method, df in method_dfs.items()}
-    plt.figure(figsize=(6,4))
-    plt.bar(coverage.keys(), coverage.values(), color='skyblue')
-    plt.ylim(0,1)
-    plt.ylabel("Fraction of Patients with Needle Found")
-    plt.xlabel("Retrieval Method")
-    plt.title("Retrieval Coverage by Method")
+
+    coverage = {
+        method: df["found"].mean()
+        for method, df in method_dfs.items()
+    }
+
+    cov_df = (
+        pd.DataFrame.from_dict(coverage, orient="index", columns=["coverage"])
+        .sort_values("coverage", ascending=False)
+        .reset_index()
+        .rename(columns={"index": "method"})
+    )
+
+    plt.figure(figsize=(12,5))
+    sns.set_theme(style="whitegrid")
+
+    bars = plt.bar(
+        wrap_labels(cov_df["method"]),
+        cov_df["coverage"]
+    )
+
+    plt.ylim(0, 1)
+
+    plt.ylabel("Fraction of Patients with Needle Found", fontsize=12)
+    plt.xlabel("Retrieval Method", fontsize=12)
+    plt.title("Retrieval Coverage by Method", fontsize=14)
+
+    plt.xticks(rotation=25, ha="right")
+
+    for bar in bars:
+        height = bar.get_height()
+        plt.text(
+            bar.get_x() + bar.get_width()/2,
+            height + 0.02,
+            f"{height:.2f}",
+            ha="center",
+            fontsize=10
+        )
+
     plt.tight_layout()
+
     plt.savefig(os.path.join(SAVE_DIR, "retrieval_coverage.png"), dpi=300)
     plt.close()
+
     print("Saved retrieval coverage plot")
 
 def plot_summary_table(method_dfs):
