@@ -1,5 +1,5 @@
 data/mimic/NOTEEVENTS.csv.gz
-src/haystacks/mimic_haystack.csv
+src/haystacks/outputs/
 src/retrieval/outputs/
 venv/
 src/bedrock_pipeline/bedrock_prompts/

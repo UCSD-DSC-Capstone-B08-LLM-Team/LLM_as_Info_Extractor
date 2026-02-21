@@ -142,6 +142,7 @@ def plot_colbert_results(csv_file):
     
     plt.tight_layout()
     plt.savefig(os.path.join(SAVE_DIR, "colbert_retrieval.png"), dpi=300)
+    # plt.savefig("figure.png", dpi=300, bbox_inches="tight")
     plt.close()
     print("Saved colbert retrieval plot")
 

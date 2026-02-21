@@ -33,8 +33,21 @@ parser.add_argument(
     default=42,
     help="Random seed for reproducibility"
 )
+parser.add_argument(
+    "--needle_file",
+    type=str,
+    default="src/needles/contra_care_needles.csv",
+    help="Path to synthetic needle CSV"
+)
+parser.add_argument(
+    "--output_file",
+    type=str,
+    default="src/haystack/outputs/mimic_haystack.csv",
+    help="Path to output haystack CSV"
+)
 args = parser.parse_args()
 random.seed(args.seed)
+print(f"Using needle file: {args.needle_file}")
 
 
 
@@ -129,8 +142,10 @@ print(notes_subset["CATEGORY"].value_counts())
 
 
 # Load synthetic needles
-needle_file = "src/needles/sep1_needles.csv"
-needles_df = pd.read_csv(needle_file)
+if not os.path.exists(args.needle_file):
+    raise FileNotFoundError(f"Needle file not found: {args.needle_file}")
+
+needles_df = pd.read_csv(args.needle_file)
 
 needles = needles_df[
     ["DATA_ELEMENT", "QUERY", "NEEDLE_TEXT"]
@@ -206,7 +221,7 @@ for subject_id, patient_notes in tqdm(
 
 
 # Save haystack CSV
-output_file = os.path.join("src", "haystacks", "mimic_haystack.csv")
+output_file = args.output_file
 
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
