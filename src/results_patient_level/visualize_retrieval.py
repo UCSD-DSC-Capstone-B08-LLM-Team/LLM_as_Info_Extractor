@@ -6,8 +6,8 @@ import textwrap
 
 
 # Directories
-BASE_RETRIEVAL_DIR = "src/retrieval_query/outputs"
-SAVE_DIR = "src/results_patient_level/retrieval_query_visualizations"
+BASE_RETRIEVAL_DIR = "src/retrieval_query/outputs/original_needle"
+SAVE_DIR = "src/results_patient_level/retrieval_query_visualizations/original_needle"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 

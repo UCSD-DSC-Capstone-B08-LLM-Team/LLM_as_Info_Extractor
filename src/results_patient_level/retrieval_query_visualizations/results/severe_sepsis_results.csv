@@ -1,0 +1,8 @@
+Method,k,Parameters,Mean Needle Rank,% Needles at rank 1,Recall@k,Runtime
+BM25,5,window=1,1.55,47.30%,0.648,00:00:29
+ColBERT,5,chunk=64,1.3,70.10%,0.832,02:12:19
+FAISS,5,window=1,1.36,62.90%,0.767,00:06:10
+FAISS MMR,5,window=1,1.38,62.90%,0.798,00:05:58
+Hybrid,5,window=1,1.26,74.70%,0.869,00:06:50
+Semantic Chunking,5,max_sents=5,1.36,62.40%,0.77,00:10:54
+SPLADE,5,window=1,1.24,78.40%,0.886,06:22:22

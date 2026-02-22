@@ -1,0 +1,5 @@
+element,BM25,ColBERT,FAISS,FAISS MMR,Hybrid,SPLADE,Semantic Chunking
+Clinical Trial,0.786,0.825,0.839,0.839,0.89,0.951,0.843
+Comfort Care,0.639,0.791,0.737,0.745,0.826,0.91,0.738
+Severe Sepsis,0.648,0.832,0.767,0.798,0.869,0.886,0.77
+Vasopressor,0.574,0.783,0.629,0.661,0.752,0.908,0.64
