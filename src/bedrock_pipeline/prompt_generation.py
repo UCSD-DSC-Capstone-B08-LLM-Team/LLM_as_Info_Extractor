@@ -2,6 +2,12 @@ import pandas as pd
 import os
 import ast
 import argparse
+import tiktoken
+
+
+MAX_INPUT_TOKENS = 163840        # DeepSeek v3 max input
+SAFETY_BUFFER = 2000             # Safety buffer to avoid overflow
+TOKENIZER_NAME = "cl100k_base"   # tiktoken encoding
 
 
 TASK_TEMPLATES = {
@@ -29,6 +35,39 @@ TASK_TEMPLATES = {
 }
 
 
+# Tokenizer setup
+enc = tiktoken.get_encoding(TOKENIZER_NAME)
+
+
+def count_tokens(text: str) -> int:
+    return len(enc.encode(text))
+
+
+def trim_to_token_limit(text: str, max_tokens: int) -> str:
+    """Trim text to a max number of tokens."""
+    tokens = enc.encode(text)
+    return enc.decode(tokens[:max_tokens])
+
+
+def pack_passages_to_tokens(passages, available_tokens):
+    """
+    Concatenate passages up to the available token limit.
+    Stops before exceeding max tokens.
+    """
+    packed = []
+    used_tokens = 0
+
+    for p in passages:
+        p_tokens = count_tokens(p)
+        if used_tokens + p_tokens > available_tokens:
+            break
+        packed.append(p)
+        used_tokens += p_tokens
+
+    return " ".join(packed)
+
+
+# Prompt generation
 def generate_bedrock_prompts(results_df, task):
     """
     Generate Bedrock prompts from retrieval results.
@@ -40,16 +79,15 @@ def generate_bedrock_prompts(results_df, task):
 
     Returns:
         pd.DataFrame with columns:
-        ['needle', 'task', 'top_passages', 'bedrock_prompt']
+        ['SUBJECT_ID', 'needle', 'task', 'top_passages', 'bedrock_prompt', 'tokens_used']
     """
-
     if task not in TASK_TEMPLATES:
         raise ValueError(f"Unsupported task '{task}'. Valid tasks: {list(TASK_TEMPLATES.keys())}")
 
     prompts = []
 
     for _, row in results_df.iterrows():
-        query = row['query']
+        query = row["query"]
         needle = row["needle"]
         passages = row["top_passages"]
 
@@ -60,20 +98,30 @@ def generate_bedrock_prompts(results_df, task):
             except Exception:
                 passages = [passages]
 
-        context = " ".join(sorted(set(passages), key=lambda x: passages.index(x)))
+        # Preserve original order; remove duplicates
+        passages = [p for i, p in enumerate(passages) if p not in passages[:i]]
 
-        # Limit context to around 2000 words
-        max_words = 2000
-        context_words = context.split()
-        if len(context_words) > max_words:
-            print(f"Context for SUBJECT_ID {row['SUBJECT_ID']} exceeds {max_words} words. Truncating.")
-            context = " ".join(context_words[:max_words])
+        # check if needle exists in any of the top passages 
+        needle_in_top_k = any(needle in p for p in passages)
 
+        template = TASK_TEMPLATES[task]
 
-        prompt = TASK_TEMPLATES[task].format(
-            context=context,
-            query=query
-        )
+        # Tokens used by template and query
+        base_prompt = template.format(context="", query=query)
+        overhead_tokens = count_tokens(base_prompt)
+
+        available_tokens_for_context = MAX_INPUT_TOKENS - overhead_tokens - SAFETY_BUFFER
+        if available_tokens_for_context <= 0:
+            raise ValueError(
+                f"Prompt overhead too large for SUBJECT_ID {row.get('SUBJECT_ID', 'unknown')}"
+            )
+
+        # Pack passages up to available token budget
+        context = pack_passages_to_tokens(passages, available_tokens_for_context)
+
+        # Build final prompt
+        prompt = template.format(context=context, query=query)
+        tokens_used = count_tokens(prompt)
 
         prompts.append({
             "SUBJECT_ID": row["SUBJECT_ID"],
@@ -81,7 +129,9 @@ def generate_bedrock_prompts(results_df, task):
             "needle": needle,
             "task": task,
             "top_passages": passages,
-            "bedrock_prompt": prompt
+            "needle_in_top_k": needle_in_top_k,
+            "bedrock_prompt": prompt,
+            "tokens_used": tokens_used
         })
 
     return pd.DataFrame(prompts)
@@ -118,11 +168,14 @@ if __name__ == "__main__":
         task=args.task
     )
 
-    output_path = os.path.join(args.output_csv,)
+    output_path = args.output_csv
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     prompts_df.to_csv(output_path, index=False)
 
     print(f"Saved Bedrock prompts to {output_path}")
+    print(f"Example: SUBJECT_ID {prompts_df.iloc[0]['SUBJECT_ID']}, "
+          f"needle_in_top_k = {prompts_df.iloc[0]['needle_in_top_k']}, "
+          f"tokens_used = {prompts_df.iloc[0]['tokens_used']}")
 
     # Example usage:
     # python src/bedrock_pipeline/prompt_generation.py \
