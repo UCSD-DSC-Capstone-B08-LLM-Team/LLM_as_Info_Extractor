@@ -130,74 +130,31 @@ NEGATIVE_TEMPLATES = NO_DOC_TEMPLATES + PROVIDER_TIME_TEMPLATES + INFECTION_ONLY
 
 # Severe Sepsis needle generator
 def generate_severe_sepsis_needle():
-    # 60% positive, 40% negative
-    if random.random() < 0.6:
-        # Positive case
-        template = random.choice(POSITIVE_TEMPLATES)
-        
-        # Match template to appropriate formatter
-        if template in PROVIDER_TERM_TEMPLATES:
-            return template.format(
-                provider=random.choice(["physician", "APN", "PA"]),
-                term=random.choice(SEVERE_SEPSIS_TERMS),
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        elif template in INFECTION_SIRS_ORGAN_TEMPLATES:
-            return template.format(
-                infection=random.choice(INFECTION_TERMS),
-                sirs=random.choice(SIRS_INDICATORS),
-                organ_dysfunction=random.choice(ORGAN_DYSFUNCTION),
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        elif template in PROVIDER_INFECTION_TEMPLATES:
-            return template.format(
-                provider=random.choice(["physician", "APN", "PA"]),
-                infection=random.choice(INFECTION_TERMS),
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        else:
-            # Fallback
-            return f"{random.choice(['physician', 'APN'])} documents {random.choice(SEVERE_SEPSIS_TERMS)} {random.choice(TIME_REFERENCES)}."
+    # Always generate positive case
+    template = random.choice(POSITIVE_TEMPLATES)
+    # Match template to appropriate formatter
+    if template in PROVIDER_TERM_TEMPLATES:
+        return template.format(
+            provider=random.choice(["physician", "APN", "PA"]),
+            term=random.choice(SEVERE_SEPSIS_TERMS),
+            time_ref=random.choice(TIME_REFERENCES)
+        )
+    elif template in INFECTION_SIRS_ORGAN_TEMPLATES:
+        return template.format(
+            infection=random.choice(INFECTION_TERMS),
+            sirs=random.choice(SIRS_INDICATORS),
+            organ_dysfunction=random.choice(ORGAN_DYSFUNCTION),
+            time_ref=random.choice(TIME_REFERENCES)
+        )
+    elif template in PROVIDER_INFECTION_TEMPLATES:
+        return template.format(
+            provider=random.choice(["physician", "APN", "PA"]),
+            infection=random.choice(INFECTION_TERMS),
+            time_ref=random.choice(TIME_REFERENCES)
+        )
     else:
-        # Negative case
-        template = random.choice(NEGATIVE_TEMPLATES)
-        
-        # Match template to appropriate formatter
-        if template in NO_DOC_TEMPLATES:
-            return template
-        elif template in PROVIDER_TIME_TEMPLATES:
-            return template.format(
-                provider=random.choice(["physician", "APN", "PA"]),
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        elif template in INFECTION_ONLY_TEMPLATES:
-            return template.format(
-                infection=random.choice(INFECTION_TERMS)
-            )
-        elif template in SIRS_NONINFECTIOUS_TEMPLATES:
-            return template.format(
-                sirs=random.choice(SIRS_INDICATORS),
-                non_infectious=random.choice(NON_INFECTIOUS_CAUSES)
-            )
-        elif template in RULE_OUT_TEMPLATES:
-            if "{provider}" in template:
-                return template.format(
-                    provider=random.choice(["physician", "APN", "PA"])
-                )
-            elif "{infection}" in template:
-                return template.format(
-                    infection=random.choice(INFECTION_TERMS)
-                )
-            else:
-                return template
-        elif template in UNABLE_DETERMINE_TEMPLATES:
-            return template
-        elif template in ORGAN_DYSFUNCTION_ONLY_TEMPLATES:
-            return template.format(
-                organ_dysfunction=random.choice(ORGAN_DYSFUNCTION)
-            )
-        else:
-            return template
+        # Fallback
+        return f"{random.choice(['physician', 'APN'])} documents {random.choice(SEVERE_SEPSIS_TERMS)} {random.choice(TIME_REFERENCES)}."
 
 
 # Generate multiple needles
@@ -209,17 +166,22 @@ def generate_needle_set(n=20, seed=42):
 if __name__ == "__main__":
     needles = generate_needle_set(n=100)
 
+    llm_prompt = (
+        "In this note, is there explicit positive qualifier for an infection? Do not infer or take a likely guess. "
+        "Answer Y only if the infectious condition is clearly stated in the note. Do not use documentation of viral, fungal, or parasitic infections. "
+        "The following is a list of conditions commonly associated with severe sepsis that are considered infections (this is not an all-inclusive list.): "
+        "EXAMPLES: Abscess, Acute abdomen, Acute abdominal infection, Blood stream, catheter infection, Bone/joint infection, C. difficile (C-diff), Chronic obstructive pulmonary disease (COPD) acute exacerbation, Endocarditis, Gangrene, Implantable device infection, Infection, Infectious, Meningitis, Necrosis, Necrotic/ischemic/infarcted bowel, Pelvic Inflammatory Disease, Perforated bowel, Pneumonia, Empyema, Purulence/pus, Sepsis, Septic, Skin/soft tissue infection, Suspect infection source unknown, Urosepsis, Urinary tract infection, Wound infection. "
+        "EXAMPLES THAT AREN'T INFECTIONS: Fever, Diarrhea. "
+        "POSITIVE QUALIFIERS: Possible, Rule out (r/o), Suspected, Likely, Probable, Differential diagnosis, Suspicious for, Concern for, Suggestive of, Presumed. "
+        "NEGATIVE QUALIFIERS: Impending, Unlikely, Doubt, Ruled out, Less likely, Questionable."
+    )
     df = pd.DataFrame({
         "DATA_ELEMENT": ["Severe Sepsis Present"] * len(needles),
-        "QUERY": [(
-            "Based on SEP-1 guidelines, was severe sepsis present? "
-            "Select 'Yes' if there is physician/APN/PA documentation of severe sepsis/septic shock "
-            "OR all three criteria met: infection + 2+ SIRS criteria + organ dysfunction."
-        )] * len(needles),
+        "QUERY": [llm_prompt] * len(needles),
         "NEEDLE_TEXT": needles
     })
     
-    df.to_csv("severe_sepsis_needles.csv", index=False)
+    df.to_csv("severe_sepsis_needles_new.csv", index=False)
     print(f"Generated {len(needles)} needles")
     print("\nSample needles:")
     print("-" * 80)
