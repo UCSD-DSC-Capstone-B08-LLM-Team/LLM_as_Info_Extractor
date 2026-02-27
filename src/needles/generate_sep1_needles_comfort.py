@@ -112,43 +112,30 @@ TIME_REFERENCES = [
 
 # Comfort Care/Palliative Care needle generator
 def generate_comfort_care_needle():
-    # Generate positive cases 70% of the time, negative 30%
-    if random.random() < 0.7:
-        # Positive case
-        if random.random() < 0.3:
-            # SAPO case
-            template = random.choice(SAPO_TEMPLATES)
-            return template.format(
-                sapo_form=random.choice(SAPO_FORMS),
-                provider=random.choice(PROVIDERS),
-                term=random.choice(INCLUSION_TERMS),
-                term_cap=random.choice(INCLUSION_TERMS).capitalize()
-            )
-        else:
-            # Regular positive documentation
-            template = random.choice(POSITIVE_TEMPLATES)
-            time_ref = random.choice(TIME_REFERENCES)
-            if time_ref:
-                time_ref = " " + time_ref
-            
-            return template.format(
-                provider=random.choice(PROVIDERS),
-                context=random.choice(ACCEPTABLE_CONTEXTS),
-                term=random.choice(INCLUSION_TERMS),
-                term_cap=random.choice(INCLUSION_TERMS).capitalize(),
-                source=random.choice(DOCUMENTATION_SOURCES),
-                sapo_form=random.choice(SAPO_FORMS),
-                time_ref=time_ref
-            )
+    # Always generate positive cases only
+    if random.random() < 0.3:
+        # SAPO case
+        template = random.choice(SAPO_TEMPLATES)
+        return template.format(
+            sapo_form=random.choice(SAPO_FORMS),
+            provider=random.choice(PROVIDERS),
+            term=random.choice(INCLUSION_TERMS),
+            term_cap=random.choice(INCLUSION_TERMS).capitalize()
+        )
     else:
-        # Negative case
-        template = random.choice(NEGATIVE_TEMPLATES)
+        # Regular positive documentation
+        template = random.choice(POSITIVE_TEMPLATES)
+        time_ref = random.choice(TIME_REFERENCES)
+        if time_ref:
+            time_ref = " " + time_ref
         return template.format(
             provider=random.choice(PROVIDERS),
-            negative_context=random.choice(NEGATIVE_CONTEXTS),
+            context=random.choice(ACCEPTABLE_CONTEXTS),
+            term=random.choice(INCLUSION_TERMS),
+            term_cap=random.choice(INCLUSION_TERMS).capitalize(),
             source=random.choice(DOCUMENTATION_SOURCES),
             sapo_form=random.choice(SAPO_FORMS),
-            term=random.choice(INCLUSION_TERMS)
+            time_ref=time_ref
         )
 
 # Generate multiple needles
@@ -163,7 +150,7 @@ if __name__ == "__main__":
     df = pd.DataFrame({
         "DATA_ELEMENT": ["Directive for Comfort Care or Palliative Care, Severe Sepsis"] * len(needles),
         "QUERY": [(
-            "Based on SEP-1 guidelines, is there physician/APN/PA documentation of "
+            "Is there physician/APN/PA documentation of "
             "comfort measures only, palliative care, or another acceptable inclusion term "
             "within an acceptable context? Note: Acceptable contexts include comfort measures "
             "only recommendation, order for hospice consultation, patient request for comfort "
@@ -176,7 +163,7 @@ if __name__ == "__main__":
         "NEEDLE_TEXT": needles
     })
 
-    df.to_csv("comfort_care_needles.csv", index=False)
+    df.to_csv("comfort_care_needles_new.csv", index=False)
     print(f"Generated {len(needles)} needles for Comfort Care/Palliative Care")
     print("\nSample needles:")
     print("-" * 80)

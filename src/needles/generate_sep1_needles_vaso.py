@@ -100,57 +100,15 @@ MIXED_NEGATIVE_PHRASES = [
 
 # Vasopressor needle generator
 def generate_vasopressor_needle():
-    # Generate positive cases 60% of the time, negative 40%
-    if random.random() < 0.6:
-        # Positive case
-        template = random.choice(POSITIVE_TEMPLATES)
-        return template.format(
-            vasopressor=random.choice(VASOPRESSORS),
-            route=random.choice(ROUTES),
-            admin_phrase=random.choice(ADMINISTRATION_PHRASES),
-            source=random.choice(DOCUMENTATION_SOURCES),
-            time_ref=random.choice(TIME_REFERENCES)
-        )
-    else:
-        # Negative case
-        template = random.choice(NEGATIVE_TEMPLATES)
-        
-        # For templates that need specific parameters
-        if "{vasopressor}" in template and "{source}" in template and "{time_ref}" in template:
-            return template.format(
-                vasopressor=random.choice(VASOPRESSORS),
-                source=random.choice(DOCUMENTATION_SOURCES),
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        elif "{vasopressor}" in template and "{source}" in template:
-            return template.format(
-                vasopressor=random.choice(VASOPRESSORS),
-                source=random.choice(DOCUMENTATION_SOURCES)
-            )
-        elif "{vasopressor}" in template and "{time_ref}" in template:
-            return template.format(
-                vasopressor=random.choice(VASOPRESSORS),
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        elif "{vasopressor}" in template:
-            return template.format(
-                vasopressor=random.choice(VASOPRESSORS)
-            )
-        elif "{source}" in template and "{time_ref}" in template:
-            return template.format(
-                source=random.choice(DOCUMENTATION_SOURCES),
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        elif "{source}" in template:
-            return template.format(
-                source=random.choice(DOCUMENTATION_SOURCES)
-            )
-        elif "{time_ref}" in template:
-            return template.format(
-                time_ref=random.choice(TIME_REFERENCES)
-            )
-        else:
-            return template
+    # Always generate positive cases only
+    template = random.choice(POSITIVE_TEMPLATES)
+    return template.format(
+        vasopressor=random.choice(VASOPRESSORS),
+        route=random.choice(ROUTES),
+        admin_phrase=random.choice(ADMINISTRATION_PHRASES),
+        source=random.choice(DOCUMENTATION_SOURCES),
+        time_ref=random.choice(TIME_REFERENCES)
+    )
 
 
 # Generate multiple needles
@@ -165,7 +123,7 @@ if __name__ == "__main__":
     df = pd.DataFrame({
         "DATA_ELEMENT": ["Vasopressor Administration, Severe Sepsis"] * len(needles),
         "QUERY": [(
-            "Based on SEP-1 guidelines, was an intravenous or intraosseous vasopressor "
+            "Was an intravenous or intraosseous vasopressor "
             "administered within the specified time frame? The specified time frame starts "
             "at Septic Shock Presentation Time and ends six hours after. "
             "Note: Select 'Yes' if there is documentation of actual administration (e.g., "
@@ -178,7 +136,7 @@ if __name__ == "__main__":
         "NEEDLE_TEXT": needles
     })
     
-    df.to_csv("vasopressor_needles.csv", index=False)
+    df.to_csv("vasopressor_needles_new.csv", index=False)
     print(f"Generated {len(needles)} needles for Vasopressor Administration")
     print("\nSample needles:")
     print("-" * 80)

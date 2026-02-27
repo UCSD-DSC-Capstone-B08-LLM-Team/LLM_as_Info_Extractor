@@ -116,48 +116,15 @@ NEGATIVE_TEMPLATES = [
 
 # needle generator
 def generate_clinical_trial_needle():
-    # Generate positive cases 40% of the time, negative 60%
-    if random.random() < 0.4:
-        # Positive case
-        template = random.choice(POSITIVE_TEMPLATES)
-        return template.format(
-            term=random.choice(INCLUSION_TERMS),
-            condition=random.choice(MATCHING_CONDITIONS),
-            intervention=random.choice(INTERVENTIONS),
-            source=random.choice(DOCUMENTATION_SOURCES),
-            time_ref=random.choice(TIME_REFERENCES)
-        )
-    else:
-        # Negative case
-        template = random.choice(NEGATIVE_TEMPLATES)
-        
-        # Determine which type of negative case to generate
-        neg_type = random.random()
-        
-        if neg_type < 0.5:  # Observational study
-            return template.format(
-                observational=random.choice(OBSERVATIONAL_TERMS),
-                source=random.choice(DOCUMENTATION_SOURCES),
-                unacceptable_context=random.choice(UNACCEPTABLE_CONTEXTS),
-                term=random.choice(INCLUSION_TERMS),
-                wrong_condition=random.choice(WRONG_CONDITIONS)
-            )
-        elif neg_type < 0.75:  # Unclear case
-            return template.format(
-                unacceptable_context=random.choice(UNACCEPTABLE_CONTEXTS),
-                source=random.choice(DOCUMENTATION_SOURCES),
-                observational=random.choice(OBSERVATIONAL_TERMS),
-                term=random.choice(INCLUSION_TERMS),
-                wrong_condition=random.choice(WRONG_CONDITIONS)
-            )
-        else:  # Wrong condition
-            return template.format(
-                wrong_condition=random.choice(WRONG_CONDITIONS),
-                term=random.choice(INCLUSION_TERMS),
-                source=random.choice(DOCUMENTATION_SOURCES),
-                observational=random.choice(OBSERVATIONAL_TERMS),
-                unacceptable_context=random.choice(UNACCEPTABLE_CONTEXTS)
-            )
+    # Always generate positive cases only
+    template = random.choice(POSITIVE_TEMPLATES)
+    return template.format(
+        term=random.choice(INCLUSION_TERMS),
+        condition=random.choice(MATCHING_CONDITIONS),
+        intervention=random.choice(INTERVENTIONS),
+        source=random.choice(DOCUMENTATION_SOURCES),
+        time_ref=random.choice(TIME_REFERENCES)
+    )
 
 def generate_needle_set(n=20, seed=42):
     random.seed(seed)
@@ -170,7 +137,7 @@ if __name__ == "__main__":
     df = pd.DataFrame({
         "DATA_ELEMENT": ["Clinical Trial, Severe Sepsis"] * len(needles),
         "QUERY": [(
-            "Based on SEP-1 guidelines, during this hospital stay, was the patient enrolled "
+            "During this hospital stay, was the patient enrolled "
             "in a clinical trial in which patients with the same condition as the measure set "
             "were being studied? Note: Select 'Yes' ONLY if BOTH of the following are true: "
             "1. There is a signed consent form for a clinical trial (experimental study with "
@@ -183,7 +150,7 @@ if __name__ == "__main__":
         "NEEDLE_TEXT": needles
     })
 
-    df.to_csv("clinical_trial_needles.csv", index=False)
+    df.to_csv("clinical_trial_needles_new.csv", index=False)
     print(f"Generated {len(needles)} needles for Clinical Trial")
     print("\nSample needles:")
     print("-" * 80)
