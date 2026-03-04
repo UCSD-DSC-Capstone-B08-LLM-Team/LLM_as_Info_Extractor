@@ -203,7 +203,7 @@ if __name__ == "__main__":
     # Create DataFrame from the list
     df = pd.DataFrame(data)
     
-    df.to_csv("comfort_care_needles_new.csv", index=False)
+    df.to_csv("comfort_care_needles.csv", index=False)
     print(f"Generated {len(needles)} needles for Directive for Comfort Care/Palliative Care")
     print(f"CSV has {len(df)} rows (one per query+needle combination)")
     print("\nSample needles (all should return 'Y' but require inference):")

@@ -171,7 +171,7 @@ if __name__ == "__main__":
         "NEEDLE_TEXT": needles
     })
     
-    df.to_csv("severe_sepsis_needles_new.csv", index=False)
+    df.to_csv("severe_sepsis_needles.csv", index=False)
     print(f"Generated {len(needles)} positive needles")
     print("\nSample needles (all should return Y):")
     print("-" * 80)

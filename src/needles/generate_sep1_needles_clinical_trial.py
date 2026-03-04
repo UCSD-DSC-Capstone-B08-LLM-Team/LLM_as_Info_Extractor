@@ -202,7 +202,7 @@ if __name__ == "__main__":
     # Create DataFrame from the list (this creates one row per entry)
     df = pd.DataFrame(data)
     
-    df.to_csv("clinical_trial_needles_new.csv", index=False)
+    df.to_csv("clinical_trial_needles.csv", index=False)
     print(f"Generated {len(needles)} needles for Clinical Trial")
     print("-" * 80)
     for i in range(min(10, len(needles))):
