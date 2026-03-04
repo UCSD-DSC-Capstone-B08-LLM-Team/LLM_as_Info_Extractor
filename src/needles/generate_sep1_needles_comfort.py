@@ -1,171 +1,213 @@
 import random
 import pandas as pd
 
-# Inclusion terms for Comfort Care/Palliative Care
 INCLUSION_TERMS = [
-    "brain dead",
-    "brain death",
     "comfort care",
     "comfort measures",
     "comfort measures only",
     "comfort only",
-    "DNR-CC",
-    "end of life care",
+    "palliative care",
+    "palliative",
     "hospice",
     "hospice care",
-    "organ harvest",
-    "palliative care",
-    "palliative consult",
+    "end of life care",
     "terminal care",
-    "terminal extubation",
     "withdraw care",
     "withhold care",
+    "terminal extubation",
 ]
 
-# Acceptable contexts for documentation
+CLINICAL_SHORTHAND = [
+    "CMO",
+    "comfort care",
+    "palliative",
+    "hospice",
+]
+
 ACCEPTABLE_CONTEXTS = [
-    "comfort measures only recommendation",
-    "order for consultation or evaluation by a hospice care service",
-    "patient or patient representative request for comfort measures only",
-    "plan for comfort measures only",
-    "referral to hospice care service",
+    "recommendation for",
+    "order for",
+    "plan for",
+    "patient requests",
+    "family requests",
+    "goal of care is",
+    "care plan:",
+    "plan to pursue",
+    "transition to",
+    "goals of care discussion - family prefers",
 ]
 
-# State-authorized portable orders (SAPOs)
+# State-authorized portable orders
 SAPO_FORMS = [
     "DNR-Comfort Care form",
-    "MOLST (Medical Orders for Life-Sustaining Treatment)",
-    "POLST (Physician Orders for Life-Sustaining Treatment)",
-    "Out-of-Hospital DNR (OOH DNR)",
+    "MOLST",
+    "POLST",
+    "OOH DNR",
+    "advance directive",
 ]
 
-# Healthcare providers who can document
 PROVIDERS = [
     "physician",
     "APN",
     "PA",
     "MD",
-    "nurse practitioner",
-    "physician assistant",
+    "attending",
+    "hospitalist",
+    "intensivist",
 ]
 
-# Documentation sources
 DOCUMENTATION_SOURCES = [
-    "consultation note",
-    "discharge summary",
-    "ED record",
-    "history and physical",
-    "physician order",
+    "ED note",
+    "H&P",
     "progress note",
-    "emergency department note",
+    "consult note",
+    "physician order",
+    "admission note",
+    "critical care note",
 ]
 
-# Note templates (POSITIVE cases - where LLM SHOULD say Yes)
-POSITIVE_TEMPLATES = [
-    "{provider} documents {context}: {term}.",
-    "Per {provider} {source}, {context}: {term}.",
-    "{provider} {source}: {context} - {term_cap}.",
-    "After discussion with family, {provider} documents {context}: {term}.",
-    "{provider} orders {context}: {term_cap}.",
-    "{sapo_form} signed prior to arrival with {term} option selected.",
-    "Most recent {sapo_form} (dated and signed by {provider}) indicates {term}.",
-]
-
-# SAPO-specific templates
-SAPO_TEMPLATES = [
-    "{sapo_form} dated prior to arrival with {term} option checked.",
-    "Patient has {sapo_form} signed by {provider} with {term} selected.",
-    "Medical record includes {sapo_form} indicating {term_cap}.",
-]
-
-# NEGATIVE cases - where LLM SHOULD say No
-# These include unacceptable contexts, negative terms, or pre-arrival documentation
-NEGATIVE_CONTEXTS = [
-    "discussion of comfort measures",
-    "consider palliative care",
-    "no comfort care",
-    "not appropriate for hospice care",
-    "comfort care would also be reasonable - defer decision for now",
-    "DNRCCA (Do Not Resuscitate – Comfort Care Arrest)",
-    "family requests comfort measures only should the patient arrest",
-]
-
-NEGATIVE_TEMPLATES = [
-    "{provider} documents '{negative_context}' in {source}.",
-    "Per {provider} {source}: '{negative_context}'.",
-    "ED note states '{negative_context}'.",
-    "{provider} {source} indicates '{negative_context}'.",
-    "Patient has {sapo_form} but {provider} documents '{negative_context}' on day of arrival.",
-    "Previous hospitalization record shows {term} order (dated prior to arrival).",
-    "MD ED note: 'Pt. on hospice at home' (pre-arrival).",
-    "Chart shows 'hx dilated CMO' (cardiomyopathy context).",
-]
-
-# Time frame references
 TIME_REFERENCES = [
+    "on arrival",
+    "at presentation",
+    "upon admission",
+    "in the ED",
+    "within first hour",
+    "at 08:00",
+    "during initial assessment",
     "",
-    "within 6 hours of presentation",
-    "documented before severe sepsis presentation",
-    "noted in initial assessment",
-    "recorded upon admission",
 ]
 
-# Comfort Care/Palliative Care needle generator
-def generate_comfort_care_needle():
-    # Always generate positive cases only
-    if random.random() < 0.3:
-        # SAPO case
-        template = random.choice(SAPO_TEMPLATES)
-        return template.format(
-            sapo_form=random.choice(SAPO_FORMS),
-            provider=random.choice(PROVIDERS),
-            term=random.choice(INCLUSION_TERMS),
-            term_cap=random.choice(INCLUSION_TERMS).capitalize()
-        )
-    else:
-        # Regular positive documentation
-        template = random.choice(POSITIVE_TEMPLATES)
-        time_ref = random.choice(TIME_REFERENCES)
-        if time_ref:
-            time_ref = " " + time_ref
-        return template.format(
-            provider=random.choice(PROVIDERS),
-            context=random.choice(ACCEPTABLE_CONTEXTS),
-            term=random.choice(INCLUSION_TERMS),
-            term_cap=random.choice(INCLUSION_TERMS).capitalize(),
-            source=random.choice(DOCUMENTATION_SOURCES),
-            sapo_form=random.choice(SAPO_FORMS),
-            time_ref=time_ref
-        )
+POSITIVE_TEMPLATES = [
+    # Basic documentation
+    "{provider} {source}: {context} {term} {time_ref}.",
+    "Per {provider}, {context} {term} {time_ref}.",
+    "{provider} documents {context} {term} {time_ref}.",
+    "Goals of care: {context} {term} {time_ref}.",
+    
+    # With specific phrasing
+    "After discussion with family, {provider} {context} {term}.",
+    "{provider} recommending {term} - family agrees {time_ref}.",
+    "Plan: {term} per {provider} note {time_ref}.",
+    
+    # Order/consult formats
+    "Order placed for {term} consultation {time_ref}.",
+    "Consult to {term} service placed {time_ref}.",
+    "{provider} ordered {term} protocol {time_ref}.",
+    
+    # Patient/family request formats
+    "Family requesting {term} for patient {time_ref}.",
+    "Patient prefers {term} approach {time_ref}.",
+    "Spouse requests {term} only {time_ref}.",
+    
+    # CMO specific
+    "Patient is {term} - full support withdrawn {time_ref}.",
+    "Decision made for {term} after goals discussion.",
+    "Transitioning to {term} effective {time_ref}.",
+    
+    # SAPO documentation
+    "{sapo_form} in chart dated {time_ref} with {term} option selected.",
+    "Prior {sapo_form} indicates {term} - on file {time_ref}.",
+    "Advance directive: {term} selected on {sapo_form}.",
+    
+    # Mixed natural examples
+    "Palliative care consulted - recommending comfort measures.",
+    "Hospice referral placed by attending physician.",
+    "Patient to be made CMO per family request.",
+    "Withdrawing life support - transitioning to comfort care.",
+]
 
-# Generate multiple needles
+SAPO_TEMPLATES = [
+    "{sapo_form} from prior admission with {term} checked.",
+    "Patient has {sapo_form} on file indicating {term} preference.",
+    "Pre-arrival {sapo_form} documents {term} selection.",
+    "Old {sapo_form} in chart: {term} option selected.",
+]
+
+def generate_term():
+    if random.random() < 0.3:  # 30% chance of using shorthand
+        return random.choice(CLINICAL_SHORTHAND)
+    return random.choice(INCLUSION_TERMS)
+
+def generate_sapo_needle():
+    template = random.choice(SAPO_TEMPLATES)
+    return template.format(
+        sapo_form=random.choice(SAPO_FORMS),
+        term=generate_term(),
+        time_ref=random.choice(TIME_REFERENCES) if random.random() < 0.5 else "prior to arrival"
+    )
+
+def generate_positive_needle():
+    # 20% chance of SAPO case
+    if random.random() < 0.2:
+        return generate_sapo_needle()
+    
+    template = random.choice(POSITIVE_TEMPLATES)
+    
+    # Build the needle
+    provider = random.choice(PROVIDERS)
+    source = random.choice(DOCUMENTATION_SOURCES) if random.random() < 0.6 else ""
+    context = random.choice(ACCEPTABLE_CONTEXTS)
+    term = generate_term()
+    time_ref = random.choice(TIME_REFERENCES)
+    sapo_form = random.choice(SAPO_FORMS) if random.random() < 0.3 else ""
+    
+    needle = template.format(
+        provider=provider,
+        source=source,
+        context=context,
+        term=term,
+        term_cap=term.capitalize() if term else "",
+        time_ref=time_ref,
+        sapo_form=sapo_form,
+    )
+    
+    # Cleaning up
+    needle = ' '.join(needle.split())
+    return needle
+
+# Generate needles
 def generate_needle_set(n=20, seed=42):
     random.seed(seed)
-    return [generate_comfort_care_needle() for _ in range(n)]
-
+    needles = []
+    for _ in range(n):
+        needle = generate_positive_needle()
+        # Cleaning up
+        needle = ' '.join(needle.split())
+        needles.append(needle)
+    return needles
 
 if __name__ == "__main__":
     needles = generate_needle_set(n=100)
-
-    df = pd.DataFrame({
-        "DATA_ELEMENT": ["Directive for Comfort Care or Palliative Care, Severe Sepsis"] * len(needles),
-        "QUERY": [(
-            "Is there physician/APN/PA documentation of "
-            "comfort measures only, palliative care, or another acceptable inclusion term "
-            "within an acceptable context? Note: Acceptable contexts include comfort measures "
-            "only recommendation, order for hospice consultation, patient request for comfort "
-            "measures only, plan for comfort measures only, or referral to hospice. "
-            "Also accept SAPOs with CMO option checked if dated and signed prior to arrival, "
-            "unless contradicted by documentation on day of arrival. "
-            "Do NOT accept documentation that is only discussion/consideration, "
-            "negative/conditional statements, or dated prior to arrival."
-        )] * len(needles),
-        "NEEDLE_TEXT": needles
-    })
-
+    
+    llm_prompt = (
+        "In this note, is there physician/APN/PA documentation of comfort measures only, palliative care, "
+        "or another acceptable inclusion term within an acceptable context? Answer Y only if clearly documented. "
+        "Acceptable contexts include: comfort measures only recommendation, order for hospice consultation, "
+        "patient or family request for comfort measures only, plan for comfort measures only, or referral to hospice. "
+        "Also accept state-authorized portable orders (SAPOs) like POLST/MOLST with CMO option checked if dated and signed prior to arrival, "
+        "unless contradicted by documentation on day of arrival. "
+        "Do NOT count documentation that is only discussion/consideration (e.g., 'consider palliative care'), "
+        "negative/conditional statements (e.g., 'no comfort care'), or pre-arrival documentation referring to prior admission. "
+        "Inclusion terms include: comfort care, comfort measures only, CMO, palliative care, hospice, end of life care, withdraw care, terminal extubation."
+    )
+    
+    # Create a list of dictionaries, each representing one row
+    data = []
+    for needle in needles:
+        data.append({
+            "DATA_ELEMENT": "Directive for Comfort Care or Palliative Care, Severe Sepsis",
+            "QUERY": llm_prompt,
+            "NEEDLE_TEXT": needle
+        })
+    
+    # Create DataFrame from the list
+    df = pd.DataFrame(data)
+    
     df.to_csv("comfort_care_needles_new.csv", index=False)
-    print(f"Generated {len(needles)} needles for Comfort Care/Palliative Care")
-    print("\nSample needles:")
+    print(f"Generated {len(needles)} needles for Directive for Comfort Care/Palliative Care")
+    print(f"CSV has {len(df)} rows (one per query+needle combination)")
+    print("\nSample needles (all should return 'Y' but require inference):")
     print("-" * 80)
-    for i in range(5):
+    for i in range(min(10, len(needles))):
         print(f"{i+1}. {needles[i]}")
+    

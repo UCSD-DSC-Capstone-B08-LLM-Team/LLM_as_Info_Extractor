@@ -1,19 +1,16 @@
 import random
 import pandas as pd
 
-# Vasopressor medications (from Appendix C, Table 5.2)
 VASOPRESSORS = [
     "Levophed",
     "norepinephrine",
     "dopamine",
     "phenylephrine",
-    "epinephrine",
     "vasopressin",
     "Neo-Synephrine",
     "Adrenalin",
 ]
 
-# Routes of administration
 ROUTES = [
     "IV",
     "intravenous",
@@ -21,124 +18,166 @@ ROUTES = [
     "intraosseous",
 ]
 
-# Documentation of administration phrases
+CONTEXT_PHRASES = [
+    "for blood pressure support",
+    "for hypotension",
+    "for shock",
+    "to maintain MAP",
+    "for pressure support",
+    "for hemodynamic support",
+    "for septic shock",
+    "for pressor support",
+]
+
 ADMINISTRATION_PHRASES = [
-    "vasopressor running",
-    "vasopressor given",
-    "administered",
     "infusing",
+    "running",
+    "drip",
+    "gtt",
+    "continuous infusion",
     "started",
     "initiated",
     "titrating",
-    "on continuous infusion",
+    "on",
+    "receiving",
+    "given",
+    "pushed",
+    "administered",
 ]
 
-# Documentation sources
 DOCUMENTATION_SOURCES = [
-    "Emergency Department record",
+    "ED record",
     "IV flow sheet",
-    "Medication Administration Record",
     "MAR",
     "nursing note",
+    "progress note",
     "physician note",
-    "APN note",
     "transport record",
     "ambulance record",
+    "flow sheet",
+    "medication record",
 ]
 
-# Time references relative to septic shock presentation
 TIME_REFERENCES = [
-    "at time of triage",
+    "at triage",
     "at 08:00",
     "on arrival",
-    "within 1 hour of presentation",
-    "at septic shock presentation",
-    "2 hours after presentation",
-    "within the specified time frame",
+    "at presentation",
+    "in the ED",
+    "upon arrival",
     "at 22:30",
+    "during resuscitation",
+    "on admission",
+    "at septic shock presentation",
+    "within the first hour",
 ]
 
-# Note templates (POSITIVE cases - where LLM SHOULD say Yes)
-POSITIVE_TEMPLATES = [
-    "{vasopressor} {route} {admin_phrase} {time_ref}.",
-    "Per {source}, {vasopressor} {admin_phrase} via {route} {time_ref}.",
-    "Patient receiving {vasopressor} via {route} at time of triage - {admin_phrase} {time_ref}.",
-    "{source} documents {vasopressor} {admin_phrase} {route} {time_ref}.",
-    "{vasopressor} infusion {admin_phrase} per {source} {time_ref}.",
-    "IV flow sheet shows {vasopressor} {admin_phrase} {route} {time_ref}.",
-    "Nursing note: {vasopressor} {admin_phrase} via {route} {time_ref}.",
-    "Patient on {vasopressor} drip {admin_phrase} at presentation {time_ref}.",
-    "{vasopressor} started at {time_ref} per {source} - {admin_phrase} via {route}.",
-    "{vasopressor} infusing at time of septic shock presentation {time_ref}.",
-]
+def generate_rate():
+    rates = [
+        "5 mcg/min",
+        "10 mcg/min",
+        "0.05 mcg/kg/min",
+        "2-10 mcg/min",
+        "0.1 units/min",
+        "50 mcg/min",
+        "100 mcg/min",
+        "0.5 mcg/kg/min",
+        "titrating rate",
+        "5-15 mcg/min",
+        "2 mcg/kg/min",
+        "20 mcg/min",
+    ]
+    return random.choice(rates)
 
-# NEGATIVE cases - where LLM SHOULD say No
-NEGATIVE_TEMPLATES = [
-    "No vasopressor administration documented within specified time frame.",
-    "Per {source}, patient not on any vasopressors {time_ref}.",
-    "Physician order for {vasopressor} written but not designated as given - not abstracted.",
-    "{source} shows {vasopressor} ordered but no documentation of administration.",
-    "Test dose of {vasopressor} administered - not abstracted per guidelines.",
-    "{vasopressor} given via oral route - not IV or IO.",
-    "Vasopressor mentioned in narrative note only - no MAR documentation.",
-    "Patient received {vasopressor} but outside specified time frame (after 6 hours).",
-    "{vasopressor} started at {time_ref} - beyond the six-hour window.",
-    "Transport record indicates {vasopressor} given - time not documented.",
-    "Unable to determine if vasopressor administered within specified time frame.",
-    "No documentation of IV or IO vasopressor administration.",
-]
+def generate_context():
+    if random.random() < 0.6:  # 60% chance of having context
+        return random.choice(CONTEXT_PHRASES)
+    return ""
 
-# Mixed cases - vasopressor given but via wrong route or test dose
-MIXED_NEGATIVE_PHRASES = [
-    "oral",
-    "PO",
-    "subcutaneous",
-    "IM",
-    "test dose",
-    "trial dose",
-]
-
-# Vasopressor needle generator
 def generate_vasopressor_needle():
-    # Always generate positive cases only
     template = random.choice(POSITIVE_TEMPLATES)
-    return template.format(
+    
+    needle = template.format(
         vasopressor=random.choice(VASOPRESSORS),
-        route=random.choice(ROUTES),
+        route=random.choice(ROUTES) if random.random() < 0.7 else "",
         admin_phrase=random.choice(ADMINISTRATION_PHRASES),
-        source=random.choice(DOCUMENTATION_SOURCES),
-        time_ref=random.choice(TIME_REFERENCES)
+        source=random.choice(DOCUMENTATION_SOURCES) if random.random() < 0.5 else "",
+        time_ref=random.choice(TIME_REFERENCES),
+        rate=generate_rate(),
+        context=generate_context(),
     )
+    
+    needle = ' '.join(needle.split())
+    return needle
 
+POSITIVE_TEMPLATES = [
+    # Levophed/norepinephrine common documentation
+    "{vasopressor} {admin_phrase} at {rate} {route} {time_ref} {context}.",
+    "Patient on {vasopressor} {admin_phrase} {route} {time_ref} {context}.",
+    "{vasopressor} {admin_phrase} at {rate} {time_ref} per {source}.",
+    "Started {vasopressor} {route} {time_ref} {context}.",
+    "{vasopressor} drip at {rate} {time_ref} - titrating to MAP.",
+    "Nursing note: {vasopressor} {admin_phrase} at {rate} {time_ref}.",
+    "MAR shows {vasopressor} {admin_phrase} {route} {time_ref}.",
+    "Patient receiving {vasopressor} infusion {time_ref} {context}.",
+    "{vasopressor} running at {rate} {time_ref} per {source}.",
+    "IV flow sheet: {vasopressor} {admin_phrase} {route} {time_ref}.",
+    
+    # More natural variations
+    "On {vasopressor} drip {time_ref} - titrating to goal BP.",
+    "Pressors: {vasopressor} at {rate} {time_ref}.",
+    "Hemodynamics: on {vasopressor} {route} {time_ref}.",
+    "Started on {vasopressor} {time_ref} for refractory hypotension.",
+    "Requiring {vasopressor} support {time_ref} - currently at {rate}.",
+    
+    # Realistic examples from clinical practice
+    "Patient brought in by ambulance on {vasopressor} drip at {rate} {time_ref}.",
+    "ED course: placed on {vasopressor} {route} {time_ref} for persistent hypotension.",
+    "Medication reconciliation: {vasopressor} {admin_phrase} at {rate} {time_ref}.",
+    "Critical care note: {vasopressor} infusion ongoing at {rate} {time_ref}.",
+    
+    # Documentation with rates
+    "{vasopressor} at {rate} mcg/min {route} {time_ref}.",
+    "{vasopressor} at {rate} {time_ref} per MAR.",
+    "Titrating {vasopressor} - current rate {rate} {time_ref}.",
+    
+    # Additional natural variations
+    "Continued {vasopressor} infusion at {rate} {time_ref}.",
+    "BP improving on {vasopressor} at {rate} {time_ref}.",
+    "Maintaining MAP >65 on {vasopressor} {rate} {route} {time_ref}.",
+    "Started second pressor: {vasopressor} at {rate} {time_ref}.",
+    "Weaning {vasopressor} - now at {rate} {time_ref}.",
+]
 
-# Generate multiple needles
+# Generate needles
 def generate_needle_set(n=20, seed=42):
     random.seed(seed)
     return [generate_vasopressor_needle() for _ in range(n)]
 
-
 if __name__ == "__main__":
     needles = generate_needle_set(n=100)
-
+    
+    llm_prompt = (
+        "In this note, is there documentation of intravenous or intraosseous vasopressor administration? "
+        "Do not infer or take a likely guess. Answer Y only if vasopressor administration is clearly stated in the note. "
+        "The following is a list of vasopressors that should be considered (this is not an all-inclusive list): "
+        "EXAMPLES: Levophed, norepinephrine, dopamine, phenylephrine, epinephrine, vasopressin, Neo-Synephrine, Adrenalin. "
+        "Only consider administration via IV or IO routes. "
+        "Look for documentation of actual administration (e.g., 'infusing', 'running', 'started', 'given', 'on drip', 'receiving'). "
+        "Do not count physician orders unless they are clearly designated as given. "
+        "Do not count test doses. "
+        "Acceptable documentation sources include ED records, IV flow sheets, MAR, nursing notes, physician notes, transport records."
+    )
+    
     df = pd.DataFrame({
-        "DATA_ELEMENT": ["Vasopressor Administration, Severe Sepsis"] * len(needles),
-        "QUERY": [(
-            "Was an intravenous or intraosseous vasopressor "
-            "administered within the specified time frame? The specified time frame starts "
-            "at Septic Shock Presentation Time and ends six hours after. "
-            "Note: Select 'Yes' if there is documentation of actual administration (e.g., "
-            "'vasopressor running', 'vasopressor given') of an IV or IO vasopressor from "
-            "Appendix C, Table 5.2. Acceptable sources include MAR, IV flow sheets, nursing "
-            "notes, physician notes, and transport records. Do not abstract orders unless "
-            "designated as given. Do not abstract test doses or non-IV/IO routes. "
-            "Select 'No' if no vasopressor administered within time frame, or unable to determine."
-        )] * len(needles),
+        "DATA_ELEMENT": ["Vasopressor Administration (SEP-1)"] * len(needles),
+        "QUERY": [llm_prompt] * len(needles),
         "NEEDLE_TEXT": needles
     })
     
     df.to_csv("vasopressor_needles_new.csv", index=False)
     print(f"Generated {len(needles)} needles for Vasopressor Administration")
-    print("\nSample needles:")
+    print("\nSample needles (all should return 'Y' but require inference):")
     print("-" * 80)
     for i in range(10):
         print(f"{i+1}. {needles[i]}")

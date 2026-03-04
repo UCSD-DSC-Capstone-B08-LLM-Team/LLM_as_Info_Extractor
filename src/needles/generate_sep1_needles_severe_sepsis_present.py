@@ -1,7 +1,6 @@
 import random
 import pandas as pd
 
-# Infection terms (expanded based on query examples)
 INFECTION_TERMS = [
     "pneumonia",
     "UTI",
@@ -82,7 +81,7 @@ POSITIVE_TEMPLATES = [
     "Plan to treat for {qualifier} {infection}.",
     "Patient presents with symptoms concerning for {infection} {time_ref}.",
     
-    # Rule out format (note: "rule out" is a positive qualifier in your query)
+    # Rule out format
     "Rule out {infection} {time_ref}.",
     "r/o {infection} {time_ref}.",
     "Need to rule out {infection} {time_ref}.",
@@ -131,7 +130,7 @@ def generate_positive_needle():
             time_ref=random.choice(TIME_REFERENCES)
         ).strip()
     else:
-        # Templates that have the qualifier built in (e.g., "Rule out {infection}")
+        # Templates that have the qualifier built in
         return template.format(
             provider=random.choice(DOCUMENTATION_SOURCES),
             infection=random.choice(INFECTION_TERMS),
@@ -172,15 +171,9 @@ if __name__ == "__main__":
         "NEEDLE_TEXT": needles
     })
     
-    df.to_csv("severe_sepsis_needles.csv", index=False)
+    df.to_csv("severe_sepsis_needles_new.csv", index=False)
     print(f"Generated {len(needles)} positive needles")
     print("\nSample needles (all should return Y):")
     print("-" * 80)
     for i in range(min(20, len(needles))):
         print(f"{i+1}. {needles[i]}")
-    
-    # Show variety of qualifiers and infections used
-    print("\n" + "=" * 80)
-    print("Note: All needles contain:")
-    print("- An infection term from the approved list")
-    print("- A positive qualifier from: " + ", ".join(POSITIVE_QUALIFIERS[:5]) + "...")
