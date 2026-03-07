@@ -1,0 +1,8 @@
+element,strategy,num_patients,retrieval_success,accuracy
+comfort_care,bm25,10000,0.6015,0.5574
+comfort_care,faiss,10000,0.7405,0.5324
+comfort_care,faiss_mmr,10000,0.7544,0.5422
+comfort_care,hybrid,10000,0.8071,0.5869
+comfort_care,full_context_baseline,10000,1.0,0.1934
+comfort_care,semantic_chunking,10000,0.7497,0.5417
+comfort_care,splade,10000,0.9133,0.6996

@@ -16,7 +16,7 @@ def plot_method_comparison_by_element(df):
 
     plt.ylim(0,1)
     plt.title("Retrieval Recall per Clinical Element")
-    plt.ylabel("Recall@k")
+    plt.ylabel("Recall@10")
     plt.xlabel("Clinical Element")
 
     plt.legend(title="Method", bbox_to_anchor=(1.05, 1))
@@ -67,6 +67,7 @@ def plot_avg_method_performance(df):
 elements = {
     "clinical_trial": "src/results_patient_level/retrieval_query_visualizations/results/clinical_trial_results.csv",
     "comfort_care": "src/results_patient_level/retrieval_query_visualizations/results/comfort_care_results.csv",
+    "conta_care": "src/results_patient_level/retrieval_query_visualizations/results/contra_care_results.csv",
     "severe_sepsis": "src/results_patient_level/retrieval_query_visualizations/results/severe_sepsis_results.csv",
     "vasopressor": "src/results_patient_level/retrieval_query_visualizations/results/vasopressor_results.csv"
 }

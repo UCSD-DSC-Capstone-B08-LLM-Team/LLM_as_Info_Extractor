@@ -1,0 +1,8 @@
+element,strategy,num_patients,retrieval_success,accuracy
+severe_sepsis,bm25,10000,0.1982,0.2238
+severe_sepsis,faiss,10000,0.5563,0.3557
+severe_sepsis,faiss_mmr,10000,0.6152,0.3797
+severe_sepsis,hybrid,10000,0.5451,0.3634
+severe_sepsis,full_context_baseline,10000,1.0,0.2686
+severe_sepsis,semantic_chunking,10000,0.5762,0.38
+severe_sepsis,splade,10000,0.7253,0.3995

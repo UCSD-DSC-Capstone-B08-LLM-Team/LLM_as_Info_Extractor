@@ -1,0 +1,8 @@
+element,strategy,num_patients,retrieval_success,accuracy
+clinical_trial,bm25,10000,0.7865,0.6087
+clinical_trial,faiss,10000,0.8812,0.597
+clinical_trial,faiss_mmr,10000,0.8902,0.5972
+clinical_trial,hybrid,10000,0.9192,0.6209
+clinical_trial,full_context_baseline,10000,1.0,0.14
+clinical_trial,semantic_chunking,10000,0.8855,0.5907
+clinical_trial,splade,10000,0.9431,0.6112

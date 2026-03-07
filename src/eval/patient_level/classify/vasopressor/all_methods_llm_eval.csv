@@ -1,0 +1,8 @@
+element,strategy,num_patients,retrieval_success,accuracy
+vasopressor,bm25,10000,0.0488,0.1039
+vasopressor,faiss,10000,0.405,0.5147
+vasopressor,faiss_mmr,10000,0.4557,0.5656
+vasopressor,hybrid,10000,0.3612,0.4903
+vasopressor,full_context_baseline,10000,1.0,0.5917
+vasopressor,semantic_chunking,10000,0.423,0.5327
+vasopressor,splade,10000,0.8692,0.9143

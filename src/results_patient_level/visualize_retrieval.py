@@ -6,8 +6,8 @@ import textwrap
 
 
 # Directories
-BASE_RETRIEVAL_DIR = "src/retrieval_query/outputs/original_needle"
-SAVE_DIR = "src/results_patient_level/retrieval_query_visualizations/original_needle"
+BASE_RETRIEVAL_DIR = "src/retrieval_query/outputs/clinical_trial"
+SAVE_DIR = "src/results_patient_level/retrieval_query_visualizations/clinical_trial"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 
@@ -54,7 +54,7 @@ def plot_coverage(method_dfs):
 
     plt.ylabel("Fraction of Patients with Needle Found", fontsize=12)
     plt.xlabel("Retrieval Method", fontsize=12)
-    plt.title("Retrieval Coverage by Method", fontsize=14)
+    plt.title("Clinical Trial Retrieval Coverage by Method", fontsize=14)
 
     plt.xticks(rotation=25, ha="right")
 
@@ -100,7 +100,7 @@ def plot_summary_heatmap(summary_df):
     heatmap_data = summary_df.set_index("method")[["coverage_rate","avg_num_passages","avg_haystack_len"]]
     plt.figure(figsize=(8,4))
     sns.heatmap(heatmap_data, annot=True, fmt=".2f", cmap="YlGnBu", linewidths=0.5)
-    plt.title("Retrieval Summary Metrics by Method")
+    plt.title("Clinical Trial Retrieval Summary Metrics by Method")
     plt.tight_layout()
     plt.savefig(os.path.join(SAVE_DIR, "retrieval_summary_heatmap.png"), dpi=300)
     plt.close()
@@ -148,7 +148,7 @@ def plot_colbert_results(csv_file):
 
 
 if __name__ == "__main__":
-    methods = ["bm25", "colbert", "faiss_cos", "faiss_euc", "faiss_mmr", "hybrid", "semantic_chunking", "splade"]
+    methods = ["bm25", "faiss_cos", "faiss_mmr", "hybrid", "semantic_chunking", "splade"]
     method_dfs = {method: load_retrieval_csv(method) for method in methods}
 
     # Coverage plot
@@ -158,5 +158,5 @@ if __name__ == "__main__":
     summary_df = plot_summary_table(method_dfs)
     plot_summary_heatmap(summary_df)
 
-    # Detailed haystack plot for ColBERT
-    plot_colbert_results("src/retrieval_query/outputs/colbert_patient_results_5.csv")
+    # # Detailed haystack plot for ColBERT
+    # plot_colbert_results("src/retrieval_query/outputs/colbert_patient_results_5.csv")

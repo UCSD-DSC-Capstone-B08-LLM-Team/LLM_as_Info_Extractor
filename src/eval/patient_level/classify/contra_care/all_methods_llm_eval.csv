@@ -1,0 +1,8 @@
+element,strategy,num_patients,retrieval_success,accuracy
+contra_care,bm25,10000,0.3883,0.258
+contra_care,faiss,10000,0.6063,0.2984
+contra_care,faiss_mmr,10000,0.6589,0.344
+contra_care,hybrid,10000,0.66,0.345
+contra_care,full_context_baseline,10000,1.0,0.1072
+contra_care,semantic_chunking,10000,0.619,0.2986
+contra_care,splade,10000,0.8337,0.3867

@@ -1,0 +1,7 @@
+Method,k,Parameters,Mean Needle Rank,% Needles at rank 1,Recall@k
+BM25,10,window=1,2.63,32.42%,0.6015
+FAISS,10,window=1,2.09,49.87%,0.7405
+FAISS MMR,10,window=1,2.16,49.87%,0.7544
+Hybrid,10,window=1,1.95,56.67%,0.8071
+Semantic Chunking,10,max_sents=5,2.11,49.89%,0.7497
+SPLADE,10,window=1,1.74,67.97%,0.9133

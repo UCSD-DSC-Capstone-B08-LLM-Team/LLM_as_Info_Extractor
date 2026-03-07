@@ -43,7 +43,7 @@ def merge_llm_results(task, method, element):
     print(f"Saved {output_file}")
 
 # Run the merging for all methods
-methods = ["full_context_baseline"]#["bm25", "colbert", "faiss", "faiss_mmr", "hybrid", "full_context_baseline", "semantic_chunking", "splade"]
+methods = ["bm25", "faiss", "faiss_mmr", "hybrid", "full_context_baseline", "semantic_chunking", "splade"]
 task = "classify"
 element = "clinical_trial"
 for method in methods:
@@ -58,6 +58,7 @@ def summarize_classify_eval(methods, task, element):
         df = pd.read_csv(eval_file)
 
         rows.append({
+            "element": element,
             "strategy": method,
             "num_patients": df["SUBJECT_ID"].nunique(),
             "retrieval_success": df["needle_in_top_k"].mean(),
