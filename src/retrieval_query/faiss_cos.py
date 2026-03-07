@@ -47,6 +47,7 @@ def retrieve_faiss_cos(haystack, query, top_k=5, window_size=3):
     faiss.normalize_L2(passage_embeddings)
     faiss.normalize_L2(query_embedding)
 
+    # Create FAISS index 
     dim = passage_embeddings.shape[1]
     index = faiss.IndexFlatIP(dim)
     index.add(passage_embeddings)
