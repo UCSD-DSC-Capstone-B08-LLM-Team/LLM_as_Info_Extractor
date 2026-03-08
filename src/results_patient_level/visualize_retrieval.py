@@ -3,38 +3,24 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import textwrap
-
-
-# Directories
-BASE_RETRIEVAL_DIR = "src/retrieval_query/outputs/clinical_trial"
-SAVE_DIR = "src/results_patient_level/retrieval_query_visualizations/clinical_trial"
-os.makedirs(SAVE_DIR, exist_ok=True)
+import argparse
 
 
 def wrap_labels(labels, width=12):
     return ["\n".join(textwrap.wrap(str(l), width)) for l in labels]
 
-# Helper Functions
-def load_retrieval_csv(method):
+def load_retrieval_csv(method, base_dir):
     """
-    Load retrieval CSV for a given method.
+    Load retrieval CSV for a given method and element directory.
     """
-    if method == "colbert":
-        path = os.path.join(BASE_RETRIEVAL_DIR, f"{method}_patient_results_5.csv")
-    else:
-        path = os.path.join(BASE_RETRIEVAL_DIR, f"{method}_patient_results.csv")
+    path = os.path.join(base_dir, f"{method}_patient_results.csv")
     return pd.read_csv(path)
 
-def plot_coverage(method_dfs):
+def plot_coverage(method_dfs, save_dir):
     """
     Plot retrieval coverage (found rate) per method.
     """
-
-    coverage = {
-        method: df["found"].mean()
-        for method, df in method_dfs.items()
-    }
-
+    coverage = {method: df["found"].mean() for method, df in method_dfs.items()}
     cov_df = (
         pd.DataFrame.from_dict(coverage, orient="index", columns=["coverage"])
         .sort_values("coverage", ascending=False)
@@ -51,11 +37,9 @@ def plot_coverage(method_dfs):
     )
 
     plt.ylim(0, 1)
-
     plt.ylabel("Fraction of Patients with Needle Found", fontsize=12)
     plt.xlabel("Retrieval Method", fontsize=12)
     plt.title("Clinical Trial Retrieval Coverage by Method", fontsize=14)
-
     plt.xticks(rotation=25, ha="right")
 
     for bar in bars:
@@ -69,13 +53,11 @@ def plot_coverage(method_dfs):
         )
 
     plt.tight_layout()
-
-    plt.savefig(os.path.join(SAVE_DIR, "retrieval_coverage.png"), dpi=300)
+    plt.savefig(os.path.join(save_dir, "retrieval_coverage.png"), dpi=300)
     plt.close()
-
     print("Saved retrieval coverage plot")
 
-def plot_summary_table(method_dfs):
+def plot_summary_table(method_dfs, save_dir):
     """
     Create a summary table with coverage, avg num_passages, avg haystack length.
     """
@@ -89,11 +71,11 @@ def plot_summary_table(method_dfs):
             "avg_haystack_len": df['haystack_len_chars'].mean()
         })
     summary_df = pd.DataFrame(summary)
-    summary_df.to_csv(os.path.join(SAVE_DIR, "retrieval_summary_table.csv"), index=False)
+    summary_df.to_csv(os.path.join(save_dir, "retrieval_summary_table.csv"), index=False)
     print("Saved summary table CSV")
     return summary_df
 
-def plot_summary_heatmap(summary_df):
+def plot_summary_heatmap(summary_df, save_dir):
     """
     Heatmap of coverage, avg_num_passages, avg_haystack_len.
     """
@@ -102,61 +84,27 @@ def plot_summary_heatmap(summary_df):
     sns.heatmap(heatmap_data, annot=True, fmt=".2f", cmap="YlGnBu", linewidths=0.5)
     plt.title("Clinical Trial Retrieval Summary Metrics by Method")
     plt.tight_layout()
-    plt.savefig(os.path.join(SAVE_DIR, "retrieval_summary_heatmap.png"), dpi=300)
+    plt.savefig(os.path.join(save_dir, "retrieval_summary_heatmap.png"), dpi=300)
     plt.close()
     print("Saved summary heatmap")
 
 
-def plot_colbert_results(csv_file):
-    df = pd.read_csv(csv_file)
-    
-    plt.figure(figsize=(12, 6))
-    sns.set_theme(style="whitegrid")
-
-    plot = sns.scatterplot(
-        data=df, 
-        x="num_passages", 
-        y="found", 
-        hue="found", 
-        palette={True: "#2ecc71", False: "#e74c3c"},
-        alpha=0.6,
-        s=100
-    )
-
-    # Add a "Recall Rate" line
-    # This shows the moving average of success as records get longer
-    df['found_int'] = df['found'].astype(int)
-    sns.lineplot(
-        data=df, 
-        x="num_passages", 
-        y="found_int", 
-        color="#3498db", 
-        label="Success Rate Trend"
-    )
-
-    plt.title("ColBERT 'Needle in a Haystack' Performance", fontsize=15)
-    plt.xlabel("Haystack Size", fontsize=12)
-    plt.ylabel("Needle Found? (1 = Yes, 0 = No)", fontsize=12)
-    plt.yticks([0, 1], ["Missed", "Found"])
-    plt.legend(title="Status", bbox_to_anchor=(1.05, 1), loc='upper left')
-    
-    plt.tight_layout()
-    plt.savefig(os.path.join(SAVE_DIR, "colbert_retrieval.png"), dpi=300)
-    # plt.savefig("figure.png", dpi=300, bbox_inches="tight")
-    plt.close()
-    print("Saved colbert retrieval plot")
-
-
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Visualize retrieval results for a clinical element")
+    parser.add_argument("--element", required=True, help="Clinical element, e.g., 'comfort_care'")
+    args = parser.parse_args()
+
+    element = args.element
+    BASE_RETRIEVAL_DIR = f"src/retrieval_query/outputs/{element}"
+    SAVE_DIR = f"src/results_patient_level/retrieval_query_visualizations/{element}"
+    os.makedirs(SAVE_DIR, exist_ok=True)
+
     methods = ["bm25", "faiss_cos", "faiss_mmr", "hybrid", "semantic_chunking", "splade"]
-    method_dfs = {method: load_retrieval_csv(method) for method in methods}
+    method_dfs = {method: load_retrieval_csv(method, BASE_RETRIEVAL_DIR) for method in methods}
 
     # Coverage plot
-    plot_coverage(method_dfs)
+    plot_coverage(method_dfs, SAVE_DIR)
 
     # Summary table & heatmap
-    summary_df = plot_summary_table(method_dfs)
-    plot_summary_heatmap(summary_df)
-
-    # # Detailed haystack plot for ColBERT
-    # plot_colbert_results("src/retrieval_query/outputs/colbert_patient_results_5.csv")
+    summary_df = plot_summary_table(method_dfs, SAVE_DIR)
+    plot_summary_heatmap(summary_df, SAVE_DIR)

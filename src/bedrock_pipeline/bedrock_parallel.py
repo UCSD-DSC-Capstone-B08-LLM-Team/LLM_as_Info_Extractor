@@ -15,7 +15,16 @@ def infer_task_and_retrieval(prompt_csv_path):
     return task, retrieval
 
 def call_bedrock_row_with_retry(client, prompt, max_retries=5):
-    """Call Bedrock for a single prompt with retry for throttling."""
+    """Call Bedrock for a single prompt with retry for throttling.
+    
+    Args:
+        client: Boto3 Bedrock client
+        prompt: The prompt string to send to Bedrock
+        max_retries: Maximum number of retries for throttling exceptions
+        
+    Returns:
+        The response from Bedrock or an error message if all retries fail.
+    """
     wait = 1  # initial backoff in seconds
     for attempt in range(max_retries):
         try:
@@ -49,6 +58,19 @@ def call_bedrock_row_with_retry(client, prompt, max_retries=5):
     return f"ERROR: ThrottlingException after {max_retries} retries"
 
 def call_bedrock_and_save_parallel(prompt_csv, output_csv=None, max_workers=10, sleep_time=0.0, region="us-west-2"):
+    """
+    Calls Bedrock model on prompts from CSV in parallel and saves responses.
+    
+    Args:
+        prompt_csv (str): Path to input prompt CSV file.
+        output_csv (str): Optional path to save output CSV file. If None, auto-generated based on prompt_csv path.
+        max_workers (int): Number of concurrent API calls.
+        sleep_time (float): Optional sleep time between calls to avoid rate limits.
+        region (str): AWS region for Bedrock client.
+    
+    Returns:
+        None
+    """
     df = pd.read_csv(prompt_csv)
     client = boto3.client("bedrock-runtime", region_name=region)
     task, retrieval = infer_task_and_retrieval(prompt_csv)
@@ -94,7 +116,7 @@ def call_bedrock_and_save_parallel(prompt_csv, output_csv=None, max_workers=10, 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Bedrock on prompt CSV (parallel)")
     parser.add_argument("--prompt_csv", required=True, help="Path to input prompt CSV file")
-    parser.add_argument("--output_csv", default=None, help="Optional explicit output CSV path")
+    parser.add_argument("--output_csv", required=True, help="Optional explicit output CSV path")
     parser.add_argument("--workers", type=int, default=10, help="Number of concurrent API calls")
     parser.add_argument("--sleep_time", type=float, default=0.0, help="Optional delay between calls")
     args = parser.parse_args()
@@ -105,9 +127,3 @@ if __name__ == "__main__":
         max_workers=args.workers,
         sleep_time=args.sleep_time
     )
-
-# python bedrock_parallel.py \
-#     --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/severe_sepsis/bm25_prompts.csv \
-#     --output_csv src/bedrock_pipeline/bedrock_responses/classify/severe_sepsis/bm25_responses.csv \
-#     --workers 10 \
-#     --sleep_time 0.5

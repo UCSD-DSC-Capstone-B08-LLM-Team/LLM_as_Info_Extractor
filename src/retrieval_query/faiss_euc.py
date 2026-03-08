@@ -22,6 +22,16 @@ def retrieve_faiss_euc(haystack, query, top_k=5, window_size=3):
     """
     Retrieve top_k passages from haystack using FAISS Euclidean distance.
     Retrieval is driven by QUERY, not the needle.
+
+    Args:
+        haystack (str): Full patient record text.
+        query (str): Retrieval query to drive passage selection.
+        top_k (int): Number of top passages to retrieve.
+        window_size (int): Number of sentences per passage. If ≤ 0, use entire haystack as one passage.
+
+    Returns:
+        top_passages (list of str): List of retrieved passages.
+        num_passages (int): Total number of passages created from the haystack. 
     """
 
     sentences = sent_tokenize(str(haystack))
@@ -63,7 +73,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Patient-level FAISS Euclidean retrieval (query-based)")
     parser.add_argument("--haystack_csv", type=str, default="src/haystacks/mimic_haystack.csv")
     parser.add_argument("--output_csv", type=str, default="src/retrieval_query/outputs/faiss_euc_patient_results.csv")
-    parser.add_argument("--top_k", type=int, default=2)
+    parser.add_argument("--top_k", type=int, default=5)
     parser.add_argument("--window_size", type=int, default=3)
     args = parser.parse_args()
 

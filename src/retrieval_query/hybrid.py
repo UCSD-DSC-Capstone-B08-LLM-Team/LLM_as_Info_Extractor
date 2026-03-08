@@ -23,6 +23,17 @@ def build_indices(haystack, window_size=3):
     """
     Build BM25 and FAISS indices for all passages in a haystack.
     Returns passages, bm25_index, faiss_index, passage_embeddings, num_passages
+
+    Args:
+        haystack (str): Full patient record text.
+        window_size (int): Number of sentences per passage (overlapping). If <= 0, use entire haystack as one passage.
+
+    Returns:
+        passages (list of str): List of passage texts.
+        bm25_index (BM25Okapi): BM25 index for passages.
+        faiss_index (faiss.Index): FAISS index for passage embeddings.
+        passage_embeddings (np.ndarray): Embeddings for passages.
+        num_passages (int): Number of passages created.
     """
     sentences = sent_tokenize(str(haystack))
 
@@ -56,6 +67,19 @@ def hybrid_retrieve(query, passages, bm25_index, faiss_index, passage_embeddings
     """
     Hybrid BM25 + FAISS retrieval using query (not needle) to score passages.
     Returns top_k passages ranked by combined normalized score.
+
+    Args:
+        query (str): The query string to retrieve relevant passages.
+        passages (list of str): List of passage texts.
+        bm25_index (BM25Okapi): BM25 index for passages.
+        faiss_index (faiss.Index): FAISS index for passage embeddings.
+        passage_embeddings (np.ndarray): Embeddings for passages.
+        top_k (int): Number of top passages to return.
+        bm25_weight (float): Weight for BM25 score in combined ranking.
+        faiss_weight (float): Weight for FAISS score in combined ranking.
+
+    Returns:
+        List of top_k passages ranked by combined score.
     """
     if not passages:
         return []
@@ -93,7 +117,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Patient-level hybrid BM25 + FAISS retrieval (query-driven)")
     parser.add_argument("--haystack_csv", type=str, default="src/haystacks/mimic_haystack.csv")
     parser.add_argument("--output_csv", type=str, default="src/retrieval_query/outputs/hybrid_patient_results.csv")
-    parser.add_argument("--top_k", type=int, default=2)
+    parser.add_argument("--top_k", type=int, default=5)
     parser.add_argument("--window_size", type=int, default=3)
     parser.add_argument("--bm25_weight", type=float, default=0.5)
     parser.add_argument("--faiss_weight", type=float, default=0.5)

@@ -1,12 +1,12 @@
 # LLMs as Information Extractors
 
-This project explores the use of Large Language Models (LLMs) to extract and classify information from unstructured clinical notes, such as those found in Electronic Health Records (EHRs). By combining LLMs with retrieval-augmented generation (RAG) techniques, we aim to improve extraction accuracy for long and complex clinical notes.
+Doctors and hospitals rely on medical records to make life-or-death decisions. These records contain vital information such as diagnoses, treatments, medications, lab results, and clinical observations that guide patient care.
 
-## Introduction
+But medical records are long, complex, and often messy. Finding the important details can take hours of careful review, and mistakes or delays can affect patient outcomes. Accurate information extraction is not only critical for doctors and patients, but it also supports hospital operations, research, and reporting to agencies like the Centers for Medicare and Medicaid Services (CMS).
 
-Medical notes are a critical part of healthcare, providing comprehensive patient information from allergies to past complications. However, these notes are often unstructured, contain domain specific abbreviations, and require significant manual effort to analyze. Hospitals spend millions annually on maintaining and reporting medical notes, consuming thousands of hours that could be more beneifical if spend on treating patients.
+AI tools, like large language models (LLMs), can help speed up information extraction from medical records. But they have a problem: when given long and messy notes, they often get confused and miss the most important details. This limits how much hospitals can rely on AI for critical tasks. Retrieval-augmented generation (RAG) can help mitigate this challenge by reducing the amount of information providing to LLMs, however, this field is underexplored. Thus, we introduce a benchmark for evaluating and comparing retrieval methods for EHR information extraction. To help LLMs focus on the right information, we tested different retrieval strategies that guide the model to the most relevant parts of the records before it answers questions. Through this framework, researchers are able to compare different strategies and see which ones work best in medical settings.
 
-LLMs, such as GPT-4, Claude 3, Gemini Advanced, and DeepSeek-V3 have demonstrated the ability to accurately identify key details in medical text, often matching or surpassing traditional machine learning methods. In this project, we investigate LLM performance on MIMIC-III clinical data, exploring how RAG and other retrieval techniques can enhance reliability for nuanced or context-rich information and whether a "needle-in-a-haystack" approach can help to benchmark LLM reliability.
+We tested our methods using real patient records from the MIMIC-III database, which contains thousands of de-identified unstructured clinical notes from a hospital’s intensive care units. These notes come in many forms such as nursing notes, doctor’s observations, lab reports, and discharge summaries, and they vary in length and style.
 
 ## Project Structure
 <pre>
@@ -34,31 +34,31 @@ LLMs, such as GPT-4, Claude 3, Gemini Advanced, and DeepSeek-V3 have demonstrate
 </pre>
 
 ## Features
-- Evaluate LLMs on information extraction from clinical notes. 
-- Extracts information from unstructured clinical notes
-- Supports multiple LLMs (GPT-4, Claude 3, DeepSeek). 
+- "Needle-in-a-haystack" benchmark where synthetic clinical statements (“needles”) are inserted into long patient records (“haystacks”) for clinical information retrieval
+- Comparison of different retrieval strategies
+- Insights on how to make LLMs more accurate and reliable in healthcare settings
+- Privacy preserving LLM using DeepSeek-V3 model on AWS Bedrock
 - Retrieval-augmented generation (RAG) using multiple retrieval strategies:
     - BM25
-    - ColBERT
     - FAISS using euclidean distance and cosine similarity
-    - FAISS using maximal marginal relevance
-    - Hybrid: Combination of BM25 and FAISS where weights are by default 0.5/0.5
+    - FAISS using maximal marginal relevance (MMR)
+    - Hybrid: Combination of BM25 and FAISS
     - Semantic Chunking
     - SPLADE
-- Generate and test Needle-in-a-Haystack querires
-- LLM Evaluation can perform three tasks: **Extract** key information, **classify** note contents, and **summarize** notes (more resource-intensive)
-    - Focus for this experiment is on extraction and classification tasks
+- LLM Evaluation can perform two tasks: 
+    - Classification: determining whether relevant information exists
+    - Extraction: identifying the specific evidence in clinical notes
 - Generates visualizations for accuracy and retrieval performance
-- Can be extended to other clinical datasets or synthetic notes
 
 ## Methodology
 
 1. **Data Preparation**: Generate synthetic needles using several files under `needles/` folder. 
-    - Synthetic needles were created by using Centers for Medicare and Medicaid Services (CMS) Specifications Manual for National Hospital Inpatient Quality Measures. 
+    - Synthetic needles were generated using five elements from the Severe Sepsis and Septic Shock
+    Early Management Bundle (SEP-1) from the Centers for Medicare and Medicaid Services (CMS) specifications manual.
     - Create patient-level haystacks of clinical notes by inserting needles into MIMIC-III structured and unstructured data (specifically notes from MIMIC-III `NOTEEVENTS` table). 
-2. **Retrieval**: Implements and evaluates retrieval methods (BM25, ColBERT, FAISS, Hybrid, Semantic Chunking, and SPLADE) to select relevant note segments before feeding to LLMs. 
-3. **Baseline LLM (No Retrieval)**: To measure the impact of retrieval-augmented generation (RAG), we run the same classification, extraction, and summarization tasks using LLMs without any retrieval step. In this setting, the model receives the full patient note (or truncated context) directly in the prompt. This provides a direct comparison between LLM-only performance and RAG-enhanced performance. The baseline scripts are located in `src/llm/`.
-4. **LLM Prompting**: Use AWS Bedrock to query LLMs for extracting and classifying relevant information. LLM evaluation scripts support summarization in addition to extract and classify tasks. Summarization can provide high-level overviews of medical notes but is more energy-intensive and may take longer to run.
+2. **Retrieval**: Implements and evaluates retrieval methods (BM25, FAISS, FAISS with MMR, Hybrid, Semantic Chunking, and SPLADE) to select relevant note segments before feeding to LLMs. 
+3. **Baseline LLM (No Retrieval)**: To measure the impact of retrieval-augmented generation (RAG), we run the same classification and extraction tasks using LLMs without any retrieval step. In this setting, the model receives the full patient note directly in the prompt. This provides a direct comparison between LLM-only performance and RAG-enhanced performance. The baseline scripts are located in `src/llm/`.
+4. **LLM Prompting**: Use AWS Bedrock to query LLMs for extracting and classifying relevant information.
 5. **Evaluation**: Compare LLM predictions against structured labels or known needles.  
 6. **Visualization**: Results are visualized by generating plots for overall accuracy, heatmaps, and strategy comparison.
 
@@ -81,7 +81,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 4. Place MIMIC-III data in `data/mimic/` following instructions in `data/mimic/README.md`.
 
-5. Configure **AWS Bedrock** credentials (if using AWS LLMs). 
+5. Configure **AWS Bedrock** credentials. 
 
 ## Dataset
 
@@ -94,7 +94,7 @@ Used `NOTEEVENTS.csv` from `data/mimic/` where only the `NOTEEVENTS` table was p
 
 ## Results & Visualization
 - Extraction and classification accuracy per LLM
-- Strategy performance (BM25, ColBERT, FAISS, Hybrid, Semantic Chunking, SPLADE)
+- Strategy performance (BM25, FAISS, FAISS MMR, Hybrid, Semantic Chunking, SPLADE)
 - Heatmaps comparing overall and per-category performance
 - Visualizations highlight LLM strengths and limitations for nuanced text
 
@@ -120,7 +120,7 @@ Each needle is a short ground-truth text span inserted into the patient timeline
 
 #### 1. Administrative Contraindication to Care — Severe Sepsis:
 ```bash
-python src/needles/generate_sep1_needles_contra_care_severe_sepsis.py
+python src/needles/generate_sep1_needles_contra_care.py
 ```
 
 #### 2. Directive for Comfort Care or Palliative Care — Severe Sepsis:
@@ -143,45 +143,29 @@ python src/needles/generate_sep1_needles_severe_sepsis_present.py
 python src/needles/generate_sep1_needles_vaso.py
 ```
 
+After creating five types of needles, we show how to run the benchmark pipeline for one type of needle, administrative contraindication to care. To run on all five needles, repeat steps 4-8 using different needle files. 
 
 ### STEP 4: Create Haystacks by inserting Needles
 
-We support two ways of constructing haystacks from `NOTEEVENTS.csv`:
-
-#### 1. Note-level Needle Insertion:
-
-Insert synthetic needles into individual notes by sampling notes from specified MIMIC note categories.
-
-```bash
-python src/haystacks/insert_needle.py \
-    --categories "Echo" "ECG" "Discharge summary" \
-    --n_notes 500 \
-    --seed 42
-```
-**Parameters**
-- `--categories` (required): One or more note categories to sample from (e.g., Discharge, ECG, Echo)
-- `--n_notes`: Number of notes to sample (default: 500)
-- `--seed`: Random seed for reproducibility (default: 42)
-
-Each sampled note becomes a separate haystack document with a single inserted needle.
-
-#### 2. Patient-level Needle Insertion:
-
-This is our main method of needle insertion as it insert needles at the patient level, where all notes from a single patient are concatenated into one document and exactly one needle is inserted per patient.
+Patient-level needle insertion is our main method of needle insertion as it insert needles at the patient level, where all notes from a single patient are concatenated into one document and exactly one needle is inserted per patient.
 
 ```bash
 python src/haystacks/create_haystack_query.py \
   --categories "Echo" "ECG" "Discharge summary" \
   --n_patients 100 \
   --min_notes_per_patient 2 \
-  --seed 42
+  --seed 42 \
+  --needle_file "src/needles/contra_care_needles.csv" \
+  --output_file "src/haystack/outputs/mimic_haystack_contra_care.csv"
 ``` 
 
 **Parameters:**
 - `--categories`: Optional list of note categories to include (default: all categories)
-- `--n_patients`: Number of patients to sample (default: 100)
-- `--min_notes_per_patient`: Minimum number of notes required per patient (default: 1)
-- `--seed`: Random seed for reproducibility (default: 42)
+- `--n_patients`: Number of patients to sample 
+- `--min_notes_per_patient`: Minimum number of notes required per patient
+- `--seed`: Random seed for reproducibility 
+- `--needle_file`: Path to synthetic needle CSV
+- `--output_file`: Path to output haystack CSV
 
 Each patient corresponds to one haystack document containing all qualifying notes and one inserted needle.
 
@@ -191,31 +175,21 @@ This step evaluates LLM performance without retrieval to quantify the benefit of
 Run the baseline file to create a "retrieval" csv:
 ```bash
 python src/llm/full_context_baseline.py \
-  --input_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/llm/outputs/full_context_baseline.csv
+  --input_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/llm/outputs/baseline_contra_care.csv
 ```
 
-We then use this baseline retrieval file to prompt the LLM and run Bedrock. Go to STEP 7 for more information on how to create prompts and run the Bedrock model.
+We then use this baseline retrieval file to prompt the LLM and run Bedrock. See STEP 7 for more information on how to create prompts and run the Bedrock model.
 
 ### STEP 6: Run retrieval methods
 
-#### 1. Note-level retrieval: 
-Run BM25, FAISS with cosine similarity, FAISS with euclidean distance, and hybrid retrieval:
-```bash
-python src/retrieval/bm25_retrieval.py
-python src/retrieval/faiss_cos_retrieval.py
-python src/retrieval/faiss_cos_retrieval.py
-python src/retrieval/hybrid_retrieval.py
-```
-
-#### 2. Patient-level retrieval:
 Run BM25 retrieval: 
 ```bash
 python src/retrieval_query/bm25.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_query/outputs/bm25_patient_results.csv \
-  --top_k 2 \
-  --window_size 3
+  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/retrieval_query/outputs/contra_care/bm25_patient_results.csv \
+  --top_k 10 \
+  --window_size 1
 ```
 **Parameters:**
 - `--haystack_csv`: Path to patient-level haystack CSV (optional)
@@ -224,28 +198,13 @@ python src/retrieval_query/bm25.py \
 - `--window_size`: Number of sentences per passage window (optional)
 
 
-Run ColBERT retrieval:
-```bash
-python src/retrieval_query/colbert_retrieval.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_query/outputs/colbert_patient_results.csv \
-  --top_k 10 \
-  --chunk_size 128
-```
-**Parameters:**
-- `--haystack_csv`: Path to patient-level haystack CSV (optional)
-- `--output_csv`: Path to save ColBERT retrieval results (optional)
-- `--top_k`: Number of top passages retrieved per patient (optional)
-- `--chunk_size`: The amount of text contained in each indexed segment (optional)
-
-
 Run FAISS with cosine similarity retrieval:
 ```bash
 python src/retrieval_query/faiss_cos.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_query/outputs/faiss_cos_patient_results.csv \
-  --top_k 2 \
-  --window_size 3
+  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/retrieval_query/outputs/contra_care/faiss_cos_patient_results.csv \
+  --top_k 10 \
+  --window_size 1
 ```
 **Parameters:**
 - `--haystack_csv`: Path to patient-level haystack CSV (optional)
@@ -257,8 +216,8 @@ python src/retrieval_query/faiss_cos.py \
 Run FAISS with euclidean distance retrieval: 
 ```bash
 python src/retrieval_query/faiss_euc.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_query/outputs/faiss_euc_patient_results.csv \
+  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/retrieval_query/outputs/contra_care/faiss_euc_patient_results.csv \
   --top_k 2 \
   --window_size 3
 ```
@@ -272,10 +231,12 @@ python src/retrieval_query/faiss_euc.py \
 Run FAISS with maximal marginal relevance (MMR) retrieval:
 ```bash
 python src/retrieval_query/faiss_mmr.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_query/outputs/faiss_mmr_patient_results.csv \
-  --top_k 2 \
-  --window_size 3
+  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/retrieval_query/outputs/contra_care/faiss_mmr_patient_results.csv \
+  --top_k 10 \
+  --window_size 1 \
+  --mmr_lamda 0.7 \
+  --mmr_candidates 20
 ```
 **Parameters:**
 - `--haystack_csv`: Path to patient-level haystack CSV (optional)
@@ -289,12 +250,12 @@ python src/retrieval_query/faiss_mmr.py \
 Run hybrid retrieval: 
 ```bash
 python src/retrieval_query/hybrid.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_query/outputs/hybrid_patient_results.csv \
-  --top_k 2 \
-  --window_size 3 \
-  --bm25_weight 0.5 \
-  --faiss_weight 0.5
+  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/retrieval_query/outputs/contra_care/hybrid_patient_results.csv \
+  --top_k 10 \
+  --window_size 1 \
+  --bm25_weight 0.3 \
+  --faiss_weight 0.7
 ```
 **Parameters:**
 - `--haystack_csv`: Path to patient-level haystack CSV (optional)
@@ -308,11 +269,10 @@ python src/retrieval_query/hybrid.py \
 Run Semantic Chunking retrieval: 
 ```bash
 python src/retrieval_patient_level/semantic_chunking.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_patient_level/outputs/hybrid_patient_results.csv \
-  --top_k 5 \
-  --max_sents 5 \
-  --sim_threshold 0.55 
+  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/retrieval_patient_level/outputs/contra_care/hybrid_patient_results.csv \
+  --top_k 10 \
+  --max_sents 5 
 ```
 **Parameters:**
 - `--haystack_csv`: Path to patient-level haystack CSV (optional)
@@ -327,11 +287,11 @@ python src/retrieval_patient_level/semantic_chunking.py \
 Run SPLADE retrieval: 
 ```bash
 python src/retrieval_patient_level/splade.py \
-  --haystack_csv src/haystacks/mimic_haystack.csv \
-  --output_csv src/retrieval_patient_level/outputs/splade_patient_results.csv \
+  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --output_csv src/retrieval_patient_level/outputs/contra_care/splade_patient_results.csv \
   --top_k 5 \
-  --window_size 3 \
-  --max_length 256 \
+  --window_size 1 \
+  --max_length 128 \
   --batch_size 8
 ```
 **Parameters:**
@@ -344,31 +304,30 @@ python src/retrieval_patient_level/splade.py \
 - `--batch_size`: Number of passages encoded at once during inference (optional)
 - `--limit_rows`: Limit on the number of patients processed (optional)
 
+SPLADE retrieval takes longest to run, so to upscale on more patients GPU use may be necessary. If access to a GPU, splade can be run by using `splade_gpu.py` with the same inputs used on `splade.py`. For other retrieval methods, changes would need to be made to run on a GPU.
 
 ### STEP 7: Generate prompts and run Bedrock LLM based on prompts by using `bedrock_pipeline` folder.
 
 #### 1. Generate Prompts:
 `prompt_generation.py` converts retrieval outputs (e.g., BM25, FAISS) into structured prompts suitable for Amazon Bedrock / LLM inference. It takes the top retrieved passages for each patient-level query (“needle”) and formats them into task-specific prompts for downstream evaluation.
 
-The script currently supports three clinical NLP tasks:
+The script supports two clinical NLP tasks:
 
 1. `classify`: Binary classification of whether a clinical scenario is present. The prompt intends to check whether the retrieved notes contain the clinical scenario described by the needle with an expected output of yes or no. 
 
-2. `extract`: Exact text span extraction from the retrieved context. The prompt intends to force a precise extraction instead of summarizing or paraphrasing with an expected output of a python style list of the extracted text. 
-
-3. `summarize`: Focused summarization of relevant information only. The prompt intends to filter out unrelated history while maintaining medically relevant details with an expected output of a clinical summary of the topics specified by the needle. 
+2. `extract`: Boolean value of whether the exact text span was extracted from the retrieved context. The prompt determines whether the needle was retrieved from the haystack. 
 
 To generate the prompts, run: 
 ```bash
 python src/bedrock_pipeline/prompt_generation.py \
-  --retrieval_csv src/retrieval_query/outputs/bm25_patient_results.csv \
-  --output_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv \
+  --retrieval_csv src/retrieval_query/outputs/contra_care/bm25_patient_results.csv \
+  --output_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \
   --task classify
 ```
 **Parameters:**
-- `--retrieval_csv`: Path to retrieval csv 
-- `--output_csv`: Path to save generated Bedrock prompt csv
-- `--task`: One of `classify`, `extract`, `summarize`
+- `--retrieval_csv`: Path to retrieval csv (required)
+- `--output_csv`: Path to save generated Bedrock prompt csv (required)
+- `--task`: Contains 'classify' (required)
 
 To create prompts for the Baseline LLMs, use the csv that was generated in STEP 5 in the folder `src/llm/outputs/` as the retrieval csv.
 
@@ -379,53 +338,63 @@ The scipt expects the prompt CSV path to follow this structure:
 ```php-template
 src/bedrock_pipeline/bedrock_prompts/<task>/<retrieval_method>_prompts*.csv
 ```
-From this path, the script automatically infers the task (classify, extract, or summarize) and the retrieval method (bm25,colbert, faiss_mmr, hybrid, baseline, etc). 
+From this path, the script automatically infers the task (classify) and the retrieval method (BM25, FAISS, hybrid, baseline, etc). 
 
 To call a Bedrock model, run:
 ```bash
 python src/bedrock_pipeline/call_bedrock.py \
-  --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv \
-  --output_csv src/bedrock_pipeline/bedrock_responses/classify/bm25_responses.csv
+  --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \ 
+  --output_csv src/bedrock_pipeline/bedrock_responses/classify/contra_care/bm25_responses.csv 
 ```
 **Parameters:**
-- `--prompt_csv`: Path to a generated `bedrock_prompts` CSV containing prompts for a specific task and retrieval method.
-- `--output_csv`: Path to save bedrock responses 
+- `--prompt_csv`: Path to a generated `bedrock_prompts` CSV containing prompts for a specific task and retrieval method (required)
+- `--output_csv`: Path to save bedrock responses (required)
+
+When running on large amounts of patients, use `bedrock_parallel.py` to parallelize theh calls: 
+```bash
+python src/bedrock_pipeline/bedrock_parallel.py \
+  --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \ 
+  --output_csv src/bedrock_pipeline/bedrock_responses/classify/contra_care/bm25_responses.csv \
+  --workers 10
+```
+**Parameters:**
+- `--prompt_csv`: Path to a generated `bedrock_prompts` CSV containing prompts for a specific task and retrieval method (required)
+- `--output_csv`: Path to save bedrock responses (required)
+- `workers`: Number of concurrent API calls where limit is 20 (optional)
+- `sleep_time`: Delay between calls (optional)
 
 
 ### STEP 8: Evaluate Bedrock LLM
 
 #### 1. For classification methods:
 ```bash
-python src/eval/patient_level/classify_eval.py
-```
-#### 2. For extraction methods:
-```bash
-python src/eval/patient_level/extract_eval.py
-```
-#### 3. For summarization methods:
-```bash
-python src/eval/patient_level/summarize_eval.py
+python src/eval/patient_level/classify_eval.py \
+  --element "contra_care"
 ```
 
+**Parameters:**
+- `element`: Clinical element to process (required)
+
 ### STEP 9: Generate Visualizations
+Assuming that steps 4-8 were run for all five elements then visualizations can be created.
 
 Visualizations for Bedrock evaluation can be generated by:
 ```bash
-python src/results_patient_level/visualize_eval.py
-python src/results_patient_level/eval_table.py
+python src/results_patient_level/visualize.py
+python src/results_patient_level/visualize_element_retrieval.py
 ```
+
 Visualizations for retrieval evaluation can be generated by:
 ```bash
-python src/results_patient_level/visualize_retrieval.py
+python src/results_patient_level/visualize_retrieval.py \
+ --element "contra_care"
 ```
+
+**Parameters:**
+- `element`: Clinical element to process (required)
 
 ## Notes
 - `.gitignore` is configured to exclude `.DS_Store`, `__pycache__`, and sensitive MIMIC data. The project demonstrates methodology on a small subset of the data; scaling to full MIMIC requires additional setup and approvals.
 
 - The Specifications Manual for National Hospital Inpatient Quality Measures used to generate synthetic needles in "needle-in-a-haystack" approach can be found at this website (Version 5.18a): 
 [CMS Manual](https://qualitynet.cms.gov/inpatient/specifications-manuals)
-
-### Contributions: 
-- Leah: Worked on the main branch, llm-needle-experiments branch, and medqa-prep branch. Specifically on llm-needle-experiments branch, worked on generating needles and haystacks and implementing and testing retrieval methods. On main branch, generated synthetic needles using LLMs and inserted them into MIMIC notes. Tested them on several retrieval methods and generate responses using AWS Bedrock to protect MIMIC privacy concerns. Used medqa-prep branch to determine if data could be used as benchmark. 
-- Lewis: Worked on the generate needles branch. Implemented the pipeline using DeepSeek API to generate needles and haystacks and retrieve needles from haystacks. Added configuration for temperature, subtlety, and number of samples. Clean the LLM output and wrote into csv files for future analysis.
-- Omid: Worked on the answer-generation component of the project and contributed to the LLM-retrieval pipeline. Specifically, created the full pipeline that takes retrieved passages from BM25, FAISS-cosine, FAISS-euclidean, and hybrid methods and generates final LLM answers for all queries. Implemented passage reordering to reduce lost-in-the-middle effects, designed standardized prompting, and ran gpt-4o-mini across all retrieval outputs. Produced structured CSV outputs for each method and added all code/results to the answer_generation branch. Also assisted with repository organization and ensured compatibility between retrieval outputs and downstream evaluation.

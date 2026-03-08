@@ -88,8 +88,6 @@ if len(category_notes) == 0:
 
 
 
-# Compute EVENT_TIME
-
 # MIMIC notes have varying timestamp availability across categories,
 # so define a unified event time using chart time when available and chart date otherwise 
 category_notes["CHARTTIME"] = pd.to_datetime(category_notes["CHARTTIME"], errors="coerce")
@@ -155,8 +153,21 @@ print(f"Loaded {len(needles)} synthetic needles.")
 
 
 
+# Function to insert one random needle from the dataframe into the note text
 def insert_needle(note_text, needle_df):
-    """Insert one random needle from the dataframe into the note text."""
+    """
+    Insert one random needle from the dataframe into the note text.
+    
+    Args:
+        note_text (str): Original note text.
+        needle_df (pd.DataFrame): DataFrame containing needles
+        
+    Returns:
+        modified_note (str): Note text with needle inserted
+        needle_text (str): The needle text that was inserted
+        query (str): The query associated with the inserted needle
+        data_element (str): The data element associated with the inserted needle
+    """
 
     row = needle_df.sample(n=1).iloc[0]
 
@@ -231,10 +242,3 @@ with open(output_file, "w", newline="", encoding="utf-8") as f:
     writer.writerows(output_rows)
 
 print(f"Saved {len(output_rows)} notes with REAL synthetic needles to {output_file}")
-
-# to run: 
-# python src/haystacks/create_haystack_query.py \
-#   --categories \
-#   --n_patients 100 \
-#   --min_notes_per_patient 2 \
-#   --seed 42

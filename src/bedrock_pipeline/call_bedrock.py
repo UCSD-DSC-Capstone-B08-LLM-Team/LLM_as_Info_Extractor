@@ -100,27 +100,10 @@ def call_bedrock_and_save(prompt_csv, output_csv=None, model_id="deepseek.v3-v1:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Bedrock on prompt CSV")
     parser.add_argument("--prompt_csv", required=True, help="Path to input prompt CSV file")
-    parser.add_argument("--output_csv", default=None, help="Optional explicit output CSV path")
+    parser.add_argument("--output_csv", required=True, help="Path to output CSV path")
     args = parser.parse_args()
 
     call_bedrock_and_save(
         prompt_csv=args.prompt_csv,
         output_csv=args.output_csv
     )
-
-# Run the script with:
-# python src/bedrock_pipeline/call_bedrock.py \
-#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv \
-#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/bm25_responses.csv
-
-# python src/bedrock_pipeline/call_bedrock.py \
-#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/colbert_prompts.csv \
-#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/colbert_responses.csv
-
-# python src/bedrock_pipeline/call_bedrock.py \
-#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/faiss_prompts.csv \
-#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/faiss_responses.csv
-
-# python src/bedrock_pipeline/call_bedrock.py \
-#   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/hybrid_prompts.csv \
-#   --output_csv src/bedrock_pipeline/bedrock_responses/classify/hybrid_responses.csv

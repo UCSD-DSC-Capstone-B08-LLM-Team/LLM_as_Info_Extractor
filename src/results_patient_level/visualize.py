@@ -60,8 +60,6 @@ plt.close()
 
 # Grouped Bar Chart (Method Comparison)
 # Shows retrieval vs LLM accuracy side-by-side.
-import numpy as np
-
 elements = ["comfort_care", "contra_care", "severe_sepsis", "vasopressor"]
 for element in elements:
     df_plot = df[df["element"] == element]
@@ -88,9 +86,30 @@ for element in elements:
 # Shows method performance across all elements.
 
 # LLM accuracy heatmap
-pivot_acc = df.pivot(
-    index="strategy",
-    columns="element",
+element_mapping = {
+    "clinical_trial": "Clinical Trial",
+    "comfort_care": "Comfort / Palliative Care",
+    "contra_care": "Contraindication to Care",
+    "severe_sepsis": "Severe Sepsis",
+    "vasopressor": "Vasopressor Administration"
+}
+strategy_mapping = {
+        "bm25": "BM25",
+        "faiss": "FAISS",
+        "faiss_mmr": "FAISS + MMR",
+        "hybrid": "Hybrid",
+        "semantic_chunking": "Semantic Chunking",
+        "splade": "SPLADE",
+        "full_context_baseline": "Full Context Baseline"
+}
+
+pivot_acc_copy = df.copy()
+pivot_acc_copy["Element"] = pivot_acc_copy["element"].map(element_mapping)
+pivot_acc_copy["Strategy"] = pivot_acc_copy["strategy"].map(strategy_mapping)
+
+pivot_acc = pivot_acc_copy.pivot(
+    index="Strategy",
+    columns="Element",
     values="accuracy"
 )
 
@@ -106,6 +125,8 @@ sns.heatmap(
 plt.title("LLM Accuracy Across Retrieval Methods and Elements")
 plt.ylabel("Retrieval Strategy")
 plt.xlabel("Clinical Element")
+# rotate x-axis labels for better readability
+plt.xticks(rotation=20)
 
 plt.tight_layout()
 plt.savefig(f"{output_dir}/llm_accuracy_heatmap.png", dpi=300)
@@ -113,9 +134,30 @@ plt.close()
 
 
 # retrieval success heatmap
-pivot_ret = df.pivot(
-    index="strategy",
-    columns="element",
+element_mapping = {
+    "clinical_trial": "Clinical Trial",
+    "comfort_care": "Comfort / Palliative Care",
+    "contra_care": "Contraindication to Care",
+    "severe_sepsis": "Severe Sepsis",
+    "vasopressor": "Vasopressor Administration"
+}
+strategy_mapping = {
+        "bm25": "BM25",
+        "faiss": "FAISS",
+        "faiss_mmr": "FAISS + MMR",
+        "hybrid": "Hybrid",
+        "semantic_chunking": "Semantic Chunking",
+        "splade": "SPLADE",
+        "full_context_baseline": "Full Context Baseline"
+}
+
+pivot_ret_copy = df.copy()
+pivot_ret_copy["Element"] = pivot_ret_copy["element"].map(element_mapping)
+pivot_ret_copy["Strategy"] = pivot_ret_copy["strategy"].map(strategy_mapping)
+
+pivot_ret = pivot_ret_copy.pivot(
+    index="Strategy",
+    columns="Element",
     values="retrieval_success"
 )
 
@@ -131,6 +173,8 @@ sns.heatmap(
 plt.title("Retrieval Success Across Methods and Elements")
 plt.ylabel("Retrieval Strategy")
 plt.xlabel("Clinical Element")
+# rotate x-axis labels for better readability
+plt.xticks(rotation=20)
 
 plt.tight_layout()
 plt.savefig(f"{output_dir}/retrieval_success_heatmap.png", dpi=300)
@@ -206,7 +250,7 @@ sns.regplot(
 
 plt.xlabel("Retrieval Success")
 plt.ylabel("LLM Accuracy")
-plt.title("Retrieval Performance vs LLM Accuracy (Retrieval Methods Only)")
+plt.title("Retrieval Performance vs LLM Accuracy")
 
 plt.grid(True)
 plt.legend(bbox_to_anchor=(1.05,1))
@@ -221,14 +265,25 @@ df["type"] = df["strategy"].apply(
     lambda x: "Baseline (Full Context)" if x == "full_context_baseline" else "Retrieval Method"
 )
 
+element_mapping = {
+    "clinical_trial": "Clinical Trial",
+    "comfort_care": "Comfort / Palliative Care",
+    "contra_care": "Contraindication to Care",
+    "severe_sepsis": "Severe Sepsis",
+    "vasopressor": "Vasopressor Administration"
+}
+df_copy = df.copy()
+df_copy["Type"] = df_copy["type"]
+df_copy["Element"] = df_copy["element"].map(element_mapping)
+
 plt.figure(figsize=(8,6))
 
 sns.scatterplot(
-    data=df,
+    data=df_copy,
     x="retrieval_success",
     y="accuracy",
-    hue="type",
-    style="element",
+    hue="Type",
+    style="Element",
     s=160,
     alpha=0.85
 )
@@ -260,21 +315,41 @@ df_improve["accuracy_over_baseline"] = df_improve.apply(
     axis=1
 )
 
+element_mapping = {
+    "clinical_trial": "Clinical Trial",
+    "comfort_care": "Comfort / Palliative Care",
+    "contra_care": "Contraindication to Care",
+    "severe_sepsis": "Severe Sepsis",
+    "vasopressor": "Vasopressor Administration"
+}
+strategy_mapping = {
+        "bm25": "BM25",
+        "faiss": "FAISS",
+        "faiss_mmr": "FAISS + MMR",
+        "hybrid": "Hybrid",
+        "semantic_chunking": "Semantic Chunking",
+        "splade": "SPLADE",
+        "full_context_baseline": "Full Context Baseline"
+}
+df_improve_copy = df_improve.copy()
+df_improve_copy["Element"] = df_improve_copy["element"].map(element_mapping)
+df_improve_copy["Strategy"] = df_improve_copy["strategy"].map(strategy_mapping)
+
 # bar plot of improvement over baseline by method and element
 plt.figure(figsize=(10,6))
 
 sns.barplot(
-    data=df_improve,
-    x="strategy",
+    data=df_improve_copy,
+    x="Strategy",
     y="accuracy_over_baseline",
-    hue="element"
+    hue="Element"
 )
 
-plt.xticks(rotation=45)
+plt.xticks(rotation=10)
 plt.ylabel("Accuracy Improvement vs Baseline")
 plt.title("How Retrieval Methods Improve LLM Accuracy Over Full-Context Baseline")
 plt.grid(axis="y", linestyle="--", alpha=0.5)
-plt.legend(bbox_to_anchor=(1.05,1))
+plt.legend(bbox_to_anchor=(1.05,1), fontsize=9)
 plt.axhline(0, color="black", linestyle="--")
 plt.tight_layout()
 

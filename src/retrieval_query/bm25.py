@@ -59,7 +59,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Patient-level BM25 retrieval (query-based)")
     parser.add_argument("--haystack_csv", type=str, default="src/haystacks/mimic_haystack.csv")
     parser.add_argument("--output_csv", type=str, default="src/retrieval_query/outputs/bm25_patient_results.csv")
-    parser.add_argument("--top_k", type=int, default=2)
+    parser.add_argument("--top_k", type=int, default=5)
     parser.add_argument("--window_size", type=int, default=3)
     args = parser.parse_args()
 
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     for _, row in tqdm(df.iterrows(), total=len(df), desc="BM25 patient-level retrieval"):
         haystack = row["PATIENT_RECORD"]
         query = row["QUERY"]              
-        needle = row["NEEDLE_INSERTED"]      # Ground-truth text span
+        needle = row["NEEDLE_INSERTED"]    
 
         top_passages, num_passages = retrieve_passages(
             haystack, query, top_k=args.top_k, window_size=args.window_size

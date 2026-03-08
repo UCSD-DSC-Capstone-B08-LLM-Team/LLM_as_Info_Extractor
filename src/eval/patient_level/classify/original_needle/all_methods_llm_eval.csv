@@ -1,9 +1,0 @@
-strategy,num_patients,accuracy
-bm25,1000,0.539
-colbert,1000,0.546
-faiss,1000,0.641
-faiss_mmr,1000,0.718
-hybrid,1000,0.706
-full_context_baseline,1000,0.194
-semantic_chunking,1000,0.637
-splade,1000,0.803

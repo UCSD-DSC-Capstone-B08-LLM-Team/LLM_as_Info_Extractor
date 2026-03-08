@@ -19,16 +19,20 @@ nltk.download("punkt")
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 
-def mmr_rerank(
-    query_embedding,
-    passage_embeddings,
-    passages,
-    lambda_param=0.7,
-    top_k=5,
-):
+def mmr_rerank(query_embedding, passage_embeddings, passages, lambda_param=0.7, top_k=5):
     """
     Apply Maximal Marginal Relevance (MMR) re-ranking.
     Assumes cosine similarity (embeddings already normalized).
+
+    Args:
+        query_embedding: np.array of shape (1, dim)
+        passage_embeddings: np.array of shape (num_passages, dim)
+        passages: list of passage texts
+        lambda_param: float in [0, 1] controlling relevance vs diversity
+        top_k: number of passages to select
+
+    Returns:
+        List of top_k passages after MMR re-ranking
     """
 
     selected_indices = []
@@ -62,17 +66,22 @@ def mmr_rerank(
     return [passages[i] for i in selected_indices]
 
 
-def retrieve_faiss_mmr(
-    haystack,
-    query,
-    top_k=5,
-    window_size=3,
-    mmr_lambda=0.7,
-    mmr_candidates=20,
-):
+def retrieve_faiss_mmr(haystack, query, top_k=5, window_size=3, mmr_lambda=0.7, mmr_candidates=20):
     """
     Retrieve top_k passages from haystack using FAISS cosine similarity
     followed by MMR re-ranking. Search is driven by QUERY.
+
+    Args:
+        haystack: str, full patient record text
+        query: str, retrieval query
+        top_k: number of passages to return after MMR re-ranking
+        window_size: number of sentences per passage (if <= 0, use full haystack
+        mmr_lambda: float in [0, 1] controlling relevance vs diversity in MMR
+        mmr_candidates: number of top passages from FAISS to consider for MMR re-ranking
+
+    Returns:
+        top_passages: list of top_k passages after MMR re-ranking
+        num_passages: total number of passages created from haystack
     """
 
     sentences = sent_tokenize(str(haystack))

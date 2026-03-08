@@ -16,22 +16,7 @@ TASK_TEMPLATES = {
         "Answer only 'Yes' or 'No'.\n"
         "Input: {context}\n"
         "Query: {query}"
-    ),
-
-    "extract": (
-        "Instruction: You are a clinical data extractor. Extract the exact text spans from the 'Input' "
-        "that answer the 'Query'. Return ONLY the extracted text strings in a list format. "
-        "If no text matches, return 'None'.\n"
-        "Input: {context}\n"
-        "Query: {query}"
-    ),
-
-    "summarize": (
-        "Instruction: Summarize all information in the 'Input' notes that is relevant to the 'Query'. "
-        "Do not include unrelated medical history. Keep the summary concise and clinical.\n"
-        "Input: {context}\n"
-        "Query: {query}"
-    ),
+    )
 }
 
 
@@ -40,6 +25,7 @@ enc = tiktoken.get_encoding(TOKENIZER_NAME)
 
 
 def count_tokens(text: str) -> int:
+    """Count the number of tokens in a given text."""
     return len(enc.encode(text))
 
 
@@ -75,11 +61,18 @@ def generate_bedrock_prompts(results_df, task):
     Args:
         results_df (pd.DataFrame): Retrieval results containing at least
                                    ['needle', 'top_passages'].
-        task (str): One of ['classify', 'extract', 'summarize'].
+        task (str): 'classify'
 
     Returns:
         pd.DataFrame with columns:
-        ['SUBJECT_ID', 'needle', 'task', 'top_passages', 'bedrock_prompt', 'tokens_used']
+        - 'SUBJECT_ID': Identifier for the patient/query
+        - 'query': The original query/needle
+        - 'needle': The clinical scenario or information need
+        - 'task': The task type (classify)
+        - 'top_passages': List of top retrieved passages
+        - 'needle_in_top_k': Boolean indicating if needle is in any top passage 
+        - 'bedrock_prompt': The final prompt formatted for Bedrock
+        - 'tokens_used': Number of tokens in the final prompt
     """
     if task not in TASK_TEMPLATES:
         raise ValueError(f"Unsupported task '{task}'. Valid tasks: {list(TASK_TEMPLATES.keys())}")
@@ -154,7 +147,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--task",
         type=str,
-        choices=["classify", "extract", "summarize"],
+        choices=["classify"],
         required=True,
         help="Task type for Bedrock prompting"
     )
@@ -176,9 +169,3 @@ if __name__ == "__main__":
     print(f"Example: SUBJECT_ID {prompts_df.iloc[0]['SUBJECT_ID']}, "
           f"needle_in_top_k = {prompts_df.iloc[0]['needle_in_top_k']}, "
           f"tokens_used = {prompts_df.iloc[0]['tokens_used']}")
-
-    # Example usage:
-    # python src/bedrock_pipeline/prompt_generation.py \
-    #   --retrieval_csv src/retrieval_patient_level/outputs/bm25_patient_results.csv \
-    #   --output_csv src/bedrock_pipeline/bedrock_prompts/classify/bm25_prompts.csv \
-    #   --task classify

@@ -19,6 +19,16 @@ DEFAULT_SPLADE = "naver/splade-cocondenser-ensembledistil"
 
 
 def chunk_sliding_sentences(text: str, window_size: int = 3):
+    """
+    Splits text into sentences and creates overlapping chunks of sentences.
+    
+    Args:
+        text (str): The input text to be chunked.
+        window_size (int): The number of sentences in each chunk.
+
+    Returns:
+        List[str]: A list of sentence chunks.
+    """
     sents = sent_tokenize(str(text))
     if not sents:
         return []
@@ -29,6 +39,18 @@ def chunk_sliding_sentences(text: str, window_size: int = 3):
 
 @torch.no_grad()
 def splade_encode(texts, tokenizer, model, device, max_length=256):
+    """
+    Encodes a list of texts into sparse vectors using SPLADE.
+    
+    Args:
+        texts (List[str]): List of input texts to encode.
+        tokenizer: The SPLADE tokenizer.
+        model: The SPLADE model.
+        device: The device to run the model on.
+        
+    Returns:
+        np.ndarray: A 2D array where each row is the sparse vector representation of the corresponding input text.
+    """
     tok = tokenizer(
         texts,
         padding=True,
@@ -45,6 +67,22 @@ def splade_encode(texts, tokenizer, model, device, max_length=256):
 
 
 def retrieve_topk(chunks, query, tokenizer, model, device, top_k=5, max_length=256, batch_size=8):
+    """
+    Retrieves the top-k most relevant chunks for a given query using SPLADE.
+    
+    Args:
+        chunks (List[str]): List of text chunks to search through.
+        query (str): The query string to match against the chunks.
+        tokenizer: The SPLADE tokenizer.
+        model: The SPLADE model.
+        device: The device to run the model on.
+        top_k (int): The number of top relevant chunks to return.
+        max_length (int): Maximum token length for encoding.
+        batch_size (int): Number of chunks to encode at once.
+        
+    Returns:
+        List[str]: The top-k most relevant chunks based on SPLADE similarity to the query.
+    """
     if not chunks:
         return []
 

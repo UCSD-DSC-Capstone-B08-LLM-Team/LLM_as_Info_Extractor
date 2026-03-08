@@ -19,6 +19,16 @@ DEFAULT_SPLADE = "naver/splade-cocondenser-ensembledistil"
 
 
 def chunk_sliding_sentences(text: str, window_size: int = 3):
+    """
+    Splits text into sentences and creates overlapping chunks of sentences.
+    
+    Args:
+        text (str): The input text to be chunked.
+        window_size (int): The number of sentences in each chunk. s
+    
+    Returns:
+        List[str]: A list of sentence chunks.
+    """
     sents = sent_tokenize(str(text))
     if not sents:
         return []
@@ -29,6 +39,18 @@ def chunk_sliding_sentences(text: str, window_size: int = 3):
 
 @torch.no_grad()
 def splade_encode(texts, tokenizer, model, device, max_length=256):
+    """
+    Encodes a list of texts into sparse vectors using the SPLADE model.
+    
+    Args:
+        texts (List[str]): A list of input texts to encode.
+        tokenizer: The tokenizer corresponding to the SPLADE model.
+        model: The SPLADE model for encoding.
+        device: The device to run the model on.
+        
+    Returns:
+        np.ndarray: A 2D array where each row is the sparse vector representation of the corresponding input text.
+    """
 
     tok = tokenizer(
         texts,
@@ -47,6 +69,22 @@ def splade_encode(texts, tokenizer, model, device, max_length=256):
 
 
 def retrieve_topk(chunks, query, tokenizer, model, device, top_k=5, max_length=256, batch_size=8):
+    """
+    Retrieves the top-k most relevant chunks for a given query using SPLADE encoding and dot product similarity.
+    
+    Args:
+        chunks (List[str]): A list of text chunks to search through.
+        query (str): The query string to compare against the chunks.
+        tokenizer: The tokenizer corresponding to the SPLADE model.
+        model: The SPLADE model for encoding.
+        device: The device to run the model on.
+        top_k (int): The number of top relevant chunks to retrieve.
+        max_length (int): The maximum token length for encoding.
+        batch_size (int): The number of chunks to encode at once.
+        
+    Returns:
+        List[str]: A list of the top-k most relevant chunks sorted by relevance.
+    """
     if not chunks:
         return []
 

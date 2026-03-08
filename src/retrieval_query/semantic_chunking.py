@@ -19,6 +19,18 @@ DEFAULT_MODEL = "all-MiniLM-L6-v2"
 
 
 def chunk_by_similarity(text: str, model: SentenceTransformer, max_sents: int, similarity_threshold: float):
+    """
+    Chunks the input text into semantically similar groups of sentences using cosine similarity of sentence embeddings.
+
+    Args:
+        text (str): The input text to be chunked.
+        model (SentenceTransformer): The sentence transformer model used to compute sentence embeddings.
+        max_sents (int): The maximum number of sentences allowed in a single chunk.
+        similarity_threshold (float): The cosine similarity threshold for grouping sentences together.
+
+    Returns:
+        List[str]: A list of text chunks, where each chunk is a concatenation of semantically similar sentences.
+    """
     sents = sent_tokenize(str(text))
     if not sents:
         return []
@@ -52,6 +64,17 @@ def chunk_by_similarity(text: str, model: SentenceTransformer, max_sents: int, s
 
 
 def retrieve_topk_cosine(chunks, query, model, top_k: int):
+    """
+    Retrieves the top-k most semantically similar chunks to the query using cosine similarity of sentence embeddings.
+    Args:
+        chunks (List[str]): A list of text chunks to search over.
+        query (str): The query string to compare against the chunks.
+        model (SentenceTransformer): The sentence transformer model used to compute embeddings.
+        top_k (int): The number of top similar chunks to retrieve.
+        
+    Returns:
+        List[str]: A list of the top-k most similar chunks to the query.
+    """
     if not chunks:
         return []
 

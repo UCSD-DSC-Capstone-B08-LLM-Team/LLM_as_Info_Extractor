@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 
 # Function to plot method comparison by clinical element
 def plot_method_comparison_by_element(df):
+    """Creates a grouped bar plot comparing recall across retrieval methods for each clinical element."""
+
     plt.figure(figsize=(12,6))
     sns.set_theme(style="whitegrid")
 
@@ -25,6 +27,8 @@ def plot_method_comparison_by_element(df):
 
 # Function to plot heatmap of recall by retrieval method and element
 def plot_recall_heatmap(df):
+    """Creates a heatmap to visualize recall across retrieval methods and clinical elements."""
+
     pivot = df.pivot(index="method", columns="element", values="recall")
 
     plt.figure(figsize=(8,5))
@@ -45,6 +49,8 @@ def plot_recall_heatmap(df):
 
 # Function to plot average recall by method across all elements
 def plot_avg_method_performance(df):
+    """Creates a bar plot comparing average recall across retrieval methods, averaged over all clinical elements."""
+
     avg_df = (
         df.groupby("method")["recall"]
         .mean()
@@ -86,7 +92,16 @@ full_df = all_df[["element", "Method", "Recall@k"]].rename(
     }
 )
 
+element_labels = {
+    "clinical_trial": "Clinical Trial",
+    "comfort_care": "Comfort/Palliative Care",
+    "conta_care": "Contraindication to Care",
+    "severe_sepsis": "Severe Sepsis Present",
+    "vasopressor": "Vasopressor Administration"
+}
+
+full_df["element"] = full_df["element"].map(element_labels)
+
 plot_method_comparison_by_element(full_df)
 plot_recall_heatmap(full_df)
 plot_avg_method_performance(full_df)
-
