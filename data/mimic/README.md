@@ -42,6 +42,6 @@ This ensures your private clinical data remains secure.
 ## Verifying Setup
 After placing the CSVs, you can test the setup by running a simple script:
 ```bash
-python src/haystacks/insert_needle.py --test
+python src/haystacks/create_haystack_query.py --test
 ```
 This will check for required files without processing any sensitive data.

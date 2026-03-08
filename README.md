@@ -22,13 +22,10 @@ We tested our methods using real patient records from the MIMIC-III database, wh
         │   ├── bedrock_pipeline/           # LLM prompt & Bedrock pipeline
         │   ├── eval/                       # LLM evaluation scripts
         │   ├── haystacks/                  # Functions for inserting needles and constructing haystacks
-        │   ├── llm/                        # Baseline LLMs
+        │   ├── llm/                        # Baseline LLM
         │   ├── needles/                    # Synthetic needle generation
-        │   ├── results/                    # Visualization scripts & output
-        │   ├── results_patient_level/      # Visualization scripts & output (Patient level)
-        │   ├── retrieval/                  # Retrieval methods (Note level)
-        |   ├── retrieval_patient_level/    # Retrieval methods (Patient level)
-        |   └── retrieval_query/            # Retrieval methods using query
+        │   ├── results_patient_level/      # Visualization scripts & output 
+        |   └── retrieval_query/            # Retrieval methods
         └── Support_Docs                    # Past EDA & Literature Review
     </code>
 </pre>
