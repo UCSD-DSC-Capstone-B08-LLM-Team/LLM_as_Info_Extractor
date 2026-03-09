@@ -349,7 +349,7 @@ From this path, the script automatically infers the task (classify) and the retr
 To call a Bedrock model, run:
 ```bash
 python src/bedrock_pipeline/call_bedrock.py \
-  --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \ 
+  --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \
   --output_csv src/bedrock_pipeline/bedrock_responses/classify/contra_care/bm25_responses.csv 
 ```
 **Parameters:**
@@ -359,7 +359,7 @@ python src/bedrock_pipeline/call_bedrock.py \
 When running on large amounts of patients, use `bedrock_parallel.py` to parallelize the calls: 
 ```bash
 python src/bedrock_pipeline/bedrock_parallel.py \
-  --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \ 
+  --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \
   --output_csv src/bedrock_pipeline/bedrock_responses/classify/contra_care/bm25_responses.csv \
   --workers 10
 ```
