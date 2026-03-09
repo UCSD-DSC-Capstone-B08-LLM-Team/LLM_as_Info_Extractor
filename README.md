@@ -99,7 +99,8 @@ Used `NOTEEVENTS.csv` from `data/mimic/` where only the `NOTEEVENTS` table was p
 
 ### STEP 1: Place MIMIC-III data in `data/mimic/`. 
 
-### STEP 2: Configure AWS 
+### STEP 2: Configure AWS Bedrock
+Sign in to AWS console. In the search bar, look up Bedrock and click on the first option. Under "Get started by using API Keys", select "View API keys." Select the long-term API key and then select "Generate long-term API keys". Save this key in a secure location.
 
 ### STEP 3: Generate synthetic needles
 
@@ -144,7 +145,11 @@ After creating five types of needles, we show how to run the benchmark pipeline 
 
 ### STEP 4: Create Haystacks by inserting Needles
 
-Patient-level needle insertion is our main method of needle insertion as it insert needles at the patient level, where all notes from a single patient are concatenated into one document and exactly one needle is inserted per patient.
+Patient-level needle insertion is our main method of needle insertion as it insert needles at the patient level, where all notes from a single patient are concatenated into one document and exactly one needle is inserted per patient. Before inserting the needles, need to export the the Bedrock API key from before.
+
+```bash
+export AWS_BEARER_TOKEN_BEDROCK={YOUR_API_KEY}
+```
 
 ```bash
 python src/haystacks/create_haystack_query.py \
