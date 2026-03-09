@@ -4,7 +4,7 @@ Doctors and hospitals rely on medical records to make life-or-death decisions. T
 
 But medical records are long, complex, and often messy. Finding the important details can take hours of careful review, and mistakes or delays can affect patient outcomes. Accurate information extraction is not only critical for doctors and patients, but it also supports hospital operations, research, and reporting to agencies like the Centers for Medicare and Medicaid Services (CMS).
 
-AI tools, like large language models (LLMs), can help speed up information extraction from medical records. But they have a problem: when given long and messy notes, they often get confused and miss the most important details. This limits how much hospitals can rely on AI for critical tasks. Retrieval-augmented generation (RAG) can help mitigate this challenge by reducing the amount of information providing to LLMs, however, this field is underexplored. Thus, we introduce a benchmark for evaluating and comparing retrieval methods for EHR information extraction. To help LLMs focus on the right information, we tested different retrieval strategies that guide the model to the most relevant parts of the records before it answers questions. Through this framework, researchers are able to compare different strategies and see which ones work best in medical settings.
+AI tools, like large language models (LLMs), can help speed up information extraction from medical records. But they have a problem: when given long and messy notes, they often get confused and miss the most important details. This limits how much hospitals can rely on AI for critical tasks. Retrieval-augmented generation (RAG) can help mitigate this challenge by reducing the amount of information provided to LLMs, however, this field is underexplored. Thus, we introduce a benchmark for evaluating and comparing retrieval methods for EHR information extraction. To help LLMs focus on the right information, we tested different retrieval strategies that guide the model to the most relevant parts of the records before it answers questions. Through this framework, researchers are able to compare different strategies and see which ones work best in medical settings.
 
 We tested our methods using real patient records from the MIMIC-III database, which contains thousands of de-identified unstructured clinical notes from a hospital’s intensive care units. These notes come in many forms such as nursing notes, doctor’s observations, lab reports, and discharge summaries, and they vary in length and style.
 
@@ -83,7 +83,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ## Dataset
 
 - **MIMIC-III**: Deidentified clinical data for ~46,000 patients at Beth Israel Deaconess Medical Center (2001–2012). Includes structured data (demographics, vitals, labs, medications) and unstructured clinical notes.
-- **Synthetic Needles**: Generated data by using CMS Specifications and used as a ground truth to test retrieval and extraction without patient privacy concerns.
+- **Synthetic Needles**: Generated needles by using CMS Specifications and used as a ground truth to test retrieval and extraction without patient privacy concerns.
 **Important**: MIMIC data is sensitive and cannot be shared publicly. Do not commit MIMIC files to GitHub.
 
 #### Subset used in this project:
@@ -145,7 +145,7 @@ After creating five types of needles, we show how to run the benchmark pipeline 
 
 ### STEP 4: Create Haystacks by inserting Needles
 
-Patient-level needle insertion is our main method of needle insertion as it insert needles at the patient level, where all notes from a single patient are concatenated into one document and exactly one needle is inserted per patient. Before inserting the needles, the Bedrock API key from before needs to be exported.
+Patient-level needle insertion is our main method of needle insertion as it inserts needles at the patient level, where all notes from a single patient are concatenated into one document and exactly one needle is inserted per patient. Before inserting the needles, the Bedrock API key from before needs to be exported.
 
 ```bash
 export AWS_BEARER_TOKEN_BEDROCK={YOUR_API_KEY}
@@ -306,7 +306,7 @@ python src/retrieval_patient_level/splade.py \
 - `--batch_size`: Number of passages encoded at once during inference (optional)
 - `--limit_rows`: Limit on the number of patients processed (optional)
 
-SPLADE retrieval takes longest to run, so to upscale on more patients GPU use may be necessary. If access to a GPU, splade can be run by using `splade_gpu.py` with the same inputs used on `splade.py`. For other retrieval methods, changes would need to be made to run on a GPU.
+SPLADE retrieval takes the longest to run, so GPU usage may be necessary to upscale on more patients. If access to a GPU, splade can be run by using `splade_gpu.py` with the same inputs used on `splade.py`. For other retrieval methods, changes would need to be made to run on a GPU.
 
 ### STEP 7: Generate prompts and run Bedrock LLM based on prompts by using `bedrock_pipeline` folder.
 
@@ -352,7 +352,7 @@ python src/bedrock_pipeline/call_bedrock.py \
 - `--prompt_csv`: Path to a generated `bedrock_prompts` CSV containing prompts for a specific task and retrieval method (required)
 - `--output_csv`: Path to save bedrock responses (required)
 
-When running on large amounts of patients, use `bedrock_parallel.py` to parallelize theh calls: 
+When running on large amounts of patients, use `bedrock_parallel.py` to parallelize the calls: 
 ```bash
 python src/bedrock_pipeline/bedrock_parallel.py \
   --prompt_csv src/bedrock_pipeline/bedrock_prompts/classify/contra_care/bm25_prompts.csv \ 
