@@ -181,7 +181,7 @@ This step evaluates LLM performance without retrieval to quantify the benefit of
 Run the baseline file to create a "retrieval" csv:
 ```bash
 python src/llm/full_context_baseline.py \
-  --input_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --input_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/llm/outputs/baseline_contra_care.csv
 ```
 
@@ -192,7 +192,7 @@ We then use this baseline retrieval file to prompt the LLM and run Bedrock. See 
 Run BM25 retrieval: 
 ```bash
 python src/retrieval_query/bm25.py \
-  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --haystack_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/retrieval_query/outputs/contra_care/bm25_patient_results.csv \
   --top_k 10 \
   --window_size 1
@@ -207,7 +207,7 @@ python src/retrieval_query/bm25.py \
 Run FAISS with cosine similarity retrieval:
 ```bash
 python src/retrieval_query/faiss_cos.py \
-  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --haystack_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/retrieval_query/outputs/contra_care/faiss_cos_patient_results.csv \
   --top_k 10 \
   --window_size 1
@@ -222,7 +222,7 @@ python src/retrieval_query/faiss_cos.py \
 Run FAISS with euclidean distance retrieval: 
 ```bash
 python src/retrieval_query/faiss_euc.py \
-  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --haystack_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/retrieval_query/outputs/contra_care/faiss_euc_patient_results.csv \
   --top_k 2 \
   --window_size 3
@@ -237,7 +237,7 @@ python src/retrieval_query/faiss_euc.py \
 Run FAISS with maximal marginal relevance (MMR) retrieval:
 ```bash
 python src/retrieval_query/faiss_mmr.py \
-  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --haystack_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/retrieval_query/outputs/contra_care/faiss_mmr_patient_results.csv \
   --top_k 10 \
   --window_size 1 \
@@ -256,7 +256,7 @@ python src/retrieval_query/faiss_mmr.py \
 Run hybrid retrieval: 
 ```bash
 python src/retrieval_query/hybrid.py \
-  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --haystack_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/retrieval_query/outputs/contra_care/hybrid_patient_results.csv \
   --top_k 10 \
   --window_size 1 \
@@ -275,7 +275,7 @@ python src/retrieval_query/hybrid.py \
 Run Semantic Chunking retrieval: 
 ```bash
 python src/retrieval_patient_level/semantic_chunking.py \
-  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --haystack_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/retrieval_patient_level/outputs/contra_care/hybrid_patient_results.csv \
   --top_k 10 \
   --max_sents 5 
@@ -293,7 +293,7 @@ python src/retrieval_patient_level/semantic_chunking.py \
 Run SPLADE retrieval: 
 ```bash
 python src/retrieval_patient_level/splade.py \
-  --haystack_csv src/haystacks/mimic_haystack_contra_care.csv \
+  --haystack_csv src/haystack/outputs/mimic_haystack_contra_care.csv \
   --output_csv src/retrieval_patient_level/outputs/contra_care/splade_patient_results.csv \
   --top_k 5 \
   --window_size 1 \
