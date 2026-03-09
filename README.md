@@ -336,7 +336,7 @@ To create prompts for the Baseline LLMs, use the csv that was generated in STEP 
 #### 2. Call Bedrock: 
 `call_bedrock.py` sends generated prompts to an Amazon Bedrock hosted LLM (e.g., DeepSeek) and saves the model responses to disk. It is designed to operate on prompt CSVs produced by `prompt_generation.py` and follows a standardized directory structure to automatically infer task and retrieval method.
 
-The scipt expects the prompt CSV path to follow this structure:
+The script expects the prompt CSV path to follow this structure:
 ```php-template
 src/bedrock_pipeline/bedrock_prompts/<task>/<retrieval_method>_prompts*.csv
 ```
