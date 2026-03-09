@@ -377,6 +377,7 @@ python src/bedrock_pipeline/bedrock_parallel.py \
 python src/eval/patient_level/classify_eval.py \
   --element "contra_care"
 ```
+Note: All of the retrieval methods need to be ran for this command to work
 
 **Parameters:**
 - `element`: Clinical element to process (required)
