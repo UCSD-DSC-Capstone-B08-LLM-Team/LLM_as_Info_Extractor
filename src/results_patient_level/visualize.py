@@ -228,20 +228,24 @@ plt.close()
 # Scatter Plot (Retrieval Methods Only)
 df_retrieval = df[df["strategy"] != "full_context_baseline"]
 
+df_retrieval_copy = df_retrieval.copy()
+df_retrieval_copy["Element"] = df_retrieval_copy["element"].map(element_mapping)
+df_retrieval_copy["Strategy"] = df_retrieval_copy["strategy"].map(strategy_mapping)
+
 plt.figure(figsize=(8,6))
 
 sns.scatterplot(
-    data=df_retrieval,
+    data=df_retrieval_copy,
     x="retrieval_success",
     y="accuracy",
-    hue="strategy",
-    style="element",
+    hue="Strategy",
+    style="Element",
     s=140,
     alpha=0.85
 )
 
 sns.regplot(
-    data=df_retrieval,
+    data=df_retrieval_copy,
     x="retrieval_success",
     y="accuracy",
     scatter=False,
